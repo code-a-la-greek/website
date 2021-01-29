@@ -1,0 +1,144 @@
+$title: "Indie Flower", cursive;
+$text: "Ubuntu Mono", monospace;
+$royal-blue-dark: #10316bff;
+$jasmine: #ffdc7aff;
+$rich-black: #03070fff;
+$dark-purple: #2a152dff;
+
+//GENERAL STYLING
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  &:focus {
+    outline: 2px solid $jasmine;
+  }
+}
+span {
+  color: $jasmine;
+}
+body {
+  text-align: center;
+  background-color: $rich-black;
+  color: whitesmoke;
+  font: {
+    family: $text;
+    size: clamp(15px, 2vw, 2rem);
+  }
+}
+
+h1,
+h2 {
+  font: {
+    family: $title;
+    size: clamp(1.5rem, 3vw, 4rem);
+  }
+  letter-spacing: 4px;
+}
+p {
+  line-height: 25px;
+  max-inline-size: 75ch;
+}
+/* ul {
+  list-style: none;
+} */
+a {
+  font-family: $title;
+  color: $jasmine;
+  text-decoration: none;
+  /*
+  &:hover {
+  }
+  &:active {
+    color: $royal-blue-dark;
+  } */
+}
+
+//ELEMENTS-STYLE
+
+header {
+  margin-top: clamp(6rem, 10vw, 10rem);
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+/* header {
+  overflow: hidden;
+  padding: 0.5rem;
+  nav {
+    margin-top: 2rem;
+    section {
+      display: flex;
+      padding: 1rem;
+      p {
+        font-size: initial;
+        padding: 0;
+        line-height: initial;
+      }
+      article {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 250px;
+        border-radius: 16px;
+        background: #17141d;
+        box-shadow: -1rem 0rem 3rem rgba(0, 0, 0, 0.5);
+        transition: 500ms;
+        padding: 1rem;
+        &:first-child {
+          box-shadow: none;
+        }
+        &:hover {
+          transform: translateY(-1rem);
+        }
+        &:hover ~ article {
+          transform: translateX(135px);
+        }
+        &:not(:first-child) {
+          margin-left: -130px;
+        }
+      }
+      .card {
+        h2 {
+          font-size: larger;
+          margin: 1rem auto;
+        }
+      }
+      .card-author {
+        margin: 0;
+        border-radius: 15px;
+        transition: background-image 0.3s ease-in-out;
+        padding: 10px;
+        &:hover {
+          background: #136f63;
+        }
+        i {
+          color: white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+main {
+  ul {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    overflow-x: scroll;
+    article {
+      min-width: 200px;
+    }
+  }
+  main {
+    padding-top: 1rem;
+  }
+}
+ */
