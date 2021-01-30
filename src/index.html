@@ -9,8 +9,7 @@
     content="Panagiotis, Front-End enthusiast. Explore my projects. Feedback is always welcome" />
   <meta name="keywords" content="code, projects, website, javascript, html, portfolio, Development, Front-End" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu+Mono&display=swap"
-    rel="stylesheet preload" as="font" />
+  <link href="https://fonts.googleapis.com/css2?family=Imbue&family=Rokkitt&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="style.scss" rel="stylesheet" />
   <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
@@ -18,7 +17,7 @@
 </head>
 
 <body>
-  <nav class=" w3-center w3-top w3-padding-16 w3-black ">
+  <nav class=" w3-center w3-top w3-padding-16 w3-black w3-disabled ">
     <a href="#projects" class="w3-padding">Projects</a>
     <a href="#about" class="w3-padding">About me</a>
     <a href="#contact" class="w3-padding">Contact</a>
@@ -33,8 +32,8 @@
         I know the feeling! That's why I created this app so the right word will be just a click away. <br>
         In this project, I've made a web application, which uses fetch-requests to a word database, provided by
         datamuse.org</p>
-      <a href="https://panugr.github.io/writepoem/" class="w3-hover-black">See live</a>
-      <a href="https://github.com/PanuGr/writepoem" class="w3-hover-black">See code</a>
+      <a href="https://panugr.github.io/writepoem/">See live</a>
+      <a href="https://github.com/PanuGr/writepoem">See code</a>
       <a href="" class="w3-disabled">Read more</a>
     </section>
     <section class="w3-third w3-container">
@@ -42,10 +41,11 @@
       <img class="w3-image" src="url:./assets/weather-application.png?as=webp&quality=75&width=300" width="300"
         height="150" alt="screenshot from the site: weather forecast ">
       <p>Check the weather conditions for any location <br>
-        I have been working with xhr-requests to a weather API, provided by openweather.org. Dark-mode is based on the
+        In this project, I have been working with xhr-requests to a weather API, provided by openweather.org. Dark-mode
+        is based on the
         device's color preferences.</p>
-      <a href="https://panagiotis.netlify.app/sites/weather" class="w3-hover-black">See live</a>
-      <a href="" class="w3-disabled" class="w3-hover-black">See code</a>
+      <a href="https://panagiotis.netlify.app/sites/weather">See live</a>
+      <a href="" class="w3-disabled">See code</a>
       <a href="" class="w3-disabled">Read more</a>
     </section>
     <section class="w3-third w3-container">
@@ -56,36 +56,55 @@
         with a friend. <br>
         In this project I've been working with arrow functions and array loops. Lodash.js-library simplifies the
         arithmetic operators.</p>
-      <a href="https://panugr.github.io/javascriptGame/" class="w3-hover-black">See live</a>
-      <a href="https://github.com/PanuGr/javascriptGame" class="w3-hover-black">See code</a>
+      <a href="https://panugr.github.io/javascriptGame/">See live</a>
+      <a href="https://github.com/PanuGr/javascriptGame">See code</a>
       <a href="" class="w3-disabled">Read more</a>
     </section>
   </header>
-  <a>See more projects</a><a>Contact me</a>
 
+  <section id="more">
+    <a href="#" class="w3-margin w3-padding w3-disabled">See more projects</a>
+    <a href="#" class="w3-margin w3-padding w3-disabled">Contact me</a>
+  </section>
 
-
-  <!--<main>
-    <section>
-      <p>
-        Hello! My name is
-        Panagiotis and I am currently working in the automobile industry. In
-        April 2020, I had the opportunity to join Codecademy and start a
-        Web-Development course. I learnt a lot. But there is so much to still
-        learn! I love Frond-End Development, I am very passionate about it. I
-        spend all my free time building projects and learning from that
-        process.
-      </p>
-      <p>
-        So far, my main courses have been: <span>Html, Css, Scss, Javascript and
-          the Wix-website editor</span> .
-        <br />
-        As secondary lessons, I've taken: <span>Responsive design, Bootstrap, Intro
-          to Node.js and Color design</span> .
-      </p>
+  <main id="about" class="w3-container">
+    <section class="w3-row-padding ">
+      <img src="url:./assets/profile-photo-small.webp" srcset="url:./assets/profile-photo-small.webp 500w,
+        url:./assets/profile-photo.jpg?as=webp&quality=75&width=1000 1500w"
+        alt="Panagiotis Panagiotakopoulos,profile-photo" class="w3-half" loading="lazy">
+      <article class="w3-half">
+        <h2 class="">Hello</h2>
+        <p>
+          My name is
+          Panagiotis and I am currently working in the automobile industry. In
+          April 2020, I had the opportunity to join Codecademy and start a
+          Web-Development course. I love Frond-End Development and I am very passionate about it. I
+          spend all my free time building projects and learning from that
+          process.</p>
+      </article>
     </section>
-    <section>
+
+    <section class="w3-row-padding w3-margin-top w3-padding-64"></section>
+    <section class="w3-half">
+      <i class="fab fa-html5 fa-2x"></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </section>
+    <article class="w3-half">
       <h2>Languages and Tools</h2>
+      <p> So far, my main courses have been: Html, Css, Scss, Javascript and
+        the Wix-website editor .</p>
+    </article>
+    
+  </main>
+
+  <!--<section>
       <ul id="tool-list">
          <script id="tool-template" type="text/x-handlebars-template">
             {{#each tools}}
@@ -103,6 +122,7 @@
       </ul>
     </section>
   </main>-->
+  <script src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
