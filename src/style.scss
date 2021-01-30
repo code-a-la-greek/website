@@ -2,7 +2,7 @@ $title: "Indie Flower", cursive;
 $text: "Ubuntu Mono", monospace;
 $royal-blue-dark: #10316bff;
 $jasmine: #ffdc7aff;
-$rich-black: #03070fff;
+$rich-black: #17141d;
 $dark-purple: #2a152dff;
 
 //GENERAL STYLING
@@ -20,7 +20,9 @@ span {
 body {
   text-align: center;
   background-color: $rich-black;
+  background-image: linear-gradient(to bottom, $rich-black, $royal-blue-dark);
   color: whitesmoke;
+  //height: 100vh;
   font: {
     family: $text;
     size: clamp(15px, 2vw, 2rem);
@@ -36,109 +38,69 @@ h2 {
   letter-spacing: 4px;
 }
 p {
-  line-height: 25px;
+  line-height: 1em;
   max-inline-size: 75ch;
+  letter-spacing: 2px;
 }
-/* ul {
-  list-style: none;
-} */
+
 a {
   font-family: $title;
   color: $jasmine;
   text-decoration: none;
-  /*
-  &:hover {
+  &:hover,
+  :active,
+  :focus {
+    color: white;
+    background: $rich-black;
+    border-radius: 50px;
+    transition: background-color ease-in 200ms;
   }
-  &:active {
-    color: $royal-blue-dark;
-  } */
 }
 
 //ELEMENTS-STYLE
-
 header {
   margin-top: clamp(6rem, 10vw, 10rem);
-  /* display: flex;
-  flex-wrap: wrap; */
-}
-
-/* header {
-  overflow: hidden;
-  padding: 0.5rem;
-  nav {
-    margin-top: 2rem;
-    section {
-      display: flex;
-      padding: 1rem;
-      p {
-        font-size: initial;
-        padding: 0;
-        line-height: initial;
-      }
-      article {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        width: 250px;
-        border-radius: 16px;
-        background: #17141d;
-        box-shadow: -1rem 0rem 3rem rgba(0, 0, 0, 0.5);
-        transition: 500ms;
-        padding: 1rem;
-        &:first-child {
-          box-shadow: none;
-        }
-        &:hover {
-          transform: translateY(-1rem);
-        }
-        &:hover ~ article {
-          transform: translateX(135px);
-        }
-        &:not(:first-child) {
-          margin-left: -130px;
-        }
-      }
-      .card {
-        h2 {
-          font-size: larger;
-          margin: 1rem auto;
-        }
-      }
-      .card-author {
-        margin: 0;
-        border-radius: 15px;
-        transition: background-image 0.3s ease-in-out;
-        padding: 10px;
-        &:hover {
-          background: #136f63;
-        }
-        i {
-          color: white;
-          text-decoration: underline;
-        }
-      }
+  section {
+    background: $rich-black;
+    margin: 5px 0;
+    border-radius: 1rem;
+    p {
+      padding: 1em 0;
     }
   }
 }
-main {
-  ul {
-    margin-top: 1.5rem;
+@media (min-width: 600px) {
+  header {
+    margin-top: clamp(6rem, 10vw, 10rem);
+    overflow: hidden;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 600px) {
-  nav {
-    overflow-x: scroll;
-    article {
-      min-width: 200px;
+    section {
+      margin: 0;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      min-width: 250px;
+      box-shadow: -1rem 0rem 3rem rgba(255, 220, 122, 0.2);
+      transition: 500ms;
+      padding: 1rem;
+      &:first-child {
+        box-shadow: none;
+      }
+      &:hover {
+        transform: translateY(-1rem);
+      }
+      &:hover ~ section {
+        transform: translateX(150px);
+      }
+      &:not(:first-child) {
+        margin-left: -130px;
+      }
+      img {
+        margin: 0 auto;
+        width: 70%;
+      }
     }
   }
-  main {
-    padding-top: 1rem;
-  }
 }
- */
