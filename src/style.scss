@@ -35,8 +35,9 @@ h2 {
 }
 p {
   line-height: 1em;
-  max-inline-size: 75ch;
+  max-inline-size: 55ch;
   letter-spacing: 2px;
+  margin: 0 auto;
 }
 
 a {
@@ -55,7 +56,6 @@ a {
 
 //ELEMENTS-STYLE
 header {
-  margin-top: clamp(6rem, 10vw, 10rem);
   section {
     background: $dark-black;
     margin: 5px 0;
@@ -70,8 +70,6 @@ header {
 }
 
 #more {
-  margin: 8rem 0;
-  padding: 8rem 0;
   @extend h1;
   a:hover,
   :active,
@@ -81,23 +79,23 @@ header {
 }
 
 main {
-  height: 100vh;
-  h2 {
-    text-decoration: underline;
-    text-decoration-style: double;
-    text-decoration-color: $jasmine;
+  max-width: 1500px;
+  margin: 0 auto;
+  img {
+    display: none;
+  }
+  i {
+    margin-top: 2rem;
   }
 }
+
+
 @media (min-width: 600px) {
   header {
-    margin-top: clamp(6rem, 10vw, 10rem);
-    overflow: hidden;
-    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     section {
-      margin: 0;
       display: flex;
       flex-direction: column;
       min-width: 250px;
@@ -124,5 +122,24 @@ main {
   }
   main {
     text-align: right;
+    img {
+      display: block;
+    }
+    .flex {
+      width: 30vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      i {
+        padding: 5px;
+        margin: 5px;
+      }
+    }
+    ul {
+      /*  margin: 0 auto;
+      width: 500px;
+       */
+    }
   }
 }

@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html --out-dir final"
   },
   "keywords": [
     "portfolio",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "parcel": "^2.0.0-beta.1",
     "sass": "^1.32.5",
-    "sharp": "^0.27.1"
+    "sharp": "^0.27.1",
+    "w3-css": "^4.1.0"
   }
 }

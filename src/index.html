@@ -17,21 +17,20 @@
 </head>
 
 <body>
-  <nav class=" w3-center w3-top w3-padding-16 w3-black w3-disabled ">
-    <a href="#projects" class="w3-padding">Projects</a>
-    <a href="#about" class="w3-padding">About me</a>
-    <a href="#contact" class="w3-padding">Contact</a>
+  <nav class="w3-top w3-black w3-bar  ">
+    <a href="#home" class=" w3-bar-item">Home</a>
+    <a href="#projects" class=" w3-bar-item">Projects</a>
+    <a href="#about" class=" w3-bar-item">About me</a>
+    <a href="#contact" class=" w3-bar-item">Contact</a>
   </nav>
 
-  <header id="projects" class="w3-container">
+  <header id="home" class="w3-container w3-padding-64">
     <section class="w3-third w3-container ">
       <h2>Words that rhyme</h2>
       <img class="w3-image" src="url:./assets/poem.png?as=webp&quality=75&width=300" width="300" height="150"
         alt="screenshot from the site: a form that finds words that rhyme">
       <p>Did you ever want to write something that rhymes well but you just couldn't find the right words?
-        I know the feeling! That's why I created this app so the right word will be just a click away. <br>
-        In this project, I've made a web application, which uses fetch-requests to a word database, provided by
-        datamuse.org</p>
+        I know the feeling! That's why I created this app so the right word will be just a click away.</p>
       <a href="https://panugr.github.io/writepoem/">See live</a>
       <a href="https://github.com/PanuGr/writepoem">See code</a>
       <a href="" class="w3-disabled">Read more</a>
@@ -40,10 +39,7 @@
       <h2>Weather app</h2>
       <img class="w3-image" src="url:./assets/weather-application.png?as=webp&quality=75&width=300" width="300"
         height="150" alt="screenshot from the site: weather forecast ">
-      <p>Check the weather conditions for any location <br>
-        In this project, I have been working with xhr-requests to a weather API, provided by openweather.org. Dark-mode
-        is based on the
-        device's color preferences.</p>
+      <p>Check the weather conditions for any location</p>
       <a href="https://panagiotis.netlify.app/sites/weather">See live</a>
       <a href="" class="w3-disabled">See code</a>
       <a href="" class="w3-disabled">Read more</a>
@@ -53,9 +49,7 @@
       <img class="w3-image" src="url:./assets/rock-paper-scissor.png?as=webp&quality=75&width=300" width="300"
         height="150" alt="screenshot from the site: the game rock-paper-scissor made with javascript on the web">
       <p>A web-application of the famous game "rock-paper-scissors", made with native Javascript.Play it by yourself or
-        with a friend. <br>
-        In this project I've been working with arrow functions and array loops. Lodash.js-library simplifies the
-        arithmetic operators.</p>
+        with a friend.</p>
       <a href="https://panugr.github.io/javascriptGame/">See live</a>
       <a href="https://github.com/PanuGr/javascriptGame">See code</a>
       <a href="" class="w3-disabled">Read more</a>
@@ -63,20 +57,20 @@
   </header>
 
   <section id="more">
-    <a href="#" class="w3-margin w3-padding w3-disabled">See more projects</a>
-    <a href="#" class="w3-margin w3-padding w3-disabled">Contact me</a>
+    <a href="#" class="w3-margin w3-padding">See more projects</a>
+    <a href="#" class="w3-margin w3-padding">Contact me</a>
   </section>
 
-  <main id="about" class="w3-container">
-    <section class="w3-row-padding ">
-      <img src="url:./assets/profile-photo-small.webp" srcset="url:./assets/profile-photo-small.webp 500w,
-        url:./assets/profile-photo.jpg?as=webp&quality=75&width=1000 1500w"
-        alt="Panagiotis Panagiotakopoulos,profile-photo" class="w3-half" loading="lazy">
-      <article class="w3-half">
-        <h2 class="">Hello</h2>
+  <main id="about" class=" w3-padding-64">
+    <section class="w3-container w3-padding-64">
+      <img src="url:./assets/profile-photo.jpg?as=webp&quality=75&width=500" width="300" height="500"
+        alt="Panagiotis Panagiotakopoulos,profile-photo"
+        class="w3-half w3-image w3-round-xlarge w3-opacity-min w3-grayscale-min" loading="lazy">
+      <article class="w3-half ">
+        <h2>Hello</h2>
         <p>
           My name is
-          Panagiotis and I am currently working in the automobile industry. In
+          Panagiotis Panagiotakopoulos and I am currently working in the automobile industry. In
           April 2020, I had the opportunity to join Codecademy and start a
           Web-Development course. I love Frond-End Development and I am very passionate about it. I
           spend all my free time building projects and learning from that
@@ -84,45 +78,54 @@
       </article>
     </section>
 
-    <section class="w3-row-padding w3-margin-top w3-padding-64"></section>
-    <section class="w3-half">
-      <i class="fab fa-html5 fa-2x"></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
+    <section class="w3-container w3-padding-64">
+      <article class="w3-half">
+        <h2>Languages and Tools</h2>
+        <p> So far, my main courses have been: Html, Css, Scss, Javascript and
+          the Wix-website editor.</p>
+      </article>
+      <section class="w3-half flex w3-right">
+        <i class="fab fa-html5 fa-2x w3-hover-opacity"></i>
+        <i class="fab fa-css3-alt fa-2x w3-hover-opacity"></i>
+        <i class="fab fa-js-square fa-2x w3-hover-opacity"></i>
+        <i class="fab fa-bootstrap fa-2x w3-hover-opacity"></i>
+        <i class="fab fa-github fa-2x w3-hover-opacity"></i>
+        <i class="fas fa-terminal fa-2x w3-hover-opacity"></i>
+        <i class="fab fa-wix fa-2x w3-hover-opacity"></i>
+        <i class="fab fa-font-awesome-flag fa-2x w3-hover-opacity"></i>
+        <i class="fab fa-sass fa-2x w3-hover-opacity"></i>
+      </section>
     </section>
-    <article class="w3-half">
-      <h2>Languages and Tools</h2>
-      <p> So far, my main courses have been: Html, Css, Scss, Javascript and
-        the Wix-website editor .</p>
-    </article>
-    
-  </main>
 
-  <!--<section>
-      <ul id="tool-list">
-         <script id="tool-template" type="text/x-handlebars-template">
-            {{#each tools}}
-              <li>
-                <img
-                  loading="lazy"
-                  src="{{source}}"
-                  alt="{{description}}"
-                  width="100%"
-                  height="20"
-                />
-              </li>
-            {{/each}}
-          </script> 
+    <section class="w3-container w3-center  w3-padding-64">
+      <h2>Experience</h2>
+      <p>Up until today, my experience in coding comes from working on my projects. However, I recently started working
+        on other people's projects, which has given me valuable experience. You can read more about these projects
+        below.</p>
+      <ul class=" w3-padding-32 w3-ul">
+        <li><a href="">Elisan Antologia</a></li>
+        <li><a href="">Revelation Football Club</a></li>
       </ul>
     </section>
-  </main>-->
-  <script src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script>
+  </main>
+
+  <footer id="contact" class="w3-container w3-padding-64 w3-content">
+    <h2 class="w3-wide ">CONTACT</h2>
+    <p class="w3-opacity w3-padding">Feedback? Project? Drop a note!</p>
+    <form class="w3-container w3-padding" action="" method="post">
+      <label for="name">First Name</label><br>
+      <input type="text" id="name" name="firstname" placeholder="Your name..">
+      <br>
+      <label for="Suname">Last Name</label><br>
+      <input type="text" id="Suname" name="lastname" placeholder="Your last name..">
+      <br>
+      <label for="subject">Subject</label><br>
+      <textarea id="subject" name="subject" placeholder="Message.." rows="3" cols="30"></textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </footer>
+  <script async src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
