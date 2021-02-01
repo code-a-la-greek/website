@@ -1,22 +1,25 @@
 {
   "name": "My_portfolio",
   "version": "1.0.0",
-  "description": "My portfolio site",
+  "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "start": "parcel src/index.html --no-source-maps",
+    "build": "parcel build src/index.html --no-source-maps --no-cache"
   },
-  "keywords": [
-    "portfolio",
-    "web development",
-    "front-end"
-  ],
-  "author": "Panagiotis Panagiotakopoulos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PanuGr/My_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PanuGr/My_portfolio/issues"
+  },
+  "homepage": "https://github.com/PanuGr/My_portfolio#readme",
   "devDependencies": {
-    "parcel": "^2.0.0-beta.1",
-    "sass": "^1.32.5",
-    "sharp": "^0.27.1"
+    "parcel-bundler": "^1.3.1",
+    "sass": "^1.32.5"
   }
 }

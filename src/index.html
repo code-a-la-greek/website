@@ -19,7 +19,7 @@
 <body>
   <nav class="w3-top w3-black w3-bar">
     <a href="#home" class=" w3-bar-item ">Home</a>
-    <a href="./projects.html" class=" w3-bar-item ">All projects</a>
+    <a href="projects.html" class=" w3-bar-item ">All projects</a>
     <a href="#about" class=" w3-bar-item ">About me</a>
     <a href="#contact" class=" w3-bar-item ">Contact</a>
   </nav>
@@ -27,7 +27,7 @@
   <header id="home" class="w3-container w3-padding-64">
     <section class="w3-third w3-container ">
       <h2>Words that rhyme</h2>
-      <img class="w3-image" src="url:./assets/poem.png?as=webp&quality=75&width=300" width="300" height="150"
+      <img class="w3-image" src="assets/poem.webp" width="300" height="150"
         alt="screenshot from the site: a form that finds words that rhyme">
       <p>Did you ever want to write something that rhymes well but you just couldn't find the right words?
         I know the feeling! That's why I created this app so the right word will be just a click away.</p>
@@ -37,8 +37,8 @@
     </section>
     <section class="w3-third w3-container">
       <h2>Weather app</h2>
-      <img class="w3-image" src="url:./assets/weather-application.png?as=webp&quality=75&width=300" width="300"
-        height="150" alt="screenshot from the site: weather forecast ">
+      <img class="w3-image" src="assets/weather-application.webp" width="300" height="150"
+        alt="screenshot from the site: weather forecast ">
       <p>Check the weather conditions for any location</p>
       <a href="https://panagiotis.netlify.app/sites/weather">See live</a>
       <a href="" class="w3-disabled">See code</a>
@@ -46,8 +46,8 @@
     </section>
     <section class="w3-third w3-container">
       <h2>Rock-paper-scissor</h2>
-      <img class="w3-image" src="url:./assets/rock-paper-scissor.png?as=webp&quality=75&width=300" width="300"
-        height="150" alt="screenshot from the site: the game rock-paper-scissor made with javascript on the web">
+      <img class="w3-image" src="assets/rock-paper-scissor.webp" width="300" height="150"
+        alt="screenshot from the site: the game rock-paper-scissor made with javascript on the web">
       <p>A web-application of the famous game "rock-paper-scissors", made with native Javascript.Play it by yourself or
         with a friend.</p>
       <a href="https://panugr.github.io/javascriptGame/">See live</a>
@@ -62,7 +62,8 @@
   </section>
   <main id="about" class=" w3-padding-64">
     <section class="w3-container w3-padding-64">
-      <img src="url:./assets/profile-photo.jpg?as=webp&quality=75&width=500" width="300" height="500"
+      <img src="assets/profile-photo-small.webp" srcset="assets/profile-photo-small.webp 400w,
+        assets/profile-photo.webp 700w" sizes="50vw" width="300" height="500"
         alt="Panagiotis Panagiotakopoulos,profile-photo"
         class="w3-half w3-image w3-round-xlarge w3-opacity-min w3-grayscale-min" loading="lazy">
       <article class="w3-half ">
@@ -101,10 +102,18 @@
       <p>Up until today, my experience in coding comes from working on my projects. However, I recently started working
         on other people's projects, which has given me valuable experience. You can read more about these projects
         below.</p>
-      <ul class=" w3-padding-32 w3-ul">
+      <!-- <ul class=" w3-padding-32 w3-ul">
         <li><a href="">Elisan Antologia</a></li>
         <li><a href="">Revelation Football Club</a></li>
-      </ul>
+      </ul> -->
+      <details class="w3-padding-top-24">
+        <summary>Elisan Antologia</summary>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </details>
+      <details>
+        <summary>Revelation Football Club</summary>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </details>
     </section>
   </main>
   <footer id="contact" class="w3-container w3-padding-64 w3-content">

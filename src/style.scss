@@ -4,6 +4,16 @@ $royal-blue-dark: #10316bff;
 $jasmine: #ffdc7aff;
 $rich-black: #201b29;
 $dark-black: rgb(22, 19, 27);
+@keyframes sweep {
+  from {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
 
 //GENERAL STYLING
 * {
@@ -11,7 +21,7 @@ $dark-black: rgb(22, 19, 27);
   margin: 0;
   padding: 0;
   &:focus {
-    outline: 2px solid $jasmine;
+    outline: 1px solid $jasmine;
   }
 }
 body {
@@ -84,11 +94,28 @@ header {
 main {
   max-width: 1500px;
   margin: 0 auto;
-  img {
-    display: none;
-  }
   i {
     margin-top: 2rem;
+  }
+  details {
+    width: 300px;
+    padding: 0.5em;
+    margin: 0 auto;
+    summary {
+      @extend a;
+      cursor: pointer;
+      letter-spacing: 3px;
+      //padding: 0.5em;
+      margin-bottom: 0.5em;
+      &:hover,
+      :active,
+      :focus {
+        background: $dark-black;
+      }
+    }
+  }
+  details[open] summary ~ * {
+    animation: sweep 0.5s ease-in-out;
   }
 }
 
@@ -139,9 +166,6 @@ input[type="submit"] {
   }
   main {
     text-align: right;
-    img {
-      display: block;
-    }
     .flex {
       width: 30vw;
       display: flex;
@@ -152,6 +176,9 @@ input[type="submit"] {
         padding: 5px;
         margin: 5px;
       }
+    }
+    details {
+      width: 600px;
     }
   }
 }
