@@ -30,7 +30,7 @@ body {
   color: whitesmoke;
   font: {
     family: $text;
-    size: clamp(15px, 2vw, 2rem);
+    size: clamp(15px, 1.5vw, 2rem);
   }
 }
 
@@ -38,13 +38,13 @@ h1,
 h2 {
   font: {
     family: $title;
-    size: clamp(1.5rem, 4vw, 4rem);
+    size: clamp(1.5rem, 3vw, 4rem);
     weight: bold;
   }
   letter-spacing: 4px;
 }
 p {
-  line-height: 1em;
+  line-height: 1.5em;
   max-inline-size: 55ch;
   letter-spacing: 2px;
   margin: 0 auto;
@@ -98,7 +98,7 @@ main {
     margin-top: 2rem;
   }
   details {
-    width: 300px;
+    width: 100%;
     padding: 0.5em;
     margin: 0 auto;
     summary {
@@ -165,7 +165,6 @@ input[type="submit"] {
     }
   }
   main {
-    text-align: right;
     .flex {
       width: 30vw;
       display: flex;
@@ -178,7 +177,7 @@ input[type="submit"] {
       }
     }
     details {
-      width: 600px;
+      width: calc(600px + 5vw);
     }
   }
 }
