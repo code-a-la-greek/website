@@ -7,17 +7,17 @@
   <meta name="author" content="Panagiotis Panagiotakopoulos" />
   <meta name="description"
     content="I study Web-Development and I love Front-End. Explore my portfolio. Feedback is always welcome" />
-  <meta name="keywords" content="code, projects, website, javascript, html, portfolio, Development, Front-End" />
+  <meta name="keywords" content="code, projects, site, javascript, html, portfolio, Development, Front-End" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="preload" as="font" onload="this.rel='stylesheet'" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="style.scss" rel="stylesheet" />
+  <link href="style.scss" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-  <meta property=“og:image” content="assets/profile-photo-small.webp" />
+  <meta property=“og:image” content="src/assets/profile-photo-small.webp" />
   <title>Panagiotis Panagiotakopoulos</title>
 </head>
 
-<body>
+<body class="w3-black">
   <nav class="w3-top w3-black w3-bar w3-left-align">
     <a href="#" class="w3-padding">Home</a>
     <a href="projects.html" class="w3-padding w3-disabled">All projects</a>
@@ -162,7 +162,7 @@
       <input type="submit" value="Submit">
     </form>
   </footer>
-  <script async src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
