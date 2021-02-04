@@ -9,12 +9,19 @@
     content="I study Web-Development and I love Front-End. Explore my portfolio. Feedback is always welcome" />
   <meta name="keywords" content="code, projects, site, javascript, html, portfolio, Development, Front-End" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="preload" as="font" onload="this.rel='stylesheet'" />
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="preload" as="font"
+    onload="this.rel='stylesheet'" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="style.scss" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
   <meta property=“og:image” content="dist/profile-photo-small.9380ce3e.webp" />
   <title>Panagiotis Panagiotakopoulos</title>
+  <style>
+    body {
+      background-color: #201b29;
+      color: whitesmoke;
+    }
+  </style>
 </head>
 
 <body>
@@ -61,8 +68,9 @@
   </section>
   <main id="about" class=" w3-padding-64">
     <section class="w3-container w3-padding-64">
-      <img src="assets/profile-photo-small.webp" srcset="assets/profile-photo-small.webp 100w,
-        assets/profile-photo.webp 700w" width="300" height="500" alt="Panagiotis Panagiotakopoulos,profile-photo"
+      <img src="assets/profile-photo-small.webp" srcset="assets/profile-photo-small.webp 300w,
+        assets/profile-photo.webp 700w" sizes="70vw" width="300" height="500"
+        alt="Panagiotis Panagiotakopoulos,profile-photo"
         class="w3-half w3-image w3-round-xlarge w3-opacity-min w3-grayscale-min" loading="lazy">
       <article class="w3-half w3-right-align">
         <h2 class="w3-padding">About me</h2>
@@ -81,7 +89,8 @@
         <h2>Languages and Tools</h2>
         <p> My course is still in progress. So far, my completed main courses have been: Html, Css, Scss, Javascript and
           the Wix-website editor. <br>
-        You can watch all the completed courses and their certificates on my Codecademy <a href="https://www.codecademy.com/profiles/PakisGr" rel="noopener" target="_blank">profile</a>.</p>
+          You can watch all the completed courses and their certificates on my Codecademy <a
+            href="https://www.codecademy.com/profiles/PakisGr" rel="noopener" target="_blank">profile</a>.</p>
       </article>
       <section class="w3-half flex w3-right">
         <i class="fab fa-html5 fa-2x w3-hover-opacity"></i>
@@ -137,7 +146,8 @@
           fix.<br> <br>
           This is the first time that I am not working alone on a project. The client has an opinion about the state of
           the site and on the other side, I get pictures and guidelines from a designer, who works with them. <br>
-          On this project, I had the chance to use a wireframe to show a basic structure for the site. I had read about it during my studies on Frond-End Development but
+          On this project, I had the chance to use a wireframe to show a basic structure for the site. I had read about
+          it during my studies on Frond-End Development but
           I had never tried it before. I didn't use some computer program, I just made a pdf document. <br>
           This situation has taught me a lot about communication. <br>
           Overall, I am happy with the process and the progress of the site.</p>
@@ -159,7 +169,7 @@
       <label for="subject">Subject</label><br>
       <textarea id="subject" name="subject" placeholder="Message..." rows="3" cols="30" required></textarea>
       <br>
-      <input type="submit" value="Submit" >
+      <input type="submit" value="Submit">
     </form>
   </footer>
   <script src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script>
