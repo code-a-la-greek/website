@@ -30,7 +30,7 @@ body {
   color: whitesmoke;
   font: {
     family: $text;
-    size: clamp(1rem, 1.5vw, 2rem);
+    size: clamp(16px, 1.5vw, 2rem);
   }
 }
 
