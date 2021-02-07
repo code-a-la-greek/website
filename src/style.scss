@@ -92,14 +92,14 @@ main {
       margin-top: 10px;
     }
   }
- /*  #more {
+  #more {
     @extend h1;
     a:hover,
     :active,
     :focus {
       background: $dark-black;
     }
-  } */
+  } 
 
   details {
     width: 100%;
