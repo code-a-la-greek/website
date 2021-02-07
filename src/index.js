@@ -1,2 +1,2 @@
-import 'w3-css/4/w3pro.css'; 
+import 'w3-css/w3.css'; 
 import "./style.scss";

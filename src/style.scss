@@ -1,6 +1,6 @@
 $title: Arial, sans-serif;
 $text: Rokkitt, serif;
-$royal-blue-dark: #10316bff;
+/* $royal-blue-dark: #10316bff; */
 $jasmine: #ffdc7aff;
 $rich-black: #201b29;
 $dark-black: rgb(22, 19, 27);
@@ -30,7 +30,7 @@ body {
   color: whitesmoke;
   font: {
     family: $text;
-    size: clamp(16px, 1.5vw, 2rem);
+    size: clamp(1rem, 1.5vw, 2rem);
   }
 }
 
@@ -69,6 +69,16 @@ img {
 
 //ELEMENTS-STYLE
 header {
+  max-width: 1500px;
+  margin: 0 auto;
+  i {
+    padding: 5px;
+  }
+}
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
   section {
     background: $dark-black;
     margin: 5px 0;
@@ -77,26 +87,20 @@ header {
       padding: 1em 0;
     }
     a {
-      padding: 0 10px;
+      display: block;
+      padding: 10px;
+      margin-top: 10px;
     }
   }
-}
+ /*  #more {
+    @extend h1;
+    a:hover,
+    :active,
+    :focus {
+      background: $dark-black;
+    }
+  } */
 
-#more {
-  @extend h1;
-  a:hover,
-  :active,
-  :focus {
-    background: $dark-black;
-  }
-}
-
-main {
-  max-width: 1500px;
-  margin: 0 auto;
-    i {
-    margin-top: 2rem;
-  }
   details {
     width: 100%;
     padding: 0.5em;
@@ -119,22 +123,38 @@ main {
   }
 }
 
-input[type="submit"] {
-  background-color: black;
-  color: $jasmine;
-  padding: 10px 15px;
-  border-radius: 1rem;
-  cursor: pointer;
-  &:hover {
-    color: whitesmoke;
+footer {
+  article {
+    background-color: $dark-black;
   }
-  &:active {
-    transform: scale(0.9);
+  textarea{@extend input}
+  input[type="submit"] {
+    background-color: black;
+    color: $jasmine;
+    padding: 10px 15px;
+    cursor: pointer;
+    &:hover {
+      color: whitesmoke;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
   }
 }
 
 @media (min-width: 600px) {
-  header {
+  .flex {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    i {
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+  main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -164,20 +184,8 @@ input[type="submit"] {
       }
     }
   }
-  main {
-    .flex {
-      width: 30vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      i {
-        padding: 5px;
-        margin: 5px;
-      }
-    }
-    details {
-      width: calc(600px + 5vw);
-    }
+
+  details {
+    width: calc(600px + 5vw);
   }
 }

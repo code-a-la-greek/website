@@ -23,14 +23,51 @@
 </head>
 
 <body>
-  <nav class="w3-top w3-black w3-bar w3-left-align ">
-    <a href="#" class="w3-padding ">Home</a>
+  <nav class="w3-top w3-black w3-bar w3-left-align">
+    <!--     <a href="#" class="w3-padding ">Home</a> -->
+    <!-- <a href="#about" class="w3-padding  ">About me</a> -->
     <a href="projects.html" class="w3-padding w3-disabled ">All projects</a>
-    <a href="#about" class="w3-padding  ">About me</a>
     <a href="#contact" class="w3-padding  ">Contact</a>
   </nav>
 
-  <header class="w3-container w3-padding-64">
+  <header id="about" class="w3-container w3-padding-32">
+    <section class="w3-container w3-padding-64">
+      <img src="assets/profile-photo-small.webp" srcset="assets/profile-photo-small.webp 300w,
+        assets/profile-photo.webp 700w" sizes="70vw" width="300" height="500"
+        alt="Panagiotis Panagiotakopoulos,profile-photo"
+        class="w3-half w3-image w3-round-xlarge w3-opacity-min w3-grayscale-min" loading="lazy">
+      <article class="w3-half w3-right-align">
+        <h1 class="w3-padding">Hello, I'm Panagiotis</h1>
+        <p>I am currently working in the automobile industry and in April 2020, I had the opportunity to join Codecademy
+          and start a
+          Web-Development course. I love Frond-End Development and I am very passionate about it. I
+          spend all my free time building projects and learning from that
+          process.</p>
+      </article>
+    </section>
+    <section class="w3-container w3-padding-64">
+      <article class="w3-half">
+        <h2>Languages and Tools</h2>
+        <p> My course is still in progress. So far, my completed main courses have been: Html, Css, Scss, Javascript and
+          the Wix-website editor. <br>
+          You can watch all the completed courses and their certificates on my Codecademy <a
+            href="https://www.codecademy.com/profiles/PakisGr" rel="noopener" target="_blank">profile</a>.</p>
+      </article>
+      <section class="w3-half flex w3-right w3-margin">
+        <i class="fab fa-html5 fa-2x" title="html5"></i>
+        <i class="fab fa-css3-alt fa-2x " title="Css3"></i>
+        <i class="fab fa-sass fa-2x " title="Sass"></i>
+        <i class="fab fa-js-square fa-2x " title="Javascript"></i>
+        <i class="fab fa-bootstrap fa-2x " title="Bootstrap 5"></i>
+        <i class="fab fa-github fa-2x " title="Github"></i>
+        <i class="fas fa-terminal fa-2x " title="Bash"></i>
+        <i class="fab fa-wix fa-2x " title="Wix-Website Editor"></i>
+        <i class="fab fa-font-awesome-flag fa-2x " title="Font awesome"></i>
+      </section>
+    </section>
+  </header>
+
+  <main id="projects" class=" w3-padding-64">
     <section class="w3-third w3-container ">
       <h2>Words that rhyme</h2>
       <img class="w3-image" src="assets/poem.webp" width="300" height="150"
@@ -56,54 +93,11 @@
       <a href="https://github.com/PanuGr/javascriptGame">See code</a>
       <p>The game "rock-paper-scissors", made with native Javascript.<a href="" class="w3-large w3-disabled">Read
           more...</a></p>
-
-    </section>
-  </header>
-
-  <section id="more">
-    <a href="#" class="w3-margin w3-padding w3-disabled">See more projects</a>
-    <a href="#contact" class="w3-margin w3-padding">Contact me</a>
-  </section>
-  <main id="about" class=" w3-padding-64">
-    <section class="w3-container w3-padding-64">
-      <img src="assets/profile-photo-small.webp" srcset="assets/profile-photo-small.webp 300w,
-        assets/profile-photo.webp 700w" sizes="70vw" width="300" height="500"
-        alt="Panagiotis Panagiotakopoulos,profile-photo"
-        class="w3-half w3-image w3-round-xlarge w3-opacity-min w3-grayscale-min" loading="lazy">
-      <article class="w3-half w3-right-align">
-        <h2 class="w3-padding">About me</h2>
-        <p>
-          My name is
-          Panagiotis Panagiotakopoulos and I am currently working in the automobile industry. In
-          April 2020, I had the opportunity to join Codecademy and start a
-          Web-Development course. I love Frond-End Development and I am very passionate about it. I
-          spend all my free time building projects and learning from that
-          process.</p>
-      </article>
     </section>
 
-    <section class="w3-container w3-padding-64">
-      <article class="w3-half">
-        <h2>Languages and Tools</h2>
-        <p> My course is still in progress. So far, my completed main courses have been: Html, Css, Scss, Javascript and
-          the Wix-website editor. <br>
-          You can watch all the completed courses and their certificates on my Codecademy <a
-            href="https://www.codecademy.com/profiles/PakisGr" rel="noopener" target="_blank">profile</a>.</p>
-      </article>
-      <section class="w3-half flex w3-right">
-        <i class="fab fa-html5 fa-2x w3-hover-opacity"></i>
-        <i class="fab fa-css3-alt fa-2x w3-hover-opacity"></i>
-        <i class="fab fa-js-square fa-2x w3-hover-opacity"></i>
-        <i class="fab fa-bootstrap fa-2x w3-hover-opacity"></i>
-        <i class="fab fa-github fa-2x w3-hover-opacity"></i>
-        <i class="fas fa-terminal fa-2x w3-hover-opacity"></i>
-        <i class="fab fa-wix fa-2x w3-hover-opacity"></i>
-        <i class="fab fa-font-awesome-flag fa-2x w3-hover-opacity"></i>
-        <i class="fab fa-sass fa-2x w3-hover-opacity"></i>
-      </section>
-    </section>
+    <!--<a href="#" id="more" class=" w3-container w3-margin w3-padding w3-disabled">See more projects</a> -->
 
-    <section class="w3-container w3-center  w3-padding-64">
+    <article class="w3-container w3-center  w3-padding-64">
       <h2>Experience</h2>
       <p>Up until today, my experience in coding comes from working on my projects. However, I recently started working
         on other people's projects, which has given me valuable experience. You can read more about these projects
@@ -152,23 +146,34 @@
         <!--  <a href="" target="_blank">Visit the site </a> <i
           class="w3-small fas fa-external-link-square-alt"></i> -->
       </details>
-    </section>
+    </article>
   </main>
-  <footer id="contact" class="w3-container w3-padding-64 w3-content">
-    <h2 class="w3-wide ">CONTACT</h2>
-    <p class="w3-opacity w3-padding">Feedback? Project? <br> Drop a note and I will be in touch!</p>
-    <form class="w3-container w3-padding" netlify name="feedback" method="POST" target="_blank">
-      <label for="name">Name</label><br>
-      <input type="text" id="name" name="name" placeholder="Your name...">
-      <br>
-      <label for="mail">E-mail</label><br>
-      <input type="email" id="mail" name="mail" placeholder="Your email address...">
-      <br>
-      <label for="subject">Subject</label><br>
-      <textarea id="subject" name="subject" placeholder="Message..." rows="3" cols="30" required></textarea>
-      <br>
-      <input type="submit" value="Submit">
-    </form>
+  <footer id="contact" class="w3-padding-64 w3-content w3-container">
+    <h2 class="w3-wide  w3-margin-bottom w3-padding-32 ">CONTACT ME</h2>
+    <section class="w3-half w3-left-align">
+      <form class=" w3-padding" netlify name="feedback" method="POST" target="_blank">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" class="w3-margin-bottom w3-round" required>
+        <br>
+        <label for="mail">Email</label><br>
+        <input type="email" id="mail" name="mail" class="w3-margin-bottom w3-round" required>
+        <br>
+        <label for="subject">Message</label><br>
+        <textarea id="subject" name="subject" rows="3" cols="30" class="w3-margin-bottom w3-round" required></textarea>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <article class="w3-half">
+      <p class=" w3-padding">
+      Feel free to get in touch with me. <br> 
+      I am always open to feedback, discussing new projects, creating websites.</p>
+
+      <address class="w3-left-align w3-padding w3-margin">
+        Uusikaupunki, FI <br>
+        <a href="http://"><i class="fab fa-github" title="Github"></i></a>
+      </address>
+    </article>
   </footer>
   <script src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
