@@ -5,6 +5,7 @@ import * as weather from "./assets/weather-application.webp";
 const projects = [
     {
         link: "https://panugr.github.io/flipbook-HTML/",
+        code: null,
         description: "A simple guide to HTML code for beginners",
         title: "Build Your Website using this simple guide to HTML!",
         info:
@@ -12,6 +13,7 @@ const projects = [
     },
     {
         link: "https://panugr.github.io/flipbook-css",
+        code: null,
         description: "A simple guide to CSS code for beginners",
         title: "Style your Website using this simple guide to CSS!",
         info:
@@ -19,6 +21,7 @@ const projects = [
     },
     {
         link: "https://panugr.github.io/desmon-art/",
+        code: null,
         description: "Example of a landing page for a craft's store",
         title: "Welcome to Desmon's Arts & Crafts!",
         info:
@@ -26,6 +29,7 @@ const projects = [
     },
     {
         link: "https://panugr.github.io/Driven/",
+        code: null,
         description: "Replicating the landing-page of a local driving-school",
         title: "Driven Autokoulu",
         info:
@@ -33,6 +37,7 @@ const projects = [
     },
     {
         link: "https://panugr.github.io/Koirakerho/",
+        code: null,
         description: "Replicating the landing-page of a local dog-club",
         title: "Vakka-Suomen Kennelkerho",
         info:
@@ -40,6 +45,7 @@ const projects = [
     },
     {
         link: "https://panugr.github.io/mrfunny/",
+        code: null,
         description: "A series of small applications",
         title: "Mr.Funny",
         info:
@@ -98,7 +104,7 @@ function lastprojectsTemplate() {
     <section class="w3-third w3-container ">
       <h2>${last3Projects[i].title}</h2>
       <img class="w3-image" src=${last3Projects[i].img} width="300" height="150"
-        alt="screenshot from the site: a form that finds words that rhyme">
+        alt="screenshot from the site">
       <a href=${last3Projects[i].link}>See live</a>
       <a href=${last3Projects[i].code}>See code</a>
       <p>${last3Projects[i].description}.<a href="" class="w3-large w3-disabled">Read more...</a></p>
@@ -107,5 +113,23 @@ function lastprojectsTemplate() {
     }
 }
 
+function projectsTemplate() {
+    for (let i = 0; i < projects.length; i++) {
+        document.querySelector("main").innerHTML += `
+    <article class="w3-card-4 w3-left-align w3-content w3-margin-bottom w3-padding ">
+      <h2 class="w3-xlarge">${projects[i].title}</h2>
+      <img class="w3-image" src=${projects[i].img} width="300" height="150"
+        alt="screenshot from the site">
+      <a href=${projects[i].link} class="w3-block w3-padding">See live</a>
+      <a href=${projects[i].code} class="w3-block w3-padding">See code</a>
+      <details class="">
+      <summary>Info</summary>
+      <p>Technical information</p>
+      </details>
+    </article>
+    `
+    }
+}
 
-export default lastprojectsTemplate;
+
+export { lastprojectsTemplate, projectsTemplate };

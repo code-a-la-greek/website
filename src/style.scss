@@ -1,9 +1,28 @@
 $title: Arial, sans-serif;
 $text: Rokkitt, serif;
-/* $royal-blue-dark: #10316bff; */
 $jasmine: #ffdc7aff;
 $rich-black: #201b29;
 $dark-black: rgb(22, 19, 27);
+@mixin detailsTag {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0 auto;
+  summary {
+    @extend a;
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin-bottom: 0.5em;
+    &:hover,
+    :active,
+    :focus {
+      background: $dark-black;
+    }
+  }
+  p{max-inline-size: 55ch;}
+  @media (min-width600px) {
+    width: calc(600px + 5vw);
+  }
+}
 @keyframes sweep {
   from {
     opacity: 0;
@@ -45,7 +64,7 @@ h2 {
 }
 p {
   line-height: 1.5em;
-  max-inline-size: 55ch;
+  max-inline-size: 75ch;
   letter-spacing: 2px;
   margin: 0 auto;
 }
@@ -101,27 +120,14 @@ main {
     }
   } 
 
-  details {
-    width: 100%;
-    padding: 0.5em;
-    margin: 0 auto;
-    summary {
-      @extend a;
-      cursor: pointer;
-      letter-spacing: 3px;
-      //padding: 0.5em;
-      margin-bottom: 0.5em;
-      &:hover,
-      :active,
-      :focus {
-        background: $dark-black;
-      }
-    }
-  }
-  details[open] summary ~ * {
-    animation: sweep 0.5s ease-in-out;
+  .details {
+    @include detailsTag()
   }
 }
+
+details[open] summary ~ * {
+    animation: sweep 0.5s ease-in-out;
+  }
 
 footer {
   article {
@@ -186,7 +192,5 @@ footer {
     }
   }
 
-  details {
-    width: calc(600px + 5vw);
-  }
+
 }
