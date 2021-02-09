@@ -107,4 +107,5 @@ function lastprojectsTemplate() {
     }
 }
 
+
 export default lastprojectsTemplate;
