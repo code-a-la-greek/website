@@ -1,7 +1,7 @@
 {
   "name": "My_portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "My portfolio site",
   "main": "index.html",
   "scripts": {
     "start": "parcel src/index.html --no-source-maps --no-cache",

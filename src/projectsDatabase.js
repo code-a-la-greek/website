@@ -91,7 +91,7 @@ function lastprojectsTemplate() {
         alt="screenshot from the site">
       <a href=${last3Projects[i].link}>See live</a>
       <a href=${last3Projects[i].code}>See code</a>
-      <p>${last3Projects[i].description}.<a href="" class="w3-large w3-disabled">Read more...</a></p>
+      <p>${last3Projects[i].description}.<a href="sites/projects.html" class="w3-large">Read more...</a></p>
     </section>
     `;
     }

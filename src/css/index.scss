@@ -12,9 +12,7 @@ main {
   max-width: 1500px;
   margin: 0 auto;
   section {
-    background: $dark-black;
-    margin: 5px 0;
-    border-radius: 2rem;
+   @include section;
     p {
       padding: 1em 0;
     }

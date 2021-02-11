@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
 $title: Arial, sans-serif;
 $text: Rokkitt, serif;
 $jasmine: #ffdc7aff;
@@ -18,7 +19,9 @@ $dark-black: rgb(22, 19, 27);
       background: $dark-black;
     }
   }
-  p{max-inline-size: 55ch;}
+  p {
+    max-inline-size: 55ch;
+  }
   @media (min-width600px) {
     width: calc(600px + 5vw);
   }
@@ -35,6 +38,11 @@ $dark-black: rgb(22, 19, 27);
     border-radius: 50px;
     transition: background-color ease-in 200ms;
   }
+}
+@mixin section {
+  background: $dark-black;
+  margin: 5px 0;
+  border-radius: 2rem;
 }
 @keyframes sweep {
   from {
@@ -83,7 +91,7 @@ p {
 }
 
 a {
-@include link();
+  @include link();
 }
 
 img {
@@ -91,4 +99,3 @@ img {
 }
 
 //ELEMENTS-STYLE
-
