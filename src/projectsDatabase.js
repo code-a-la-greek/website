@@ -4,28 +4,12 @@ import * as weather from "./assets/weather-application.webp";
 
 const projects = [
     {
-        link: "https://panugr.github.io/flipbook-HTML/",
-        code: null,
-        description: "A simple guide to HTML code for beginners",
-        title: "Build Your Website using this simple guide to HTML!",
-        info:
-            "This book-like webpage is created by using the free version of turn.js library and basic jquery language.",
-    },
-    {
         link: "https://panugr.github.io/flipbook-css",
         code: null,
         description: "A simple guide to CSS code for beginners",
         title: "Style your Website using this simple guide to CSS!",
         info:
             "This book-like webpage is created by using the free version of turn.js library and basic jquery language.",
-    },
-    {
-        link: "https://panugr.github.io/desmon-art/",
-        code: null,
-        description: "Example of a landing page for a craft's store",
-        title: "Welcome to Desmon's Arts & Crafts!",
-        info:
-            " In this project, I work with the video-tag and flexbox techniques. I used cards from W3.CSS framework first, then switched to Bootstrap 5. The products are displayed with the Handlebars.js.",
     },
     {
         link: "https://panugr.github.io/Driven/",
@@ -116,7 +100,7 @@ function lastprojectsTemplate() {
 function projectsTemplate() {
     for (let i = 0; i < projects.length; i++) {
         document.querySelector("main").innerHTML += `
-    <article class="w3-card-4 w3-left-align w3-content w3-margin-bottom w3-padding ">
+    <section class="w3-left-align w3-content w3-margin-bottom w3-padding ">
       <h2 class="w3-xlarge">${projects[i].title}</h2>
       <img class="w3-image" src=${projects[i].img} width="300" height="150"
         alt="screenshot from the site">
@@ -126,7 +110,7 @@ function projectsTemplate() {
       <summary>Info</summary>
       <p>Technical information</p>
       </details>
-    </article>
+    </section>
     `
     }
 }

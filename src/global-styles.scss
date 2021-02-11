@@ -1,0 +1,94 @@
+$title: Arial, sans-serif;
+$text: Rokkitt, serif;
+$jasmine: #ffdc7aff;
+$rich-black: #201b29;
+$dark-black: rgb(22, 19, 27);
+@mixin detailsTag {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0 auto;
+  summary {
+    @extend a;
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin-bottom: 0.5em;
+    &:hover,
+    :active,
+    :focus {
+      background: $dark-black;
+    }
+  }
+  p{max-inline-size: 55ch;}
+  @media (min-width600px) {
+    width: calc(600px + 5vw);
+  }
+}
+@mixin link {
+  font-family: $text;
+  color: $jasmine;
+  text-decoration: none;
+  &:hover,
+  :active,
+  :focus {
+    color: whitesmoke;
+    background: $rich-black;
+    border-radius: 50px;
+    transition: background-color ease-in 200ms;
+  }
+}
+@keyframes sweep {
+  from {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+//GENERAL STYLING
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  &:focus {
+    outline: 1px solid $jasmine;
+  }
+}
+body {
+  text-align: center;
+  background-color: $rich-black;
+  color: whitesmoke;
+  font: {
+    family: $text;
+    size: clamp(1rem, 1.5vw, 2rem);
+  }
+}
+
+h1,
+h2 {
+  font: {
+    family: $title;
+    size: clamp(1.5rem, 3vw, 4rem);
+    weight: bold;
+  }
+  letter-spacing: 4px;
+}
+p {
+  line-height: 1.5em;
+  max-inline-size: 75ch;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+a {
+@include link();
+}
+
+img {
+  pointer-events: none;
+}
+
+//ELEMENTS-STYLE
+
