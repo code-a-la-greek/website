@@ -26,8 +26,8 @@
         <img class="w3-image" src={{img}} width="300" height="150"
           alt="screenshot from the site">
         <a href={{link}} class="w3-block w3-padding">See live</a>
-        <a href={{code}} class="w3-block w3-padding">See code</a>
-        <details class="">
+       {{#if code}} <a href={{code}} class="w3-block w3-padding">See code</a>{{/if}}
+        <details>
         <summary>Info</summary>
         <p>{{info}}</p>
         </details>

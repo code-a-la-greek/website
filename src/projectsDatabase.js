@@ -2,6 +2,9 @@ import * as poem from "./assets/poem.webp";
 import * as rockPaper from "./assets/rock-paper-scissor.webp";
 import * as weather from "./assets/weather-application.webp";
 import * as flipbook from "./assets/css-flipbook-small.webp";
+import * as driven from "./assets/driven.webp";
+import * as koirakerho from "./assets/koirakerho.webp";
+import * as mrfunny from "./assets/mrfunny.webp";
 
 const projects = {
     projects:[
@@ -36,6 +39,7 @@ const projects = {
     {
         link: "https://panugr.github.io/mrfunny/",
         code: "https://github.com/PanuGr/mrfunny",
+        img:mrfunny.default,
         description: "A series of small applications",
         title: "Mr.Funny",
         info:
@@ -44,6 +48,7 @@ const projects = {
     {
         link: "https://panugr.github.io/Koirakerho/",
         code: "https://github.com/PanuGr/koirakerho",
+        img:koirakerho.default,
         description: "Replicating the landing-page of a local dog-club",
         title: "Vakka-Suomen Kennelkerho",
         info:
@@ -52,6 +57,7 @@ const projects = {
     {
         link: "https://panugr.github.io/Driven/",
         code: "https://github.com/PanuGr/Driven",
+        img:driven.default,
         description: "Replicating the landing-page of a local driving-school",
         title: "Driven Autokoulu",
         info:
