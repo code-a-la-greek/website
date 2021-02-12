@@ -1,39 +1,26 @@
 import * as poem from "./assets/poem.webp";
 import * as rockPaper from "./assets/rock-paper-scissor.webp";
 import * as weather from "./assets/weather-application.webp";
+import * as flipbook from "./assets/css-flipbook-small.webp";
 
 const projects = [
     {
-        link: "https://panugr.github.io/flipbook-css",
-        code: null,
-        description: "A simple guide to CSS code for beginners",
-        title: "Style your Website using this simple guide to CSS!",
-        info:
-            "This book-like webpage is created by using the free version of turn.js library and basic jquery language.",
+        link: "https://panugr.github.io/writepoem/",
+        code: "https://github.com/PanuGr/writepoem",
+        img: poem.default,
+        description:
+            "Find a word that rhymes or sounds similar with any other given word",
+        title: "Write your poem",
+        info: "Fetch-requests to a word database, provided by datamuse.org.",
     },
     {
-        link: "https://panugr.github.io/Driven/",
+        link: "https://weather-desktop-application.netlify.app/",
         code: null,
-        description: "Replicating the landing-page of a local driving-school",
-        title: "Driven Autokoulu",
+        img: weather.default,
+        description: "Check the weather conditions for any location",
+        title: "Weather app",
         info:
-            "In this project I worked with the animate.css for the animations. I used flexbox to display the cards and the Handlebars.js template to display the courses.",
-    },
-    {
-        link: "https://panugr.github.io/Koirakerho/",
-        code: null,
-        description: "Replicating the landing-page of a local dog-club",
-        title: "Vakka-Suomen Kennelkerho",
-        info:
-            "In this project I've been practising with css-frameworks. First I used the W3.CSS framework, then i redesigned the site with Bootstrap 5.",
-    },
-    {
-        link: "https://panugr.github.io/mrfunny/",
-        code: null,
-        description: "A series of small applications",
-        title: "Mr.Funny",
-        info:
-            "I've been working with alert/confirm functions and array-loops. Lodash.js-library simplifies the arithmetic operators.",
+            "I have been working with xhr-requests to a weather API, provided by openweather.org. Dark-mode is based on the device's color preferences.",
     },
     {
         link: "https://panugr.github.io/javascriptGame/",
@@ -46,22 +33,37 @@ const projects = [
             "I've been working with arrow functions and array loops. Lodash.js-library simplifies the arithmetic operators.",
     },
     {
-        link: "/Sites/weather.html",
-        code: null,
-        img: weather.default,
-        description: "Check the weather conditions for any location",
-        title: "Weather app",
+        link: "https://panugr.github.io/mrfunny/",
+        code: "https://github.com/PanuGr/mrfunny",
+        description: "A series of small applications",
+        title: "Mr.Funny",
         info:
-            "I have been working with xhr-requests to a weather API, provided by openweather.org. Dark-mode is based on the device's color preferences.",
+            "I've been working with alert/confirm functions and array-loops. Lodash.js-library simplifies the arithmetic operators.",
     },
     {
-        link: "https://panugr.github.io/writepoem/",
-        code: "https://github.com/PanuGr/writepoem",
-        img: poem.default,
-        description:
-            "Find a word that rhymes or sounds similar with any other given word",
-        title: "Write your poem",
-        info: "Fetch-requests to a word database, provided by datamuse.org.",
+        link: "https://panugr.github.io/Koirakerho/",
+        code: "https://github.com/PanuGr/koirakerho",
+        description: "Replicating the landing-page of a local dog-club",
+        title: "Vakka-Suomen Kennelkerho",
+        info:
+            "In this project I've been practising with css-frameworks. First I used the W3.CSS framework, then i redesigned the site with Bootstrap 5.",
+    },
+    {
+        link: "https://panugr.github.io/Driven/",
+        code: "https://github.com/PanuGr/Driven",
+        description: "Replicating the landing-page of a local driving-school",
+        title: "Driven Autokoulu",
+        info:
+            "In this project I worked with the animate.css for the animations. I used flexbox to display the cards and the Handlebars.js template to display the courses.",
+    },
+    {
+        link: "https://panugr.github.io/flipbook-css",
+        code: "https://github.com/PanuGr/flipbook-css",
+        img:flipbook.default,
+        description: "A simple guide to CSS code for beginners",
+        title: "Style your Website using this simple guide to CSS!",
+        info:
+            "This book-like webpage is created by using the free version of turn.js library and basic jquery language.",
     },
 ];
 
@@ -76,11 +78,10 @@ const workProjects = [
 ];
 
 const last3Projects = [
-    projects[projects.length - 1],
-    projects[projects.length - 2],
-    projects[projects.length - 3],
+    projects[0],
+    projects[1],
+    projects[2],
 ];
-
 
 function lastprojectsTemplate() {
     for (let i = 0; i < last3Projects.length; i++) {
@@ -111,9 +112,8 @@ function projectsTemplate() {
       <p>Technical information</p>
       </details>
     </section>
-    `
+    `;
     }
 }
-
 
 export { lastprojectsTemplate, projectsTemplate };
