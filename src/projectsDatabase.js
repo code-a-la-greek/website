@@ -3,7 +3,8 @@ import * as rockPaper from "./assets/rock-paper-scissor.webp";
 import * as weather from "./assets/weather-application.webp";
 import * as flipbook from "./assets/css-flipbook-small.webp";
 
-const projects = [
+const projects = {
+    projects:[
     {
         link: "https://panugr.github.io/writepoem/",
         code: "https://github.com/PanuGr/writepoem",
@@ -65,7 +66,7 @@ const projects = [
         info:
             "This book-like webpage is created by using the free version of turn.js library and basic jquery language.",
     },
-];
+]};
 
 const workProjects = [
     {
@@ -78,9 +79,9 @@ const workProjects = [
 ];
 
 const last3Projects = [
-    projects[0],
-    projects[1],
-    projects[2],
+    projects.projects[0],
+    projects.projects[1],
+    projects.projects[2],
 ];
 
 function lastprojectsTemplate() {
@@ -98,22 +99,5 @@ function lastprojectsTemplate() {
     }
 }
 
-function projectsTemplate() {
-    for (let i = 0; i < projects.length; i++) {
-        document.querySelector("main").innerHTML += `
-    <section class="w3-left-align w3-content w3-margin-bottom w3-padding ">
-      <h2 class="w3-xlarge">${projects[i].title}</h2>
-      <img class="w3-image" src=${projects[i].img} width="300" height="150"
-        alt="screenshot from the site">
-      <a href=${projects[i].link} class="w3-block w3-padding">See live</a>
-      <a href=${projects[i].code} class="w3-block w3-padding">See code</a>
-      <details class="">
-      <summary>Info</summary>
-      <p>Technical information</p>
-      </details>
-    </section>
-    `;
-    }
-}
 
-export { lastprojectsTemplate, projectsTemplate };
+export { lastprojectsTemplate, projects };

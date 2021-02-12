@@ -12,7 +12,6 @@ main {
   max-width: 1500px;
   margin: 0 auto;
   section {
-   @include section;
     p {
       padding: 1em 0;
     }
@@ -34,10 +33,6 @@ main {
   .details {
     @include detailsTag();
   }
-}
-
-details[open] summary ~ * {
-  animation: sweep 0.5s ease-in-out;
 }
 
 footer {
