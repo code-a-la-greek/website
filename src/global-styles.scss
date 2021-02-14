@@ -73,6 +73,14 @@ body {
     size: clamp(1rem, 1.5vw, 2rem);
   }
 }
+nav {
+  background-color: black;
+  text-align: left;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 1rem;
+}
 
 h1,
 h2 {

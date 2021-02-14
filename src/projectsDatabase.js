@@ -15,7 +15,7 @@ const projects = {
         description:
             "Find a word that rhymes or sounds similar with any other given word",
         title: "Write your poem",
-        info: "Fetch-requests to a word database, provided by datamuse.org.",
+        info: "In this project, I have been working with fetch-requests to a word database, provided by datamuse.org. I wanted to create a simple app that finds words that rhyme with any given word.",
     },
     {
         link: "https://weather-desktop-application.netlify.app/",
@@ -24,7 +24,7 @@ const projects = {
         description: "Check the weather conditions for any location",
         title: "Weather app",
         info:
-            "I have been working with xhr-requests to a weather API, provided by openweather.org. Dark-mode is based on the device's color preferences.",
+            "I have been practising with xhr-requests to a weather API, provided by openweather.org. Dark-mode is based on the device's color preferences.",
     },
     {
         link: "https://panugr.github.io/javascriptGame/",
@@ -34,7 +34,7 @@ const projects = {
             "A web-application of the famous game. Play it by yourself or with a friend.",
         title: "Rock-Paper-Scissors",
         info:
-            "I've been working with arrow functions and array loops. Lodash.js-library simplifies the arithmetic operators.",
+            "I've been working with arrow functions and array loops. Lodash.js-library simplifies the arithmetic operators. The project was inspired from an exercise in courses.",
     },
     {
         link: "https://panugr.github.io/mrfunny/",
@@ -43,7 +43,7 @@ const projects = {
         description: "A series of small applications",
         title: "Mr.Funny",
         info:
-            "I've been working with alert/confirm functions and array-loops. Lodash.js-library simplifies the arithmetic operators.",
+            "This project contains a series of small applications, inspired by exercises during my Javascript lesson. I've been working with alert/confirm functions and array-loops. Lodash.js-library simplifies the arithmetic operators.",
     },
     {
         link: "https://panugr.github.io/Koirakerho/",
@@ -52,7 +52,7 @@ const projects = {
         description: "Replicating the landing-page of a local dog-club",
         title: "Vakka-Suomen Kennelkerho",
         info:
-            "In this project I've been practising with css-frameworks. First I used the W3.CSS framework, then i redesigned the site with Bootstrap 5.",
+            "In this project I replicate a local dog-club. I've been practising with css-frameworks for building the layout and for displaying the gallery. First I used the W3.CSS framework, then i redesigned the site with Bootstrap 5.",
     },
     {
         link: "https://panugr.github.io/Driven/",
@@ -61,7 +61,7 @@ const projects = {
         description: "Replicating the landing-page of a local driving-school",
         title: "Driven Autokoulu",
         info:
-            "In this project I worked with the animate.css for the animations. I used flexbox to display the cards and the Handlebars.js template to display the courses.",
+            "In this project I replicate a local driving-school. I've been working with the animate.css for the animations. I used flexbox to display the cards and the Handlebars.js template to display the courses.",
     },
     {
         link: "https://panugr.github.io/flipbook-css",
@@ -70,7 +70,7 @@ const projects = {
         description: "A simple guide to CSS code for beginners",
         title: "Style your Website using this simple guide to CSS!",
         info:
-            "This book-like webpage is created by using the free version of turn.js library and basic jquery language.",
+            "This has been one of my first projects. Originally it was just a simple html and css file. Later i turned into  this book-like webpage by using the free version of turn.js library and basic jquery language.",
     },
 ]};
 
@@ -99,7 +99,8 @@ function lastprojectsTemplate() {
         alt="screenshot from the site">
       <a href=${last3Projects[i].link}>See live</a>
       <a href=${last3Projects[i].code}>See code</a>
-      <p>${last3Projects[i].description}.<a href="sites/projects.html" class="w3-large">Read more...</a></p>
+      <p>${last3Projects[i].info}</p>
+      <a href="sites/projects.html" class="w3-large">Read more...</a>
     </section>
     `;
     }
