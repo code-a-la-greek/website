@@ -4,4 +4,5 @@ import "./css/index.scss";
 import {lastprojectsTemplate} from './projectsDatabase';
 lastprojectsTemplate(); 
 
-//console.log(process.env.MY_SECRET_KEY);
+console.log('testing for secrets');
+console.log(process.env.TEST);
