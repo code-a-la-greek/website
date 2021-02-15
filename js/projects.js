@@ -1,9 +1,9 @@
-import 'w3-css/w3.css';
-import '../global-styles.scss';
-import "./projects.scss";
-import {projects} from '../projectsDatabase'
+import 'w3-css/4/w3pro.css';
+import "../css/projects.scss";
+import Handlebars from 'https://cdn.skypack.dev/handlebars';
+import {projects} from '../js/projectsDatabase'
 
-const Handlebars = window.Handlebars;
+//const Handlebars = window.Handlebars;
 const projectList = document.querySelector("#project-template").innerHTML;
 const projectTemplate = Handlebars.compile(projectList);
 const compiledProjects = projectTemplate(projects);
