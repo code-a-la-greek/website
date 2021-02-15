@@ -1,6 +1,6 @@
 import 'w3-css/w3.css';
 import '../global-styles.scss';
-import "../css/projects.scss";
+import "./projects.scss";
 import {projects} from '../projectsDatabase'
 
 const Handlebars = window.Handlebars;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="You can see the weather forecast for any location. The service is provided by https://openweathermap.org/" />
+  <meta name="author" content="Panagiotis Panagiotakopoulos" />
+<!--   <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="weather.css"> -->
+  <title>Check the weather</title>
+</head>
+
+<body>
+  <header class="container-fluid text-center">
+    <h1 class="display-1 py-4 text-white font-weight-bold">
+      Check the weather
+    </h1>
+    <nav class="container mt-lg-5 bg-light p-1 border border-primary rounded-pill">
+      <input type="text" placeholder="Athens, Gr " autocomplete="off" aria-label="search for location"
+        class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false" />
+      <a class="dropdown-menu rounded-pill" aria-labelledby="dropdownMenuButton"><i
+          class="fas fa-map-marker-alt px-2"></i>My location</a>
+      <i class="fas fa-search"></i>
+      <input type="checkbox" id="switch" name="theme" /><label for="switch" aria-label="switch">Toggle</label>
+    </nav>
+  </header>
+  <main class="container mt-5">
+    <section class="row gx-3"></section>
+    <section class="row mt-3"></section>
+  </main>
+  <!-- <script src="bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script> 
+  <script src="weatherApp.js"></script>-->
+</body>
+
+</html>
