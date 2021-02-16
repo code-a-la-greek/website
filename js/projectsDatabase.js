@@ -11,7 +11,7 @@ const projects = {
         "In this project, I have been working with fetch-requests to a word database, provided by datamuse.org. I wanted to create a simple app that finds words that rhyme with any given word.",
     },
     {
-      link: "../sites/weather.html",
+      link: "../sites/weather/weather.html",
       code: null,
       img: "../pictures/weather-application.webp",
       description: "Check the weather conditions for any location",

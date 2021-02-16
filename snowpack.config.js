@@ -3,14 +3,19 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-  exclude:['node_modules',".gitignore","package-lock.json","package.json","snowpack.config.js"],
+  exclude: [
+    "node_modules",
+    ".gitignore",
+    "package-lock.json",
+    "package.json",
+    "snowpack.config.js",
+  ],
   plugins: [
-    ["@snowpack/plugin-sass", { compilerOptions: { style: 'compressed' } }]
+    ["@snowpack/plugin-sass", { compilerOptions: { style: "compressed" } }],
+    "@snowpack/plugin-dotenv",
   ],
   optimize: {
     bundle: true,
-    minify: true
-/*     target: "es2018" */
-  }
+    minify: true,
+  },
 };
-

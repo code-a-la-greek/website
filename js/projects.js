@@ -1,6 +1,6 @@
 import 'w3-css/4/w3pro.css';
 import "../css/projects.scss";
-import Handlebars from 'https://cdn.skypack.dev/handlebars';
+import Handlebars from 'https://cdn.skypack.dev/handlebars?min';
 import {projects} from '../js/projectsDatabase'
 
 //const Handlebars = window.Handlebars;
