@@ -142,7 +142,9 @@
     </article>
   </footer>
   <script type="module" src="./js/index.js"></script>
-  <script>console.log(process.env.WEATHER_KEY) </script>
+   <script type="module">
+    //import.meta.env.MODE;
+    if (import.meta.env.MODE === 'production') { console.log('development') }  </script>
 </body>
 
 </html>
