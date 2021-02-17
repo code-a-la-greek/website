@@ -12,7 +12,7 @@ const projects = {
     },
     {
       link: "../sites/weather/weather.html",
-      code: null,
+      code: "https://github.com/PanuGr/weather-app",
       img: "../pictures/weather-application.webp",
       description: "Check the weather conditions for any location",
       title: "Weather app",
