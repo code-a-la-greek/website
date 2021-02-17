@@ -7,8 +7,6 @@
   <meta name="description"
     content="You can see the weather forecast for any location. The service is provided by https://openweathermap.org/" />
   <meta name="author" content="Panagiotis Panagiotakopoulos" />
-  <link rel="stylesheet" href="bootstrap.min.css" />
-  <link rel="stylesheet" href="weather.css" />
   <title>Check the weather</title>
 </head>
 
@@ -30,9 +28,12 @@
     <section class="row gx-3"></section>
     <section class="row mt-3"></section>
   </main>
-  <script src="bootstrap.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script>
-  <script src="weatherApp.js"></script>
+  <script type="module">
+    import "./bootstrap.min.css";
+    import "./weather.css";
+    import "./bootstrap.bundle.min.js";
+  </script>
+  <script async src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script>
+  <script type="module" src="weatherApp.js"></script>
 </body>
-
 </html>
