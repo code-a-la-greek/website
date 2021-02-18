@@ -28,7 +28,8 @@
         <img class="w3-image" src={{img}} width="300" height="150"
           alt="screenshot from the site">
         <a href={{link}} class="w3-block w3-padding">See live</a>
-       {{#if code}} <a href={{code}} class="w3-block w3-padding">See code</a>{{/if}}
+       {{#if code}} <a href={{code}} class="w3-block w3-padding">See code <i
+       class="w3-small fas fa-external-link-square-alt"></i></a>{{/if}}
         <details>
         <summary>Info</summary>
         <p>{{info}}</p>
@@ -37,6 +38,7 @@
       {{/each}}
     </script>
   </main>
+  <script async src="https://kit.fontawesome.com/a72b9e7ca4.js"></script>
   <script type="module" src="../js/projects.js"></script>
 </body>
 

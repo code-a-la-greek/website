@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="css, CSS, html, style, website, selector, selectors"
+    />
+    <meta
+      name="description"
+      content="Learn about CSS language and how to use it to style your website with this simple CSS guide."
+    />
+    <meta name="author" content="Panagiotis Panagiotakopoulos" />
+    <link rel="stylesheet" href="css-flipbook.css" />
+    <link rel="stylesheet" href="css-pages&media.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Simple CSS guide</title>
+  </head>
+
+  <body>
+    <main>
+      <article id="flipbook">
+        <section class="hard">
+          <h1>SIMPLE GUIDE TO CSS</h1>
+          <p>by Panagiotis Panagiotakopoulos</p>
+        </section>
+        <section>
+          <h2>Contents</h2>
+          <ol>
+            <li><a>CHAPTER I: INTRODUCTION......3</a></li>
+            <li><a>CHAPTER II: SELECTORS......7</a></li>
+            <li><a>CHAPTER III: TYPOGRAPHY AND VISUAL RULES......10</a></li>
+            <li><a>CHAPTER IV: THE BOX MODEL......15</a></li>
+            <li><a>CHAPTER V: FLEXBOX......17</a></li>
+            <li><a>CHAPTER VI: WHAT'S NEXT ?......19</a></li>
+          </ol>
+        </section>
+        <section>
+          <h2>Introduction</h2>
+          <p>
+            HTML code is responsible for making the website itself, but a
+            website with just html code is a plain, black and white page. In
+            order to add color, fonts or in general to control how your site
+            looks like, you need to use the CSS language. <br />
+            This simple guide to CSS language will take you through the basic
+            concepts so you can modify the style of your website by yourself. If
+            you want to check on your html code, you can always review
+            <br />
+            <a href="http://panugr.github.io/flipbook-HTML">My guide to HTML basics</a>.
+          </p>
+          <p class="w3-panel">
+            CSS stands for Cascading Style Sheets. <br />
+            CSS describes how HTML elements are to be displayed on screen.
+            <br />
+            CSS saves a lot of work. It can control the layout of multiple web
+            pages all at once.
+          </p>
+          <p class="pageNum">-3-</p>
+        </section>
+        <section>
+          <p>
+            Back in the old days, you could add style right in the html code.
+            You can just add <b>style</b> property and into that you can add the
+            style you want. <br />
+            For example the code
+            <code>&lt;p style= "color: red;"&gt;</code> will make the text in
+            your paragraph red. <br /><br />
+            You can already imagine the problem that this method creates. You
+            have a messy styling code inside your html code and when you want a
+            change you have to change manually all those style properties.
+            <br />
+            To solve this problem, CSS language was created. CSS removed the
+            style formatting from the HTML page and it's normally saved in
+            external
+            <b>.css files</b>. With an external stylesheet file, you can change
+            the look of an entire website by changing just one file! <br />
+            Then this external .css file is linked with your .html file.
+          </p>
+          <p class="w3-panel">
+            To link your .css file to the .html file you need to add a
+            <b>link</b> tag into the <b>head</b> tag of your html code: <br />
+            <code
+              >&lt;link rel="stylesheet" href="<em
+                >local address to your .css file</em
+              >"></code
+            >
+          </p>
+          <p class="pageNum">-4-</p>
+        </section>
+        <section>
+          <img
+            loading="lazy"
+            class="image1"
+            src="site-without-style.jpg"
+            alt="A webpage without link to css file"
+          />
+          <img
+            loading="lazy"
+            class="image2"
+            src="site-with-style1.jpg"
+            alt="A webpage with a link to css file"
+          />
+        </section>
+        <section>
+          <p>
+            CSS has its own syntax, but it's quite simple and straightforward.
+            <br />
+            A CSS rule-set consists of a <b>selector</b> and a
+            <b>declaration block:</b> <br />
+            The selector points to the HTML element you want to style. It can be
+            any html tag you want to style, h1, p, img and so on. <br />
+            The declaration block is surrounded by curly braces <b>{}</b> and it
+            contains one or more declarations separated by semicolons
+            <b>(;)</b>. Each declaration includes a CSS <b>name</b> and a
+            <b>value</b>, separated by a <b>colon (:)</b>.
+          </p>
+          <p class="w3-panel">
+            For Example, If we wanted the color of our text to be green, we
+            would do it like this: <br />
+            <code>p{color:green;}</code> We can add as many declarations we want
+            as long we separate them with semicolons. <br />
+            <code
+              >p{color:green; font-size: 32px; background-color: grey;}</code
+            >
+          </p>
+
+          <p class="pageNum">-6-</p>
+        </section>
+        <section>
+          <h2>Selectors</h2>
+          <p>
+            CSS selectors are used to "find" (or select) the HTML elements you
+            want to style and we can divide them into five categories:
+          </p>
+          <ul>
+            <li>The CSS element Selector</li>
+            <li>The CSS id Selector</li>
+            <li>The CSS class Selector</li>
+            <li>The CSS Universal Selector</li>
+            <li>The CSS Grouping Selector</li>
+          </ul>
+          <h3>The CSS element Selector</h3>
+          <p>
+            The element selector selects HTML elements based on their tagname.
+          </p>
+          <p class="w3-panel">
+            Here, all &lt;p&gt; elements on the page will be with a red text
+            color: <br />
+            <code>p{color:red;}</code>
+          </p>
+          <p class="pageNum">-7-</p>
+        </section>
+        <section>
+          <h3>The CSS id Selector</h3>
+          <p>
+            The id selector uses the <b>id attribute</b> of an HTML element to
+            select a specific element. The id selector is used to select
+            <b>one unique element!</b> To select an element with a specific id,
+            write a hash (#) character,<br />
+            followed by the id of the element. Because the id attribute has to
+            be unique, it's recommended to avoid it. You can use
+            <em>classes</em> instead.
+          </p>
+          <p class="w3-panel">
+            The CSS rule below will be applied only to the HTML element with the
+            id="para1": <br />
+            <code>#para1{font-size:32px}</code>
+          </p>
+          <h3>The CSS class Selector</h3>
+          <p>
+            The class selector selects HTML elements with a specific class
+            attribute. To select elements with a specific class, write a period
+            (.) character, followed by the class name.
+          </p>
+          <p class="w3-panel">
+            In this example all HTML elements with the class="red" will be red:
+            <br />
+            <code>.red{color:red;}</code>
+          </p>
+          <p class="pageNum">-8-</p>
+        </section>
+        <section>
+          <h3>The CSS Universal Selector</h3>
+          <p>
+            The universal selector (*) selects all HTML elements on the page.
+            It's recommended to use it for style that are definitely applied to
+            all of your elements, such as margin, fonts etc.
+          </p>
+          <!--  <p class="w3-panel">
+            The CSS rule below will affect every HTML element on the page:
+            <br />
+            <code>*{margin:0;}</code>
+          </p> -->
+          <h3>The CSS Grouping Selector</h3>
+          <p>
+            The grouping selector selects all the HTML elements with the same
+            style definitions. Instead of writing the same code multiple times,
+            it's better to group the selectors to minimize the code. <br />
+            To group selectors, separate each selector with a comma.
+          </p>
+          <p class="w3-panel">
+            In this example we have grouped together couple of selectors which
+            would take the same style: <br />
+            <code>p,h1{text-align:center;}</code>
+          </p>
+          <p class="pageNum">-9-</p>
+        </section>
+        <section>
+          <h2>Typography and Visual Rules</h2>
+          <h3 id="fonts">Fonts</h3>
+          <h4>font-family</h4>
+          <p>
+            The browsers use a default font to show your text but with CSS is
+            possible to change that font. Remember however three important
+            things:
+          </p>
+          <ul>
+            <li>
+              The font in use must be installed on the user's computer.
+              Computers have many fonts pre-installed but it's a good idea to
+              use couple of fonts just in case. Especially if your main font is
+              not so common.
+            </li>
+            <li>
+              The default font is <em>Times New Roman</em> and if you don't
+              change it, you don't have to mention it on your css file.
+            </li>
+            <li>
+              The fonts belong in two main font-categories, the
+              <em>Serif font</em> and the <em>Sans-Serif font.</em> The Serif
+              font has calligraphic letters, while the Sans-Serif is more clean
+              and modern
+            </li>
+            <li class="smallPage">
+              When the name of our font is more than one word, then it's good to
+              have the name in quotes.
+            </li>
+          </ul>
+          <article class="smallPage">
+            <h4>font-size</h4>
+            <p>
+              You can change the size as you like.By default the size of the
+              letters is 16px and headings are a bit bigger.
+            </p>
+          </article>
+          <p class="pageNum">-10-</p>
+        </section>
+        <section>
+          <h4>font-weight</h4>
+          <p>
+            Instead of inserting the
+            <code>&lt;b&gt; or &lt;strong&gt;</code> tag all the time in your
+            html document, you can use <code>font-weight:bold;</code> to make an
+            element or many elements to appear bolder. <br />
+            However you can and should still use the <code>strong</code> tag if
+            there is strong meaning in your sentence, since it is a semantic
+            tag.
+          </p>
+          <h4>font-style</h4>
+          <p>
+            Similar to <code>font-weight and &lt;b&gt;</code>tag, you can use
+            <code>font-style:italic;</code> instead of <code>&lt;em&gt;</code>,
+            to make an element appear in italic style.
+          </p>
+          <p class="w3-panel">
+            <code
+              >p{font-family: georgia, arial,serif; font-size: 20px; } <br />
+              h2{font-style:italic; font-weight:bold;}
+            </code>
+          </p>
+          <p class="pageNum">-11-</p>
+        </section>
+        <section>
+          <h3>Text</h3>
+          <h4>text-align</h4>
+          <p>
+            You can control how your text will be aligned. The default value is
+            <code>left</code>. It can also be <code>right</code> and
+            <code>center</code>.
+          </p>
+          <h4>text-transform</h4>
+          <p>
+            You can use the value <code>capitalize</code> to capitalize the
+            first letter of each word, <code>uppercase</code>,
+            <code>lowercase</code> to make every letter capital or small letter.
+          </p>
+          <h4>word-spacing</h4>
+          <p>
+            It's not so common but sometimes you might want to give an extra
+            space between the words. You can set your own distance in
+            px(=pixels).
+          </p>
+          <h4>letter-spacing</h4>
+          <p>
+            Similar to <code>word-spacing</code> you can increase the space
+            between the letters.
+          </p>
+          <p class="w3-panel">
+            <code
+              >p{text-align:center;} <br />
+              h1{text-transform:uppercase;}
+            </code>
+          </p>
+          <p class="pageNum">-12-</p>
+        </section>
+        <section>
+          <h3>Colors</h3>
+          <p>
+            In css colors can be specified by using a color name like red, blue,
+            yellow and so on. We can also set a color to the background, using
+            the <code>background-color.</code><br />
+            In CSS, colors can also be specified using:
+          </p>
+          <ul>
+            <li>RGB values: rgb(255, 99, 71)</li>
+            <li>HEX values: #ff6347</li>
+            <li>HSL values: hsl(9, 100%, 64%)</li>
+            <li>RGBA values: rgba(255, 99, 71, 0.5)</li>
+            <li>HSLA values: hsla(9, 100%, 64%, 0.5)</li>
+          </ul>
+          <p>
+            These values give us more control over the contrast, hue, opacity
+            values of our colors.
+          </p>
+          <h4>opacity</h4>
+          <p>
+            Opacity controls the transparency and it accepts a number from 0-1.
+          </p>
+          <p class="w3-panel">
+            <code
+              >body{background-color: light-gey;} <br />
+              p{color:orange;}</code
+            >
+          </p>
+          <p class="pageNum">-13-</p>
+        </section>
+        <section>
+          <h3>Borders</h3>
+          <p>
+            Every html element is surrounded by a border, which is invisible by
+            default. With the <code>border</code> property, you can change the
+            style of it. <br />
+            The <code>border</code> takes 3 values: border's width, style and
+            color.
+          </p>
+          <ul>
+            <li>
+              The width determines how thick/thin is the border. You can set it
+              with pixels (px) or you can use the pre-defined values:
+              <code>thin, medium, thick.</code>
+            </li>
+            <li>
+              Style determines the border's style. There are pre-defined values
+              such as: <code>solid, double, dashed, dotted.</code>
+            </li>
+            <li>
+              The color determines the border's color and it can be any color.
+            </li>
+          </ul>
+          <p>
+            It is possible to make a border to look like a circle with the
+            <code>border-radius</code> property. You can use px or % and the
+            higher the value the more rounded it gets.
+          </p>
+          <p class="w3-panel">
+            <code>button{border:1px solid red; border-radius:100%;}</code> That
+            will make the button a perfect circle.
+          </p>
+          <p class="pageNum">-14-</p>
+        </section>
+        <section>
+          <h2>The Box Model</h2>
+          <p>
+            As we have already learned, each element takes its own space on the
+            page and the content resides inside that space, that <em>box</em>.
+            <br />
+            There are 4 properties that can manipulate the space that an element
+            will take on the page and also the space that the content will take
+            inside its own box. <br />
+            We've already examined the <code>border</code>, which changes the
+            border surrounding the element. The rest are:
+          </p>
+          <ul>
+            <li>
+              <code>width and height</code>: manipulate the dimensions of the
+              content itself
+            </li>
+            <li>
+              <code>padding</code>: manipulates the amount of space between the
+              content and the border
+            </li>
+            <li>
+              <code>margin</code>: manipulates the amount of space between the
+              border and the rest of the webpage
+            </li>
+          </ul>
+          <h3 style="margin: 0">width and height</h3>
+          <p style="margin-top: 0px">
+            There are default settings by all the browsers but we can change
+            them. If we set a size in pixels, it will be the same across all
+            devices. This method is not so flexible with big sizes <br />
+            because maybe our content looks fine in a laptop, but it will
+            overflow a mobile screen. Another method is to set a size in
+            percentage %. Then the element will keep the same amount of
+            screen-space across all devices.
+          </p>
+          <p class="pageNum">-15-</p>
+        </section>
+        <section>
+          <h3>padding and margin</h3>
+          <p>
+            <code>padding</code> can take 4 values:
+            <code
+              >padding-top, padding-right, padding-bottom, padding-left</code
+            >
+            controlling each side of the element. However if you want to change
+            all sides <br />
+            you can set all 4 values together by typing just
+            <code>padding</code>. In this case, the sizes you type work
+            clockwise, meaning the values are: top-left-bottom-right. <br />
+            If all the values are the same size, then it's enough if you declare
+            just one size. If the values are same in pairs, like some top-bottom
+            and same left-right, then it's enough to declare 2 sizes.
+          </p>
+          <p class="w3-panel">
+            <code>h1{padding-bottom:20px;}</code>: This will add 20 pixels space
+            only on the top of the content. <br />
+            <code>h1{padding:20px;}</code>: This will add 20 pixels space around
+            the content. <br />
+            <code>h1{padding:20px 30px;}</code>: This will add 20pixels space on
+            the top and bottom of the content and 30 pixels space around the
+            left and right of the content.
+          </p>
+          <p>
+            <code>margin</code> has the same syntax with <code>padding</code>.
+          </p>
+          <!--  <p class="w3-panel">
+            <code>img{margin:50px 30px 20px 10px}</code>: This will add space
+            between the image element and the rest of the webpage.
+          </p> -->
+          <p class="pageNum">-16-</p>
+        </section>
+        <section>
+          <h2>Flexbox</h2>
+          <p>
+            Flexbox is an easy, yet powerful method to display multiple elements
+            in a flexible, responsive way. To start you need to declare
+            <code>display:flex</code> on a <em>parent</em> element. <br />
+            Flex automatically will place the <em>children</em> elements on a
+            row. Then you have a lot of control over the way it's displayed.
+          </p>
+          <ul>
+            <li>
+              <code>flex-direction:column</code> sets your elements to be
+              displayed in a column.
+            </li>
+            <li>
+              <code>flex-wrap</code> take 2 values, either wrap or nowrap and it
+              controls whether your elements will change the row, if they don't
+              fit on the screen.
+            </li>
+            <li>
+              <code>align-items</code> positions your elements
+              <b>vertically</b> inside the flexbox. This property is declared on
+              the <em>parent</em> container and its value can be:
+            </li>
+            <ul>
+              <li>
+                <code>start</code>: elements are positioned to the top of the
+                container
+              </li>
+              <li>
+                <code>end</code>: elements are positioned to the bottom of the
+                container
+              </li>
+              <li><code>center</code></li>
+              <li><code>stretch</code></li>
+            </ul>
+          </ul>
+          <p class="pageNum">-17-</p>
+        </section>
+        <section>
+          <ul style="margin-top: 67px">
+            <li>
+              <code>justify-content</code> positions your elements
+              <b>horizontally</b> inside the flexbox. This property is declared
+              on the <em>parent</em> container and its value can be:
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <code>start</code>: elements are positioned to the left of the
+              container
+            </li>
+            <li>
+              <code>end</code>: elements are positioned to the right of the
+              container
+            </li>
+            <li>
+              <code>center</code>: elements are positioned to the center of the
+              container
+            </li>
+            <li>
+              <code>stretch</code>: elements are stretched across the container
+            </li>
+            <li>
+              <code>space-around</code>: it adds equal space around each element
+            </li>
+            <li>
+              <code>space-between</code>: it adds space only between the
+              elements
+            </li>
+            <li>
+              <code>space-evenly</code>: it adds equal amount of space around
+              and between each element
+            </li>
+          </ul>
+          <p class="pageNum">-18-</p>
+        </section>
+        <section>
+          <h2>What's Next?</h2>
+          <p>
+            Congratulations! you started styling your website, all by yourself!
+            &#128079;&#128079;
+          </p>
+          <p>
+            Now that you know the basics of CSS you can enrich your styling by
+            using css-libraries and frameworks. There are tons of them out on
+            the internet but i can give you some hints. <br />
+            In <em>Google Fonts</em> you can find many fonts that you can import
+            to your website. If you want to add icons in your website, instead
+            of importing images, you can add icons from
+            <em>font-awesome</em> site. <br />
+            They are free and easy to use. You just copy the code in your html
+            and that's it. Then you can style in your css file. There are
+            frameworks like bootstrap, skeleton and others that can a lot of
+            styling and you won't have to write that much of code by yourself.
+          </p>
+          <p>
+            You can always review your memory about html in my
+            <a href="http://panugr.github.io/flipbook-HTML">Simple Guide to HTML</a>.
+          </p>
+          <p class="pageNum">-19-</p>
+        </section>
+        <section class="final">
+          <p>
+            Hello! My name is Panagiotis Panagiotakopoulos and I am currently
+            working in automobile industry. On April 2020, I had the opportunity
+            to join Codecademy and start a Web-Development course. I learnt
+            Html, Css and Javascript among other side-subjects. I love Frond-End
+            Development, I am very passionate about it and I spend all my free
+            time in building projects and learning from that.
+          </p>
+          <p>
+            In this book, "simple guide to CSS", I try to give clear and simple
+            code instructions for beginners on how to style a webpage by using
+            the Css language.
+          </p>
+        </section>
+      </article>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+      
+    ></script>
+    <script defer src="turn.min.js"></script>
+    <script defer src="flipbook.js"></script>
+    <script >
+      //CONTENTS
+      const intro = document.getElementsByTagName("li")[0];
+      const selectors = document.getElementsByTagName("li")[1];
+      const typo = document.getElementsByTagName("li")[2];
+      const box = document.getElementsByTagName("li")[3];
+      const flex = document.getElementsByTagName("li")[4];
+      const next = document.getElementsByTagName("li")[5];
+      intro.onclick = function () {
+        $("#flipbook").turn("page", 3);
+      };
+      selectors.onclick = function () {
+        $("#flipbook").turn("page", 7);
+      };
+      typo.onclick = function () {
+        $("#flipbook").turn("page", 10);
+      };
+      box.onclick = function () {
+        $("#flipbook").turn("page", 15);
+      };
+      flex.onclick = function () {
+        $("#flipbook").turn("page", 17);
+      };
+      next.onclick = function () {
+        $("#flipbook").turn("page", 19);
+      };
+    </script>
+  </body>
+</html>

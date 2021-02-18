@@ -1,7 +1,7 @@
 const projects = {
   projects: [
     {
-      link: "https://panugr.github.io/writepoem/",
+      link: "../sites/writepoem/poem.html",
       code: "https://github.com/PanuGr/writepoem",
       img: "../pictures/poem.webp",
       description:
@@ -20,7 +20,7 @@ const projects = {
         "I have been practising with xhr-requests to a weather API, provided by openweather.org. Dark-mode is based on the device's color preferences.",
     },
     {
-      link: "https://panugr.github.io/javascriptGame/",
+      link: "../sites/rockpaper/rockpaper.html",
       code: "https://github.com/PanuGr/javascriptGame",
       img: "../pictures/rock-paper-scissor.webp",
       description:
@@ -30,7 +30,7 @@ const projects = {
         "I've been working with arrow functions and array loops. Lodash.js-library simplifies the arithmetic operators. The project was inspired from an exercise in courses.",
     },
     {
-      link: "https://panugr.github.io/mrfunny/",
+      link: "../sites/mrfunny/mrfunny.html",
       code: "https://github.com/PanuGr/mrfunny",
       img: "../pictures/mrfunny.webp",
       description: "A series of small applications",
@@ -39,7 +39,7 @@ const projects = {
         "This project contains a series of small applications, inspired by exercises during my Javascript lesson. I've been working with alert/confirm functions and array-loops. Lodash.js-library simplifies the arithmetic operators.",
     },
     {
-      link: "https://panugr.github.io/Koirakerho/",
+      link: "../sites/koirakerho/koirakerho.html",
       code: "https://github.com/PanuGr/koirakerho",
       img: "../pictures/koirakerho.webp",
       description: "Replicating the landing-page of a local dog-club",
@@ -48,7 +48,7 @@ const projects = {
         "In this project I replicate a local dog-club. I've been practising with css-frameworks for building the layout and for displaying the gallery. First I used the W3.CSS framework, then i redesigned the site with Bootstrap 5.",
     },
     {
-      link: "https://panugr.github.io/Driven/",
+      link: "../sites/driven/driven.html",
       code: "https://github.com/PanuGr/Driven",
       img: "../pictures/driven.webp",
       description: "Replicating the landing-page of a local driving-school",
@@ -57,7 +57,7 @@ const projects = {
         "In this project I replicate a local driving-school. I've been working with the animate.css for the animations. I used flexbox to display the cards and the Handlebars.js template to display the courses.",
     },
     {
-      link: "https://panugr.github.io/flipbook-css",
+      link: "../sites/flipbookCss/flipbookCss.html",
       code: "https://github.com/PanuGr/flipbook-css",
       img: "../pictures/css-flipbook-small.webp",
       description: "A simple guide to CSS code for beginners",
@@ -92,7 +92,8 @@ function lastprojectsTemplate() {
       <img class="w3-image" src=${last3Projects[i].img} width="300" height="150"
         alt="screenshot from the site">
       <a href=${last3Projects[i].link}>See live</a>
-      <a href=${last3Projects[i].code}>See code</a>
+      <a href=${last3Projects[i].code}>See code <i
+      class="w3-small fas fa-external-link-square-alt"></i></a>
       <p>${last3Projects[i].info}</p>
       <a href="sites/projects.html" class="w3-large">Read more...</a>
     </section>
