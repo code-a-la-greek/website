@@ -12,7 +12,7 @@ module.exports = {
   ],
   plugins: [
     ["@snowpack/plugin-sass", { compilerOptions: { style: "compressed" } }],
-    "@snowpack/plugin-dotenv",
+    "@snowpack/plugin-dotenv"
   ],
   optimize: {
     bundle: true,
