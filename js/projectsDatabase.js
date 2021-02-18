@@ -95,7 +95,6 @@ function lastprojectsTemplate() {
       <a href=${last3Projects[i].code}>See code <i
       class="w3-small fas fa-external-link-square-alt"></i></a>
       <p>${last3Projects[i].info}</p>
-      <a href="sites/projects.html" class="w3-large">Read more...</a>
     </section>
     `;
   }
