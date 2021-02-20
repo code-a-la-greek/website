@@ -1,5 +1,5 @@
 import 'w3-css/4/w3pro.css';
-import "../css/projects.scss";
+import "../css/global-styles.scss"
 import Handlebars from 'https://cdn.skypack.dev/handlebars?min';
 import {projects} from '../js/projectsDatabase'
 
