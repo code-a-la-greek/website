@@ -1,8 +1,8 @@
 const projects = {
   projects: [
     {
-      link: "../sites/writepoem/poem.html",
-      code: "https://github.com/PanuGr/writepoem",
+      link: "https://panugr.github.io/rhyme/",
+      code: "https://github.com/PanuGr/rhyme",
       img: "../pictures/poem.webp",
       description:
         "Find a word that rhymes or sounds similar with any other given word",
@@ -20,7 +20,7 @@ const projects = {
         "I have been practising with xhr-requests to a weather API, provided by openweather.org. Dark-mode is based on the device's color preferences.",
     },
     {
-      link: "../sites/rockpaper/rockpaper.html",
+      link: "https://panugr.github.io/javascriptGame/",
       code: "https://github.com/PanuGr/javascriptGame",
       img: "../pictures/rock-paper-scissor.webp",
       description:
@@ -30,7 +30,7 @@ const projects = {
         "I've been working with arrow functions and array loops. Lodash.js-library simplifies the arithmetic operators. The project was inspired from an exercise in courses.",
     },
     {
-      link: "../sites/mrfunny/mrfunny.html",
+      link: "https://panugr.github.io/mrfunny/",
       code: "https://github.com/PanuGr/mrfunny",
       img: "../pictures/mrfunny.webp",
       description: "A series of small applications",
@@ -39,7 +39,7 @@ const projects = {
         "This project contains a series of small applications, inspired by exercises during my Javascript lesson. I've been working with alert/confirm functions and array-loops. Lodash.js-library simplifies the arithmetic operators.",
     },
     {
-      link: "../sites/koirakerho/koirakerho.html",
+      link: "https://panugr.github.io/Koirakerho/",
       code: "https://github.com/PanuGr/koirakerho",
       img: "../pictures/koirakerho.webp",
       description: "Replicating the landing-page of a local dog-club",
@@ -48,7 +48,7 @@ const projects = {
         "In this project I replicate a local dog-club. I've been practising with css-frameworks for building the layout and for displaying the gallery. First I used the W3.CSS framework, then i redesigned the site with Bootstrap 5.",
     },
     {
-      link: "../sites/driven/driven.html",
+      link: "https://panugr.github.io/Driven/",
       code: "https://github.com/PanuGr/Driven",
       img: "../pictures/driven.webp",
       description: "Replicating the landing-page of a local driving-school",
@@ -57,7 +57,7 @@ const projects = {
         "In this project I replicate a local driving-school. I've been working with the animate.css for the animations. I used flexbox to display the cards and the Handlebars.js template to display the courses.",
     },
     {
-      link: "../sites/flipbookCss/flipbookCss.html",
+      link: "https://panugr.github.io/flipbook-css/",
       code: "https://github.com/PanuGr/flipbook-css",
       img: "../pictures/css-flipbook-small.webp",
       description: "A simple guide to CSS code for beginners",
