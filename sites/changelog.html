@@ -9,7 +9,15 @@
     <link rel="shortcut icon" href="../pictures/favicon.ico" type="image/x-icon" />
     <title>Panagiotis Panagiotakopoulos|Changelog</title>
     <style>
-
+        ul {
+            max-inline-size: 75ch;
+            padding: 1.1rem;
+            margin: 0 auto;
+            list-style: none;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -23,21 +31,41 @@
         <p>I wanted a space where I can write all the changes that I am doing through the site's development.
             That's why I've added this <em>changelog</em> page, where I will be listing every update I do.</p>
     </header>
-    <main class= "w3-container ">
-        <ul class="w3-ul w3-left-align">
-            <h2 class="w3-center">March</h2>
+    <main>
+        <h2 class="w3-center">March</h2>
+        <ul class=" w3-left-align w3-border w3-round-xlarge w3-margin-bottom">
+
             <li>
                 <p>Changelog-page added. Readme.md file added (for github repository).</p>
+                </p>
             </li>
             <li>
                 <p>Project files were removed from source folder. Each project has its own different repository on
                     Github.</p>
             </li>
         </ul>
+
+        <ul class=" w3-left-align w3-border w3-round-xlarge w3-margin-bottom">
+            <li>
+                <p>I've been working on <a href="panugr.github.io/mrfunny/" rel="noreferrer"
+                        target="_blank">Mr.Funny</a><i
+                        class="w3-small fas fa-external-link-square-alt"></i>, a collection of small applications and calculators.</p>
+            </li>
+            <li>
+                <p>Removed Lodash.js library. Arrays and functions were refactored using native javascript.</p>
+            </li>
+            <li>
+                <p>Calculators spread into different files were brought together in one javascript file.</p>
+            </li>
+            <li>
+                <p>Named functions converted into variables.</p>
+            </li>
+        </ul>
     </main>
     <script type="module">
         import 'w3-css/4/w3pro.css';
         import "../css/index.scss";
+        import "https://kit.fontawesome.com/a72b9e7ca4.js";
 
     </script>
 </body>
