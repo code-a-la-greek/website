@@ -35,7 +35,7 @@
   <main id="project-list">
     <script id="project-template" type="text/x-handlebars-template">
       {{#each projects}}
-      <section class="w3-left-align w3-content w3-margin-bottom w3-padding ">
+      <section class="w3-left-align w3-content w3-margin-bottom w3-padding "id={{@index}}>
         <h2 class="w3-xlarge">{{title}}</h2>
         <img class="w3-image" src={{img}} width="300" height="150"
           alt="screenshot from the site">
