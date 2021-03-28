@@ -12,97 +12,7 @@
     <script src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script>
     <title>Panagiotis Panagiotakopoulos</title>
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
 
-        body {
-            font-family: "Montserrat", serif;
-            max-width: 1600px;
-            background-color: #f7f5faff;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        a:active {
-            color: #8abd2bff;
-        }
-
-        main a {
-            text-decoration: underline;
-        }
-
-        main a:hover {
-            color: #8abd2bff;
-        }
-
-        footer a {
-            text-decoration: underline;
-        }
-
-        footer a:hover {
-            color: #8abd2bff;
-        }
-
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Raleway", sans-serif;
-            font-weight: bold;
-        }
-
-        nav img {
-            width: 45%;
-        }
-
-        header img {
-            width: 65px;
-        }
-
-        img {
-            width: 100%;
-        }
-
-        main .w3-button {
-            background-color: #1c1b1cff;
-        }
-
-        @media screen and (min-width: 1023px) {
-
-            main,
-            header,
-            footer {
-                margin-left: 300px;
-            }
-
-            .w3-content {
-                max-width: 1600px;
-            }
-
-        }
-
-        @media screen and (min-width: 600px) {
-            .flex {
-                display: flex;
-
-            }
-
-            .flex section {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-        }
     </style>
 </head>
 
@@ -154,22 +64,17 @@
     </header>
 
     <main class="w3-main">
-
-
-
-
         <!-- Recent projects-->
-        <section class="w3-row-padding">
-            <section class="w3-third w3-container w3-margin-bottom">
-                <img src="/w3images/mountains.jpg" alt="Norway" class="w3-hover-opacity">
+        <section class="w3-row-padding w3-margin-top">
+            <section class=" w3-third w3-container w3-margin-bottom w3-card">
+                <a href="https://panugr.github.io/rhyme/"><img src="/pictures/poem.webp" alt="Poem-writer site"class="w3-hover-opacity"></a>
                 <section class="w3-container w3-white">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-                        ultricies congue gravida diam non fringilla.</p>
+                    <h3>Poem-writer app</h3>
+                    <p>Find a word that rhymes or sounds similar with any other given word.</p>
                 </section>
             </section>
             <section class="w3-third w3-container w3-margin-bottom">
-                <img src="/w3images/lights.jpg" alt="Norway" class="w3-hover-opacity">
+                <img src="" alt="Norway" class="w3-hover-opacity">
                 <section class="w3-container w3-white">
                     <h3>Lorem Ipsum</h3>
                     <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
@@ -177,7 +82,7 @@
                 </section>
             </section>
             <section class="w3-third w3-container">
-                <img src="/w3images/nature.jpg" alt="Norway" class="w3-hover-opacity">
+                <img src="" alt="Norway" class="w3-hover-opacity">
                 <section class="w3-container w3-white">
                     <h3>Lorem Ipsum</h3>
                     <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
@@ -188,10 +93,10 @@
 
         <!-- Button to more projects -->
         <div class="w3-center w3-padding-32">
-            <a href="#" class="w3-bar-item w3-text-white w3-button w3-round-xlarge">More projects</a>
+            <a href="#" class="w3-bar-item w3-text-white w3-button w3-round-xxlarge w3-padding-16">More projects</a>
         </div>
 
-        <!-- Images of Me -->
+        <!-- Images of Me 
         <div class="w3-row-padding w3-padding-16" id="about">
             <section class="w3-col m6">
                 <img src="/pictures/profile-photo.webp" alt="Me">
@@ -199,9 +104,9 @@
             <section class="w3-col m6">
                 <img src="/pictures/profile-photo.webp" alt="Me">
             </section>
-        </div>
+        </div>-->
 
-        <section class="w3-container w3-padding-large w3-margin-bottom ">
+        <section class="w3-container w3-padding-large w3-margin-bottom" id="about">
             <h2>About Me</h2>
             <p>I am Panagiotis and I'm currently working in the automobile industry. In April 2020, I had the
                 opportunity to join Codecademy and start a Web-Development course. All the projects are based on
@@ -210,10 +115,44 @@
             <hr>
             <!-- Studies -->
             <h3>Courses and Tools</h3>
-
-            <p>My course is still in progress. So far, my completed main courses have been: Html, Css, Scss, Javascript
-                and the Wix-website editor.
-                You can watch all the completed courses and their certificates on my Codecademy profile.</p>
+            <p>You can watch all the completed courses and their certificates on my Codecademy <a
+                href="https://www.codecademy.com/profiles/PakisGr" rel="noopener" target="_blank">profile</a> <i
+                class="w3-small fas fa-external-link-square-alt"></i>.</p>
+            <ul class="w3-ul" style="width:50%">
+                <li>
+                    <h5>Web-Development</h5>
+                    <p>This course begins with the basics of HTML but progresses quickly through CSS, JavaScript, and
+                        React.</p>
+                        <p class="w3-small">30 weeks to complete. In progress: 62%</p>
+                </li>
+                <li>
+                    <h5>Front-End Engineer</h5>
+                    <p>Front-end engineers work closely with designers to make websites beautiful, functional, and fast.</p>
+                    <p class="w3-small">350hrs to complete. In progress: 51%</p>
+                </li>
+                <li>
+                    <h5>Wix-Website editor</h5>
+                    <p>Create a Professional Website with Velo by Wix.</p>
+                    <a href="https://www.codecademy.com/profiles/PakisGr/certificates/9605a581bda107153c433f7889dbc268"
+                    target="_blank" class="w3-small" rel="noopener noreferrer">20hrs course. Completed</a> <i
+                    class="w3-small fas fa-external-link-square-alt"></i>
+                </li>
+                <li>
+                    <h5>Javascript</h5>
+                    <p>Syntax, interactive websites, asynchronous javascript, TDD and more.</p>
+                    <a href="https://www.codecademy.com/profiles/PakisGr/certificates/705dcb15de0da4dd9d9fc4f3274b430e"
+                    target="_blank" class="w3-small" rel="noopener noreferrer">36hrs course. Completed</a> <i
+                    class="w3-small fas fa-external-link-square-alt"></i>
+                </li>
+                <li>
+                    <h5>Sass</h5>
+                    <p>Scss syntax, nesting, functions and more.</p>
+                    <a href="https://www.codecademy.com/profiles/PakisGr/certificates/eb1ffda40f347629dcef6de33d3f9741"
+                    target="_blank" class="w3-small" rel="noopener noreferrer">7hrs course. Completed</a> <i
+                    class="w3-small fas fa-external-link-square-alt"></i>
+                </li>
+                <li>
+            </ul>
 
             <hr>
             <!-- Work -->
@@ -285,7 +224,7 @@
             </details>
 
         </section>
-
+<hr>
         <!-- Contact Section -->
         <section class="w3-container w3-padding-large w3-grey">
             <h2 id="contact"><b>Contact Me</b></h2>
@@ -322,6 +261,7 @@
             </form>
         </section>
     </main>
+    
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-dark-grey" id="changelog">
         <h2 class="w3-center">Changelog</h2>
@@ -339,7 +279,7 @@
             <li class="date"><em>19.03.2021</em></li>
             <li>
                 <p>I've been working on <a href="https://panugr.github.io/mrfunny/" rel="noreferrer"
-                        target="_blank">Mr.Funny</a><i class="w3-small fas fa-external-link-square-alt"></i>, a
+                        target="_blank">Mr.Funny</a> <i class="w3-small fas fa-external-link-square-alt"></i>, a
                     collection of small applications and calculators.</p>
             </li>
             <li>
@@ -362,7 +302,7 @@
             </li>
             <li>
                 <p>Lodash.js library was removed from the <a href="https://panugr.github.io/javascriptGame/"
-                        rel="noreferrer" target="_blank">Rock-paper game</a><i
+                        rel="noreferrer" target="_blank">Rock-paper game</a> <i
                         class="w3-small fas fa-external-link-square-alt"></i>, a
                     web app of the known game.</p>
             </li>
@@ -375,7 +315,7 @@
             <li class="date"><em>24.03.2021</em></li>
             <li>
                 <p>I added a TDD testing using the cypress.io framework on my <a href="projects.html#5" rel="noreferrer"
-                        target="_blank">Poem-writer</a><i class="w3-small fas fa-external-link-square-alt"></i>,
+                        target="_blank">Poem-writer</a> <i class="w3-small fas fa-external-link-square-alt"></i>,
                     application.</p>
             </li>
         </ul>

@@ -1,0 +1,100 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  max-width: 1600px;
+  background-color: #f7f5faff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+main p {
+  max-inline-size: 75ch;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #8abd2bff;
+}
+
+main a {
+  text-decoration: underline;
+}
+
+main a:hover {
+  color: #8abd2bff;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #8abd2bff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+nav img {
+  width: 45%;
+}
+
+header img {
+  width: 65px;
+}
+
+img {
+  width: 100%;
+}
+
+main .w3-button {
+  background-color: #1c1b1cff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1023px) {
+  main,
+  header,
+  footer {
+    margin-left: 300px;
+  }
+
+  .w3-content {
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .flex {
+    display: flex;
+  }
+
+  .flex section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
