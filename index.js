@@ -3,9 +3,9 @@ import "./index.scss";
 import "https://kit.fontawesome.com/a72b9e7ca4.js";
 import {goingUp,scrollFunction} from './js/scrollup';
 import {w3_open, w3_close} from './js/sidebarFunction';
-
-/* import {lastprojectsTemplate} from "./js/projectsDatabase";
-lastprojectsTemplate(); */
+//import Handlebars from 'https://cdn.skypack.dev/handlebars?min';
+import {projects,lastprojectsTemplate} from './js/projectsDatabase'
+import displayCourses from './js/courses'
 
 
 //SIDEBAR
@@ -19,3 +19,7 @@ document.querySelector('header>span').addEventListener('click', w3_open)
 //BUTTON UP
 buttonUp.addEventListener('click',goingUp)
 window.addEventListener('scroll',scrollFunction)
+//RECENT PROJECTS
+lastprojectsTemplate(); 
+//DISPLAY COURSES
+displayCourses()

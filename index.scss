@@ -30,29 +30,20 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,a:active {
+  text-decoration: underline;
+  color: #8abd2bff;
+
+}
+
+
+
+main a, footer a {
   text-decoration: underline;
 }
 
-a:active {
-  color: #8abd2bff;
-}
 
-main a {
-  text-decoration: underline;
-}
 
-main a:hover {
-  color: #8abd2bff;
-}
-
-footer a {
-  text-decoration: underline;
-}
-
-footer a:hover {
-  color: #8abd2bff;
-}
 
 h1,
 h2,
@@ -80,6 +71,14 @@ main .w3-button {
   background-color: #1c1b1cff;
   text-decoration: none;
 }
+#buttonUp {
+  float: right;
+  position: fixed;
+  right: 0;
+  visibility: hidden;
+}
+
+details{cursor: pointer;}
 
 @media screen and (min-width: 1023px) {
   main,

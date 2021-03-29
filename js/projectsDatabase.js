@@ -85,19 +85,25 @@ const last3Projects = [
 ];
 
 function lastprojectsTemplate() {
-  for (let i = 0; i < last3Projects.length; i++) {
-    document.querySelector("#projects").innerHTML += `
-    <section class="w3-third w3-container ">
-      <h2>${last3Projects[i].title}</h2>
-      <img class="w3-image" src=${last3Projects[i].img} width="300" height="150"
-        alt="screenshot from the site">
-      <a href=${last3Projects[i].link}>See live</a>
-      <a href=${last3Projects[i].code}>See code <i
-      class="w3-small fas fa-external-link-square-alt"></i></a>
-      <p>${last3Projects[i].info}</p>
-    </section>
-    `;
+  for (const projects of last3Projects) {
+    document.querySelector("#recentProjects").innerHTML += `
+      <section class=" w3-third w3-container w3-margin-bottom w3-card">
+              <a href="${projects.link}"><img src=${projects.img} alt="Poem-writer site"
+                      class="w3-hover-opacity"></a>
+              <section class="w3-container w3-white">
+                  <h3>${projects.title}</h3>
+                  <p>${projects.description}</p>
+                  <details>
+                  <summary>More info</summary>
+                  <p>${projects.info}</p>
+                  </details>
+                  <a href="${projects.code}" target="_blank" rel="noopener noreferrer">See code on Github</a> <i
+                  class="w3-small fas fa-external-link-square-alt"></i>
+              </section>
+              </section>
+      `;
   }
 }
+
 
 export { lastprojectsTemplate, projects };
