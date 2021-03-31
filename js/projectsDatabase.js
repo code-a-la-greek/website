@@ -1,3 +1,5 @@
+//import Handlebars from 'https://cdn.skypack.dev/handlebars?min';
+
 const projects = {
   projects: [
     {
@@ -78,19 +80,25 @@ const workProjects = [
   },
 ];
 
-const last3Projects = [
-  projects.projects[0],
-  projects.projects[1],
-  projects.projects[2],
-];
+let num1= Math.round(Math.random()*6)
+let num2= Math.round(Math.random()*6)
+let num3= Math.round(Math.random()*6)
 
-function lastprojectsTemplate() {
-  for (const projects of last3Projects) {
-    document.querySelector("#recentProjects").innerHTML += `
-      <section class=" w3-third w3-container w3-margin-bottom w3-card">
-              <a href="${projects.link}"><img src=${projects.img} alt="Poem-writer site"
+
+
+const random3Projects = [
+  projects.projects[num1],
+  projects.projects[num2],
+  projects.projects[num3],
+]; 
+
+
+for (const projects of random3Projects) {
+  document.querySelector("#recentProjects").innerHTML += `
+      <section class="w3-third w3-container w3-margin-bottom w3-card w3-white">
+              <a href="${projects.link}"><img src=${projects.img} alt="${projects.title}"
                       class="w3-hover-opacity"></a>
-              <section class="w3-container w3-white">
+              <section class="w3-container">
                   <h3>${projects.title}</h3>
                   <p>${projects.description}</p>
                   <details>
@@ -102,8 +110,5 @@ function lastprojectsTemplate() {
               </section>
               </section>
       `;
-  }
 }
 
-
-export { lastprojectsTemplate, projects };
