@@ -18,5 +18,3 @@ document.querySelector('header>span').addEventListener('click', w3_open)
 //BUTTON UP
 buttonUp.addEventListener('click',goingUp)
 window.addEventListener('scroll',scrollFunction)
-//RECENT PROJECTS
-//lastprojectsTemplate(); 

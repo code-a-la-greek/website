@@ -1,5 +1,3 @@
-//import Handlebars from 'https://cdn.skypack.dev/handlebars?min';
-
 const projects = {
   projects: [
     {
@@ -80,22 +78,25 @@ const workProjects = [
   },
 ];
 
-let num1= Math.round(Math.random()*6)
-let num2= Math.round(Math.random()*6)
-let num3= Math.round(Math.random()*6)
+//RANDOMIZE THE PROJECTS IN LANDING PAGE
+let randomNumbersArray = []
 
-
+for (let i = 0; i < 2; i++) {
+    let num = Math.round(Math.random() * 6)
+    if (!randomNumbersArray.includes(num)) {
+        randomNumbersArray.push(num)
+    } 
+}
 
 const random3Projects = [
-  projects.projects[num1],
-  projects.projects[num2],
-  projects.projects[num3],
+  projects.projects[randomNumbersArray[0]],
+  projects.projects[randomNumbersArray[1]],
 ]; 
 
-
+//DISPLAY THE PROJECTS
 for (const projects of random3Projects) {
   document.querySelector("#recentProjects").innerHTML += `
-      <section class="w3-third w3-container w3-margin-bottom w3-card w3-white">
+      <section class="w3-half w3-container w3-margin-bottom w3-card w3-white">
               <a href="${projects.link}"><img src=${projects.img} alt="${projects.title}"
                       class="w3-hover-opacity"></a>
               <section class="w3-container">

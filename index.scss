@@ -30,20 +30,16 @@ a {
   text-decoration: none;
 }
 
-a:hover,a:active {
+a:hover,
+a:active {
   text-decoration: underline;
   color: #8abd2bff;
-
 }
 
-
-
-main a, footer a {
+main a,
+footer a {
   text-decoration: underline;
 }
-
-
-
 
 h1,
 h2,
@@ -78,7 +74,9 @@ main .w3-button {
   visibility: hidden;
 }
 
-details{cursor: pointer;}
+details {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 1023px) {
   main,
@@ -101,5 +99,10 @@ details{cursor: pointer;}
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  #recentProjects {
+    display: flex;
+
+    gap: 5px;
   }
 }
