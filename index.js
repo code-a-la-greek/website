@@ -6,7 +6,6 @@ import './js/projectsDatabase';
 import {goingUp,scrollFunction} from './js/scrollup';
 import {w3_open, w3_close} from './js/sidebarFunction';
 
-
 //SIDEBAR
 document.getElementById('myOverlay').addEventListener('click', w3_close)
 document.querySelector('#mySidebar > section > a').addEventListener('click', w3_close)

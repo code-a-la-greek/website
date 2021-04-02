@@ -82,16 +82,19 @@ const workProjects = [
 let randomNumbersArray = []
 
 for (let i = 0; i < 2; i++) {
-    let num = Math.round(Math.random() * 6)
-    if (!randomNumbersArray.includes(num)) {
-        randomNumbersArray.push(num)
-    } 
+  let num = Math.round(Math.random() * 6)
+  if (!randomNumbersArray.includes(num)) {
+    randomNumbersArray.push(num)
+  }
 }
-
+if (randomNumbersArray.length === 1) {
+  location.reload();
+}
 const random3Projects = [
   projects.projects[randomNumbersArray[0]],
   projects.projects[randomNumbersArray[1]],
-]; 
+];
+
 
 //DISPLAY THE PROJECTS
 for (const projects of random3Projects) {

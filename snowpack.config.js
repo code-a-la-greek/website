@@ -11,8 +11,7 @@ module.exports = {
     "snowpack.config.js",
   ],
   plugins: [
-    ["@snowpack/plugin-sass", { compilerOptions: { style: "compressed" } }],
-    "@snowpack/plugin-dotenv"
+    ["@snowpack/plugin-sass", { compilerOptions: { style: "compressed" } }]
   ],
   optimize: {
     bundle: true,
