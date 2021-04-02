@@ -1,10 +1,10 @@
 //import 'w3-css/4/w3pro.css';
 import "./index.scss";
 import "https://kit.fontawesome.com/a72b9e7ca4.js";
-import './js/courses'
+import './js/courses';
+import './js/projectsDatabase';
 import {goingUp,scrollFunction} from './js/scrollup';
 import {w3_open, w3_close} from './js/sidebarFunction';
-import './js/projectsDatabase'
 
 
 //SIDEBAR

@@ -29,7 +29,7 @@ const projects = {
         "A web-application of the famous game. Play it by yourself or with a friend.",
       title: "Rock-Paper-Scissors",
       info:
-        "I've been working with arrow functions and array loops. Lodash.js-library simplifies the arithmetic operators. The project was inspired from an exercise in courses.",
+        "I've been working with arrow functions and array loops. The project was inspired from an exercise in courses.",
     },
     {
       link: "https://panugr.github.io/mrfunny/",
@@ -38,7 +38,7 @@ const projects = {
       description: "A series of small applications",
       title: "Mr.Funny",
       info:
-        "This project contains a series of small applications, inspired by exercises during my Javascript lesson. I've been working with alert/confirm functions and array-loops. Lodash.js-library simplifies the arithmetic operators.",
+        "This project contains a series of small applications, inspired by exercises during my Javascript lesson. I've been working with alert/confirm functions and array-loops.",
     },
     {
       link: "https://panugr.github.io/Koirakerho/",
