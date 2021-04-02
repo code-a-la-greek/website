@@ -8,7 +8,7 @@ module.exports = {
     ".gitignore",
     "package-lock.json",
     "package.json",
-    "snowpack.config.js",
+    "snowpack.config.js"
   ],
   plugins: [
     ["@snowpack/plugin-sass", { compilerOptions: { style: "compressed" } }]
