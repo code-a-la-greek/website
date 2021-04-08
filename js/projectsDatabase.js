@@ -104,11 +104,8 @@ for (const projects of random3Projects) {
                       class="w3-hover-opacity"></a>
               <section class="w3-container">
                   <h3>${projects.title}</h3>
-                  <p>${projects.description}</p>
-                  <details>
-                  <summary>More info</summary>
+                  <p>${projects.description}.</p>
                   <p>${projects.info}</p>
-                  </details>
                   <a href="${projects.code}" target="_blank" rel="noopener noreferrer">See code on Github</a> <i
                   class="w3-small fas fa-external-link-square-alt"></i>
               </section>

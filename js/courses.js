@@ -84,7 +84,7 @@ const coursesList = {
             ]
         }
     ],
-    other:[ {
+    other: [{
         title: "Sass",
         info: "Scss syntax, nesting, functions, partials.",
         link:
@@ -98,7 +98,11 @@ const coursesList = {
     },]
 };
 
-const source = document.getElementById("courses-template").innerHTML;
-const template = Handlebars.compile(source);
-const html = template(coursesList);
-document.querySelector(".w3-ul").innerHTML = html;
+function showCourses() {
+    const source = document.getElementById("courses-template").innerHTML;
+    const template = Handlebars.compile(source);
+    const html = template(coursesList);
+    document.querySelector(".w3-ul").innerHTML = html;
+}
+
+export default showCourses
