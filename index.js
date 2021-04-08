@@ -1,8 +1,9 @@
-//import 'w3-css/4/w3pro.css';
+import './w3.css';
 import "./index.scss";
 import "https://kit.fontawesome.com/a72b9e7ca4.js";
-import './js/courses';
 import './js/projectsDatabase';
+import showCourses from './js/courses';
+import showChangelog from './js/changelog';
 import {goingUp,scrollFunction} from './js/scrollup';
 import {w3_open, w3_close} from './js/sidebarFunction';
 
@@ -17,3 +18,6 @@ document.querySelector('header>span').addEventListener('click', w3_open)
 //BUTTON UP
 buttonUp.addEventListener('click',goingUp)
 window.addEventListener('scroll',scrollFunction)
+//SCRIPT OF COMPLETED COURSES AND CHANGELOG
+showCourses()
+showChangelog()
