@@ -10,7 +10,7 @@ const changelog = {
         {
             date: '19.03.2021',
             updates: [
-                { value: " I've been working on <a href='https://panugr.github.io/mrfunny/' rel='noreferrer' target='_blank'>Mr.Funny</a> <i class='w3-small fas fa-external-link-square-alt'></i>, a collection of small applications and calculators" },
+                { value: " I've been working on <a href='https://github.com/PanuGr/mrfunny' title='open in github' rel='noreferrer' target='_blank'>Mr.Funny</a> <i class='w3-small fas fa-external-link-square-alt'></i>, a collection of small applications and calculators" },
                 {
                     value: ' Removed Lodash.js library. Arrays and functions were refactored using native javascript'
                 },
@@ -20,16 +20,16 @@ const changelog = {
         {
             date: '23.03.2021',
             updates: [
-                { value: "I wrote my first test(TDD) with mocha.js for couple of <a href='https://github.com/PanuGr/mrfunny' rel='noreferrer' target='_blank'>Mr Funny's functions</a> <i class='w3-small fas fa-external-link-square-alt'></i>. Running the test I was surprised to see that my functions could actually be reformed in a better way!" },
+                { value: "I wrote my first test(TDD) with mocha.js for couple of <a href='https://github.com/PanuGr/mrfunny' title='open in github' rel='noreferrer' target='_blank'>Mr Funny's functions</a> <i class='w3-small fas fa-external-link-square-alt'></i>. Running the test I was surprised to see that my functions could actually be reformed in a better way!" },
                 {
-                    value: "Lodash.js library was removed from the <a href='https://panugr.github.io/javascriptGame/' rel='noreferrer' target='_blank'>Rock-paper project</a> <i class='w3-small fas fa-external-link-square-alt'></i>, a website where you can play the game"
+                    value: "Lodash.js library was removed from the <a href='https://github.com/PanuGr/javascriptGame' title='open in github' rel='noreferrer' target='_blank'>Rock-paper project</a> <i class='w3-small fas fa-external-link-square-alt'></i>, a website where you can play the game"
                 },
                 { value:  "For-loops were removed in favor of the shorter and more readable <code>for...of</code> loop" }]
         },
         {
             date: '24.03.2021',
             updates: [
-                { value: " I added a TDD testing using the cypress.io framework on my <a href='https://github.com/PanuGr/rhyme' rel='noreferrer' target='_blank'>Poem-writer</a> <i class='w3-small fas fa-external-link-square-alt'></i> application" }]
+                { value: " I added a TDD testing using the cypress.io framework on my <a href='https://github.com/PanuGr/rhyme' title='open in github' rel='noreferrer' target='_blank'>Poem-writer</a> <i class='w3-small fas fa-external-link-square-alt'></i> application" }]
         }
     ]
 }

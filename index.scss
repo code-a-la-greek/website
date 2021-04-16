@@ -11,15 +11,7 @@ html {
 body {
   font-family: "Montserrat", serif;
   max-width: 1600px;
-  background-color: #f7f5faff;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
+  background-color: $ghost-white;
 }
 
 main p {
@@ -78,17 +70,6 @@ details {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1023px) {
-  main,
-  header,
-  footer {
-    margin-left: 300px;
-  }
-
-  .w3-content {
-    max-width: 1600px;
-  }
-}
 
 @media screen and (min-width: 600px) {
   .flex {
@@ -102,7 +83,16 @@ details {
   }
   #recentProjects {
     display: flex;
-
     gap: 5px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  main,
+  header,
+  footer {
+    margin-left: 300px;
+  }
+  #recentProjects img{
+aspect-ratio: 19/9;
   }
 }

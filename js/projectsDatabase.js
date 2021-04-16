@@ -97,10 +97,11 @@ const random3Projects = [
 
 
 //DISPLAY THE PROJECTS
-for (const projects of random3Projects) {
-  document.querySelector("#recentProjects").innerHTML += `
+function showProjects() {
+  for (const projects of random3Projects) {
+    document.querySelector("#recentProjects").innerHTML += `
       <section class="w3-half w3-container w3-margin-bottom w3-card w3-white">
-              <a href="${projects.link}"><img src=${projects.img} alt="${projects.title}"
+              <a href="${projects.link}"><img src=${projects.img} alt="${projects.title}" 
                       class="w3-hover-opacity"></a>
               <section class="w3-container">
                   <h3>${projects.title}</h3>
@@ -111,5 +112,25 @@ for (const projects of random3Projects) {
               </section>
               </section>
       `;
+  }
 }
 
+const allProjects = () => {
+  projects.projects.forEach(projects => {
+    document.querySelector('main').innerHTML +=
+      `<section class="w3-container w3-content w3-padding w3-margin-bottom w3-margin-top w3-card w3-white">
+      <a href="${projects.link}"><img src=${projects.img} alt="${projects.title}"
+      class="w3-hover-opacity"></a>
+<section class="w3-container w3-padding">
+  <h2>${projects.title}</h2>
+  <p>${projects.description}.</p>
+  <p>${projects.info}</p>
+  <a href="${projects.code}" target="_blank" rel="noopener noreferrer">See code on Github</a> <i
+  class="w3-small fas fa-external-link-square-alt"></i>
+</section>
+      </section>`;
+  });
+
+};
+
+export { showProjects, allProjects };
