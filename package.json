@@ -19,7 +19,11 @@
   },
   "homepage": "https://github.com/PanuGr/My_portfolio#readme",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@snowpack/plugin-postcss": "^1.2.2",
     "@snowpack/plugin-sass": "^1.4.0",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
     "snowpack": "^3.3.3"
   }
 }
