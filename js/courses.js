@@ -48,7 +48,7 @@ const coursesList = {
         {
             title: "Front-End Engineer",
             info:
-                "This course focuses in front-end and contains a collection of lessons about front-end development.",
+                "This course contains a collection of lessons about front-end development.",
             progress: "In progress: 51%",
             lessons: [
                 {
@@ -86,7 +86,7 @@ const coursesList = {
     ],
     other: [{
         title: "Sass",
-        info: "Scss syntax, nesting, functions, partials.",
+        info: "This course contains lessons about Scss syntax, nesting, functions, partials.",
         link:
             "https://www.codecademy.com/profiles/PakisGr/certificates/eb1ffda40f347629dcef6de33d3f9741",
     },

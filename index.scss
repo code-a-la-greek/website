@@ -70,7 +70,6 @@ details {
   cursor: pointer;
 }
 
-
 @media screen and (min-width: 600px) {
   .flex {
     display: flex;
@@ -92,7 +91,7 @@ details {
   footer {
     margin-left: 300px;
   }
-  #recentProjects img{
-aspect-ratio: 19/9;
+  #recentProjects img {
+    aspect-ratio: 19/9;
   }
 }

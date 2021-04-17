@@ -30,7 +30,24 @@ const changelog = {
             date: '24.03.2021',
             updates: [
                 { value: " I added a TDD testing using the cypress.io framework on my <a href='https://github.com/PanuGr/rhyme' title='open in github' rel='noreferrer' target='_blank'>Poem-writer</a> <i class='w3-small fas fa-external-link-square-alt'></i> application" }]
-        }
+        },
+        {
+            date: '08.04.2021',
+            updates: [
+                { value: " I use the w3.CSS framework from npm and I noticed that npm serves the old version. Now, I am serving the newer version"},
+                { value: " All handlebars logic is exported as functions instead of importing the whole javascript file"},
+                { value: " I am making a 2nd html file, where visitors can see all the projects at once"}]
+        }/* ,
+        {
+            date: '24.03.2021',
+            updates: [
+                { value: " I added a TDD testing using the cypress.io framework on my <a href='https://github.com/PanuGr/rhyme' title='open in github' rel='noreferrer' target='_blank'>Poem-writer</a> <i class='w3-small fas fa-external-link-square-alt'></i> application" }]
+        },
+        {
+            date: '24.03.2021',
+            updates: [
+                { value: " I added a TDD testing using the cypress.io framework on my <a href='https://github.com/PanuGr/rhyme' title='open in github' rel='noreferrer' target='_blank'>Poem-writer</a> <i class='w3-small fas fa-external-link-square-alt'></i> application" }]
+        }, */
     ]
 }
 
