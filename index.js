@@ -1,5 +1,5 @@
 import './w3.css';
-import "./index.scss";
+import "./style.scss";
 import "https://kit.fontawesome.com/a72b9e7ca4.js";
 import {showProjects} from './js/projectsDatabase';
 import showCourses from './js/courses';
