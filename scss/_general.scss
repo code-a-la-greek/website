@@ -1,0 +1,31 @@
+@use 'colors' as *;
+$title:"Raleway", sans-serif;
+$text: "Montserrat", serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:$text;
+  max-width: 1600px;
+  background-color: $ghost-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title;
+  font-weight: bold;
+}
+
+main p {
+  max-inline-size: 75ch;
+}
+
+details {
+  cursor: pointer;
+}

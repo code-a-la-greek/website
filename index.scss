@@ -1,76 +1,17 @@
-$raisin-black: #201b29ff;
-$spanish-violet: #452d73ff;
-$ghost-white: #f7f5faff;
-$eerie-black: #1c1b1cff;
-$apple-green: #8abd2bff;
+@use './scss' as *;
+@use './scss/components' as *;
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Montserrat", serif;
-  max-width: 1600px;
-  background-color: $ghost-white;
-}
-
-main p {
-  max-inline-size: 75ch;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover,
-a:active {
-  text-decoration: underline;
-  color: #8abd2bff;
-}
-
-main a,
-footer a {
-  text-decoration: underline;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-}
-
-nav img {
-  width: 45%;
-}
-
-header img {
-  width: 65px;
-}
-
-img {
-  width: 100%;
-}
 
 main .w3-button {
-  background-color: #1c1b1cff;
+  background-color: $eerie-black;
   text-decoration: none;
-}
-#buttonUp {
-  float: right;
-  position: fixed;
-  right: 0;
-  visibility: hidden;
-}
-
-details {
-  cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
+  #recentProjects {
+    display: flex;
+    gap: 5px;
+  }
   .flex {
     display: flex;
   }
@@ -79,10 +20,6 @@ details {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  #recentProjects {
-    display: flex;
-    gap: 5px;
   }
 }
 @media screen and (min-width: 1023px) {
