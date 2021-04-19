@@ -1,0 +1,13 @@
+@use './scss' as *;
+@use './scss/components' as *;
+
+
+
+@media screen and (min-width: 1023px) {
+
+    main,
+    header,
+    footer {
+        margin-left: 300px;
+    }
+}

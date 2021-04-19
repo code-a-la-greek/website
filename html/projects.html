@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="../pictures/favicon.ico" type="image/x-icon">
+    <title>Panagiotis|Projects Catalogue </title>
+    <script type="module">
+        import '../scss/w3.css';
+        import './projects.scss';
+        import "https://kit.fontawesome.com/a72b9e7ca4.js";
+        import { allProjects } from '../js/projectsDatabase';
+        import { goingUp, scrollFunction } from '../js/scrollup';
+        import { w3_open, w3_close } from '../js/sidebarFunction';
+        //SIDEBAR
+        document.getElementById('myOverlay').addEventListener('click', w3_close)
+        document.querySelector('#mySidebar > section > a').addEventListener('click', w3_close)
+        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(1)').addEventListener('click', w3_close)
+        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(2)').addEventListener('click', w3_close)
+        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(3)').addEventListener('click', w3_close)
+        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(4)').addEventListener('click', w3_close)
+        document.querySelector('header>span').addEventListener('click', w3_open)
+        //BUTTON UP
+        buttonUp.addEventListener('click', goingUp)
+        window.addEventListener('scroll', scrollFunction)
+        //DISPLAY ALL THE PROJECTS
+        allProjects();
+    </script>
+</head>
+
+<body>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index: 3; width: 300px" id="mySidebar">
+        <br />
+        <section class="w3-container">
+            <a href="#" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="../pictures/profile-photo-small.webp" alt="profile photo of Panagiotis"
+                class="w3-round" /><br /><br />
+            <h4>MY FRONT END PORTFOLIO</h4>
+            <p class="w3-text-grey">Panagiotis Panagiotakopoulos</p>
+        </section>
+        <div class="w3-bar-block">
+            <a href="../index.html" class="w3-bar-item w3-padding"><i
+                    class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a>
+            <a href="../index.html#about" class="w3-bar-item w3-padding"><i
+                    class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+            <a href="../index.html#contact" class="w3-bar-item w3-padding"><i
+                    class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+            <a href="../index.html#changelog" class="w3-bar-item w3-padding"><i
+                    class="fas fa-exchange-alt fa-fw w3-margin-right"></i>CHANGELOG</a>
+        </div>
+        <div class="w3-panel w3-xlarge">
+            <a href="https://github.com/PanuGr" target="_blank" rel="noopener noreferrer" title="github profile"><i
+                    class="fab fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/p-panagiotakopoulos/" target="_blank" rel="noopener noreferrer"
+                title="Linkedin profile"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <section class="w3-overlay w3-hide-large w3-animate-opacity" style="cursor: pointer" title="close side menu"
+        id="myOverlay"></section>
+    <header>
+        <img src="../pictures/profile-photo-small.webp" width="100" height="auto" alt="profile photo of Panagiotis"
+            class="w3-circle w3-right w3-margin w3-hide-large" />
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey"><i class="fa fa-bars"></i></span>
+        <section class="w3-container">
+            <h1>My Projects</h1>
+        </section>
+    </header>
+    <button id="buttonUp"><i class="fas fa-arrow-alt-circle-up"></i></button>
+    <main></main>
+</body>
+</html>
