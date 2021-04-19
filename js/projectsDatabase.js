@@ -11,13 +11,13 @@ const projects = {
         "In this project, I have been working with fetch-requests to a word database, provided by datamuse.org. I wanted to create a simple app that finds words that rhyme with any given word.",
     },
     {
-      link: "../sites/weather/weather.html",
+      link: "https://getforecast.netlify.app",
       code: "https://github.com/PanuGr/weather-app",
       img: "../pictures/weather-application.webp",
       description: "Check the weather conditions for any location",
       title: "Weather app",
       info:
-        "I have been practising with xhr-requests to a weather API, provided by openweather.org. Dark-mode is based on the device's color preferences.",
+        "I have been practising with xhr-requests and fetch-requests to a weather API, provided by openweather.org. Dark-mode is based on the device's color preferences.",
     },
     {
       link: "https://panugr.github.io/javascriptGame/",
