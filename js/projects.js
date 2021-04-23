@@ -1,9 +1,9 @@
 import '../scss/w3.css';
 import '../scss/projects.scss';
 import "https://kit.fontawesome.com/a72b9e7ca4.js";
-import { allProjects } from '../js/projectsDatabase';
-import { goingUp, scrollFunction } from '../js/scrollup';
-import { w3_open, w3_close } from '../js/sidebarFunction';
+import { allProjects } from './projectsDatabase';
+import { goingUp, scrollFunction } from './scrollup';
+import { w3_open, w3_close } from './sidebarFunction';
 //SIDEBAR
 document.getElementById('myOverlay').addEventListener('click', w3_close)
 document.querySelector('#mySidebar > section > a').addEventListener('click', w3_close)
