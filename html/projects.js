@@ -1,5 +1,5 @@
 import '../scss/w3.css';
-import './projects.scss';
+import '../scss/projects.scss';
 import "https://kit.fontawesome.com/a72b9e7ca4.js";
 import { allProjects } from '../js/projectsDatabase';
 import { goingUp, scrollFunction } from '../js/scrollup';
