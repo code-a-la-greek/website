@@ -8,27 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="../pictures/favicon.ico" type="image/x-icon">
     <title>Panagiotis|Projects Catalogue </title>
-    <script type="module">
-        import '../scss/w3.css';
-        import './projects.scss';
-        import "https://kit.fontawesome.com/a72b9e7ca4.js";
-        import { allProjects } from '../js/projectsDatabase';
-        import { goingUp, scrollFunction } from '../js/scrollup';
-        import { w3_open, w3_close } from '../js/sidebarFunction';
-        //SIDEBAR
-        document.getElementById('myOverlay').addEventListener('click', w3_close)
-        document.querySelector('#mySidebar > section > a').addEventListener('click', w3_close)
-        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(1)').addEventListener('click', w3_close)
-        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(2)').addEventListener('click', w3_close)
-        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(3)').addEventListener('click', w3_close)
-        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(4)').addEventListener('click', w3_close)
-        document.querySelector('header>span').addEventListener('click', w3_open)
-        //BUTTON UP
-        buttonUp.addEventListener('click', goingUp)
-        window.addEventListener('scroll', scrollFunction)
-        //DISPLAY ALL THE PROJECTS
-        allProjects();
-    </script>
 </head>
 
 <body>
@@ -75,5 +54,26 @@
     </header>
     <button id="buttonUp"><i class="fas fa-arrow-alt-circle-up"></i></button>
     <main></main>
+    <script type="module">
+        import '../scss/w3.css';
+        import './projects.scss';
+        import "https://kit.fontawesome.com/a72b9e7ca4.js";
+        import { allProjects } from '../js/projectsDatabase';
+        import { goingUp, scrollFunction } from '../js/scrollup';
+        import { w3_open, w3_close } from '../js/sidebarFunction';
+        //SIDEBAR
+        document.getElementById('myOverlay').addEventListener('click', w3_close)
+        document.querySelector('#mySidebar > section > a').addEventListener('click', w3_close)
+        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(1)').addEventListener('click', w3_close)
+        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(2)').addEventListener('click', w3_close)
+        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(3)').addEventListener('click', w3_close)
+        document.querySelector('#mySidebar > div.w3-bar-block > a:nth-child(4)').addEventListener('click', w3_close)
+        document.querySelector('header>span').addEventListener('click', w3_open)
+        //BUTTON UP
+        buttonUp.addEventListener('click', goingUp)
+        window.addEventListener('scroll', scrollFunction)
+        //DISPLAY ALL THE PROJECTS
+        allProjects();
+    </script>
 </body>
 </html>
