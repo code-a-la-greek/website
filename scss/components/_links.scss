@@ -1,4 +1,4 @@
-@use '../colors' as *;
+@use '../abstract/colors' as *;
 a {
   text-decoration: none;
   &:hover,

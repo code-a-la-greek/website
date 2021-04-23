@@ -1,11 +1,11 @@
 import '../scss/w3.css';
-import "./style.scss";
+import "../scss/style.scss";
 import "https://kit.fontawesome.com/a72b9e7ca4.js";
-import {showProjects} from '../js/projectsDatabase';
-import showCourses from '../js/courses';
-import showChangelog from '../js/changelog';
-import {goingUp,scrollFunction} from '../js/scrollup';
-import {w3_open, w3_close} from '../js/sidebarFunction';
+import {showProjects} from './projectsDatabase';
+import showCourses from './courses';
+import showChangelog from './changelog';
+import {goingUp,scrollFunction} from './scrollup';
+import {w3_open, w3_close} from './sidebarFunction';
 
 //SIDEBAR
 document.getElementById('myOverlay').addEventListener('click', w3_close)
