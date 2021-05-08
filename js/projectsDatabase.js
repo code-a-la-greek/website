@@ -119,7 +119,7 @@ const allProjects = () => {
   projects.projects.forEach(projects => {
     document.querySelector('main').innerHTML +=
       `<section class="w3-container w3-content w3-padding w3-margin-bottom w3-margin-top w3-card w3-white">
-      <a href="${projects.link}"><img src=${projects.img} alt="${projects.title}"
+      <a href="${projects.link}"><img src=${projects.img} alt="${projects.title}" style="width:100%;max-width:500px;height:auto;"
       class="w3-hover-opacity"></a>
 <section class="w3-container w3-padding">
   <h2>${projects.title}</h2>

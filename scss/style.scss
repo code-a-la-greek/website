@@ -1,16 +1,19 @@
 @use './scss/abstract' as *;
-@use './scss/components' as *;
-
+@use './scss/components';
 
 main .w3-button {
   background-color: $eerie-black;
   text-decoration: none;
 }
 
-#recentProjects{
-  min-height:50vh;
+#recentProjects {
+  min-height: 50vh;
 }
 
+footer {
+  height: 100vh;
+  overflow: scroll;
+}
 @media screen and (min-width: 600px) {
   #recentProjects {
     display: flex;
