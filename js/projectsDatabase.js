@@ -1,6 +1,14 @@
 const projects = {
   projects: [
     {
+      link:"https://panugr.github.io/stats-preview-card/",
+      code:"https://github.com/PanuGr/stats-preview-card",
+      img: "../pictures/desktop-screenshot.webp",
+      title: "Stats-card component",
+      description:"I've started a series of Front-end challenges from the frontendmentor-website so I can practice and improve. The first challenge is a card component.",
+      info:"Users should be able to view the optimal layout depending on their device's screen size. There are 2 sizes, mobile and desktop. The layout is made with grid-system"
+    },
+    {
       link: "https://panugr.github.io/rhyme/",
       code: "https://github.com/PanuGr/rhyme",
       img: "../pictures/poem.webp",

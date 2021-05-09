@@ -44,12 +44,12 @@ const changelog = {
             updates: [
                 { value: " Fixed the link to my <a href='https://getforecast.netlify.app' rel='noreferrer' target='_blank'>weather</a> <i class='w3-small fas fa-external-link-square-alt'></i> application" },
                 { value: "Deprecated @import statements in my Sass files were replaced by @use and @forward " }]
-        }/* ,
+        },
         {
-            date: '24.03.2021',
+            date: '09.05.2021',
             updates: [
-                { value: " I added a TDD testing using the cypress.io framework on my <a href='https://github.com/PanuGr/rhyme' title='open in github' rel='noreferrer' target='_blank'>Poem-writer</a> <i class='w3-small fas fa-external-link-square-alt'></i> application" }]
-        }, */
+                { value: "I am starting a series of Front-end challenges from the Frontend Mentor so I can practice and improve. The first challenge is this <a href='https://github.com/PanuGr/stats-preview-card' title='open in github' rel='noreferrer' target='_blank'>card component</a> <i class='w3-small fas fa-external-link-square-alt'></i>" }]
+        }
     ]
 }
 
