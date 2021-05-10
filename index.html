@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet preload" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet preload" as="font" type="font/woff2" crossorigin />
   <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
   <title>P.Panagiotakopoulos | Front-end Developer</title>
   <meta name="description" content="Welcome to my portfolio. I started studying Web-Development in 2020. I hope you enjoy my projects 😀">
@@ -79,7 +79,7 @@
       <hr />
       <!-- Studies -->
       <h3>Courses and Tools</h3>
-      <ul class="w3-ul" style="max-inline-size: 75ch">
+      <ul class="w3-ul" style="max-width: 75ch">
         <script id="courses-template" type="text/x-handlebars-template">
             {{#each courses}}
               <li>
@@ -265,7 +265,7 @@
         {{/each}}
       </script>
   </footer>
-  <script defer type="module" src="./js/index.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
