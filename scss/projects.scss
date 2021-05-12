@@ -1,13 +1,16 @@
 @use '../scss/abstract' as *;
 @use '../scss/components' as *;
-
-
-
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    section{width: 300px;}
+  }
 @media screen and (min-width: 1023px) {
-
-    main,
-    header,
-    footer {
-        margin-left: 300px;
-    }
+  
+  main,
+  header,
+  footer {
+    margin-left: 300px;
+  }
 }
