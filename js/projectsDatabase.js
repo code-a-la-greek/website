@@ -1,6 +1,14 @@
 const projects = {
   projects: [
     {
+      link:"https://panugr.github.io/profile-card-component/",
+      code:"https://github.com/PanuGr/profile-card-component",
+      img: "../pictures/profile-card.webp",
+      title: "Profile-card",
+      description:"A profile-card challenge from frontendmentor.com.",
+      info:""
+    },
+    {
       link:"https://panugr.github.io/3-column-card/",
       code:"https://github.com/PanuGr/3-column-card",
       img: "../pictures/3-column-card.webp",
