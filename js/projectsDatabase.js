@@ -1,6 +1,14 @@
 const projects = {
   projects: [
     {
+      link:"https://panugr.github.io/faq-accordion/",
+      code:"https://github.com/PanuGr/faq-accordion",
+      img: "../pictures/accordion.webp",
+      title: "FAQ card",
+      description:"A faq-accordion challenge from frontendmentor.com.",
+      info:"I built this faq-card using the html detail-tag. No javascript required"
+    },
+    {
       link:"https://panugr.github.io/profile-card-component/",
       code:"https://github.com/PanuGr/profile-card-component",
       img: "../pictures/profile-card.webp",

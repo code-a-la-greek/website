@@ -28,8 +28,9 @@ const changelog = {
             date: 'May',
             updates: [
                 { value: "I am starting a series of Front-end challenges from the Frontend Mentor so I can practice and improve. The first challenge is this <a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>card component</a> <i class='w3-small fas fa-external-link-square-alt'></i>" },
-                { value: "I've completed another challenge from frontendmentor.com, <a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>a 3-column-card</a> <i class='w3-small fas fa-external-link-square-alt'></i>" },
-                { value: "I've completed another challenge from frontendmentor.com, <a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>a profile-card</a> <i class='w3-small fas fa-external-link-square-alt'></i>" }
+                { value: "<a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>A 3-column-card</a> <i class='w3-small fas fa-external-link-square-alt'></i> challenge completed" },
+                { value: "<a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>A profile-card</a> <i class='w3-small fas fa-external-link-square-alt'></i> challenge completed" },
+                { value: "<a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>A faq-card</a> <i class='w3-small fas fa-external-link-square-alt'></i>, challenge with just HTML and CSS, no Javascript required" }
             ]
         }
     ]
