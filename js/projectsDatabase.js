@@ -4,7 +4,7 @@ const projects = {
       link:"https://panugr.github.io/social-proof/",
       code:"https://github.com/PanuGr/social-proof",
       img: "../pictures/social-proof.webp",
-      title: "FAQ card",
+      title: "social-proof card",
       description:"A social proof-card challenge from frontendmentor.com.",
       info:""
     },
