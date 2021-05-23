@@ -1,6 +1,6 @@
 @use 'colors' as *;
-$title:"Raleway", sans-serif;
-$text: "Montserrat", serif;
+$title: system-ui, sans-serif;
+$text: system-ui, serif;
 
 html {
   scroll-behavior: smooth;

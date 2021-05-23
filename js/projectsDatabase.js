@@ -118,29 +118,19 @@ const workProjects = [
   },
 ];
 
-//RANDOMIZE THE PROJECTS IN LANDING PAGE
-let randomNumbersArray = []
 
-for (let i = 0; i < 2; i++) {
-  let num = Math.round(Math.random() * 6)
-  if (!randomNumbersArray.includes(num)) {
-    randomNumbersArray.push(num)
-  }
-}
-if (randomNumbersArray.length === 1) {
-  location.reload();
-}
-const random3Projects = [
-  projects.projects[randomNumbersArray[0]],
-  projects.projects[randomNumbersArray[1]],
+const latest3Projects = [
+  projects.projects[0],
+  projects.projects[1],
+  projects.projects[2],
 ];
 
 
 //DISPLAY THE PROJECTS
 function showProjects() {
-  for (const projects of random3Projects) {
+  for (const projects of latest3Projects) {
     document.querySelector("#recentProjects").innerHTML += `
-      <section class="w3-half w3-container w3-margin-bottom w3-card w3-white">
+      <section class="w3-third w3-container w3-margin-bottom w3-card w3-white">
               <a href="${projects.link}" class="w3-hover-opacity"><img src=${projects.img} alt="${projects.title}" 
                       ></a>
               <section class="w3-container">
