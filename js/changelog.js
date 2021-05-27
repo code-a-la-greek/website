@@ -33,6 +33,16 @@ const changelog = {
                 { value: "<a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>A faq-card</a> <i class='w3-small fas fa-external-link-square-alt'></i>, challenge with just HTML and CSS, no Javascript required" },
                 { value: "<a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>A social proof-card</a> <i class='w3-small fas fa-external-link-square-alt'></i>, challenge completed" }
             ]
+        },
+        {
+            date: 'June',
+            updates: [
+                { value: "<a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>An article-card with sharing options</a> <i class='w3-small fas fa-external-link-square-alt'></i> completed" },/* 
+                { value: "<a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>A 3-column-card</a> <i class='w3-small fas fa-external-link-square-alt'></i> challenge completed" },
+                { value: "<a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>A profile-card</a> <i class='w3-small fas fa-external-link-square-alt'></i> challenge completed" },
+                { value: "<a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>A faq-card</a> <i class='w3-small fas fa-external-link-square-alt'></i>, challenge with just HTML and CSS, no Javascript required" },
+                { value: "<a href='https://www.frontendmentor.io/profile/PanuGr' title='open in Frontend Mentor' rel='noreferrer' target='_blank'>A social proof-card</a> <i class='w3-small fas fa-external-link-square-alt'></i>, challenge completed" } */
+            ]
         }
     ]
 }
