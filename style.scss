@@ -123,6 +123,22 @@ nav {
   }
 }
 
+//DETAILS
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
 //FORM
 form {
   margin-top: 2rem;
@@ -227,5 +243,8 @@ textarea:focus {
   aside:target {
     transform: none;
     transition: none;
+  }
+  details[open] summary ~ * {
+    animation: none;
   }
 }
