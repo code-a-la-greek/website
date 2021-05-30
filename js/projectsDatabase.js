@@ -130,7 +130,6 @@ const workProjects = [
 const latest3Projects = [
   projects.projects[0],
   projects.projects[1],
-  projects.projects[2],
 ];
 
 
@@ -138,15 +137,15 @@ const latest3Projects = [
 function showProjects() {
   for (const projects of latest3Projects) {
     document.querySelector("#recentProjects").innerHTML += `
-      <section class="w3-third w3-container w3-margin-bottom w3-card w3-white">
-              <a href="${projects.link}" class="w3-hover-opacity"><img src=${projects.img} alt="${projects.title}" 
+      <section >
+              <a href="${projects.link}" ><img src=${projects.img} alt="${projects.title}" 
                       ></a>
-              <section class="w3-container">
+              <section >
                   <h3>${projects.title}</h3>
                   <p>${projects.description}</p>
                   <p>${projects.info}</p>
                   <a href="${projects.code}" target="_blank" rel="noopener noreferrer">See on Github</a> <i
-                  class="w3-small fas fa-external-link-square-alt"></i>
+                  class="fas fa-external-link-square-alt"></i>
               </section>
               </section>
       `;
@@ -156,8 +155,8 @@ function showProjects() {
 const allProjects = () => {
   projects.projects.forEach(projects => {
     document.querySelector('main').innerHTML +=
-      `<section class=" w3-padding w3-margin-bottom w3-margin-top w3-card w3-white">
-      <a href="${projects.link}" class="w3-hover-opacity"><img src=${projects.img} alt="${projects.title}" style="width:100%;max-width:500px;height:auto;"></a>
+      `<section >
+      <a href="${projects.link}" ><img src=${projects.img} alt="${projects.title}" style="width:100%;max-width:500px;height:auto;"></a>
 <section class="w3-container w3-padding">
   <h2>${projects.title}</h2>
   <p>${projects.description}.</p>
