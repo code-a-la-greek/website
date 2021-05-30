@@ -5,79 +5,108 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon" />
   <title>P.Panagiotakopoulos | Front-end Developer</title>
-  <meta name="description" content="Welcome to my portfolio. I started studying Web-Development in 2020. I hope you enjoy my projects 😀">
-  <meta property="og:image" content="https://d33wubrfki0l68.cloudfront.net/4c7149890e0a2aa8bf45068d07fb76c32cc678c2/f5888/pictures/profile-photo-small.webp" />
+  <meta name="description"
+    content="Welcome to my portfolio. I started studying Web-Development in 2020. I hope you enjoy my projects 😀" />
+  <meta property="og:image"
+    content="https://d33wubrfki0l68.cloudfront.net/4c7149890e0a2aa8bf45068d07fb76c32cc678c2/f5888/pictures/profile-photo-small.webp" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://kit.fontawesome.com/a72b9e7ca4.js"></script>
+  <script></script>
 </head>
 
 <body>
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index: 3; width: 300px" id="mySidebar">
-    <br />
-    <section class="w3-container">
-      <a href="#" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-        <i class="fa fa-remove"></i>
-      </a>
-      <img src="/pictures/profile-photo-small.webp" width="100" height="100" alt="profile photo of Panagiotis" class="w3-round" /><br /><br />
-      <h4>MY FRONT END PORTFOLIO</h4>
-      <p class="w3-text-grey">Panagiotis Panagiotakopoulos</p>
-    </section>
-    <div class="w3-bar-block" role="navigation">
-      <a href="#portfolio" class="w3-bar-item w3-padding"><i
-          class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a>
-      <a href="#about" class="w3-bar-item w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
-      <a href="#contact" class="w3-bar-item w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
-      <a href="#changelog" class="w3-bar-item w3-padding"><i
-          class="fas fa-exchange-alt fa-fw w3-margin-right"></i>CHANGELOG</a>
-    </div>
-    <div class="w3-panel w3-xlarge">
-      <a href="https://github.com/PanuGr" target="_blank" rel="noopener noreferrer" title="github profile"><i
-          class="fab fa-github w3-hover-opacity"></i></a>
-      <a href="https://www.linkedin.com/in/p-panagiotakopoulos/" target="_blank" rel="noopener noreferrer"
-        title="Linkedin profile"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    </div>
-  </nav>
+  <a href="#sidenav-open" id="sidenav-button" title="Open Menu" aria-label="Open Menu"><i class="fas fa-bars"></i></a>
+  <aside id="sidenav-open">
+    <nav>
+      <img src="/pictures/profile-photo-small.webp" width="100" height="100" alt="profile photo of Panagiotis"
+        aria-hidden="true" />
+      <h1>Panagiotis Panagiotakopoulos</h1>
+      <p>Front-end developer</p>
+      <div class="social-links">
+        <a href="https://github.com/PanuGr" title="link to github profile" aria-label="link to github profile"><i
+            class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/p-panagiotakopoulos/" title="link to Linkedin profile"
+          aria-label="link to Linkedin profile"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.frontendmentor.io/profile/PanuGr" title="Frond-End mentor profile"
+          aria-label="Frond-End mentor profile">
+          <img src="./pictures/front-mentor.png" width="50" height="20" alt="" aria-hidden="true" />
+        </a>
+        <a href="https://www.codecademy.com/profiles/PakisGr" title="link to Codecademy profile"
+          aria-label="link to Codecademy profile">
+          <img src="./pictures/codecademy.webp" width="50" height="50" alt="" aria-hidden="true" />
+        </a>
+      </div>
+      <hr aria-hidden="true" />
+      <ul class="navbar" id="navbar">
+        <li><a href="">PROJECTS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li>
+          <a href="#changelog">CHANGELOG</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" id="sidenav-close" title="Close Menu" aria-label="Close Menu"><i class="fas fa-times"></i></a>
+  </aside>
 
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <section class="w3-overlay w3-hide-large w3-animate-opacity" style="cursor: pointer" title="close side menu"
-    id="myOverlay"></section>
 
-  <!-- !PAGE CONTENT! -->
-  <!-- Header -->
-  <header id="portfolio">
-    <img src="/pictures/profile-photo-small.webp" width="100" height="100" alt="profile photo of Panagiotis"
-      class="w3-circle w3-right w3-margin w3-hide-large" />
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey"><i class="fa fa-bars"></i></span>
-    <section class="w3-container">
-      <h1>My Portfolio</h1>
-    </section>
-  </header>
-  <button id="buttonUp"><i class="fas fa-arrow-alt-circle-up fa-lg"></i></button>
 
-  <main class="w3-main">
+
+  <main>
+    <header>
+      <h2>FRONT-END PORTFOLIO</h2>
+    </header>
+
+    <button id="buttonUp" aria-label="click to scroll up">
+      <i class="fas fa-arrow-alt-circle-up fa-lg"></i>
+    </button>
+
     <!-- Recent projects-->
-    <section class="w3-row-padding w3-margin-top w3-margin-bottom"  id="recentProjects"></section>
+    <section id="recentProjects">
+      <div class="card">
+        <div>
+          <h3>Title - Card 1</h3>
+          <p>Medium length description with a few more words here.</p>
+          <a href="" class="button">PREVIEW SITE
+            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
+          <a href="" class="button">VIEW CODE
+            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
+        </div>
 
-    <!-- Button to more projects--> 
-    <div class="w3-center w3-padding-32">
-      <a href="./projects.html" class="w3-bar-item w3-text-white w3-button w3-round-xxlarge w3-padding-16">More
-        projects</a>
-    </div>
-    
-    <section class="w3-container w3-padding-large w3-margin-bottom" id="about">
+        <div class="visual"></div>
+      </div>
+      <div class="card">
+        <div>
+          <h3>Title - Card 2</h3>
+          <p>
+            Long Description. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.
+          </p>
+          <a href="" class="button">PREVIEW SITE
+            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
+          <a href="" class="button">VIEW CODE
+            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
+        </div>
+        <div class="visual"></div>
+      </div>
+    </section>
+
+    <section id="about">
       <h2>About Me</h2>
       <p>
         I am Panagiotis and I'm currently working in the automobile industry.
         In April 2020, I had the opportunity to join Codecademy and start a
-        Web-Development course. All the projects are based on exercises during
-        my studies and I'll be adding more as my course progresses.
+        Web-Development course. <br />
+        Recently I joined Frontend Mentor, a site where I can complete
+        frontend challenges. <br />
+        All the projects in my portfolio are either based on exercises during
+        my studies in Codecademy or completed challenges from Frontend Mentor.
       </p>
-
-      <hr />
       <!-- Studies -->
       <h3>Courses and Tools</h3>
-      <ul class="w3-ul" style="max-width: 75ch">
+      <ul>
         <script id="courses-template" type="text/x-handlebars-template">
             {{#each courses}}
               <li>
@@ -133,137 +162,126 @@
             {{/each}}
           </script>
       </ul>
-
-      <hr />
       <!-- Work -->
-      <h3>Experience</h3>
-      <p>
-        Up until today, my experience in coding comes from working on my
-        projects. However, I recently started working on other people's
-        projects, which has given me valuable experience. You can read more
-        about these projects below.
-      </p>
-      <details>
-        <summary>Elisan Antologia</summary>
+      <section>
+        <h3>Experience</h3>
         <p>
-          <em>Elisan Antologia</em> is a blog for Elisa Stenberg, a young
-          writer from Finland. She needed a blog to share her writings. Since
-          the project wasn't that demanding, I suggested creating a one-page
-          site styled with W3.CSS to display her documents. <br /><br />
-          On second thought, however, I made two separate pages since one page
-          would have been too long to read if all of her documents were on the
-          same page. <br /><br />
-          I worked a lot with handlebars.js in this project and I loved it. I
-          used handlebars to display each of her documents on a second
-          webpage. How to display each article on a different page using their
-          id, was something that I hadn't tried before so, I am quite excited
-          about doing it.
-          <br /><br />
-          The site displays many photos. There are background photos on the
-          body and for each article. Handling manually the photos became
-          quickly hard so, I started to use the ImageKit CDN for an easier
-          image transformation and conversion. <br /><br />
-          I learned more about handlebars and the use of an image-CDN. The
-          site is light, loads fast and the Lighthouse results are good.
-          Overall, I am satisfied with the result.
+          Up until today, my experience in coding comes from working on
+          projects, from Codecademy and Front-end mentor. I have also done
+          some other people's projects, which has given me valuable
+          experience. You can read more about these projects below.
         </p>
-        <a href="https://panugr.github.io/elisa/" target="_blank" rel="noopener">Visit the site
-        </a>
-        <i class="w3-small fas fa-external-link-square-alt"></i>
-      </details>
-      <details>
-        <summary>Revelation Football Club</summary>
-        <p>
-          This has been another interesting project, which is still in
-          progress. <br />
-          <br />
-          A football club located in Ghana wanted a site to present
-          themselves. Building the site, I had to take into account the lack
-          of infrastructure or/and the slow internet connection in Ghana. The
-          site needs to load and run fast. I use the W3.CSS framework, which
-          is very light and, I will try to use as native Javascript as
-          possible. <br />
-          One concern is that I use pictures in a webp format. Safari browser
-          doesn't have good support and, since I don't know which Safari
-          version the users will be using, I might have a problem with that
-          but, it's an easy fix.<br />
-          <br />
-          This is the first time that I am not working alone on a project. The
-          client has an opinion about the state of the site and on the other
-          side, I get pictures and guidelines from a designer, who works with
-          them. <br />
-          On this project, I had the chance to use a wireframe to show a basic
-          structure for the site. I had read about it during my studies on
-          Frond-End Development but I had never tried it before. I didn't use
-          some computer program, I just made a pdf document.
-          <br />
-          This situation has taught me a lot about communication. <br />
-          Overall, I am happy with the process and the progress of the site.
-        </p>
-        <!--  <a href="" target="_blank" rel="noopener">Visit the site </a> <i
-                                  class="w3-small fas fa-external-link-square-alt"></i> -->
-      </details>
-    </section>
-    <hr />
-    <!-- Contact Section -->
-    <section class="w3-container w3-padding-large w3-grey">
-      <h2 id="contact">Contact Me</h2>
-      <section class="w3-row-padding w3-center w3-padding-24 flex">
-        <section class="w3-third w3-text-white w3-hover-deep-purple" style="background-color: #452d73ff">
-          <a href="mailto:ppanagiotisilv@hotmail.com" aria-label="send message to my email"><i class=" fa fa-envelope w3-xxlarge w3-text-light-grey"></i></a>
-          <p>By email</p>
-        </section>
-        <section class="w3-third w3-text-white w3-hover-dark-gray" style="background-color: #201b29ff">
+        <details>
+          <summary>Elisan Antologia</summary>
           <p>
-            Feel free to get in touch with me. <br />
-            I am always open to feedback, discussing new projects or creating
-            websites.
+            <em>Elisan Antologia</em> is a blog for Elisa Stenberg, a young
+            writer from Finland. She needed a blog to share her writings.
+            Since the project wasn't that demanding, I suggested creating a
+            one-page site styled with W3.CSS to display her documents.
+            <br /><br />
+            On second thought, however, I made two separate pages since one
+            page would have been too long to read if all of her documents were
+            on the same page. <br /><br />
+            I worked a lot with handlebars.js in this project and I loved it.
+            I used handlebars to display each of her documents on a second
+            webpage. How to display each article on a different page using
+            their id, was something that I hadn't tried before so, I am quite
+            excited about doing it.
+            <br /><br />
+            The site displays many photos. There are background photos on the
+            body and for each article. Handling manually the photos became
+            quickly hard so, I started to use the ImageKit CDN for an easier
+            image transformation and conversion. <br /><br />
+            I learned more about handlebars and the use of an image-CDN. The
+            site is light, loads fast and the Lighthouse results are good.
+            Overall, I am satisfied with the result.
           </p>
-        </section>
-        <section class="w3-third w3-hover-light-green" style="background-color: #8abd2bff">
-          <a href="https://goo.gl/maps/bsNdvCqGMejqWPDp7" target="_blank" rel="noreferrer"><i
-              class="  fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></a>
-          <p>Uusikaupunki, FI</p>
-        </section>
+          <a href="https://panugr.github.io/elisa/" target="_blank" rel="noopener">Visit the site
+          </a>
+          <i class="w3-small fas fa-external-link-square-alt"></i>
+        </details>
+        <details>
+          <summary>Revelation Football Club</summary>
+          <p>
+            This has been another interesting project, which is still in
+            progress. <br />
+            <br />
+            A football club located in Ghana wanted a site to present
+            themselves. Building the site, I had to take into account the lack
+            of infrastructure or/and the slow internet connection in Ghana.
+            The site needs to load and run fast. I use the W3.CSS framework,
+            which is very light and, I will try to use as native Javascript as
+            possible. <br />
+            One concern is that I use pictures in a webp format. Safari
+            browser doesn't have good support and, since I don't know which
+            Safari version the users will be using, I might have a problem
+            with that but, it's an easy fix.<br />
+            <br />
+            This is the first time that I am not working alone on a project.
+            The client has an opinion about the state of the site and on the
+            other side, I get pictures and guidelines from a designer, who
+            works with them. <br />
+            On this project, I had the chance to use a wireframe to show a
+            basic structure for the site. I had read about it during my
+            studies on Frond-End Development but I had never tried it before.
+            I didn't use some computer program, I just made a pdf document.
+            <br />
+            This situation has taught me a lot about communication. <br />
+            Overall, I am happy with the process and the progress of the site.
+          </p>
+          <!--  <a href="" target="_blank" rel="noopener">Visit the site </a> <i
+                                  class="w3-small fas fa-external-link-square-alt"></i> -->
+        </details>
       </section>
-      <hr class="w3-opacity" />
-      <form netlify name="feedback" method="POST" target="_blank">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" class="w3-input w3-margin-bottom w3-round" required />
-
-        <label for="mail">Email</label>
-        <input type="email" id="mail" name="mail" class="w3-input w3-margin-bottom w3-round" required />
-
-        <label for="subject">Message</label>
-        <textarea id="subject" name="subject" rows="3" cols="20" class="w3-input w3-margin-bottom w3-round"
-          required></textarea>
-
-        <button type="submit" class="w3-button w3-text-white w3-margin-bottom w3-hover-light-green">
-          <i class="fa fa-paper-plane w3-margin-right"></i>Send Message
-        </button>
-      </form>
     </section>
+    <!-- Contact Section -->
+
+    <form data-netlify="true" name="feedback" method="POST" target="_blank" id="contact">
+      <section>
+        <h2>Contact Me</h2>
+        <p>
+          Feel free to get in touch with me. <br />
+          I am always open to feedback, discussing new projects or creating
+          websites.
+        </p>
+      </section>
+      <fieldset>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="mail" required />
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" rows="3" cols="20" required></textarea>
+        <button type="submit">
+          <i class="fa fa-paper-plane"></i>Send Message
+        </button>
+      </fieldset>
+    </form>
+
+    <!-- Footer -->
+    <footer id="changelog">
+      <script id="changelog-template" type="text/x-handlebars-template">
+          <h2 class="w3-center">Changelog</h2>
+          {{#each month}}
+            <ul
+              class="w3-left-align w3-border w3-round-xlarge w3-margin-bottom"
+            >
+              <li class="date" style="list-style: none;"><h5><em
+                  >{{date}}</em></h5></li>
+              {{#each updates}}
+                <li>
+                  <p>
+                    {{{value}}}.
+                  </p>
+                </li>
+              {{/each}}
+            </ul>
+          {{/each}}
+        </script>
+    </footer>
   </main>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-dark-grey" id="changelog">
-    <script id="changelog-template" type="text/x-handlebars-template">
-         <h2 class="w3-center">Changelog</h2>
-         {{#each month}}
-        <ul class="w3-left-align w3-border w3-round-xlarge w3-margin-bottom">
-          <li class="date" style="list-style: none;"><h5><em>{{date}}</em></h5></li>
-          {{#each updates}}
-          <li>
-            <p>
-             {{{value}}}.
-            </p>
-          </li>
-         {{/each}}
-        </ul>
-        {{/each}}
-      </script>
-  </footer>
-  <script type="module" src="./js/index.js"></script>
+  <!--   <script type="module" src="./js/index.js"></script> -->
 </body>
 
 </html>
