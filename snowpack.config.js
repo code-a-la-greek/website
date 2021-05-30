@@ -5,10 +5,6 @@
 module.exports = {
   plugins: [
     ["@snowpack/plugin-sass", { compilerOptions: { style: "compressed" } }],
-    ["@snowpack/plugin-postcss"]
-  ],
-  optimize: {
-    bundle: true,
-    minify: true,
-  },
+    ["@snowpack/plugin-postcss"],["@snowpack/plugin-webpack"]
+  ]
 };

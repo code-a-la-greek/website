@@ -1,5 +1,4 @@
 //import "../scss/style.scss";
-import "https://kit.fontawesome.com/a72b9e7ca4.js";
 /* import { showProjects } from './projectsDatabase';
 import showCourses from './courses';
 import showChangelog from './changelog';
