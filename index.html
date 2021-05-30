@@ -20,7 +20,7 @@
   <a href="#sidenav-open" id="sidenav-button" title="Open Menu" aria-label="Open Menu"><i class="fas fa-bars"></i></a>
   <aside id="sidenav-open">
     <nav>
-      <img src="/pictures/profile-photo-small.webp" width="100" height="100" alt="profile photo of Panagiotis"
+      <img src="/pictures/profile-photo-small.webp" width="400" height="400" alt="profile photo of Panagiotis"
         aria-hidden="true" />
       <h1>Panagiotis Panagiotakopoulos</h1>
       <p>Front-end developer</p>
@@ -40,7 +40,7 @@
       </div>
       <hr aria-hidden="true" />
       <ul class="navbar" id="navbar">
-        <li><a href="">PROJECTS</a></li>
+        <li><a href="#">PROJECTS</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <li>
@@ -116,7 +116,7 @@
                 <p>
                   {{info}}
                 </p>
-                <p class="w3-small">
+                <p>
                   {{progress}}
                 </p>
                 <details>
@@ -129,13 +129,12 @@
                         <a
                           href={{link}}
                           target="_blank"
-                          class="w3-small"
                           rel="noopener noreferrer"
                         >
                           {{title}}
                         </a>
 
-                        <i class="w3-small fas fa-external-link-square-alt"></i>
+                        <i class="fas fa-external-link-square-alt"></i>
                       </li>
                     {{/each}}
                   </ul>
@@ -151,13 +150,12 @@
                 <a
                   href={{link}}
                   target="_blank"
-                  class="w3-small"
                   rel="noopener noreferrer"
                 >
                   {{info}}
                 </a>
 
-                <i class="w3-small fas fa-external-link-square-alt"></i>
+                <i class="fas fa-external-link-square-alt"></i>
               </li>
             {{/each}}
           </script>
@@ -234,8 +232,8 @@
         </details>
       </section>
     </section>
-    <!-- Contact Section -->
 
+    <!-- Contact Section -->
     <form data-netlify="true" name="feedback" method="POST" target="_blank" id="contact">
       <section>
         <h2>Contact Me</h2>
@@ -258,15 +256,12 @@
       </fieldset>
     </form>
 
-    <!-- Footer -->
     <footer id="changelog">
       <script id="changelog-template" type="text/x-handlebars-template">
-          <h2 class="w3-center">Changelog</h2>
+          <h2>Changelog</h2>
           {{#each month}}
-            <ul
-              class="w3-left-align w3-border w3-round-xlarge w3-margin-bottom"
-            >
-              <li class="date" style="list-style: none;"><h5><em
+            <ul>
+              <li style="list-style: none;"><h5><em
                   >{{date}}</em></h5></li>
               {{#each updates}}
                 <li>

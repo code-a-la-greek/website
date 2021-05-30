@@ -10,9 +10,30 @@ body {
   display: grid;
   margin: 1rem;
 }
+a {
+  text-decoration: none;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+p {
+  max-width: 75ch;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 1rem 0;
+}
+
+header {
+  text-align: center;
+}
+//NAVIGATION
 #sidenav-button {
   position: fixed;
-  //width: 100%;
 }
 aside {
   width: 90vw;
@@ -32,6 +53,8 @@ aside {
 nav {
   img {
     border-radius: 50%;
+    width: 30%;
+    height: auto;
   }
   h1 {
     padding: 0;
@@ -58,28 +81,7 @@ nav {
   }
 }
 
-a {
-  text-decoration: none;
-  &:hover {
-    opacity: 0.7;
-  }
-}
-p {
-  max-width: 75ch;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding: 1rem 0;
-}
-
-header {
-  text-align: center;
-}
-
+//RECENT PROJECTS
 #recentProjects {
   display: grid;
   grid-gap: 1rem;
@@ -101,6 +103,14 @@ header {
   aspect-ratio: 16 / 9;
 }
 
+//BUTTONS
+#buttonUp {
+  float: right;
+  position: fixed;
+  right: 0;
+  visibility: hidden;
+}
+
 .button {
   margin: 10px 0;
   padding: 0.5rem;
@@ -113,6 +123,7 @@ header {
   }
 }
 
+//FORM
 form {
   margin-top: 2rem;
   max-width: 90vw;
@@ -204,15 +215,17 @@ textarea:focus {
 @media (max-width: 700px) {
   aside {
     transform: translateX(-110vw);
-    transition: transform 1s ease-in;
     &:target {
       transform: translateX(0);
-      transition: transform 1s ease-in;
+      transition: transform 500ms ease-in-out;
     }
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  aside {
+  aside,
+  aside:target {
+    transform: none;
+    transition: none;
   }
 }
