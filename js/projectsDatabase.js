@@ -1,52 +1,52 @@
 const projects = {
   projects: [
     {
-      link:"https://panugr.github.io/article-component/",
-      code:"https://github.com/PanuGr/article-component",
+      link: "https://panugr.github.io/article-component/",
+      code: "https://github.com/PanuGr/article-component",
       img: "../pictures/article-component.webp",
       title: "Article-component",
-      description:"An article-card with sharing options.",
-      info:" Build with html and scss. I've used javascript to toggle the share button."
+      description: "An article-card with sharing options.",
+      info: " Build with html and scss. I've used javascript to toggle the share button."
     },
     {
-      link:"https://panugr.github.io/social-proof/",
-      code:"https://github.com/PanuGr/social-proof",
+      link: "https://panugr.github.io/social-proof/",
+      code: "https://github.com/PanuGr/social-proof",
       img: "../pictures/social-proof.webp",
-      title: "social-proof card",
-      description:"A social proof-card  ",
-      info:""
+      title: "Social-proof card",
+      description: "A social proof-card  ",
+      info: ""
     },
     {
-      link:"https://panugr.github.io/faq-accordion/",
-      code:"https://github.com/PanuGr/faq-accordion",
+      link: "https://panugr.github.io/faq-accordion/",
+      code: "https://github.com/PanuGr/faq-accordion",
       img: "../pictures/accordion.webp",
       title: "FAQ card",
-      description:"A faq-accordion ",
-      info:"I built this faq-card using the html detail-tag. No javascript required"
+      description: "A faq-accordion ",
+      info: "I built this faq-card using the html detail-tag. No javascript required"
     },
     {
-      link:"https://panugr.github.io/profile-card-component/",
-      code:"https://github.com/PanuGr/profile-card-component",
+      link: "https://panugr.github.io/profile-card-component/",
+      code: "https://github.com/PanuGr/profile-card-component",
       img: "../pictures/profile-card.webp",
       title: "Profile-card",
-      description:"A profile-card ",
-      info:""
+      description: "A profile-card ",
+      info: ""
     },
     {
-      link:"https://panugr.github.io/3-column-card/",
-      code:"https://github.com/PanuGr/3-column-card",
+      link: "https://panugr.github.io/3-column-card/",
+      code: "https://github.com/PanuGr/3-column-card",
       img: "../pictures/3-column-card.webp",
       title: "3-column-card",
-      description:"A 3-column-card ",
-      info:"Users should be able to view the optimal layout depending on their device's screen size and they should see a hover-effect for the buttons."
+      description: "A 3-column-card ",
+      info: "Users should be able to view the optimal layout depending on their device's screen size and they should see a hover-effect for the buttons."
     },
     {
-      link:"https://panugr.github.io/stats-preview-card/",
-      code:"https://github.com/PanuGr/stats-preview-card",
+      link: "https://panugr.github.io/stats-preview-card/",
+      code: "https://github.com/PanuGr/stats-preview-card",
       img: "../pictures/stats-card.webp",
       title: "Stats-card component",
-      description:"I've started a series of Front-end challenges from the frontendmentor-website so I can practice and improve. The first challenge is a card component",
-      info:"Users should be able to view the optimal layout depending on their device's screen size. There are 2 sizes, mobile and desktop. The layout is made with grid-system"
+      description: "I've started a series of Front-end challenges from the frontendmentor-website so I can practice and improve. The first challenge is a card component",
+      info: "Users should be able to view the optimal layout depending on their device's screen size. There are 2 sizes, mobile and desktop. The layout is made with grid-system"
     },
     {
       link: "https://panugr.github.io/rhyme/",
@@ -135,19 +135,22 @@ const latest3Projects = [
 
 //DISPLAY THE PROJECTS
 function showProjects() {
+
   for (const projects of latest3Projects) {
     document.querySelector("#recentProjects").innerHTML += `
-      <section >
-              <a href="${projects.link}" ><img src=${projects.img} alt="${projects.title}" 
-                      ></a>
-              <section >
-                  <h3>${projects.title}</h3>
-                  <p>${projects.description}</p>
-                  <p>${projects.info}</p>
-                  <a href="${projects.code}" target="_blank" rel="noopener noreferrer">See on Github</a> <i
-                  class="fas fa-external-link-square-alt"></i>
-              </section>
-              </section>
+      <section>
+        <div>
+          <h3>${projects.title}</h3>
+          <p>${projects.description}.${projects.info}</p>
+              <a href="${projects.link}" class="button">
+              PREVIEW SITE
+            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
+              <a href="${projects.code}" class="button">
+              VIEW CODE
+            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
+        </div>
+        <img src="${projects.img}" aria-hidden="true"  alt="" >
+      </section>
       `;
   }
 }

@@ -11,8 +11,8 @@
     content="Welcome to my portfolio. I started studying Web-Development in 2020. I hope you enjoy my projects 😀" />
   <meta property="og:image"
     content="https://d33wubrfki0l68.cloudfront.net/4c7149890e0a2aa8bf45068d07fb76c32cc678c2/f5888/pictures/profile-photo-small.webp" />
-  <link rel="stylesheet" href="style.css" />
   <script defer src="https://kit.fontawesome.com/a72b9e7ca4.js"></script>
+  <script async type="module" src="./js/index.js"></script>
 </head>
 
 <body>
@@ -60,34 +60,9 @@
     </button>
 
     <!-- Recent projects-->
-    <section id="recentProjects">
-      <div class="card">
-        <div>
-          <h3>Title - Card 1</h3>
-          <p>Medium length description with a few more words here.</p>
-          <a href="" class="button">PREVIEW SITE
-            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
-          <a href="" class="button">VIEW CODE
-            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
-        </div>
-
-        <div class="visual"></div>
-      </div>
-      <div class="card">
-        <div>
-          <h3>Title - Card 2</h3>
-          <p>
-            Long Description. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit.
-          </p>
-          <a href="" class="button">PREVIEW SITE
-            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
-          <a href="" class="button">VIEW CODE
-            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
-        </div>
-        <div class="visual"></div>
-      </div>
-    </section>
+    <div id="recentProjects">
+      
+    </div>
 
     <section id="about">
       <h2>About Me</h2>
@@ -102,7 +77,7 @@
       </p>
       <!-- Studies -->
       <h3>Courses and Tools</h3>
-      <ul>
+      <ul id="courses">
         <script id="courses-template" type="text/x-handlebars-template">
             {{#each courses}}
               <li>
@@ -272,7 +247,7 @@
     </footer>
   </main>
 
- <script type="module" src="./js/index.js"></script>
+
 </body>
 
 </html>

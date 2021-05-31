@@ -102,7 +102,7 @@ function showCourses() {
     const source = document.getElementById("courses-template").innerHTML;
     const template = Handlebars.compile(source);
     const html = template(coursesList);
-    document.querySelector(".w3-ul").innerHTML = html;
+    document.querySelector("#courses").innerHTML = html;
 }
 
 export default showCourses

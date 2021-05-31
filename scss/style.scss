@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+}
 body {
   max-width: 1500px;
   font-family: system-ui;
@@ -27,6 +29,9 @@ h5,
 h6 {
   padding: 1rem 0;
 }
+ul {
+  list-style: none;
+}
 
 header {
   text-align: center;
@@ -42,9 +47,7 @@ aside {
   position: fixed;
   z-index: 1;
   background-color: pink;
-  ul {
-    list-style: none;
-  }
+
   &:target {
     visibility: visible;
   }
@@ -86,21 +89,18 @@ nav {
   display: grid;
   grid-gap: 1rem;
   grid-auto-flow: row;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  p {
-    max-width: 35ch;
+  section {
+    height: 400px;
+    display: grid;
+    grid-auto-flow: row;
+    p {
+      max-width: 35ch;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
-}
-.visual {
-  margin-top: 10px;
-  background-image: url("./pictures/3-column-card.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  aspect-ratio: 16 / 9;
 }
 
 //BUTTONS
@@ -174,7 +174,7 @@ textarea:focus {
 
 @media (min-width: 700px) {
   body {
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: min-content 1fr;
     gap: 1rem;
     margin: 0;
     font-size: large;
@@ -211,6 +211,8 @@ textarea:focus {
     grid-column: 2;
     display: grid;
     place-content: center;
+    padding: 1rem;
+    margin: 0 auto;
   }
   header {
     padding: 1rem;
@@ -219,12 +221,8 @@ textarea:focus {
   #recentProjects {
     padding: 1rem 0;
     grid-template-columns: repeat(auto-fit, 300px);
-    min-height: 80vh;
     align-items: center;
-  }
-
-  #about {
-    height: 100vh;
+    justify-content: space-between;
   }
 }
 
