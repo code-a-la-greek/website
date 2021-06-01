@@ -126,34 +126,25 @@ const workProjects = [
   },
 ];
 
-
-const latest3Projects = [
-  projects.projects[0],
-  projects.projects[1],
-];
-
-
 //DISPLAY THE PROJECTS
-function showProjects() {
-
-  for (const projects of latest3Projects) {
-    document.querySelector("#recentProjects").innerHTML += `
-      <section>
+function showProjects(element,number) {
+  document.querySelector(`${element}`).innerHTML += `
+      <section >
         <div>
-          <h3>${projects.title}</h3>
-          <p>${projects.description}.${projects.info}</p>
-              <a href="${projects.link}" class="button">
+          <h3>${projects.projects[number].title}</h3>
+          <p>${projects.projects[number].description}.${projects.projects[number].info}</p>
+              <a href="${projects.projects[number].link}" class="button">
               PREVIEW SITE
             <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
-              <a href="${projects.code}" class="button">
+              <a href="${projects.projects[number].code}" class="button">
               VIEW CODE
             <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
         </div>
-        <img src="${projects.img}" aria-hidden="true"  alt="" >
+        <img src="${projects.projects[number].img}" aria-hidden="true"  alt="" >
       </section>
       `;
-  }
 }
+
 
 const allProjects = () => {
   projects.projects.forEach(projects => {

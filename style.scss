@@ -1,0 +1,222 @@
+/* $padding-small:
+$padding-medium:
+$padding-large: */
+$opacity: 0.7;
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    opacity: $opacity;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 1rem 0;
+}
+ul {
+  list-style: none;
+}
+p {
+  max-width: 45ch;
+  padding: 1rem 0;
+}
+
+body {
+  min-width: 320px;
+  display: grid;
+  place-content: center;
+  font-family: system-ui;
+}
+
+#sidenav-button {
+  position: fixed;
+  padding: 1rem;
+}
+
+nav {
+  width: 100vw;
+  background-color: pink;
+  position: fixed;
+  visibility: hidden;
+  padding: 1rem;
+  &:target {
+    visibility: visible;
+  }
+  #sidenav-close {
+    display: block;
+    padding-bottom: 1rem;
+  }
+  img {
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    img {
+      width: 70%;
+      height: auto;
+    }
+    a {
+      padding: 0 10px;
+    }
+  }
+  .navbar {
+    padding: 5px 0;
+    list-style: none;
+    li {
+      padding: 5px 0;
+    }
+  }
+  @media (max-width: 700px) {
+    transform: translateX(-110vw);
+    &:target {
+      transform: translateX(0);
+      transition: transform 500ms ease-in-out;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    &:target {
+      transform: none;
+      transition: none;
+    }
+  }
+}
+
+main {
+  padding: 2rem 1rem;
+  background-color: beige;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2rem;
+}
+
+#recentProjects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  h2 {
+    margin-top: 1rem;
+  }
+  section {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    div {
+      display: grid;
+      grid-auto-flow: row;
+    }
+  }
+}
+#courses {
+  display: grid;
+  p {
+    padding: 0;
+  }
+  details {
+    padding-top: 1rem;
+  }
+  li {
+    padding: 10px 0;
+  }
+}
+footer {
+  padding: 0 1rem;
+  background-color: gray;
+  ul {
+    margin-bottom: 1rem;
+    list-style: initial;
+    padding: 0 2rem;
+    border: 1px solid white;
+    border-radius: 20px;
+  }
+  @media (min-width: 700px) {
+    height: 100vh;
+    overflow: scroll;
+  }
+}
+
+#buttonUp {
+  float: right;
+  position: fixed;
+  right: 0;
+  visibility: hidden;
+}
+
+.button {
+  margin: 10px 0;
+  padding: 0.5rem;
+  //display: block;
+  border-radius: 20px;
+  transition: transform 500ms ease-out;
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  section p {
+    line-height: 30px;
+  }
+}
+
+fieldset {
+  padding: 1rem;
+  display: grid;
+  gap: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  button {
+    @extend .button;
+    width: 100%;
+  }
+}
+
+input,
+textarea {
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 8px 0 red;
+}
