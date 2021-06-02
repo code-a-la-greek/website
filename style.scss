@@ -20,6 +20,9 @@ $opacity: 0.7;
 }
 html {
   scroll-behavior: smooth;
+  @media (min-width: 700px) and (max-width: 1000px) {
+    scroll-padding-top: 100px;
+  }
 }
 img {
   width: 100%;
@@ -58,11 +61,13 @@ body {
 
 #sidenav-button {
   position: fixed;
-  padding: 1rem;
+  padding: 0.5rem;
+  font-size: x-large;
+  background-color: gray;
+  border-radius: 20px;
 }
 
 nav {
-  width: 100vw;
   background-color: pink;
   position: fixed;
   visibility: hidden;
@@ -98,6 +103,34 @@ nav {
       padding: 5px 0;
     }
   }
+  @media (min-width: 700px) and (max-width: 1000px) {
+    visibility: initial;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    hr {
+      height: 100px;
+    }
+    p {
+      display: none;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    .social-links {
+      justify-content: end;
+      a {
+        padding: 0 5px;
+      }
+      img {
+        width: 40%;
+      }
+    }
+  }
   @media (max-width: 700px) {
     transform: translateX(-110vw);
     &:target {
@@ -122,9 +155,9 @@ main {
 }
 
 #recentProjects {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
+  min-height: 100vh;
   h2 {
     margin-top: 1rem;
   }
@@ -137,9 +170,39 @@ main {
       grid-auto-flow: row;
     }
   }
+  @media (min-width: 700px) {
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    gap: 0;
+    h2 {
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+  }
+}
+
+#about {
+  min-height: 100vh;
+  @media (min-width: 700px) {
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin: 0 auto;
+      font-size: larger;
+      padding-top: 2rem;
+    }
+    article {
+      padding-top: 2rem;
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      align-items: center;
+    }
+  }
 }
 #courses {
   display: grid;
+  //min-height: 100vh;
   p {
     padding: 0;
   }
@@ -149,20 +212,10 @@ main {
   li {
     padding: 10px 0;
   }
-}
-footer {
-  padding: 0 1rem;
-  background-color: gray;
-  ul {
-    margin-bottom: 1rem;
-    list-style: initial;
-    padding: 0 2rem;
-    border: 1px solid white;
-    border-radius: 20px;
-  }
   @media (min-width: 700px) {
-    height: 100vh;
-    overflow: scroll;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
   }
 }
 
@@ -197,6 +250,18 @@ form {
   section p {
     line-height: 30px;
   }
+  @media (min-width: 700px) {
+    padding-top: 2rem;
+    grid-auto-flow: column;
+    gap: 0;
+    section {
+      justify-self: center;
+    }
+    section p {
+      font-size: larger;
+      max-width: 20ch;
+    }
+  }
 }
 
 fieldset {
@@ -219,4 +284,27 @@ textarea {
 input:focus,
 textarea:focus {
   box-shadow: 0 0 8px 0 red;
+}
+
+footer {
+  padding: 0 1rem;
+  background-color: gray;
+  ul {
+    margin-bottom: 1rem;
+    list-style: initial;
+    padding: 0 2rem;
+    border: 1px solid white;
+    border-radius: 20px;
+  }
+  @media (min-width: 700px) {
+    min-height: 100vh;
+    overflow: scroll;
+  }
+}
+
+@media (min-width: 700px) {
+  #sidenav-button,
+  nav #sidenav-close {
+    display: none;
+  }
 }

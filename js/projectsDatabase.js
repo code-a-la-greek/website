@@ -5,7 +5,7 @@ const projects = {
       code: "https://github.com/PanuGr/article-component",
       img: "../pictures/article-component.webp",
       title: "Article-component",
-      description: "An article-card with sharing options.",
+      description: "An article-card with sharing options",
       info: " Build with html and scss. I've used javascript to toggle the share button."
     },
     {
@@ -13,7 +13,7 @@ const projects = {
       code: "https://github.com/PanuGr/social-proof",
       img: "../pictures/social-proof.webp",
       title: "Social-proof card",
-      description: "A social proof-card  ",
+      description: "A social proof-card",
       info: ""
     },
     {
@@ -21,7 +21,7 @@ const projects = {
       code: "https://github.com/PanuGr/faq-accordion",
       img: "../pictures/accordion.webp",
       title: "FAQ card",
-      description: "A faq-accordion ",
+      description: "A faq-accordion",
       info: "I built this faq-card using the html detail-tag. No javascript required"
     },
     {
@@ -29,7 +29,7 @@ const projects = {
       code: "https://github.com/PanuGr/profile-card-component",
       img: "../pictures/profile-card.webp",
       title: "Profile-card",
-      description: "A profile-card ",
+      description: "A profile-card",
       info: ""
     },
     {
@@ -37,7 +37,7 @@ const projects = {
       code: "https://github.com/PanuGr/3-column-card",
       img: "../pictures/3-column-card.webp",
       title: "3-column-card",
-      description: "A 3-column-card ",
+      description: "A 3-column-card",
       info: "Users should be able to view the optimal layout depending on their device's screen size and they should see a hover-effect for the buttons."
     },
     {
