@@ -1,7 +1,7 @@
 @use 'buttons';
 form {
   display: grid;
-  padding-bottom: 1rem;
+  padding: 1rem;
   section p {
     line-height: 30px;
   }
@@ -16,6 +16,7 @@ fieldset {
   overflow: hidden;
   margin: 0 auto;
   button {
+    cursor: pointer;
     @extend .button;
     width: 100%;
   }

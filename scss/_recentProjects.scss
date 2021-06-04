@@ -16,6 +16,15 @@
   }
 }
 
+.link4more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  a{padding: 1rem;}
+}
+
 @media (min-width: 700px) {
   #recentProjects {
     min-height: 90vh;

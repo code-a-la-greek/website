@@ -4,7 +4,6 @@ function scrollFunction() {
     if (
         document.body.scrollTop > 400 ||
         document.documentElement.scrollTop > 400
-        && window.innerWidth < 1000
     ) {
         buttonUp.style.visibility = "visible";
     } else{buttonUp.style.visibility = "hidden";}

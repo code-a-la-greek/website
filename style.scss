@@ -11,8 +11,6 @@
     margin-top: 0px;
   }
 }
-/*COLORS*/
-
 
 /*GENERAL*/
 * {
@@ -61,6 +59,7 @@ h3 {
 }
 
 p {
+  border-radius: 10px;
   color: colors.$paragraphs;
   max-width: 45ch;
   padding-bottom: 1rem;
@@ -79,8 +78,10 @@ main {
   grid-auto-flow: row;
 }
 
-.link4more {
-  text-align: center;
+@media (min-width: 700px) and (max-width: 1000px) {
+  main {
+    margin-top: 100px;
+  }
 }
 
 @media (min-width: 1000px) {
