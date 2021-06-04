@@ -1,3 +1,4 @@
+
 /* $padding-small:
 $padding-medium:
 $padding-large: */
@@ -57,6 +58,10 @@ body {
   display: grid;
   place-content: center;
   font-family: system-ui;
+  @media (min-width: 1000px) {
+    place-content: unset;
+    grid-template-columns: min-content 1fr;
+  }
 }
 
 #sidenav-button {
@@ -102,6 +107,9 @@ nav {
     li {
       padding: 5px 0;
     }
+    @media (min-width: 1000px) {
+      position: fixed;
+    }
   }
   @media (min-width: 700px) and (max-width: 1000px) {
     visibility: initial;
@@ -144,19 +152,28 @@ nav {
       transition: none;
     }
   }
+  @media (min-width: 1000px) {
+    grid-column: 1;
+    position: initial;
+    visibility: visible;
+    min-height: 100vh;
+  }
 }
 
 main {
-  padding: 2rem 1rem;
+  //padding: 2rem 1rem;
   background-color: beige;
   display: grid;
   grid-auto-flow: row;
   gap: 2rem;
+  @media (min-width: 1000px) {
+    grid-column: 2;
+  }
 }
 
 #recentProjects {
   display: grid;
-  gap: 1rem;
+  gap: clamp(0px, 10%, 3rem);
   min-height: 100vh;
   h2 {
     margin-top: 1rem;
@@ -164,20 +181,22 @@ main {
   section {
     display: grid;
     grid-auto-flow: row;
-    gap: 1rem;
     div {
       display: grid;
       grid-auto-flow: row;
     }
   }
   @media (min-width: 700px) {
-    grid-template-columns: 300px 1fr;
-    align-items: center;
-    gap: 0;
+    grid-template-columns: min-content max-content;
+    align-items: end;
+    justify-content: center;
     h2 {
-      font-size: 4rem;
+      font-size: clamp(4rem, 8vw, 8rem);
       line-height: 6rem;
     }
+  }
+  @media (min-width: 1000px) {
+    align-items: center;
   }
 }
 
@@ -187,20 +206,27 @@ main {
     h2 {
       text-align: center;
     }
+
     p {
       margin: 0 auto;
       font-size: larger;
       padding-top: 2rem;
     }
     article {
+      text-align: center;
       padding-top: 2rem;
-      display: grid;
-      grid-template-columns: 400px 1fr;
-      align-items: center;
+      img {
+        width: 50%;
+      }
+      p {
+        font-size: x-large;
+        max-width: 20ch;
+      }
     }
   }
 }
 #courses {
+  padding: 0 1rem;
   display: grid;
   //min-height: 100vh;
   p {
@@ -214,16 +240,18 @@ main {
   }
   @media (min-width: 700px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 5px;
   }
 }
 
-#buttonUp {
-  float: right;
-  position: fixed;
-  right: 0;
-  visibility: hidden;
+@media (min-width: 700px) {
+  #work {
+    text-align: center;
+  }
+  #work p {
+    margin: 0 auto;
+  }
 }
 
 .button {
@@ -244,61 +272,19 @@ details[open] summary ~ * {
   }
 }
 
-form {
-  display: grid;
-  gap: 1rem;
-  section p {
-    line-height: 30px;
-  }
-  @media (min-width: 700px) {
-    padding-top: 2rem;
-    grid-auto-flow: column;
-    gap: 0;
-    section {
-      justify-self: center;
-    }
-    section p {
-      font-size: larger;
-      max-width: 20ch;
-    }
-  }
-}
 
-fieldset {
-  padding: 1rem;
-  display: grid;
-  gap: 10px;
-  border-radius: 20px;
-  overflow: hidden;
-  button {
-    @extend .button;
-    width: 100%;
-  }
-}
-
-input,
-textarea {
-  border-radius: 5px;
-}
-
-input:focus,
-textarea:focus {
-  box-shadow: 0 0 8px 0 red;
-}
 
 footer {
   padding: 0 1rem;
   background-color: gray;
+  height: 100vh;
+  overflow: scroll;
   ul {
     margin-bottom: 1rem;
     list-style: initial;
     padding: 0 2rem;
     border: 1px solid white;
     border-radius: 20px;
-  }
-  @media (min-width: 700px) {
-    min-height: 100vh;
-    overflow: scroll;
   }
 }
 

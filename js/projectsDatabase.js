@@ -127,22 +127,15 @@ const workProjects = [
 ];
 
 //DISPLAY THE PROJECTS
-function showProjects(element,number) {
-  document.querySelector(`${element}`).innerHTML += `
-      <section >
-        <div>
-          <h3>${projects.projects[number].title}</h3>
-          <p>${projects.projects[number].description}.${projects.projects[number].info}</p>
-              <a href="${projects.projects[number].link}" class="button">
-              PREVIEW SITE
-            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
-              <a href="${projects.projects[number].code}" class="button">
-              VIEW CODE
-            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
-        </div>
-        <img src="${projects.projects[number].img}" aria-hidden="true"  alt="" >
-      </section>
-      `;
+const projectsDatabase = projects.projects;
+
+function showProjects(element, number) {
+  document.querySelector(`${element} h3`).innerHTML = projectsDatabase[number].title;
+  document.querySelector(`${element} p`).innerHTML =
+    `${projectsDatabase[number].description}. ${projectsDatabase[number].info}`;
+  document.querySelector(`${element} a:nth-child(3)`).setAttribute('href', projectsDatabase[number].link);
+  document.querySelector(`${element} a:nth-child(4)`).setAttribute('href', projectsDatabase[number].code);
+  document.querySelector(`${element} img`).setAttribute('src', projectsDatabase[number].img);
 }
 
 

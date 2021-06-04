@@ -10,8 +10,8 @@
     content="Welcome to my portfolio. I started studying Web-Development in 2020. I hope you enjoy my projects 😀" />
   <meta property="og:image"
     content="https://d33wubrfki0l68.cloudfront.net/4c7149890e0a2aa8bf45068d07fb76c32cc678c2/f5888/pictures/profile-photo-small.webp" />
-  <link rel="stylesheet" href="style.css">
   <script defer src="https://kit.fontawesome.com/a72b9e7ca4.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>P.Panagiotakopoulos | Front-end Developer</title>
 </head>
 
@@ -53,8 +53,24 @@
     </button>
 
     <section id="recentProjects">
-      <h2>Latest Projects</h2>
+      <h2>Latest Project</h2>
+      <article>
+        <div>
+          <h3>Title</h3>
+          <p>Desctiption-info</p>
+          <a href="" class="button">
+            PREVIEW SITE
+            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
+          <a href="" class="button">
+            VIEW CODE
+            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
+        </div>
+        <img src="" width="500" height="500" aria-hidden="true" alt="">
+      </article>
     </section>
+
+    <a href="http://" target="_blank" rel="noopener noreferrer">More projects on Github</a>
+    <a href="http://" target="_blank" rel="noopener noreferrer">More projects on Frontend Mentor</a>
 
     <article id="about">
       <h2>About Me</h2>
@@ -65,17 +81,28 @@
       <p>
         Recently I joined Frontend Mentor, a site where I can complete
         frontend challenges.</p>
+      <p>
+        All the projects in my portfolio are either based on exercises during
+        my studies in Codecademy or completed challenges from Frontend Mentor.</p>
 
       <article>
-        <p style="font-size: x-large; max-width: 20ch;">
-          All the projects in my portfolio are either based on exercises during
-          my studies in Codecademy or completed challenges from Frontend Mentor.</p>
+        <div>
+          <h3>Title</h3>
+          <p>Desctiption-info</p>
+          <a href="" class="button">
+            PREVIEW SITE
+            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
+          <a href="" class="button">
+            VIEW CODE
+            <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
+        </div>
+        <img src="" width="500" height="500" aria-hidden="true" alt="">
       </article>
-
     </article>
 
     <article>
-      <h3>Courses and Tools</h3>
+      <h3 style="padding: 0 1rem;
+      ">Courses and Tools</h3>
       <ul id="courses">
         <script id="courses-template" type="text/x-handlebars-template">
                   {{#each courses}}
@@ -132,9 +159,9 @@
       </ul>
     </article>
 
-    <article style="text-align: center;">
+    <article id="work">
       <h3>Experience</h3>
-      <p style="margin: 0 auto;">
+      <p>
         Up until today, my experience in coding comes from working on
         projects, from Codecademy and Front-end mentor. I have also done
         some other people's projects, which has given me valuable
@@ -224,28 +251,25 @@
         </button>
       </fieldset>
     </form>
+    <footer id="changelog">
+      <script id="changelog-template" type="text/x-handlebars-template">
+                <h2>Changelog</h2>
+                {{#each month}}
+                  <ul>
+                    <li style="list-style: none;"><h5><em
+                        >{{date}}</em></h5></li>
+                    {{#each updates}}
+                      <li>
+                        <p>
+                          {{{value}}}.
+                        </p>
+                      </li>
+                    {{/each}}
+                  </ul>
+                {{/each}}
+              </script>
+    </footer>
   </main>
-
-  <footer id="changelog">
-    <script id="changelog-template" type="text/x-handlebars-template">
-              <h2>Changelog</h2>
-              {{#each month}}
-                <ul>
-                  <li style="list-style: none;"><h5><em
-                      >{{date}}</em></h5></li>
-                  {{#each updates}}
-                    <li>
-                      <p>
-                        {{{value}}}.
-                      </p>
-                    </li>
-                  {{/each}}
-                </ul>
-              {{/each}}
-            </script>
-  </footer>
   <script type="module" src="./index.js"></script>
-
 </body>
-
 </html>

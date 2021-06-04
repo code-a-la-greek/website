@@ -3,10 +3,10 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
- /*  plugins: [
+  plugins: [
     ["@snowpack/plugin-sass", { compilerOptions: { style: "compressed" } }],
     ["@snowpack/plugin-postcss"]
-  ], */
+  ],
   optimize: {
     bundle: true,
     minify: true,
