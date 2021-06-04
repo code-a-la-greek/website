@@ -1,0 +1,103 @@
+#sidenav-button {
+  position: fixed;
+  padding: 0.5rem;
+  font-size: x-large;
+  background-color: gray;
+  width: 100%;
+}
+
+nav {
+  background-color: pink;
+  position: fixed;
+  visibility: hidden;
+  padding: 1rem;
+  &:target {
+    visibility: visible;
+  }
+  #sidenav-close {
+    display: block;
+    padding-bottom: 1rem;
+  }
+  img {
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    img {
+      width: 70%;
+      height: auto;
+    }
+    a {
+      padding: 0 10px;
+    }
+  }
+  .navbar {
+    padding: 5px 0;
+    list-style: none;
+    li {
+      padding: 5px 0;
+    }
+    @media (min-width: 1000px) {
+      position: fixed;
+    }
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  nav {
+    visibility: initial;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    hr {
+      height: 100px;
+    }
+    p {
+      display: none;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    .social-links {
+      justify-content: end;
+      a {
+        padding: 0 5px;
+      }
+      img {
+        width: 40%;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    transform: translateX(-110vw);
+    &:target {
+      transform: translateX(0);
+      transition: transform 500ms ease-in-out;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  nav {
+    grid-column: 1;
+    position: initial;
+    visibility: visible;
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 700px) {
+  #sidenav-button,
+  nav #sidenav-close {
+    display: none;
+  }
+}

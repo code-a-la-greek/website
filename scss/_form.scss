@@ -1,3 +1,4 @@
+@use 'buttons';
 form {
   display: grid;
   gap: 1rem;
@@ -25,6 +26,7 @@ fieldset {
   gap: 10px;
   border-radius: 20px;
   overflow: hidden;
+  margin: 0 auto;
   button {
     @extend .button;
     width: 100%;

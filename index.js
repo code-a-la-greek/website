@@ -1,3 +1,4 @@
+//import './style.scss';
 import { showProjects } from './js/projectsDatabase';
 import { goingUp, scrollFunction } from './js/scrollup';
 import showCourses from './js/courses';

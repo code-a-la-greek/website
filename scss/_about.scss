@@ -1,0 +1,54 @@
+#about {
+  min-height: 100vh;
+  padding-bottom: 1rem;
+}
+#courses {
+  padding: 0 1rem;
+  display: grid;
+  //min-height: 100vh;
+  p {
+    padding: 0;
+  }
+  details {
+    padding-top: 1rem;
+  }
+  li {
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: 700px) {
+  #about {
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      margin: 0 auto;
+      font-size: larger;
+      padding-top: 2rem;
+    }
+    article {
+      text-align: center;
+      padding-top: 2rem;
+      img {
+        width: 50%;
+      }
+      p {
+        font-size: x-large;
+        max-width: 20ch;
+      }
+    }
+  }
+  #courses {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+  #work {
+    text-align: center;
+  }
+  #work p {
+    margin: 0 auto;
+  }
+}
