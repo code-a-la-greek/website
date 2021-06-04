@@ -1,6 +1,6 @@
 #about {
   min-height: 100vh;
-  padding-bottom: 1rem;
+  padding: 2rem 0;
 }
 #courses {
   padding: 0 1rem;
@@ -16,7 +16,9 @@
     padding: 10px 0;
   }
 }
-
+#work {
+  padding: 2rem 0;
+}
 @media (min-width: 700px) {
   #about {
     h2 {

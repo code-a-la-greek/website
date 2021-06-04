@@ -2,8 +2,8 @@
   position: fixed;
   padding: 0.5rem;
   font-size: x-large;
-  background-color: gray;
-  width: 100%;
+  background-color: beige;
+  border-radius: 10px;
 }
 
 nav {
@@ -46,6 +46,7 @@ nav {
     }
   }
 }
+//NAVBAR ON TOP
 @media (min-width: 700px) and (max-width: 1000px) {
   nav {
     visibility: initial;
@@ -76,6 +77,7 @@ nav {
     }
   }
 }
+//MOBILE TRANSFORMS
 @media (max-width: 700px) {
   nav {
     transform: translateX(-110vw);

@@ -14,4 +14,4 @@ window.onload = () => {
     buttonUp.addEventListener('click', goingUp)
     window.addEventListener('scroll', scrollFunction)
     showProjects('#about article', 1);
-};
+}
