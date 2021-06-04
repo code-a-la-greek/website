@@ -17,12 +17,14 @@
 @media (min-width: 700px) {
   #recentProjects {
     min-height: 90vh;
-    grid-template-columns: min-content max-content;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: center;
+    width: 80%;
+    margin: auto;
     h2 {
-      font-size: clamp(4rem, 8vw, 8rem);
+      font-size: clamp(4rem, 8vw, 100px);
       line-height: 6rem;
+      width: min-content;
     }
   }
 }

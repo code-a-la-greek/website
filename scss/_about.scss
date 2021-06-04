@@ -1,5 +1,18 @@
 #about {
   padding: 2rem 0;
+  section p:nth-child(1) {
+    font-size: large;
+    max-width: 20ch;
+    font-style: italic;
+    margin: auto;
+  }
+}
+
+#about section {
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: center;
 }
 #courses {
   padding: 0 1rem;
@@ -19,26 +32,13 @@
 }
 @media (min-width: 700px) {
   #about {
-    h2 {
-      text-align: center;
-    }
-
     p {
       margin: 0 auto;
-      font-size: large;
       padding-top: 1rem;
-    }
-    p:nth-child(4) {
-      font-size: larger;
-      max-width: 20ch;
-      font-style: italic;
     }
     article {
       text-align: center;
       padding: 2rem 0;
-      img {
-        width: 50%;
-      }
     }
   }
   #courses {
@@ -52,5 +52,19 @@
   }
   #work p {
     margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  article img {
+    width: 50%;
+  }
+  #about section {
+    padding: 3rem 0;
+    grid-auto-flow: column;
+  }
+}
+@media (min-width: 1400px) {
+  #about section p:nth-child(1) {
+    font-size: xx-large;
   }
 }
