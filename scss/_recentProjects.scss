@@ -16,9 +16,9 @@
 
 @media (min-width: 700px) {
   #recentProjects {
-    min-height: 100vh;
+    min-height: 90vh;
     grid-template-columns: min-content max-content;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     h2 {
       font-size: clamp(4rem, 8vw, 8rem);
