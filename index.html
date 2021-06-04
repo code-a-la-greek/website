@@ -54,7 +54,7 @@
 
     <section id="recentProjects">
       <h2>Latest Project</h2>
-      <article>
+      <article class="project-card">
         <div>
           <h3>Title</h3>
           <p>Desctiption-info</p>
@@ -69,23 +69,24 @@
       </article>
     </section>
 
-    <a href="http://" target="_blank" rel="noopener noreferrer">More projects on Github</a>
-    <a href="http://" target="_blank" rel="noopener noreferrer">More projects on Frontend Mentor</a>
+    <section class="link4more">
+      <a href="http://" target="_blank" rel="noopener noreferrer" class="button">More projects on Github</a>
+      <a href="http://" target="_blank" rel="noopener noreferrer" class="button">More projects on Frontend Mentor</a>
+    </section>
 
     <article id="about">
       <h2>About Me</h2>
       <p>
         I am Panagiotis and I'm currently working in the automobile industry.
         In April 2020, I had the opportunity to join Codecademy and start a
-        Web-Development course. </p>
-      <p>
-        Recently I joined Frontend Mentor, a site where I can complete
+        Web-Development course.  Recently I joined Frontend Mentor, a site where I can complete
         frontend challenges.</p>
+     
       <section>
         <p>
           All the projects in my portfolio are either based on exercises during
           my studies in Codecademy or completed challenges from Frontend Mentor.</p>
-        <article>
+        <article class="project-card">
           <div>
             <h3>Title</h3>
             <p>Desctiption-info</p>
@@ -106,7 +107,7 @@
       <ul id="courses">
         <script id="courses-template" type="text/x-handlebars-template">
                   {{#each courses}}
-                    <li>
+                    <li class="box-courses">
                       <h5>
                         {{title}}
                       </h5>
@@ -130,7 +131,6 @@
                               >
                                 {{title}}
                               </a>
-      
                               <i class="fas fa-external-link-square-alt"></i>
                             </li>
                           {{/each}}
@@ -140,7 +140,7 @@
                   {{/each}}
       
                   {{#each other}}
-                    <li>
+                    <li class="box-courses">
                       <h5>
                         {{title}}
                       </h5>
@@ -151,7 +151,6 @@
                       >
                         {{info}}
                       </a>
-      
                       <i class="fas fa-external-link-square-alt"></i>
                     </li>
                   {{/each}}

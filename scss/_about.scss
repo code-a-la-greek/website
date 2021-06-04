@@ -1,5 +1,10 @@
 #about {
   padding: 2rem 0;
+  p {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 80%;
+  }
   section p:nth-child(1) {
     font-size: large;
     max-width: 20ch;
@@ -9,10 +14,12 @@
 }
 
 #about section {
+  margin-top: 1rem;
   display: grid;
   grid-auto-flow: row;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 #courses {
   padding: 0 1rem;
@@ -23,18 +30,24 @@
   details {
     padding-top: 1rem;
   }
-  li {
-    padding: 10px 0;
-  }
+  
 }
 #work {
   padding: 2rem 0;
 }
+
+.box-courses {
+  border-radius: 10px;
+  padding: 1rem;
+  &:hover {
+    box-shadow: 0px 10px 13px -7px #000000;
+  }
+}
+
 @media (min-width: 700px) {
   #about {
     p {
-      margin: 0 auto;
-      padding-top: 1rem;
+      width: initial;
     }
     article {
       text-align: center;
@@ -44,8 +57,12 @@
   #courses {
     grid-auto-flow: column;
     gap: 5px;
-    min-height: 50vh;
+    a {
+      display: inline;
+    }
   }
+  
+
   #work {
     text-align: center;
     padding-bottom: 4rem;

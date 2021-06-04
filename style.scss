@@ -1,3 +1,4 @@
+@use './scss/colors';
 @use './scss';
 
 @keyframes sweep {
@@ -10,6 +11,9 @@
     margin-top: 0px;
   }
 }
+/*COLORS*/
+
+
 /*GENERAL*/
 * {
   margin: 0;
@@ -28,11 +32,16 @@ img {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   text-align: center;
+  color: colors.$paragraphs;
 }
 ul {
   list-style: none;
+}
+details {
+  cursor: pointer;
 }
 details[open] summary ~ * {
   animation: sweep 0.5s ease-in-out;
@@ -52,6 +61,7 @@ h3 {
 }
 
 p {
+  color: colors.$paragraphs;
   max-width: 45ch;
   padding-bottom: 1rem;
 }
@@ -65,9 +75,12 @@ body {
 
 main {
   padding: 0 1rem;
-  background-color: beige;
   display: grid;
   grid-auto-flow: row;
+}
+
+.link4more {
+  text-align: center;
 }
 
 @media (min-width: 1000px) {

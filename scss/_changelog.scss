@@ -1,13 +1,12 @@
 footer {
   padding: 0 1rem;
-  background-color: gray;
   height: 100vh;
   overflow: scroll;
   ul {
     margin-bottom: 1rem;
     list-style: initial;
     padding: 0 2rem;
-    border: 1px solid white;
     border-radius: 20px;
   }
+  a{text-decoration: underline;}
 }

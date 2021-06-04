@@ -1,16 +1,18 @@
 #recentProjects {
   display: grid;
   padding-bottom: 1rem;
+
   h2 {
     margin-top: 1rem;
   }
-  section {
+  }
+
+.project-card {
+  border-radius: 10px;
+  padding: 1rem;
+  div {
     display: grid;
     grid-auto-flow: row;
-    div {
-      display: grid;
-      grid-auto-flow: row;
-    }
   }
 }
 
@@ -19,12 +21,12 @@
     min-height: 90vh;
     grid-template-columns: 1fr auto;
     align-items: center;
-    width: 80%;
-    margin: auto;
+    padding-right: 1rem;
     h2 {
       font-size: clamp(4rem, 8vw, 100px);
       line-height: 6rem;
       width: min-content;
+      justify-self: center;
     }
   }
 }
