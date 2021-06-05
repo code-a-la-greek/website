@@ -1,33 +1,60 @@
 @use './index';
-$color-nav: (
+/* --color-nav: (
   back: #bae8e8,
   onhover: #e3f6f5,
 );
-$main-background: #fffffe;
-$button-highlight: #ffd803;
-$button-text-Headlines: #272343;
-$paragraphs: #2d334a;
+--main-background: #fffffe;
+--button-highlight: #ffd803;
+--button-text-Headlines: #272343;
+--paragraphs: #2d334a; */
 
+:root {
+  --color-nav-back: #bae8e8;
+  --color-nav-onhover: #e3f6f5;
+  --main-background: #fffffe;
+  --button-highlight: #ffd803;
+  --button-text-Headlines: #272343;
+  --paragraphs: #2d334a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-nav-back: #0f0e17;
+    --color-nav-onhover: #fffffe;
+    --main-background: #0f0e17;
+    --button-highlight: #ff8906;
+    --button-text-Headlines: #fffffe;
+    --paragraphs: #a7a9be;
+  }
+  }
+
+a,
+p {
+  color: var(--paragraphs);
+}
 nav,
 #sidenav-button,
 .project-card,
 #about {
-  background-color: map-get($map: $color-nav, $key: back);
+  background-color: var(--color-nav-back);
 }
-nav a:hover,nav a:focus, form p, fieldset  {
-    color: map-get($map: $color-nav, $key: onhover);
+nav a:hover,
+nav a:focus,
+form p,
+fieldset {
+  color: var(--color-nav-onhover);
 }
 
 .button:hover,
 .button:focus {
-  background-color: map-get($map: $color-nav, $key: onhover);
+  background-color: var(--button-highlight);
 }
 
 main i,
 a:active,
 .link4more a,
 form button:active {
-  color: $button-highlight;
+  color: var(--button-highlight);
 }
 
 main i {
@@ -43,41 +70,43 @@ h4,
 h5,
 .link4more a:focus,
 .link4more a:hover {
-  color: $button-text-Headlines;
+  color: var(--button-text-Headlines);
 }
 
 #recentProjects,
 #about p,
-#about .project-card {
-  background-color: $main-background;
+#about .project-card,
+.link4more {
+  background-color: var(--main-background);
 }
 
 .link4more a:hover,
-.link4more a:focus, form button {
-  background-color: $button-highlight;
+.link4more a:focus,
+form button {
+  background-color: var(--button-highlight);
 }
 
 .link4more a,
 form,
 form button:active {
-  background-color: $button-text-Headlines;
+  background-color: var(--button-text-Headlines);
 }
 
 form h2 {
-    color: $main-background;
-  }
+  color: var(--main-background);
+}
 
 footer ul {
-  border: 2px solid $paragraphs;
+  border: 2px solid var(--paragraphs);
 }
 
 @media (min-width: 700px) {
   nav {
-    border-bottom: 5px solid $button-text-Headlines;
+    border-bottom: 5px solid var(--button-text-Headlines);
   }
 }
 @media (min-width: 1000px) {
   nav {
-    border-right: 5px solid $button-text-Headlines;
+    border-right: 5px solid var(--button-text-Headlines);
   }
 }

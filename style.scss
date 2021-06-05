@@ -33,7 +33,6 @@ a {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: colors.$paragraphs;
 }
 ul {
   list-style: none;
@@ -60,11 +59,9 @@ h3 {
 
 p {
   border-radius: 10px;
-  color: colors.$paragraphs;
   max-width: 45ch;
   padding-bottom: 1rem;
 }
-
 /*LAYOUT*/
 body {
   min-width: 320px;
