@@ -5,7 +5,7 @@ const coursesList = {
         {
             title: "Web Development",
             info:
-                "This course contains a collection of lessons about both front- and back-end development.",
+                "This course contains lessons about both front- and back-end development. It begins with the basics, HTML-CSS-Javascript and it progresses quickly through React, back-end Javascript, SQL and Test-Driven-Development.",
             progress: "In progress: 62%",
             lessons: [
                 {
@@ -48,7 +48,7 @@ const coursesList = {
         {
             title: "Front-End Engineer",
             info:
-                "This course contains a collection of lessons about front-end development.",
+                "This course focuses on front-end development, from languages like HTML, CSS, and JavaScript, to frameworks like React and Redux, to interview skills, like whiteboarding and data structures.",
             progress: "In progress: 51%",
             lessons: [
                 {
@@ -82,20 +82,24 @@ const coursesList = {
                         "https://www.codecademy.com/profiles/PakisGr/certificates/f4276e8c08a3ba174ef0147deb0c3013",
                 },
             ]
+        },
+        {
+            title: "Sass",
+            info:"This course contains lessons about Scss syntax, nesting, functions, partials."
         }
     ],
-    other: [{
+    /*other: [{
         title: "Sass",
         info: "This course contains lessons about Scss syntax, nesting, functions, partials.",
         link:
             "https://www.codecademy.com/profiles/PakisGr/certificates/eb1ffda40f347629dcef6de33d3f9741",
-    },
+    } ,
     {
         title: "Wix-Website editor",
         info: "Create a Professional Website with Velo by Wix.",
         link:
             "https://www.codecademy.com/profiles/PakisGr/certificates/9605a581bda107153c433f7889dbc268",
-    },]
+    }, ]*/
 };
 
 function showCourses() {

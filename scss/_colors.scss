@@ -1,112 +1,74 @@
 @use './index';
-/* --color-nav: (
-  back: #bae8e8,
-  onhover: #e3f6f5,
-);
---main-background: #fffffe;
---button-highlight: #ffd803;
---button-text-Headlines: #272343;
---paragraphs: #2d334a; */
-
-:root {
-  --color-nav-back: #bae8e8;
-  --color-nav-onhover: #e3f6f5;
-  --main-background: #fffffe;
-  --button-highlight: #ffd803;
-  --button-text-Headlines: #272343;
-  --paragraphs: #2d334a;
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-back: #bae8e8;
+    --button-highlight: #ffd803;
+    --button-Headlines: #272343;
+    --text: #2d334a;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-nav-back: #0f0e17;
-    --color-nav-onhover: #fffffe;
-    --main-background: #0f0e17;
+    --color-back: black;
     --button-highlight: #ff8906;
-    --button-text-Headlines: #fffffe;
-    --paragraphs: #a7a9be;
+    --button-Headlines: #bae8e8;
+    --text: #d3d3d3;
+    --main-button-text: #272343;
   }
-  }
-
-a,
-p {
-  color: var(--paragraphs);
-}
-nav,
-#sidenav-button,
-.project-card,
-#about {
-  background-color: var(--color-nav-back);
-}
-nav a:hover,
-nav a:focus,
-form p,
-fieldset {
-  color: var(--color-nav-onhover);
 }
 
-.button:hover,
-.button:focus {
-  background-color: var(--button-highlight);
-}
-
-main i,
-a:active,
-.link4more a,
-form button:active {
+a:not(.social-links a, .box-courses a, .project-card a:nth-child(3)):hover,
+a:not(.social-links a, .box-courses a, .project-card a:nth-child(3)):active,
+a:not(.social-links a, .box-courses a, .project-card a:nth-child(3)):focus,
+button:not(form button):hover,
+button:not(form button):active,
+#sidenav-button {
   color: var(--button-highlight);
 }
 
-main i {
-  opacity: 0.7;
+nav a,
+p,
+.box-courses a {
+  color: var(--text);
 }
 
-.button,
 button,
-h1,
-h2,
-h3,
-h4,
-h5,
-.link4more a:focus,
-.link4more a:hover {
-  color: var(--button-text-Headlines);
+.button {
+  color: var(--button-Headlines);
+  box-shadow: 0px 10px 13px -7px gray;
 }
 
-#recentProjects,
-#about p,
-#about .project-card,
-.link4more {
-  background-color: var(--main-background);
+nav {
+  background-color: var(--color-back);
 }
 
-.link4more a:hover,
-.link4more a:focus,
+.project-card {
+  background-color: var(--color-back);
+  a:nth-child(3) {
+    color: var(--main-button-text);
+    background-color: var(--button-highlight);
+  }
+}
 form button {
   background-color: var(--button-highlight);
 }
-
-.link4more a,
-form,
-form button:active {
-  background-color: var(--button-text-Headlines);
-}
-
-form h2 {
-  color: var(--main-background);
+form {
+  background-color: var(--color-back);
 }
 
 footer ul {
-  border: 2px solid var(--paragraphs);
+  border: 2px solid var(--button-Headlines);
 }
 
 @media (min-width: 700px) {
   nav {
-    border-bottom: 5px solid var(--button-text-Headlines);
+    border-bottom: 5px solid var(--button-Headlines);
   }
 }
+
 @media (min-width: 1000px) {
   nav {
-    border-right: 5px solid var(--button-text-Headlines);
+    border-right: 4px solid;
   }
 }

@@ -10,7 +10,7 @@
     content="Welcome to my portfolio. I started studying Web-Development in 2020. I hope you enjoy my projects 😀" />
   <meta property="og:image"
     content="https://d33wubrfki0l68.cloudfront.net/4c7149890e0a2aa8bf45068d07fb76c32cc678c2/f5888/pictures/profile-photo-small.webp" />
-    <!-- <meta name="color-scheme" content="light dark" /> -->
+  <meta name="color-scheme" content="light dark" />
   <script defer src="https://kit.fontawesome.com/a72b9e7ca4.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>P.Panagiotakopoulos | Front-end Developer</title>
@@ -40,7 +40,7 @@
     </div>
     <hr aria-hidden="true" />
     <ul class="navbar" id="navbar">
-      <!-- <li><a href="#">PROJECTS</a></li> -->
+      <li><a href="#recentProjects">PROJECTS</a></li>
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#contact">CONTACT</a></li>
       <li>
@@ -73,8 +73,7 @@
     <section class="link4more">
       <a href="https://github.com/PanuGr?tab=repositories" class="button">More
         projects on Github</a>
-      <a href="https://www.frontendmentor.io/profile/PanuGr"
-        class="button">More projects on Frontend Mentor</a>
+      <a href="https://www.frontendmentor.io/profile/PanuGr" class="button">More projects on Frontend Mentor</a>
     </section>
 
     <article id="about">
@@ -106,7 +105,7 @@
     </article>
 
     <article>
-      <h3>Courses and Tools</h3>
+      <h3>Courses <!-- and Tools --></h3>
       <ul id="courses">
         <script id="courses-template" type="text/x-handlebars-template">
                   {{#each courses}}
@@ -120,7 +119,7 @@
                       <p>
                         {{progress}}
                       </p>
-                      <details>
+                     <!--  <details>
                         <summary>
                           Completed lessons
                         </summary>
@@ -139,10 +138,10 @@
                           {{/each}}
                         </ul>
                       </details>
-                    </li>
+                    </li> -->
                   {{/each}}
       
-                  {{#each other}}
+                  <!-- {{#each other}}
                     <li class="box-courses">
                       <h5>
                         {{title}}
@@ -156,7 +155,7 @@
                       </a>
                       <i class="fas fa-external-link-square-alt"></i>
                     </li>
-                  {{/each}}
+                  {{/each}} -->
                 </script>
       </ul>
     </article>
