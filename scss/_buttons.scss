@@ -1,0 +1,23 @@
+#buttonUp {
+  float: right;
+  position: fixed;
+  right: 0;
+  bottom: 1rem;
+  font-size: x-large;
+  visibility: hidden;
+  border: none;
+  border-radius: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.button {
+  margin: 10px 0;
+  padding: 0.5rem;
+  border-radius: 20px;
+  &:hover {
+    box-shadow: 0px 10px 13px -7px #000000;
+  }
+}
+
+

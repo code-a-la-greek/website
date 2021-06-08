@@ -10,5 +10,9 @@ module.exports = {
   optimize: {
     bundle: true,
     minify: true,
-  },
+    sourcemap: false,
+    treeshake: true,
+    manifest: false
+  }
 };
+
