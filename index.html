@@ -13,6 +13,7 @@
   <meta name="color-scheme" content="light dark" />
   <script defer src="https://kit.fontawesome.com/a72b9e7ca4.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="./index.js"></script>
   <title>P.Panagiotakopoulos | Front-end Developer</title>
 </head>
 
@@ -66,7 +67,7 @@
             VIEW CODE
             <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
         </div>
-        <img src="./pictures/profile-card.webp" width="500" height="500" aria-hidden="true" alt="">
+        <img src="./pictures/placeholder-photo.webp" width="500" height="500" aria-hidden="true" alt="">
       </article>
     </section>
 
@@ -99,7 +100,7 @@
               VIEW CODE
               <i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a>
           </div>
-          <img src="./pictures/profile-card.webp" width="500" height="500" aria-hidden="true" alt="">
+          <img src="./pictures/placeholder-photo.webp" width="500" height="500" aria-hidden="true" alt="">
         </article>
       </section>
     </article>
@@ -117,49 +118,12 @@
                         {{info}}
                       </p>
                       <p>
-                        {{progress}}
+                        {{{progress}}}
                       </p>
-                     <!--  <details>
-                        <summary>
-                          Completed lessons
-                        </summary>
-                        <ul>
-                          {{#each lessons}}
-                            <li>
-                              <a
-                                href={{link}}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                {{title}}
-                              </a>
-                              <i class="fas fa-external-link-square-alt"></i>
-                            </li>
-                          {{/each}}
-                        </ul>
-                      </details>
-                    </li> -->
                   {{/each}}
-      
-                  <!-- {{#each other}}
-                    <li class="box-courses">
-                      <h5>
-                        {{title}}
-                      </h5>
-                      <a
-                        href={{link}}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {{info}}
-                      </a>
-                      <i class="fas fa-external-link-square-alt"></i>
-                    </li>
-                  {{/each}} -->
                 </script>
       </ul>
     </article>
-
     <article id="work">
       <h3>Experience</h3>
       <p>
@@ -271,7 +235,7 @@
               </script>
     </footer>
   </main>
-  <script type="module" src="./index.js"></script>
+
 </body>
 
 </html>

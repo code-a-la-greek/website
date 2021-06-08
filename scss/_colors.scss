@@ -1,13 +1,10 @@
 @use './index';
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-back: #bae8e8;
-    --button-highlight: #ffd803;
-    --button-Headlines: #272343;
-    --text: #2d334a;
-  }
+:root {
+  --color-back: #bae8e8;
+  --button-highlight: #ffd803;
+  --button-Headlines: #272343;
+  --text: #2d334a;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --color-back: black;
