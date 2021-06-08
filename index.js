@@ -10,7 +10,7 @@ window.onload = () => {
     showProjects('#about article', 1);
     showCourses();
     showChangelog();
-    document.getElementsByTagName('a')[8].addEventListener('click', scrollToLast)
+    document.getElementsByTagName('a')[9].addEventListener('click', scrollToLast)
     buttonUp.addEventListener('click', goingUp)
     window.addEventListener('scroll', scrollFunction)
 }
