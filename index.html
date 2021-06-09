@@ -10,12 +10,11 @@
     content="Welcome to my portfolio. I started studying Web-Development in 2020. I hope you enjoy my projects 😀" />
   <meta property="og:image"
     content="https://d33wubrfki0l68.cloudfront.net/4c7149890e0a2aa8bf45068d07fb76c32cc678c2/f5888/pictures/profile-photo-small.webp" />
-  <meta name="color-scheme" content="light dark" />
   <script defer src="https://kit.fontawesome.com/a72b9e7ca4.js"></script>
   <link rel="stylesheet" href="style.css">
   <script type="module" src="./index.js"></script>
   <title>P.Panagiotakopoulos | Front-end Developer</title>
-  </head>
+</head>
 
 <body>
   <a href="#sidenav-open" id="sidenav-button" title="Open Menu" aria-label="Open Menu"><i class="fas fa-bars"></i></a>
@@ -25,6 +24,7 @@
       aria-hidden="true" />
     <h1>P. Panagiotakopoulos</h1>
     <p>Front-end developer</p>
+    <button id="dark-mode">☀️</button>
     <div class="social-links">
       <a href="https://github.com/PanuGr" title="link to github profile" aria-label="link to github profile"><i
           class="fab fa-github"></i></a>
@@ -208,9 +208,9 @@
       </section>
       <fieldset>
         <label for="name">Name*</label>
-        <input type="text" id="name" name="name" required aria-required="true"/>
+        <input type="text" id="name" name="name" required aria-required="true" />
         <label for="mail">Email</label>
-        <input type="email" id="mail" name="mail"/>
+        <input type="email" id="mail" name="mail" />
         <label for="subject">Message*</label>
         <textarea id="subject" name="subject" rows="3" cols="20" required aria-required="true"></textarea>
         <button type="submit">
@@ -238,14 +238,34 @@
     </footer>
   </main>
 </body>
-<script >
+<script>
   if (navigator.connection.effectiveType < '3g') {
-  document.querySelectorAll('img').forEach(img => {
-    img.style.display = 'none'
+    document.querySelectorAll('img').forEach(img => {
+      img.style.display = 'none'
+    });
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.style.display = 'none'
+    });
+  }
+
+  const button = document.querySelector("button");
+  const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+  function toggleDarkMode(state) {
+    document.documentElement.classList.toggle("dark-mode", state);
+  }
+
+  toggleDarkMode(useDark.matches);
+
+  useDark.addListener((evt) => toggleDarkMode(evt.matches));
+
+  button.addEventListener("click", () => {
+    if (button.innerHTML === "🌙") {
+      button.innerHTML = "☀️"
+    } else {
+      button.innerHTML = "🌙"
+    }
+    document.documentElement.classList.toggle("dark-mode");
   });
-  document.querySelectorAll('.project-card').forEach(card => {
-    card.style.display = 'none'
-  });
-}
 </script>
+
 </html>

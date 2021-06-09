@@ -17,7 +17,7 @@ const coursesList = {
         {
             title: "Sass",
             info:"This course contains lessons about Scss syntax, nesting, functions, partials.",
-            progress:"<a style='color:orange;' href='https://www.codecademy.com/profiles/PakisGr/certificates/0a6884fad1dbf4afe5df084d2ec1e7c3'>Certificate of completion</a>"
+            progress:"<a style='text-decoration:underline' href='https://www.codecademy.com/profiles/PakisGr/certificates/0a6884fad1dbf4afe5df084d2ec1e7c3'>Certificate of completion</a>"
         }
     ]
 };
