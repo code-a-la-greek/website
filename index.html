@@ -207,12 +207,12 @@
         </p>
       </section>
       <fieldset>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required aria-required="true"/>
         <label for="mail">Email</label>
-        <input type="email" id="mail" name="mail" required />
-        <label for="subject">Message</label>
-        <textarea id="subject" name="subject" rows="3" cols="20" required></textarea>
+        <input type="email" id="mail" name="mail"/>
+        <label for="subject">Message*</label>
+        <textarea id="subject" name="subject" rows="3" cols="20" required aria-required="true"></textarea>
         <button type="submit">
           <i class="fa fa-paper-plane"></i> Send Message
         </button>
