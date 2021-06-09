@@ -10,6 +10,7 @@
     content="Welcome to my portfolio. I started studying Web-Development in 2020. I hope you enjoy my projects 😀" />
   <meta property="og:image"
     content="https://d33wubrfki0l68.cloudfront.net/4c7149890e0a2aa8bf45068d07fb76c32cc678c2/f5888/pictures/profile-photo-small.webp" />
+    <meta name="color-scheme" content="light dark" />
   <script defer src="https://kit.fontawesome.com/a72b9e7ca4.js"></script>
   <link rel="stylesheet" href="style.css">
   <script type="module" src="./index.js"></script>
@@ -239,6 +240,7 @@
   </main>
 </body>
 <script>
+  //network optimization
   if (navigator.connection.effectiveType < '3g') {
     document.querySelectorAll('img').forEach(img => {
       img.style.display = 'none'
@@ -248,6 +250,8 @@
     });
   }
 
+
+  //dark mode
   const button = document.querySelector("button");
   const useDark = window.matchMedia("(prefers-color-scheme: dark)");
   function toggleDarkMode(state) {
@@ -255,8 +259,6 @@
   }
 
   toggleDarkMode(useDark.matches);
-
-  useDark.addListener((evt) => toggleDarkMode(evt.matches));
 
   button.addEventListener("click", () => {
     if (button.innerHTML === "🌙") {
