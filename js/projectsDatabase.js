@@ -1,19 +1,18 @@
 const projects = {
   projects: [
     {
+      link: "https://panugr.github.io/coming-soon",
+      code: "https://github.com/PanuGr/coming-soon",
+      title: "Coming-soon page",
+      description: "I made the layout with css grid and I've used custom form validation",
+    },
+    
+    {
       link: "https://panugr.github.io/four-cards",
       code: "https://github.com/PanuGr/four-cards",
       title: "4-cards grid",
       description: "A section with 4 cards, build with CSS Grid",
-      info: ""
-    },
-    {
-      link: "https://panugr.github.io/article-component/",
-      code: "https://github.com/PanuGr/article-component",
-      title: "Article-component",
-      description: "An article-card with sharing options",
-      info: " Build with html and scss. I've used javascript to toggle the share button."
-    }
+    }    
   ]
 };
 
@@ -33,7 +32,7 @@ const projectsDatabase = projects.projects;
 function showProjects(element, number) {
   document.querySelector(`${element} h3`).innerHTML = projectsDatabase[number].title;
   document.querySelector(`${element} p`).innerHTML =
-    `${projectsDatabase[number].description}. ${projectsDatabase[number].info}`;
+    `${projectsDatabase[number].description}`;
   document.querySelector(`${element} a:nth-child(3)`).setAttribute('href', projectsDatabase[number].link);
   document.querySelector(`${element} a:nth-child(4)`).setAttribute('href', projectsDatabase[number].code);
 }
