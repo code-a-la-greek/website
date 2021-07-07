@@ -1,18 +1,18 @@
 const projects = {
   projects: [
     {
-      link: "https://panugr.github.io/coming-soon",
-      code: "https://github.com/PanuGr/coming-soon",
-      title: "Coming-soon page",
-      description: "I made the layout with css grid and I've used custom form validation",
+      link: "https://panugr.github.io/landing-page",
+      code: "https://github.com/PanuGr/landing-page",
+      title: "Project with a two- column layout.",
+      description: "The layout is made with grid, with a 'grid-template-rows: auto 1fr auto;'. The main content is divided in two columns automatically when the screen size is around 600px, using 'grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));'",
     },
-    
-    {
-      link: "https://panugr.github.io/four-cards",
-      code: "https://github.com/PanuGr/four-cards",
-      title: "4-cards grid",
-      description: "A section with 4 cards, build with CSS Grid",
-    }    
+
+  {
+    link: "https://panugr.github.io/signup-form",
+    code: "https://github.com/PanuGr/signup-form",
+    title: "A signup form, build with grid",
+    description: "Signup form, build with grid. I use built-in form validation but I've also added validation when typing. For showing errors I use the css selector ':invalid'",
+  }    
   ]
 };
 
