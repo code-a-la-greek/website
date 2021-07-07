@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon" />
+    <meta name="description"
+        content="Welcome to my portfolio. I started studying Web-Development in 2020. I hope you enjoy my projects 😀" />
+    <meta property="og:image"
+        content="https://d33wubrfki0l68.cloudfront.net/4c7149890e0a2aa8bf45068d07fb76c32cc678c2/f5888/pictures/profile-photo-small.webp" />
+    <meta name="color-scheme" content="light dark" />
+    <script defer src="https://kit.fontawesome.com/a72b9e7ca4.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./js/featuredProjects.js"></script>
+    <title>P.Panagiotakopoulos | Featured Projects</title>
+</head>
+
+<body>
+    <header>
+        <a href="#sidenav-open" id="sidenav-button" title="Open Menu" aria-label="Open Menu"><i
+                class="fas fa-bars"></i></a>
+        <nav id="sidenav-open">
+            <a href="#" id="sidenav-close" title="Close Menu" aria-label="Close Menu"><i class="fas fa-times"></i></a>
+            <img src="/pictures/profile-photo-small.webp" width="400" height="400" alt="profile photo of Panagiotis"
+                aria-hidden="true" />
+            <h1>P. Panagiotakopoulos</h1>
+            <p>Front-end developer</p>
+            <button id="dark-mode">☀️</button>
+            <div class="social-links">
+                <a href="https://github.com/PanuGr" title="link to github profile"
+                    aria-label="link to github profile"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/p-panagiotakopoulos/" title="link to Linkedin profile"
+                    aria-label="link to Linkedin profile"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.frontendmentor.io/profile/PanuGr" title="Frond-End mentor profile"
+                    aria-label="Frond-End mentor profile">
+                    <img src="./pictures/front-mentor.png" width="50" height="20" alt="" aria-hidden="true" />
+                </a>
+                <a href="https://www.codecademy.com/profiles/PakisGr" title="link to Codecademy profile"
+                    aria-label="link to Codecademy profile">
+                    <img src="./pictures/codecademy.webp" width="50" height="50" alt="" aria-hidden="true" />
+                </a>
+            </div>
+            <hr aria-hidden="true" />
+            <ul class="navbar" id="navbar">
+                <li><a href="./index.html">HOME</a></li>
+                <!-- <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li>
+              <a href="#changelog">CHANGELOG</a>
+            </li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <button id="buttonUp" aria-label="click to scroll up">
+            <i class="fas fa-arrow-alt-circle-up fa-lg"></i>
+        </button>
+
+
+    </main>
+
+    <script>
+        //network optimization
+        if (navigator.connection.effectiveType < "3g") {
+            confirm('Images and projects will be displayed as soon as the internet connection improves');
+            document.querySelectorAll("img").forEach((img) => {
+                img.style.display = "none";
+            });
+            document.querySelectorAll(".project-card").forEach((card) => {
+                card.style.display = "none";
+            });
+        }
+
+        //dark mode
+        const button = document.querySelector("button");
+        const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+        function toggleDarkMode(state) {
+            document.documentElement.classList.toggle("dark-mode", state);
+        }
+
+        toggleDarkMode(useDark.matches);
+
+        button.addEventListener("click", () => {
+            if (button.innerHTML === "🌙") {
+                button.innerHTML = "☀️";
+            } else {
+                button.innerHTML = "🌙";
+            }
+            document.documentElement.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+
+</html>
