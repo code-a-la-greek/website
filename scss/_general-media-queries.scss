@@ -1,0 +1,48 @@
+@media (min-width: 700px) and (max-width: 1000px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+  main {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    place-content: unset;
+    grid-template-columns: min-content 1fr;
+    font-size: larger;
+  }
+  main {
+    grid-column: 2;
+    padding: 0;
+  }
+  h2 {
+    font-size: xx-large;
+  }
+  h3 {
+    font-size: x-large;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    font-size: x-large;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  nav {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+  details[open] summary ~ * {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+  html {
+    scroll-behavior: initial;
+  }
+}

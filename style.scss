@@ -1,4 +1,3 @@
-@use './scss/colors';
 @use './scss';
 
 @keyframes sweep {
@@ -45,6 +44,10 @@ details[open] summary ~ * {
 }
 
 /*TYPO*/
+h1 {
+  font-size: x-large;
+}
+
 h2,
 h3,
 h4,
