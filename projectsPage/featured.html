@@ -45,11 +45,6 @@
             <hr aria-hidden="true" />
             <ul class="navbar" id="navbar">
                 <li><a href="/index.html">HOME</a></li>
-                <!-- <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li>
-              <a href="#changelog">CHANGELOG</a>
-            </li> -->
             </ul>
         </nav>
     </header>
@@ -73,24 +68,6 @@
                 card.style.display = "none";
             });
         }
-
-        //dark mode
-        const button = document.querySelector("button");
-        const useDark = window.matchMedia("(prefers-color-scheme: dark)");
-        function toggleDarkMode(state) {
-            document.documentElement.classList.toggle("dark-mode", state);
-        }
-
-        toggleDarkMode(useDark.matches);
-
-        button.addEventListener("click", () => {
-            if (button.innerHTML === "🌙") {
-                button.innerHTML = "☀️";
-            } else {
-                button.innerHTML = "🌙";
-            }
-            document.documentElement.classList.toggle("dark-mode");
-        });
     </script>
 </body>
 

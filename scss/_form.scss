@@ -1,36 +1,4 @@
-@use 'buttons';
-form {
-  display: grid;
-  padding: 1rem;
-  section p {
-    line-height: 30px;
-  }
-}
 
-fieldset {
-  max-width: 20vw;
-  padding: 1rem;
-  display: grid;
-  gap: 10px;
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 0 auto;
-  button {
-    cursor: pointer;
-    @extend .button;
-    width: 100%;
-  }
-}
-
-input,
-textarea {
-  border-radius: 5px;
-}
-
-input:focus,
-textarea:focus {
-  box-shadow: 0 0 8px 0 orange;
-}
 @media (min-width: 700px) {
   form {
     padding: 4rem 0;
