@@ -53,7 +53,7 @@ section { padding: 2rem 0; }
 
 .project-card div { display: grid; grid-auto-flow: row; }
 
-.projects { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 1rem; }
+.flexbox { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 1rem; }
 
 #about { padding-top: 2rem; }
 

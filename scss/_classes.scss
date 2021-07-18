@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  text-transform: uppercase;
+}
+.dark-switch {
+  font-size: x-large;
+  cursor: pointer;
+  //background-color: transparent;
+  border: none;
+}
+
+.button-primary {
+  /*  background-color: #ff8906;
+  color: black; */
+}
+.button {
+  margin: 10px auto;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  /* box-shadow: 0px 10px 13px -7px gray;
+  &:hover {
+    box-shadow: 0px 10px 13px -7px #000000;
+  } */
+}
+
+.buttonUp {
+  position: fixed;
+  right: 0;
+  bottom: 1rem;
+  font-size: x-large;
+  visibility: hidden;
+  border: none;
+  border-radius: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-card {
+  //background-color: black;
+  border-radius: 10px;
+  padding: 1rem;
+  div {
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+
+.box-courses {
+  border-radius: 10px;
+  padding: 1rem;
+  &:hover {
+    box-shadow: 0px 10px 13px -7px #000000;
+  }
+}

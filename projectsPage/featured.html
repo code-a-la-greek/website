@@ -18,39 +18,25 @@
 </head>
 
 <body>
-    <header>
-        <a href="#sidenav-open" id="sidenav-button" title="Open Menu" aria-label="Open Menu"><i
-                class="fas fa-bars"></i></a>
-        <nav id="sidenav-open">
-            <a href="#" id="sidenav-close" title="Close Menu" aria-label="Close Menu"><i class="fas fa-times"></i></a>
-            <img src="/pictures/profile-photo-small.webp" width="400" height="400" alt="profile photo of Panagiotis"
-                aria-hidden="true" />
-            <h1>P. Panagiotakopoulos</h1>
-            <p>Front-end developer</p>
-            <button id="dark-mode">☀️</button>
-            <div class="social-links">
-                <a href="https://github.com/PanuGr" title="link to github profile"
-                    aria-label="link to github profile"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/p-panagiotakopoulos/" title="link to Linkedin profile"
-                    aria-label="link to Linkedin profile"><i class="fa fa-linkedin"></i></a>
-                <a href="https://www.frontendmentor.io/profile/PanuGr" title="Frond-End mentor profile"
-                    aria-label="Frond-End mentor profile">
-                    <img src="/pictures/front-mentor.png" width="50" height="20" alt="" aria-hidden="true" />
-                </a>
-                <a href="https://www.codecademy.com/profiles/PakisGr" title="link to Codecademy profile"
-                    aria-label="link to Codecademy profile">
-                    <img src="/pictures/codecademy.webp" width="50" height="50" alt="" aria-hidden="true" />
-                </a>
-            </div>
-            <hr aria-hidden="true" />
-            <ul class="navbar" id="navbar">
-                <li><a href="/index.html">HOME</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="sidenav-open">
+
+        <a href="/" aria-label="Reload page " title="Reload page">
+          <img src="/pictures/profile-photo-small.webp" width="400" height="400" alt="profile photo of Panagiotis"
+            aria-hidden="true" />
+        </a>
+    
+        <ul class="navbar" id="navbar">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="#html">html & css</a></li>
+          <li><a href="#javascript">Javascript</a></li>
+          <!-- <li><a href="#bootstrap">bootstrap</a></li>
+          <li><a href="#tailwind">tailwind css</a></li> -->
+        </ul>
+        <button class="dark-switch">☀️</button>
+      </nav>
 
     <main>
-        <button id="buttonUp" aria-label="click to scroll up">
+        <button class="buttonUp" aria-label="click to scroll up">
             <i class="fas fa-arrow-alt-circle-up fa-lg"></i>
         </button>
 

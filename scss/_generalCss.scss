@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; //extra padding for navbar on top
+}
+
+body {
+  min-width: 320px;
+  margin: auto;
+  font-family: system-ui;
+  font-size: 20px;
+  display: grid;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  padding: 1rem;
+  max-width: 45ch;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  //EXTRA MARGIN FOR NAVBAR ON TOP
+  margin-top: 100px;
+}

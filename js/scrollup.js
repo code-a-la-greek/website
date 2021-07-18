@@ -1,4 +1,4 @@
-const buttonUp = document.querySelector("#buttonUp");
+const buttonUp = document.querySelector(".buttonUp");
 
 function scrollFunction() {
     if (
