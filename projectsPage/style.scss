@@ -54,7 +54,9 @@ h3 {
     align-items: flex-start;
   }
   .dark-switch {
-    margin-top: 2rem;
+    position: fixed;
+    left: 10px;
+    top: 10vw;
   }
   summary {
     text-align: center;

@@ -1,16 +1,33 @@
 :root {
-  --main-background: white;
-  --color-back: #bae8e8;
-  --button-highlight: #ffd803;
-  --button-Headlines: #272343;
-  --text: #2d334a;
+  --backgroundColor: white;
+  --blue: #bae8e8;
+  --yellow: #ffda06;
+  --pink: #272343;
+  --text: black;
 }
 
 .dark-mode {
-  --main-background: transparent;
-  --color-back: black;
-  --button-highlight: #ff8906;
-  --button-Headlines: #bae8e8;
-  --text: #d3d3d3;
-  --main-button-text: #272343;
+  --yellow: #ff8906;
+  --backgroundColor: transparent;
+  --pink: #d0adf0;
+  --text: white;
+  --blue: #272343;
+}
+
+.button-primary {
+  background-color: var(--yellow);
+  color: black;
+}
+nav,
+.project-card,
+fieldset,
+footer {
+  background-color: var(--blue);
+}
+body {
+  color: var(--text);
+  background-color: var(--backgroundColor);
+}
+a {
+  color: var(--pink);
 }

@@ -34,7 +34,6 @@ h3 {
   text-align: center;
 }
 
-
 section {
   padding: 2rem 0;
 }
@@ -60,7 +59,6 @@ section {
 }
 //FORM
 form {
-  //background-color: black;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -139,7 +137,9 @@ textarea {
     align-items: flex-start;
   }
   .dark-switch {
-    margin-top: 2rem;
+    position: fixed;
+    left: 10px;
+    top: 10vw;
   }
   summary {
     text-align: center;
