@@ -11,4 +11,12 @@ nav {
   img {
     border-radius: 50%;
   }
+  @media (max-width: 1000px) {
+    width: 100vw;
+  }
+  @media (min-width: 1024px) {
+    position: initial;
+    display: block;
+    font-size: large;
+  }
 }

@@ -18,14 +18,14 @@
 </head>
 
 <body>
-  <nav id="sidenav-open">
+  <nav>
 
     <a href="/" aria-label="Reload page " title="Reload page">
       <img src="/pictures/profile-photo-small.webp" width="400" height="400" alt="profile photo of Panagiotis"
         aria-hidden="true" />
     </a>
 
-    <ul class="navbar" id="navbar">
+    <ul class="navbar">
       <li><a href="./projectsPage/featured.html">PROJECTS</a></li>
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#contact">CONTACT</a></li>
@@ -216,22 +216,23 @@
       });
     }
 
+    //DARK MODE
     const button = document.querySelector(".dark-switch");
-const useDark = window.matchMedia("(prefers-color-scheme: dark)");
-function toggleDarkMode(state) {
-    document.documentElement.classList.toggle("dark-mode", state);
-}
-
-toggleDarkMode(useDark.matches);
-
-button.addEventListener("click", () => {
-    if (button.innerHTML === "🌙") {
-        button.innerHTML = "☀️";
-    } else {
-        button.innerHTML = "🌙";
+    const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+    function toggleDarkMode(state) {
+      document.documentElement.classList.toggle("dark-mode", state);
     }
-    document.documentElement.classList.toggle("dark-mode");
-});
+
+    toggleDarkMode(useDark.matches);
+
+    button.addEventListener("click", () => {
+      if (button.innerHTML === "🌙") {
+        button.innerHTML = "☀️";
+      } else {
+        button.innerHTML = "🌙";
+      }
+      document.documentElement.classList.toggle("dark-mode");
+    });
 
   </script>
 </body>

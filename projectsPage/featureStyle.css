@@ -1,0 +1,12 @@
+@use "../scss";
+body { overflow-x: hidden; }
+
+h1 { font-size: clamp(30px, 10vw, 90px); padding: 1rem 0; }
+
+h2 { font-size: clamp(25px, 5vw, 40px); padding: 1rem 0 0.5rem 0; width: 50vw; margin: auto; }
+
+h1, h2, h3 { text-align: center; }
+
+section { width: 85vw; margin: 0 auto; overflow-x: scroll; padding: 1rem; margin: 2rem 0; display: flex; gap: 1rem; }
+
+@media (min-width: 1024px) { /*  h1 { text-decoration: underline; }  summary { text-align: center; }*/ }
