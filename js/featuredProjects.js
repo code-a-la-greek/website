@@ -5,7 +5,7 @@ let css = [];
 let javascript = [];
 let bootstrap = [];
 
-if (navigator.connection.effectiveType >= "3g") {
+if (navigator.connection.effectiveType > "3g") {
     getData().then((project) => {
         for (const key in project) {
             switch (project[key].type) {
@@ -22,7 +22,7 @@ if (navigator.connection.effectiveType >= "3g") {
         }
         showData();
     });
-}
+}else{alert('Projects will be displayed as soon as the internet connection improves')}
 
 
 function showData() {
