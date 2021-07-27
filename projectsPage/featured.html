@@ -75,7 +75,7 @@
     <script>
         //network optimization
         if (navigator.connection.effectiveType < "3g") {
-            confirm('Images and projects will be displayed as soon as the internet connection improves');
+            alert('Images and projects will be displayed as soon as the internet connection improves');
             document.querySelectorAll("img").forEach((img) => {
                 img.style.display = "none";
             });

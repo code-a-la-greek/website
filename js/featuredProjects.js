@@ -5,6 +5,8 @@ const url =
     "https://v1.nocodeapi.com/panugr/google_sheets/GwaQLFgqhfpjKNFb?tabId=Projects 2021";
 
 //ASYNC FETCH
+
+
 const getData = async () => {
     try {
         const res = await fetch(url);
@@ -16,62 +18,50 @@ const getData = async () => {
     }
 };
 
-getData().then((project) => {
-    for (const key in project) {
-        switch (project[key].type) {
-            case "css":
-                css.push(project[key]);
-                break;
-            case "javascript":
-                javascript.push(project[key]);
-                break;
-            case "bootstrap":
-                bootstrap.push(project[key]);
-                break;
+
+if (navigator.connection.effectiveType >= "3g") {
+    getData().then((project) => {
+        for (const key in project) {
+            switch (project[key].type) {
+                case "css":
+                    css.push(project[key]);
+                    break;
+                case "javascript":
+                    javascript.push(project[key]);
+                    break;
+                case "bootstrap":
+                    bootstrap.push(project[key]);
+                    break;
+            }
         }
-    }
-    showData();
-});
+        showData();
+    });
+}
+
 
 function showData() {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 4; i++) {
         let cssProjects = css[i];
-        document.querySelector("#css").innerHTML += `<div class="project-card">
-    <div>
-        <h3>${cssProjects.title}</h3>
-        <p>${cssProjects.info}</p>
-        <a href="${cssProjects.website}" class="button button-primary"> PREVIEW SITE </a>
-        <a href="${cssProjects.github}" class="button"> VIEW CODE </a>
-    </div>
-    <img src="../pictures/screenshot0.webp" width="500" height="500" aria-hidden="true" alt="" />
-</div>`;
-    }
-    for (let i = 0; i < 5; i++) {
         let javascriptProjects = javascript[i];
-        document.querySelector(
-            "#javascript"
-        ).innerHTML += `<div class="project-card">
-              <div>
-                  <h3>${javascriptProjects.title}</h3>
-                  <p>${javascriptProjects.info}</p>
-                  <a href="${javascriptProjects.website}" class="button button-primary"> PREVIEW SITE </a>
-                  <a href="${javascriptProjects.github}" class="button"> VIEW CODE </a>
-              </div>
-              <img src="../pictures/screenshot0.webp" width="500" height="500" aria-hidden="true" alt="" />
-          </div>`;
-    }
-    for (let i = 0; i < 5; i++) {
+        codedSection(cssProjects, '#css');
+        codedSection(javascriptProjects, '#javascript');
+
+    };
+
+    //for some reason the codedsection function doesn't work for bootstrap array. That's why i repeat the loop
+    for (let i = 0; i < 4; i++) {
         let bootstrapProjects = bootstrap[i];
-        document.querySelector(
-            "#bootstrap"
-        ).innerHTML += `<div class="project-card">
-      <div>
-          <h3>${bootstrapProjects.title}</h3>
-          <p>${bootstrapProjects.info}</p>
-          <a href="${bootstrapProjects.website}" class="button button-primary"> PREVIEW SITE </a>
-          <a href="${bootstrapProjects.github}" class="button"> VIEW CODE </a>
-      </div>
-      <img src="../pictures/screenshot0.webp" width="500" height="500" aria-hidden="true" alt="" />
-  </div>`;
+        codedSection(bootstrapProjects, '#bootstrap');
     }
-}
+};
+
+const codedSection = (array, querySelector) => {
+    document.querySelector(querySelector).innerHTML += `<div class="project-card">
+<div>
+    <h3>${array.title}</h3>
+    <p>${array.info}</p>
+    <a href="${array.website}" class="button button-primary"> PREVIEW SITE </a>
+    <a href="${array.github}" class="button"> VIEW CODE </a>
+</div>
+<img loading=lazy src="${array.image}?tr=w-0.5" width="500" height="500" aria-hidden="true" alt="" />
+</div>`};
