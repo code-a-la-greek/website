@@ -1,6 +1,7 @@
 import showProjects from './js/projectsDatabase';
 import { goingUp, scrollFunction } from './js/scrollup';
 import showCourses from './js/courses';
+//import {getData} from './projectsAPI';
 
 showProjects('.flexbox', 0);
 window.onload = () => {

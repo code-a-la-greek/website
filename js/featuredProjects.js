@@ -1,23 +1,9 @@
+import {getData} from './projectsAPI';
+
+
 let css = [];
 let javascript = [];
 let bootstrap = [];
-const url =
-    "https://v1.nocodeapi.com/panugr/google_sheets/GwaQLFgqhfpjKNFb?tabId=Projects 2021";
-
-//ASYNC FETCH
-
-
-const getData = async () => {
-    try {
-        const res = await fetch(url);
-        const data = await res.json();
-        const project = data.data;
-        return project;
-    } catch (error) {
-        console.error(error);
-    }
-};
-
 
 if (navigator.connection.effectiveType >= "3g") {
     getData().then((project) => {
