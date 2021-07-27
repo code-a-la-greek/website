@@ -1,12 +1,13 @@
-import showProjects from './js/projectsDatabase';
+import showProjects from './js/displayProjects';
 import { goingUp, scrollFunction } from './js/scrollup';
 import showCourses from './js/courses';
-//import {getData} from './projectsAPI';
+import { getData } from './js/projectsAPI';
 
-showProjects('.flexbox', 0);
 window.onload = () => {
-    showProjects('#about article', 1);
     showCourses();
     document.querySelector(".buttonUp").addEventListener('click', goingUp)
     window.addEventListener('scroll', scrollFunction)
+    if (navigator.connection.effectiveType > "3g") {
+        getData().then((project) => { showProjects('.flexbox', project[0]); showProjects('#about article', project[1]); });
+    }
 }
