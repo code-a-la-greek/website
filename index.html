@@ -46,7 +46,7 @@
           <a href="" class="button button-primary"> PREVIEW SITE </a>
           <a href="" class="button"> VIEW CODE </a>
         </div>
-        <img src="./pictures/screenshot0.webp" width="500" height="500" aria-hidden="true" alt="" />
+        <img src="./pictures/placeholder.webp" width="500" height="500" aria-hidden="true" alt="" />
       </article>
     </section>
 
@@ -72,7 +72,7 @@
             <a href="" class="button button-primary"> PREVIEW SITE </a>
             <a href="" class="button"> VIEW CODE </a>
           </div>
-          <img src="./pictures/screenshot1.webp" width="500" height="500" aria-hidden="true" alt="" />
+          <img src="./pictures/placeholder.webp" width="500" height="500" aria-hidden="true" alt="" />
         </article>
       </section>
     </article>
@@ -206,14 +206,15 @@
   </main>
   <script>
     //network optimization
-    if (navigator.connection.effectiveType < "3g") {
-      confirm('Images and projects will be displayed as soon as the internet connection improves');
-      document.querySelectorAll("img").forEach((img) => {
+    if (navigator.connection.effectiveType <= "3g") {
+      alert('Images and projects will be displayed as soon as the internet connection improves');
+     /*  document.querySelectorAll("img").forEach((img) => {
         img.style.display = "none";
-      });
+      }); */
       document.querySelectorAll(".project-card").forEach((card) => {
         card.style.display = "none";
       });
+      document.querySelector('.dark-switch').style.display = "none";
     }
 
     //DARK MODE
