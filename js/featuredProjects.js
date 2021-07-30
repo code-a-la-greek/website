@@ -1,9 +1,8 @@
-import {getData} from './projectsAPI';
+import { getData } from './projectsAPI';
 
 
 let css = [];
 let javascript = [];
-let bootstrap = [];
 
 if (navigator.connection.effectiveType > "3g") {
     getData().then((project) => {
@@ -15,30 +14,21 @@ if (navigator.connection.effectiveType > "3g") {
                 case "javascript":
                     javascript.push(project[key]);
                     break;
-                case "bootstrap":
-                    bootstrap.push(project[key]);
-                    break;
             }
         }
         showData();
     });
-}else{alert('Projects will be displayed as soon as the internet connection improves')}
+} else { alert('Projects will be displayed as soon as the internet connection improves') }
 
 
 function showData() {
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 6; i++) {
         let cssProjects = css[i];
         let javascriptProjects = javascript[i];
         codedSection(cssProjects, '#css');
         codedSection(javascriptProjects, '#javascript');
 
     };
-
-    //for some reason the codedsection function doesn't work for bootstrap array. That's why i repeat the loop
-    for (let i = 0; i < 4; i++) {
-        let bootstrapProjects = bootstrap[i];
-        codedSection(bootstrapProjects, '#bootstrap');
-    }
 };
 
 const codedSection = (array, querySelector) => {

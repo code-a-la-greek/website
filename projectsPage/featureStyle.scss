@@ -21,7 +21,6 @@ h3 {
   text-align: center;
 }
 section {
-  width: 85vw;
   padding: 1rem;
   margin: 2rem 0;
   display: flex;
@@ -31,15 +30,20 @@ section {
 }
 
 .project-card {
-  flex: 0 1 400px;
+  max-width: 320px;
 }
 
-@media (min-width: 1024px) {
-  /*  h1 {
-    text-decoration: underline;
-  } 
-
-  summary {
-    text-align: center;
-  }*/
+@media (max-width: 1000px) {
+  :is(#css, #javascript)div:nth-child(5),
+  div:nth-child(6) {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  :is(#css, #javascript) div:nth-child(5),
+  div:nth-child(6),
+  div:nth-child(4),
+  div:nth-child(3) {
+    display: none;
+  }
 }
