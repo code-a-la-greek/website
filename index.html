@@ -41,12 +41,15 @@
       <h1>Latest Project</h1>
       <article class="project-card">
         <div>
-          <h3>Title</h3>
-          <p>Desctiption-info</p>
-          <a href="" class="button button-primary"> PREVIEW SITE </a>
-          <a href="" class="button"> VIEW CODE </a>
+          <h3>Project with a two- column layout</h3>
+          <p>The layout is made with grid, with a grid-template-rows: auto 1fr auto;. The main content is divided in two
+            columns automatically when the screen size is around 600px, using grid-template-columns: repeat(auto-fit,
+            minmax(320px, 1fr));</p>
+          <a href="https://panugr.github.io/landing-page/" class="button button-primary"> PREVIEW SITE </a>
+          <a href="https://github.com/PanuGr/landing-page" class="button"> VIEW CODE </a>
         </div>
-        <img src="./pictures/placeholder.webp" width="500" height="500" aria-hidden="true" alt="" />
+        <img src="https://ik.imagekit.io/panugr/ProjectsDatabase/huddle-landing-page.jpg?tr=w-500" width="500" height="500"
+          aria-hidden="true" alt="screenshot from the project" />
       </article>
     </section>
 
@@ -208,9 +211,9 @@
     //network optimization
     if (navigator.connection.effectiveType <= "3g") {
       alert('Images and projects will be displayed as soon as the internet connection improves');
-     /*  document.querySelectorAll("img").forEach((img) => {
-        img.style.display = "none";
-      }); */
+      /*  document.querySelectorAll("img").forEach((img) => {
+         img.style.display = "none";
+       }); */
       document.querySelectorAll(".project-card").forEach((card) => {
         card.style.display = "none";
       });
