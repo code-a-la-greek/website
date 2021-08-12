@@ -10,5 +10,4 @@ window.onload = () => {
     showCourses();
     document.querySelector(".buttonUp").addEventListener('click', goingUp)
     window.addEventListener('scroll', scrollFunction)
-
 }
