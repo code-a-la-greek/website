@@ -3,10 +3,11 @@ import { goingUp, scrollFunction } from './js/scrollup';
 import showCourses from './js/courses';
 import { getData } from './js/projectsAPI';
 
-window.onload = () => {
-    if (navigator.connection.effectiveType > "3g") {
-        getData().then((project) => { showProjects('#about article', project[1]); });
+ if (navigator.connection.effectiveType > "3g") {
+        getData().then((project) => { showProjects('#about article', project[0]); });
     }
+
+window.onload = () => {
     showCourses();
     document.querySelector(".buttonUp").addEventListener('click', goingUp)
     window.addEventListener('scroll', scrollFunction)

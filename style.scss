@@ -20,11 +20,7 @@ details[open] summary ~ * {
   animation: sweep 0.5s ease-in-out;
 }
 
-h1 {
-  font-size: clamp(30px, 10vw, 90px);
-  text-align: center;
-}
-
+h1,
 h2 {
   font-size: clamp(25px, 5vw, 40px);
 }
@@ -35,12 +31,17 @@ h3 {
 }
 
 section {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 //ABOUT SECTION
 #about {
-  padding-top: 2rem;
+  padding: 4rem 0;
+  padding-top: 8rem;
+  section{padding-top: 10rem;}
+  p {
+    font-size: x-large;
+  }
   p:nth-child(1) {
     max-width: 20ch;
     font-style: italic;
@@ -49,13 +50,14 @@ section {
 }
 
 #courses {
+  padding: 5rem 0;
   p {
     padding: 0;
   }
 }
 
 #work {
-  padding: 1rem;
+  padding: 3rem 1rem;
 }
 //FORM
 form {
@@ -64,6 +66,7 @@ form {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  padding-top: 5rem;
   h2 {
     text-align: left;
   }
@@ -104,11 +107,5 @@ textarea {
 
   summary {
     text-align: center;
-  }
-}
-
-@media (min-width: 1400px) {
-  h1 {
-    transform: rotate(-20deg);
   }
 }
