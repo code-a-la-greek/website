@@ -14,6 +14,12 @@
 details {
   cursor: pointer;
   padding-top: 1rem;
+  a{
+    padding-left: 1rem;
+    display: block;
+    margin: 0 auto;
+    max-width: 45ch;
+  }
 }
 
 details[open] summary ~ * {

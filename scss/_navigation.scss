@@ -1,22 +1,5 @@
 nav {
   font-size: small;
-  position: fixed;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  a:nth-child(1) {
-    display: inline;
-    width: 10%;
-  }
-  img {
-    border-radius: 50%;
-  }
-  @media (max-width: 1000px) {
-    width: 100vw;
-  }
-  @media (min-width: 1024px) {
-    position: initial;
-    display: block;
-    font-size: large;
-  }
+ 
 }

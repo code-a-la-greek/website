@@ -1,27 +1,13 @@
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  text-transform: uppercase;
-  @media (min-width: 1024px) {
-    position: fixed;
-    flex-direction: column;
-    transform: translateY(100px);
-    align-items: flex-start;
-  }
+.img-fluid {
+  width: 100;
+  height: auto;
 }
-.dark-switch {
-  font-size: x-large;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  @media (min-width: 1024px) {
-    position: fixed;
-    left: 10px;
-    top: 12vw;
-  }
+.navbar {
+   display: flex;
+  justify-content: space-between;
+  /*align-items: center;
+  gap: 15px; */
+  text-transform: uppercase;
 }
 
 .button-primary {
@@ -48,6 +34,7 @@
   border-radius: 20px;
   margin-right: 5px;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .flexbox {
@@ -72,5 +59,3 @@
   padding: 1rem;
   box-shadow: 0px 10px 13px -7px #000000;
 }
-
-
