@@ -17,7 +17,7 @@
     <style>
         .line {
             border-bottom: 10px solid transparent;
-            border-image: linear-gradient(50deg,transparent, var(--blue), transparent) 1;
+            border-image: linear-gradient(50deg, transparent, var(--blue), transparent) 1;
         }
     </style>
 </head>
@@ -47,6 +47,29 @@
                 on my <a href="https://www.frontendmentor.io/profile/PanuGr">Frontend Mentor account</a>. <br> All of
                 the projects are in <a href="https://github.com/PanuGr?tab=repositories">Github</a>.</p>
         </header>
+        <main>
+            <section class="py-4 container">
+                <h2>
+                    Courses
+                </h2>
+                <ul id="courses" class="flexbox">
+                    <script id="courses-template" type="text/x-handlebars-template">
+                      {{#each courses}}
+                        <li class="box-courses">
+                          <h4>
+                            {{title}}
+                          </h4>
+                          <p>
+                            {{info}}
+                          </p>
+                          <p>
+                            {{{progress}}}
+                          </p>
+                      {{/each}}
+                    </script>
+                </ul>
+            </section>
+        </main>
         <h2 class="line">Html & Css</h2>
         <section id="css"></section>
         <h2 class="line">Javascript</h2>

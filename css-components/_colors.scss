@@ -1,20 +1,19 @@
 :root {
   --backgroundColor: white;
-  --blue: #bae8e8;
-  --yellow: #ffda06;
-  --pink: #272343;
   --text: black;
+  /* --blue: #bae8e8;
+  --yellow: #ffda06;
+  --pink: #272343; */
   @media (prefers-color-scheme) {
-    --yellow: #ff8906;
     --backgroundColor: transparent;
-    --pink: #d0adf0;
     --text: white;
-    --blue: #272343;
+    /* --yellow: #ff8906;
+    --pink: #d0adf0;
+    --blue: #272343; */
   }
 }
 
-
-.button-primary {
+/* .button-primary {
   background-color: var(--yellow);
   color: black;
 }
@@ -30,4 +29,4 @@ body {
 }
 a {
   color: var(--pink);
-}
+} */

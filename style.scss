@@ -1,7 +1,15 @@
 @use "./css-components";
 
-
-
+#welcomePhoto {
+  text-align: center;
+  img {
+    border-radius: 50%;
+    max-width: 50%;
+  }
+}
+#work {
+  text-align: center;
+}
 
 //ABOUT SECTION
 /* #about {
@@ -24,7 +32,4 @@
     padding: 0;
   }
 }
-
-#work {
-  padding: 3rem 1rem;
-} */
+*/

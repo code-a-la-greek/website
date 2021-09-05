@@ -10,7 +10,7 @@
     content="Welcome to my portfolio. I started studying Web-Development in 2020. I hope you enjoy my projects 😀" />
   <meta property="og:image"
     content="https://d33wubrfki0l68.cloudfront.net/4c7149890e0a2aa8bf45068d07fb76c32cc678c2/f5888/pictures/profile-photo-small.webp" />
-  <meta name="color-scheme" content="light dark" />
+  <!--  <meta name="color-scheme" content="light dark" /> -->
   <link rel="stylesheet" href="style.css" />
   <script type="module" src="index.js"></script>
   <title>P.Panagiotakopoulos | Front-end Developer</title>
@@ -27,61 +27,35 @@
     <button class="buttonUp" aria-label="click to scroll up">up⬆️</button>
   </header>
 
-  <main class="container">
-
-
-    <section id="about">
-      <h1 class="font-title">About Me</h1>
+  <main>
+    <section id="welcomePhoto" class="py-4">
+      <img src="./pictures/profile-photo-small.webp" alt="" width="300">
+      <h1>Welcome to my portfolio</h1>
       <p>
         Hello. My name is Panagiotis Panagiotakopoulos and I'm currently working in the automobile industry.
-        In April 2020, I had the opportunity to join Codecademy and start a
-        Web-Development course. I've also joined Frontend Mentor, a site where
-        I can complete frontend challenges.
+        In April 2020, I joined Codecademy and started studying Web-Development. I enjoy the frontend development. I
+        like to build websites and web-applications.
       </p>
-
-      <section class="flexbox">
-        <p>
-          All the projects in my portfolio are either based on exercises
-          during my studies in Codecademy or completed challenges from
-          Frontend Mentor.
-        </p>
-        <div class="project-card">
-          <div>
-            <h3></h3>
-            <p></p>
-            <a href="" class="button button-primary"> PREVIEW SITE </a>
-            <a href="" class="button"> VIEW CODE </a>
-          </div>
-          <img loading="lazy" src="./pictures/placeholder.webp" aria-hidden="true"
-            alt="screenshot from the latest project" />
-        </div>
-      </section>
+      <a href="#contact">Get in touch</a>
     </section>
 
-    <section>
-      <h2>
-        Courses
-      </h2>
-      <ul id="courses" class="flexbox">
-        <script id="courses-template" type="text/x-handlebars-template">
-            {{#each courses}}
-              <li class="box-courses">
-                <h4>
-                  {{title}}
-                </h4>
-                <p>
-                  {{info}}
-                </p>
-                <p>
-                  {{{progress}}}
-                </p>
-            {{/each}}
-          </script>
-      </ul>
+    <section id="about" class="py-4 container flexbox">
+      <p> I've also joined Frontend Mentor, a
+        site where
+        I can complete frontend challenges.
+        All the projects in my portfolio are either based on exercises
+        during my studies in Codecademy or completed challenges from
+        Frontend Mentor.
+      </p>
+      <figure>
+        <img loading="lazy" src="./pictures/placeholder.webp" aria-hidden="true"
+          alt="screenshot from a completed project" class="img-fluid" />
+        <figcaption>Completed challenge. <a href="">Go to portfolio</a></figcaption>
+      </figure>
     </section>
 
-    <article id="work">
-      <h2>Experience</h2>
+    <article id="work" class="py-4 container">
+      <h1>Experience</h1>
       <p>
         Up until today, my experience in coding comes from working on
         projects, from Codecademy and Front-end mentor. I have also worked on
@@ -149,16 +123,18 @@
         </a>
       </details>
 
-      <details>
+      <!--  <details>
         <summary>Vakka-Viestintä</summary>
         <p></p>
         <a href="https://app.netlify.com/sites/cranky-montalcini-195b9a/overview" target="_blank" rel="noopener">Visit
           the site ↗️
         </a>
-      </details>
+      </details> -->
+
+      <a href="" class="py-4">Go to portfolio</a>
     </article>
 
-    <form data-netlify="true" name="feedback" method="POST" target="_blank" id="contact">
+    <form data-netlify="true" name="feedback" method="POST" target="_blank" id="contact" class="py-4">
       <section>
         <h2>Contact Me</h2>
         <p>
@@ -168,7 +144,7 @@
         </p>
       </section>
       <fieldset>
-        <label for="name">Name</label>
+        <label for="name">Name*</label>
         <input type="text" id="name" name="name" required aria-required="true" />
         <label for="mail">Email</label>
         <input type="email" id="mail" name="mail" />

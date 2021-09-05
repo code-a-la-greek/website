@@ -8,7 +8,7 @@ import { getData } from './js/projectsAPI';
     } */
 
 window.onload = () => {
-    showCourses();
+   // showCourses();
     document.querySelector(".buttonUp").addEventListener('click', goingUp)
     window.addEventListener('scroll', scrollFunction)
 }
