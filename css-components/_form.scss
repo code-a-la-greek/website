@@ -1,0 +1,42 @@
+@use './buttons';
+@use './colors';
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  padding-top: 5rem;
+  h2 {
+    text-align: left;
+  }
+  section p {
+    line-height: 30px;
+    justify-self: center;
+    padding-left: 0;
+  }
+}
+
+fieldset {
+  padding: 1rem;
+  display: grid;
+  gap: 10px;
+  border-radius: 20px;
+  button {
+    cursor: pointer;
+    width: 100%;
+    @extend .button;
+    @extend .button-primary;
+  }
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  outline: none;
+}
+
+:is(input, textarea):focus:invalid {
+  box-shadow: 0 0 8px 0 red;
+}

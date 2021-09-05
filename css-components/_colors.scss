@@ -4,15 +4,15 @@
   --yellow: #ffda06;
   --pink: #272343;
   --text: black;
+  @media (prefers-color-scheme) {
+    --yellow: #ff8906;
+    --backgroundColor: transparent;
+    --pink: #d0adf0;
+    --text: white;
+    --blue: #272343;
+  }
 }
 
-.dark-mode {
-  --yellow: #ff8906;
-  --backgroundColor: transparent;
-  --pink: #d0adf0;
-  --text: white;
-  --blue: #272343;
-}
 
 .button-primary {
   background-color: var(--yellow);
