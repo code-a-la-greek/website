@@ -1,7 +1,7 @@
-import showProjects from './js/displayProjects';
-import { goingUp, scrollFunction } from './js/scrollup';
-import showCourses from './js/courses';
-import { getData } from './js/projectsAPI';
+import showProjects from './displayProjects';
+import { goingUp, scrollFunction } from './scrollup';
+import showCourses from './courses';
+import { getData } from './projectsAPI';
 
 /*  if (navigator.connection.effectiveType > "3g") {
         getData().then((project) => { showProjects('#about article', project[0]); });
