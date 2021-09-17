@@ -6,10 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px; //extra padding for navbar on top
-  @media (min-width: 1024px) {
-    scroll-padding-top: unset;
-  }
   @media (prefers-reduced-motion) {
     scroll-behavior: initial;
     details[open] summary ~ * {
@@ -19,22 +15,34 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   min-width: 320px;
-  margin: auto;
   font-family: system-ui;
-  font-size: 20px;
-  display: grid;
-  @media (min-width: 1024px) {
-    grid-template-columns: 12vw 1fr;
-    main {
-      margin-top: initial;
-    }
-  }
+}
+
+/* h1 {
+  font-size: clamp(25px, 5vw, 75px);
+}
+h2 {
+  font-size: clamp(23px, 5vw, 65px);
+}
+h3 {
+  font-size: clamp(20px, 5vw, 55px);
+}
+h4 {
+  font-size: clamp(18px, 5vw, 45px);
+}
+h5 {
+  font-size: clamp(16px, 5vw, 35px);
+} */
+
+h1,
+h2,
+h3 {
+  text-align: center;
 }
 
 img {
-  width: 100%;
-  height: auto;
   pointer-events: none;
 }
 
@@ -43,22 +51,17 @@ p {
   max-width: 45ch;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
+  opacity: 0.7;
   &:hover,
-  &:focus {
-    opacity: 0.9;
-  }
+  &:focus,
   &:active {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 
 ul {
   list-style: none;
-}
-
-main {
-  //EXTRA MARGIN FOR NAVBAR ON TOP
-  margin-top: 100px;
 }
