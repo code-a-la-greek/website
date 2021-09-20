@@ -11,16 +11,20 @@
     margin-top: 0;
   }
 }
-
-html {
-  @media (prefers-reduced-motion) {
-    details[open] summary ~ * {
-      animation: none;
-    }
+@media (prefers-reduced-motion) {
+  details[open] summary ~ * {
+    animation: none;
   }
 }
+
+@media (min-width: 1440px) {
+  body {
+    font-size: larger;
+  }
+}
+
 /////////////////////////////////////////////////////////////////////////////
-a {
+/* a {
   text-decoration: none;
   opacity: 1;
   &:hover,
@@ -28,10 +32,12 @@ a {
   &:active {
     opacity: 0.7;
   }
-}
+} */
 body {
+  min-width: 320px;
   color: initial;
   background-color: initial;
+  //overflow: hidden;
 }
 
 .buttonUp {
@@ -60,6 +66,34 @@ details[open] summary ~ * {
   animation: sweep 0.5s ease-in-out;
 } */
 
+header {
+  background-image: url("../pictures/blob-scene-dark.svg");
+  background-repeat: no-repeat;
+  //background-position: center;
+  background-size: cover;
+  //width: 100%;
+  min-height: 100vh;
+  display: grid;
+  gap: 2rem;
+  place-content: center;
+  //text-align: center;
+  img {
+    justify-self: center;
+  }
+  h1,
+  p {
+    padding: 0 1rem;
+  }
+  p {
+    max-inline-size: 45ch;
+  }
+  .portfolio{
+    color: black;
+    background-color: darkgoldenrod;
+    padding: 4px;
+    border-radius: 5px;
+  }
+}
 img {
   pointer-events: none;
 }
@@ -78,31 +112,6 @@ footer {
   img {
     border-radius: 50%;
     max-width: 50%;
-  }
-}
-#work {
-  text-align: center;
-}
-
-//ABOUT SECTION
- #about {
-  padding: 4rem 0;
-  padding-top: 8rem;
-  section{padding-top: 10rem;}
-  p {
-    font-size: x-large;
-  }
-  p:nth-child(1) {
-    max-width: 20ch;
-    font-style: italic;
-    margin: initial;
-  }
-} 
-
- #courses {
-  padding: 5rem 0;
-  p {
-    padding: 0;
   }
 }
 
