@@ -15,11 +15,11 @@
     max-age=31536000,
     must-revalidate'''
     content-security-policy='''
-    script-src 'self' , 
+    default-src https:
     connect-src 'self', 
-    img-src 'self', 
-    style-src 'self',
     base-uri 'self',
     form-action 'self',
     object-src 'none'
     '''
+# script-src 'self' ,  img-src 'self', style-src 'self',
+    
