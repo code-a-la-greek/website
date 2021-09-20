@@ -15,7 +15,7 @@
     max-age=31536000,
     must-revalidate'''
     content-security-policy='''
-    default-src https:
+    default-src https:,
     connect-src 'self', 
     base-uri 'self',
     form-action 'self',
