@@ -1,7 +1,2 @@
 node_modules
 package-lock.json
-body.txt
-token.env
-text-ideas.txt
-# Local Netlify folder
-.netlify

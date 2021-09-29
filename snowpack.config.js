@@ -4,7 +4,8 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   plugins: [
-    ["@snowpack/plugin-sass", { compilerOptions: { style: "compressed" } }]
+    ['@snowpack/plugin-postcss']
+   /*  ["@snowpack/plugin-sass", { compilerOptions: { style: "compressed" } }] */
   ],
   optimize: {
     bundle: true,
@@ -13,7 +14,7 @@ module.exports = {
     treeshake: true,
     manifest: false
   },
-  root: "./dev",
-  buildOptions: { out: "./build" }
+  root: "src/",
+  buildOptions: { out: "build" }
 };
 

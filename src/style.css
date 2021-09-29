@@ -1,0 +1,30 @@
+@keyframes sweep { 0% { opacity: 0;
+    margin-top: -10px; }
+  100% { opacity: 1;
+    margin-top: 0; } }
+
+@media (prefers-reduced-motion) { details[open] summary ~ * { animation: none; } }
+
+body { min-width: 320px; max-width: 2000px; margin: auto; color: initial; background-color: initial; }
+
+.buttonUp { position: fixed; right: 10px; bottom: 1rem; font-size: large; visibility: hidden; border: none; border-radius: 20px; cursor: pointer; text-transform: capitalize; padding: 0.5rem; }
+
+details { cursor: pointer; padding-top: 1rem; }
+
+details a { padding-left: 1rem; display: block; margin: 0 auto; max-width: 45ch; }
+
+details[open] summary ~ * { animation: sweep 0.5s ease-in-out; }
+
+header { background-image: url("pictures/blob-scene-dark.svg"); background-repeat: no-repeat; background-size: cover; min-height: 100vh; display: grid; gap: 2rem; place-content: center; }
+
+header img { justify-self: center; }
+
+header p { max-inline-size: 45ch; }
+
+header .portfolio { color: black; background-color: darkgoldenrod; padding: 4px; border-radius: 5px; }
+
+img { pointer-events: none; }
+
+p { max-inline-size: 75ch; }
+
+@media (min-width: 1440px) { header, main { font-size: larger; } }
