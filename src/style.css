@@ -7,24 +7,24 @@
 
 body { min-width: 320px; max-width: 2000px; margin: auto; color: initial; background-color: initial; }
 
-.buttonUp { position: fixed; right: 10px; bottom: 1rem; font-size: large; visibility: hidden; border: none; border-radius: 20px; cursor: pointer; text-transform: capitalize; padding: 0.5rem; }
+img { pointer-events: none; }
 
-details { cursor: pointer; padding-top: 1rem; }
+p { max-inline-size: 75ch; }
 
-details a { padding-left: 1rem; display: block; margin: 0 auto; max-width: 45ch; }
-
-details[open] summary ~ * { animation: sweep 0.5s ease-in-out; }
-
-header { background-image: url("pictures/blob-scene-dark.svg"); background-repeat: no-repeat; background-size: cover; min-height: 100vh; display: grid; gap: 2rem; place-content: center; }
+header { background-image: url("pictures/blob-scene-dark.svg"); background-repeat: no-repeat; background-size: cover; display: grid; gap: 2rem; place-content: center; }
 
 header img { justify-self: center; }
 
 header p { max-inline-size: 45ch; }
 
-header .portfolio { color: black; background-color: darkgoldenrod; padding: 4px; border-radius: 5px; }
+.buttonUp { position: fixed; right: 10px; bottom: 1rem; font-size: large; visibility: hidden; border: none; border-radius: 20px; cursor: pointer; text-transform: capitalize; padding: 0.5rem; z-index: 1; }
 
-img { pointer-events: none; }
+details { cursor: pointer; }
 
-p { max-inline-size: 75ch; }
+details summary { text-decoration: underline; }
+
+details a { padding-left: 1rem; display: block; margin: 0 auto; max-width: 45ch; }
+
+details[open] summary ~ * { animation: sweep 0.5s ease-in-out; }
 
 @media (min-width: 1440px) { header, main { font-size: larger; } }

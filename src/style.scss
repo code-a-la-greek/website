@@ -17,13 +17,39 @@
   }
 }
 
-/////////////////////////////////////////////////////////////////////////////
+///////////////////////////////GENERAL STYLES//////////////////////////////////////////////
+
 body {
   min-width: 320px;
   max-width: 2000px;
   margin: auto;
   color: initial;
   background-color: initial;
+}
+
+img {
+  pointer-events: none;
+}
+
+p {
+  max-inline-size: 75ch;
+}
+
+////////////////////ELEMENTS STYLE////////////////////////////
+
+header {
+  background-image: url("pictures/blob-scene-dark.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  gap: 2rem;
+  place-content: center;
+  img {
+    justify-self: center;
+  }
+  p {
+    max-inline-size: 45ch;
+  }
 }
 
 .buttonUp {
@@ -37,10 +63,14 @@ body {
   cursor: pointer;
   text-transform: capitalize;
   padding: 0.5rem;
+  z-index: 1;
 }
+
 details {
   cursor: pointer;
-  padding-top: 1rem;
+  summary {
+    text-decoration: underline;
+  }
   a {
     padding-left: 1rem;
     display: block;
@@ -50,36 +80,6 @@ details {
 }
 details[open] summary ~ * {
   animation: sweep 0.5s ease-in-out;
-}
-
-header {
-  background-image: url("pictures/blob-scene-dark.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  display: grid;
-  gap: 2rem;
-  place-content: center;
-  img {
-    justify-self: center;
-  }
-  p {
-    max-inline-size: 45ch;
-  }
-  .portfolio {
-    color: black;
-    background-color: darkgoldenrod;
-    padding: 4px;
-    border-radius: 5px;
-  }
-}
-
-img {
-  pointer-events: none;
-}
-
-p {
-  max-inline-size: 75ch;
 }
 
 @media (min-width: 1440px) {

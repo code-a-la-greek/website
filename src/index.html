@@ -13,6 +13,7 @@
   <meta name="og:url" content="https://panagiotis.netlify.app">
   <meta name="og:site_name" content="P.Panagiotakopoulos | Front-end Developer">
   <meta name="og:type" content="website">
+
   <link rel="shortcut icon" href="/pictures/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
@@ -26,50 +27,67 @@
 
 
 <body>
-  <header>
+  <header class="container-fluid min-vh-100">
     <h1 class="display-1">Panagiotis Panagiotakopoulos</h1>
-    <p>Welcome to my <a href="#about" class="portfolio">portfolio.</a> This is just a small sample of the projects that
+    <p>Welcome to my <a href="#portfolio" class="bg-warning p-1 rounded-3">portfolio.</a> This is just a small sample of
+      the projects that
       I create
       and share.</p>
     <p>Feel free to explore my <a href="https://github.com/PanuGr">Github account</a> or my <a
         href="https://www.frontendmentor.io/profile/PanuGr">frontendmentor account</a> for more projects.</p>
-    <img src="./pictures/profile-photo-small.webp" alt="" width="300" aria-hidden="true" class="rounded-circle">
+    <img src="./pictures/profile-photo-small.webp" alt="" width="200" aria-hidden="true" class="rounded-circle">
     <button class="buttonUp" aria-label="click to scroll up">up⬆️</button>
   </header>
 
   <main>
-    <section>
-      <h2 id="about">About me</h2>
-      <p>Hi! I'm Panagiotis and I'm currently working in the automobile industry. In April 2020, I joined Codecademy and
-        started studying Web-Development. I enjoy the frontend development. I like to build websites and
-        web-applications. </p>
+    <section id="portfolio" class="min-vh-100 container">
 
-      <p>
-        All the projects in my portfolio are either based on exercises
-        during my studies in Codecademy or completed challenges from
-        Frontend Mentor.
-      </p>
-    </section>
-    <section>
-      <p> I've also joined Frontend Mentor, a
-        site where
-        I can complete frontend challenges.
-        All the projects in my portfolio are either based on exercises
-        during my studies in Codecademy or completed challenges from
-        Frontend Mentor.
-      </p>
-    </section>
-    <section>
-      <p>
-        Up until today, my experience in coding comes from working on
-        projects, from Codecademy and Front-end mentor. I have also worked on
-        other people's projects, which has given me valuable experience. You
-        can read more about these projects below.
-      </p>
-    </section>
+      <section class="card mt-5 mb-3 bg-dark">
+        <div class="row g-0">
+          <figure class="col-lg-4 ">
+            <img src="./pictures/VakkaViestintä.webp" class="card-img rounded-start" alt="" width="400">
+          </figure>
+          <article class="col-lg-8">
+            <div class="card-body">
+              <h2 class="card-title">Vakka-Viestintä</h2>
+              <p class="card-text">Vakka-Viestintä is an advertising agency located in Uusikaupunki (FI), specializing
+                in digital advertisement and marketing. I was tasked to update and refresh their website.</p>
+                <h3>Tools I used</h3>
+                 <img src="./pictures/html5.webp" alt="" width="50" height="50">
+                  <img src="./pictures/css3.webp" alt="" width="50" height="50">
+                  <img src="./pictures/boostrap.webp" alt="" width="50" height="50">
+                  <img src="./pictures/netlify.webp" alt="" width="50" height="50">
+                  <img src="./pictures/snowpack.webp" alt="" width="50" height="50">
+              <details class="py-2 my-2">
+                <summary>Read more</summary>
+                <p class="pt-1 mb-0"> I identified several areas which I could improve: </p>
+                <ul>
+                  <li>The site was made with Bootstrap 3</li>
+                  <li>It didn't pass the lighthouse tests</li>
+                  <li>It scored poorly on security tests</li>
+                  <li>It didn't comply with the GDPR policy</li>
+                </ul>
+                <p class="card-text">I built a new website from scratch. I still used their brand colors and most of the
+                  text they had. For design, I used the new version of Bootstrap 5.1. <br>
+                  I optimized all of their videos and images, serving .webp images. <br>
+                  No cookies are used, but there is a contact form therefore a privacy policy is required. I had never before implemented a
+                  privacy policy and it was quite a challenge to find information. Luckily I stumped upon
+                  <em>iubenda.com</em> who offer services for privacy-policies, terms of use, cookies etc. <br>
+                  I increased the security of the site, setting some headers, such as referer-policy,
+                  content-security-policy, x-frame options etc. That was a challenge as well but there's good
+                  documentation at <em>mozilla.org</em>. <br>
+                  Finally the site is bundled with Snowpack and served in Netlify.
+                 </p>
+              </details>
 
-    <section>
-      <details>
+              <a href="https://vakkaviestinta.com" class="card-text link-warning">Visit the site</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+      <!--  <details>
         <summary>Elisan Antologia</summary>
         <p>
           <em>Elisan Antologia</em> is a blog for Elisa Stenberg, a young
@@ -136,8 +154,33 @@
         <a href="https://app.netlify.com/sites/cranky-montalcini-195b9a/overview" target="_blank" rel="noopener">Visit
           the site ↗️
         </a>
-      </details>
+      </details> -->
+
     </section>
+
+
+    <section id="about" class="min-vh-100">
+      <h2>About me</h2>
+      <p>Hi! I'm Panagiotis and I'm currently working in the automobile industry. In April 2020, I joined Codecademy and
+        started studying Web-Development. I enjoy the frontend development. I like to build websites and
+        web-applications. </p>
+
+      <p> I've also joined Frontend Mentor, a
+        site where
+        I can complete frontend challenges.
+        All the projects in my portfolio are either based on exercises
+        during my studies in Codecademy or completed challenges from
+        Frontend Mentor.
+      </p>
+      <p>
+        Up until today, my experience in coding comes from working on
+        projects, from Codecademy and Front-end mentor. I have also worked on
+        other people's projects, which has given me valuable experience. You
+        can read more about these projects below.
+      </p>
+    </section>
+
+
 
 
   </main>
