@@ -12,13 +12,13 @@
     must-revalidate'''
     
     content-security-policy='''
-    default-src https:;
-    connect-src 'self'; 
+    script-src 'self' 'sha512-trzlduO3EdG7Q0xK4+A+rPbcolVt37ftugUSOvrHhLR5Yw5rsfWXcpB3CPuEBcRBCHpc+j18xtQ6YrtVPKCdsg=='; 
+    require-trusted-types-for 'script';
+    connect-src 'self';
     base-uri 'self';
     object-src 'none';
     frame-ancestors 'none';
     style-src 'self';
-     img-src https:;
+    img-src https:;
     '''
-# script-src 'self';
     
