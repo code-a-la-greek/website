@@ -1,22 +1,19 @@
-@keyframes sweep-open { 0% { opacity: 0;
+@keyframes sweep { 0% { opacity: 0;
     margin-top: -10px; }
   100% { opacity: 1;
     margin-top: 0; } }
 
-@keyframes sweep-close { 0% { opacity: 1;
-    margin-top: 0; }
-  100% { opacity: 0;
-    margin-top: -10px; } }
-
 @media (prefers-reduced-motion) { details[open] summary ~ * { animation: none; } }
 
-body { min-width: 320px; max-width: 2000px; margin: auto; color: initial; background-color: initial; }
+@media (prefers-color-scheme: dark) { :root { --bs-body-bg: black; --bs-body-color: #fff; } }
+
+body { min-width: 320px; max-width: 2000px; margin: auto; }
 
 img { pointer-events: none; }
 
 p { max-inline-size: 75ch; }
 
-header { background-image: url("pictures/blob-scene-dark.svg"); background-repeat: no-repeat; background-size: cover; display: grid; gap: 2rem; place-content: center; }
+header { background-image: url("pictures/blob-scene-dark.svg"); background-repeat: no-repeat; background-size: cover; display: grid; gap: 1rem; place-content: center; }
 
 header img { justify-self: center; }
 
@@ -30,8 +27,10 @@ details summary { text-decoration: underline; }
 
 details a { padding-left: 1rem; display: block; margin: 0 auto; max-width: 45ch; }
 
-details[open] summary ~ * { animation: sweep-open 0.5s ease-in-out; }
+details[open] summary ~ * { animation: sweep 0.5s ease-in-out; }
 
-details[close] summary ~ * { animation: sweep-close 1s ease-in-out; }
+li { padding-bottom: 1rem; }
 
-@media (min-width: 1440px) { header, main { font-size: larger; } }
+main p { line-height: 2; }
+
+@media (min-width: 1440px) { header, main { font-size: clamp(20px, 1vw, 30px); } }

@@ -17,14 +17,19 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bs-body-bg: black;
+    --bs-body-color: #fff;
+  }
+}
+
 ///////////////////////////////GENERAL STYLES//////////////////////////////////////////////
 
 body {
   min-width: 320px;
   max-width: 2000px;
   margin: auto;
-  color: initial;
-  background-color: initial;
 }
 
 img {
@@ -42,7 +47,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   place-content: center;
   img {
     justify-self: center;
@@ -82,9 +87,18 @@ details[open] summary ~ * {
   animation: sweep 0.5s ease-in-out;
 }
 
+li{
+  padding-bottom: 1rem;
+}
+
+main p{
+  line-height: 2;
+
+}
+
 @media (min-width: 1440px) {
   header,
   main {
-    font-size: larger;
+    font-size: clamp(20px, 1vw, 30px);
   }
 }

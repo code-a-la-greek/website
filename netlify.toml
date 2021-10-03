@@ -12,7 +12,7 @@
     must-revalidate'''
     
     content-security-policy-report-only='''
-    script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.bundle.min.js; 
+    script-src 'self'; 
     require-trusted-types-for 'script';
     connect-src 'self';
     base-uri 'self';

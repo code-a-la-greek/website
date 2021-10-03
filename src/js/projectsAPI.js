@@ -1,6 +1,8 @@
+const url='https://v1.nocodeapi.com/panugr/google_sheets/weAjdfuhKgnxoMqy?tabId=Projects 2021&perPage=3&page=1';
+
 export const getData = async () => {
     try {
-        const res = await fetch("https://v1.nocodeapi.com/panugr/google_sheets/GwaQLFgqhfpjKNFb?tabId=Projects 2021");
+        const res = await fetch(url);
 
         if (res.ok) {
             const data = await res.json();
@@ -15,4 +17,3 @@ export const getData = async () => {
         console.error(error);
     }
 };
-//
