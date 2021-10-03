@@ -1,7 +1,12 @@
-@keyframes sweep { 0% { opacity: 0;
+@keyframes sweep-open { 0% { opacity: 0;
     margin-top: -10px; }
   100% { opacity: 1;
     margin-top: 0; } }
+
+@keyframes sweep-close { 0% { opacity: 1;
+    margin-top: 0; }
+  100% { opacity: 0;
+    margin-top: -10px; } }
 
 @media (prefers-reduced-motion) { details[open] summary ~ * { animation: none; } }
 
@@ -25,6 +30,8 @@ details summary { text-decoration: underline; }
 
 details a { padding-left: 1rem; display: block; margin: 0 auto; max-width: 45ch; }
 
-details[open] summary ~ * { animation: sweep 0.5s ease-in-out; }
+details[open] summary ~ * { animation: sweep-open 0.5s ease-in-out; }
+
+details[close] summary ~ * { animation: sweep-close 1s ease-in-out; }
 
 @media (min-width: 1440px) { header, main { font-size: larger; } }
