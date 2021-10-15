@@ -1,266 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>P.Panagiotakopoulos | Front-end Developer</title>
+    <meta
+      name="description"
+      content="I'm Panagiotis and welcome to my portfolio. I like front-end development and building projects. "
+    />
+    <meta
+      name="image"
+      content="https://panagiotis.netlify.app/dev/pictures/profile-photo-small.webp"
+    />
+    <meta name="og:url" content="https://panagiotis.netlify.app" />
+    <meta
+      name="og:site_name"
+      content="P.Panagiotakopoulos | Front-end Developer"
+    />
+    <meta name="og:type" content="website" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="light dark" />
-  <title>P.Panagiotakopoulos | Front-end Developer</title>
-  <meta name="description"
-    content="I'm Panagiotis and welcome to my portfolio. I like front-end development and building projects. " />
-  <meta name="image" content="https://panagiotis.netlify.app/dev/pictures/profile-photo-small.webp" />
-  <meta name="og:url" content="https://panagiotis.netlify.app" />
-  <meta name="og:site_name" content="P.Panagiotakopoulos | Front-end Developer" />
-  <meta name="og:type" content="website" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="./css/bootstrap.min.css" />
-  <link rel="stylesheet" href="style.css" />
+    <script async type="module" src="index.js"></script>
+  </head>
 
-  <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.bundle.min.js"
-    integrity="sha512-trzlduO3EdG7Q0xK4+A+rPbcolVt37ftugUSOvrHhLR5Yw5rsfWXcpB3CPuEBcRBCHpc+j18xtQ6YrtVPKCdsg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script async src="https://kit.fontawesome.com/a72b9e7ca4.js" crossorigin="anonymous"></script> -->
-  <script async type="module" src="index.js"></script>
-</head>
+  <body>
+    <header class="container-fluid min-vh-100">
+      <h1 class="display-1">Panagiotis Panagiotakopoulos</h1>
+      <p>Welcome to my personal website 👋</p>
+      <nav>
+        <ul>
+          <li>
+            Take a look at my
+            <a href="#portfolio" class="bg-warning p-1 rounded-3">portfolio</a>
+          </li>
+          <li>
+            read <a href="#about" class="bg-warning p-1 rounded-3">about me</a>
+          </li>
+          <li>
+            check the latest
+            <a href="#challenges" class="bg-warning p-1 rounded-3"
+              >challenges</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-<body>
-  <header class="container-fluid min-vh-100">
-    <h1 class="display-1">Panagiotis Panagiotakopoulos</h1>
-    <p>
-      Welcome to my personal website 👋
-    </p>
-    <nav>
-      <ul>
-        <li> Take a look at my
-          <a href="#portfolio" class="bg-warning p-1 rounded-3 ">portfolio</a>
-        </li>
-        <li>read <a href="#about" class="bg-warning p-1 rounded-3">about me</a></li>
-        <li>check the latest
-          <a href="#challenges" class="bg-warning p-1 rounded-3">challenges</a>
-        </li>
-      </ul>
-    </nav>
+      <img
+        src="pictures/profile-photo-small.webp"
+        alt=""
+        width="200"
+        aria-hidden="true"
+        class="rounded-circle"
+      />
+      <button class="buttonUp" aria-label="click to scroll up">up⬆️</button>
+    </header>
 
-    <p>
-      Feel free to explore my
-      <a href="https://github.com/PanuGr">Github account</a> and my
-      <a href="https://www.frontendmentor.io/profile/PanuGr">frontendmentor account</a>
-      for more projects.
-    </p>
-    <img src="pictures/profile-photo-small.webp" alt="" width="200" aria-hidden="true" class="rounded-circle" />
-    <button class="buttonUp" aria-label="click to scroll up">up⬆️</button>
-  </header>
+    <main>
+      <section id="portfolio" class="container py-5">
+        <h2 class="display-2">#️⃣ My Portfolio</h2>
 
-  <main class="min-vh-100">
-    <section id="portfolio" class="container py-5">
-      <h2 class="display-2">#️⃣ My Portfolio</h2>
-
-      <section class="card mt-5 mb-3 bg-dark">
-        <div class="row g-0">
-          <figure class="col-lg-4 mb-0">
-            <img src="pictures/VakkaViestintä.webp" loading="lazy" aria-hidden="true" class="card-img rounded-start"
-              alt="screeshot from landing page of Vakka-Viestintä website" width="400" height="460" />
-          </figure>
-          <article class="col-lg-8">
-            <div class="card-body">
-              <h3 class="card-title display-4">Vakka-Viestintä</h3>
-              <p>
-                Vakka-Viestintä is an advertising agency located in
-                Uusikaupunki (FI) and specializing in digital advertisement
-                and marketing. I was tasked to update and refresh their
-                website.
-              </p>
-              <h4>Tools I used</h4>
-              <figure>
-                <img src="pictures/html5.webp" alt="html5 icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/css3.webp" alt="css3 icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/boostrap.webp" alt="bootstrap 5 icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/snowpack.webp" alt="snowpack icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/netlify.webp" alt="netlify icon" width="50" height="50" aria-hidden="true" />
-              </figure>
-              <details class="py-2 my-2">
-                <summary>Read more</summary>
-                <p class="pt-1 mb-0">
-                  I identified several areas which I could improve:
-                </p>
-                <ul>
-                  <li>The site was made with Bootstrap 3</li>
-                  <li>It didn't pass the lighthouse tests</li>
-                  <li>It scored poorly on security tests</li>
-                  <li>It didn't comply with the GDPR policy</li>
-                </ul>
+        <section class="card mt-5 mb-3 bg-dark">
+          <div class="row g-0">
+            <figure class="col-lg-4 mb-0">
+              <img
+                src="pictures/VakkaViestintä.webp"
+                loading="lazy"
+                aria-hidden="true"
+                class="card-img rounded-start"
+                alt="screeshot from landing page of Vakka-Viestintä website"
+                width="400"
+                height="460"
+              />
+            </figure>
+            <article class="col-lg-8">
+              <div class="card-body">
+                <h3 class="card-title display-4">Vakka-Viestintä</h3>
                 <p>
-                  I built a new website from scratch. I still used their brand
-                  colors and most of the text they had. For design, I used the
-                  new version of Bootstrap 5.1. <br />
-                  I optimized all of their videos and images, serving .webp
-                  images. <br />
-                  No cookies are used, but there is a contact form therefore a
-                  privacy policy is required. I had never before implemented a
-                  privacy policy and it was quite a challenge to find
-                  information. Luckily I stumped upon
-                  <em>iubenda.com</em> who offer services for
-                  privacy-policies, terms of use, cookies etc. <br />
-                  I increased the security of the site, setting some headers,
-                  such as referer-policy, content-security-policy, x-frame
-                  options etc. That was a challenge as well but there's good
-                  documentation at <em>mozilla.org</em>. <br />
-                  Finally the site is bundled with Snowpack and hosted in
-                  Netlify.
+                  Vakka-Viestintä is an advertising agency located in
+                  Uusikaupunki (FI) and specializing in digital advertisement
+                  and marketing. I was tasked to update and refresh their
+                  website.
                 </p>
-              </details>
-              <a href="https://vakkaviestinta.com" class="ps-2 ms-1 ms-lg-2 link-warning">Visit the site</a>
-            </div>
-          </article>
+                <h4>Tools I used</h4>
+                <figure>
+                  <img
+                    src="pictures/html5.webp"
+                    alt="html5 icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    src="pictures/css3.webp"
+                    alt="css3 icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    src="pictures/boostrap.webp"
+                    alt="bootstrap 5 icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <!--  <img
+                    src="pictures/snowpack.webp"
+                    alt="snowpack icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                    loading="lazy"
+                  /> -->
+                  <img
+                    src="pictures/netlify.webp"
+                    alt="netlify icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                </figure>
+                <details class="py-2 my-2">
+                  <summary>Read more</summary>
+                  <p class="pt-1 mb-0">
+                    I identified several areas which I could improve:
+                  </p>
+                  <ul>
+                    <li>The site was made with Bootstrap 3</li>
+                    <li>It didn't pass the lighthouse tests</li>
+                    <li>It scored poorly on security tests</li>
+                    <li>It didn't comply with the GDPR policy</li>
+                  </ul>
+                  <p>
+                    I built a new website from scratch. I still used their brand
+                    colors and most of the text they had. For design, I used the
+                    new version of Bootstrap 5. <br />
+                    I optimized all of their videos and images, serving .webp
+                    images. <br />
+                    No cookies are used, but due to a contact form a privacy
+                    policy is required. I created one with
+                    <em>iubenda.com</em> who offers services as
+                    privacy-policies, terms of use, cookies etc. and I also
+                    added the privacy and GDPR policy that Netlify provides.
+                    <br />
+                    I increased the security of the site, setting some headers,
+                    such as referer-policy, content-security-policy, x-frame
+                    options etc. That was a challenge as well but there's good
+                    documentation at <em>mozilla.org</em>. <br />
+                    Finally the site is bundled with Snowpack and hosted in
+                    Netlify.
+                  </p>
+                </details>
+                <a
+                  href="https://vakkaviestinta.com"
+                  class="ps-2 ms-1 ms-lg-2 link-warning"
+                  >Visit the site</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="card mt-5 mb-3 bg-dark">
+          <div class="row g-0">
+            <figure class="col-lg-4 mb-0">
+              <img
+                src="pictures/explore_suomi.webp"
+                loading="lazy"
+                aria-hidden="true"
+                class="card-img rounded-start"
+                alt="screeshot from landing page of explore_suomi website"
+                width="400"
+                height="300"
+              />
+            </figure>
+            <article class="col-lg-8">
+              <div class="card-body">
+                <h3 class="card-title display-4">Explore_Suomi</h3>
+                <p>
+                  Explore_Suomi is a blog website supplementary to the instagram
+                  account
+                  <a href="https://www.instagram.com/explore_suomi/"
+                    >@explore_suomi</a
+                  >
+                  which contains stories and photos of trips in Finland.
+                </p>
+                <h4>Tools I used</h4>
+                <figure>
+                  <img
+                    src="pictures/html5.webp"
+                    alt="html5 icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="pictures/css3.webp"
+                    alt="css3 icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="pictures/papercss.webp"
+                    alt="paperCss icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="pictures/javascript.webp"
+                    alt="javascript icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="pictures/handlebars.webp"
+                    alt="handlebars icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                    class="bg-light"
+                  />
+                  <img
+                    src="pictures/snowpack.webp"
+                    alt="snowpack icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="pictures/netlify.webp"
+                    alt="netlify icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                </figure>
+                <details class="py-2 my-2">
+                  <summary>Read more</summary>
+                  <p class="pt-2">
+                    I built a new website from scratch. I chose to work with the
+                    PaperCss framework because it is very minimal, customizable
+                    with my own css, it looks funny and fresh. <br />
+                    As the blog grows there will be plenty of images, therefore
+                    I use an image-CDN to automatically optimize, transform the
+                    images in real-time, and storage them as well. <br />
+                    I use handlebars.js as a templating language. All the
+                    information of the posts (destination, description, images)
+                    are written in a javascript object and then injected by
+                    handlebars in html. <br />
+                    In the future,as the blog grows, there might be a need to
+                    update this site in a cms site, using sanity or netlify cms.
+                    <br />
+                    Finally the site is bundled with Snowpack and hosted in
+                    Netlify.
+                  </p>
+                </details>
+                <a
+                  href="https://explore-suomi.netlify.app/"
+                  class="ps-2 ms-1 ms-lg-2 link-warning"
+                  >Visit the site</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="card mt-5 mb-3 bg-dark">
+          <div class="row g-0">
+            <figure class="col-lg-4 mb-0">
+              <img
+                src="pictures/elisan-blog.webp"
+                loading="lazy"
+                aria-hidden="true"
+                class="card-img rounded-start"
+                alt="screeshot from landing page of explore_suomi website"
+                width="400"
+                height="300"
+              />
+            </figure>
+            <article class="col-lg-8">
+              <div class="card-body">
+                <h3 class="card-title display-4">Elisan Antologia</h3>
+                <p>
+                  I've created this site for Elisa Stenberg, a young writer who
+                  wanted a space to share her writings.
+                </p>
+                <h4>Tools I used</h4>
+                <figure>
+                  <img
+                    src="pictures/html5.webp"
+                    alt="html5 icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="pictures/css3.webp"
+                    alt="css3 icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="pictures/w3css.webp"
+                    alt="w3Css icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="pictures/javascript.webp"
+                    alt="javascript icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="pictures/handlebars.webp"
+                    alt="handlebars icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                    class="bg-light"
+                  />
+                  <img
+                    src="pictures/github.webp"
+                    alt="github icon"
+                    width="50"
+                    height="50"
+                    aria-hidden="true"
+                  />
+                </figure>
+                <details class="py-2 my-2">
+                  <summary>Read more</summary>
+                  <p class="pt-2">
+                    I built this website using a template from
+                    <em>W3schools.com</em> and I'm working with the W3Css
+                    framework. w3.css is lightweight and easy to use. <br />
+                    There are plenty of images, therefore I use an image-CDN to
+                    automatically optimize, transform the images in real-time,
+                    and storage them as well. <br />
+                    I use handlebars.js as a templating language. All the
+                    information of the posts (title, the text itself etc.) are
+                    written in a javascript object and then injected by
+                    handlebars in html. <br />
+                    Finally the site is hosted in Github.
+                  </p>
+                </details>
+                <a
+                  href="https://panugr.github.io/elisa/"
+                  class="ps-2 ms-1 ms-lg-2 link-warning"
+                  >Visit the site</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <h2 id="about" class="display-2 container py-3">#️⃣ About me</h2>
+      <section class="container pb-5 d-lg-flex gap-lg-5">
+        <article class="">
+          <p>
+            Hello! I'm Panagiotis and I'm currently working in the automobile
+            industry. In April 2020, I joined Codecademy and started studying
+            Web-Development. I enjoy the frontend development very much.
+          </p>
+          <p>
+            Besides my codecademy courses, which you can freely seen in
+            <a href="https://www.codecademy.com/profiles/PakisGr"
+              >my Codecademy profile</a
+            >, I also joined Frontend Mentor, a site where I can complete
+            frontend challenges.
+          </p>
+          <p>
+            Up until today, my experience in coding comes from working on
+            projects, from Codecademy and Front-end mentor. Participating in
+            other people's projects has also given me valuable experience.
+          </p>
+        </article>
+        <img
+          src="pictures/aboutme.webp"
+          loading="lazy"
+          aria-hidden="true"
+          alt="Panagiotis Panagiotakopoulos in Helsinki library"
+          class="align-self-lg-center rounded-3"
+          width="512"
+          height="341"
+        />
+      </section>
+
+      <section id="challenges" class="container py-5">
+        <h2 class="display-3">Recent challenges</h2>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide w-50 mx-auto py-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <figure class="carousel-item active">
+              <img src="" class="" alt="" width="" height="" loading="lazy" />
+              <figcaption></figcaption>
+            </figure>
+
+            <figure class="carousel-item">
+              <img src="" class="" alt="" width="" height="" loading="lazy" />
+              <figcaption></figcaption>
+            </figure>
+
+            <figure class="carousel-item">
+              <img src="" class="" alt="" width="" height="" loading="lazy" />
+              <figcaption></figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
-      <section class="card mt-5 mb-3 bg-dark">
-        <div class="row g-0">
-          <figure class="col-lg-4 mb-0">
-            <img src="pictures/explore_suomi.webp" loading="lazy" aria-hidden="true" class="card-img rounded-start"
-              alt="screeshot from landing page of explore_suomi website" width="400" height="300" />
-          </figure>
-          <article class="col-lg-8">
-            <div class="card-body">
-              <h3 class="card-title display-4">Explore_Suomi</h3>
-              <p>
-                Explore_Suomi is a blog website supplementary to the instagram
-                account
-                <a href="https://www.instagram.com/explore_suomi/">@explore_suomi</a>
-                which contains stories and photos of trips in Finland.
-              </p>
-              <h4>Tools I used</h4>
-              <figure>
-                <img src="pictures/html5.webp" alt="html5 icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/css3.webp" alt="css3 icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/papercss.webp" alt="paperCss icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/javascript.webp" alt="javascript icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/handlebars.webp" alt="handlebars icon" width="50" height="50" aria-hidden="true"
-                  class="bg-light" />
-                <img src="pictures/snowpack.webp" alt="snowpack icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/netlify.webp" alt="netlify icon" width="50" height="50" aria-hidden="true" />
-              </figure>
-              <details class="py-2 my-2">
-                <summary>Read more</summary>
-                <p class="pt-2">
-                  I built a new website from scratch. I chose to work with the
-                  PaperCss framework because it is very minimal, customizable
-                  with my own css, it looks funny and fresh. <br />
-                  As the blog grows there will be plenty of images, therefore
-                  I use an image-CDN to automatically optimize, transform the
-                  images in real-time, and storage them as well. <br />
-                  I use handlebars.js as a templating language. All the
-                  information of the posts (destination, description, images)
-                  are written in a javascript object and then injected by
-                  handlebars in html. <br />
-                  In the future,as the blog grows, there might be a need to
-                  update this site in a cms site, using sanity or netlify cms.
-                  <br />
-                  Finally the site is bundled with Snowpack and hosted in
-                  Netlify.
-                </p>
-              </details>
-              <a href="https://explore-suomi.netlify.app/" class="ps-2 ms-1 ms-lg-2 link-warning">Visit the site</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="card mt-5 mb-3 bg-dark">
-        <div class="row g-0">
-          <figure class="col-lg-4 mb-0">
-            <img src="pictures/elisan-blog.webp" loading="lazy" aria-hidden="true" class="card-img rounded-start"
-              alt="screeshot from landing page of explore_suomi website" width="400" height="300" />
-          </figure>
-          <article class="col-lg-8">
-            <div class="card-body">
-              <h3 class="card-title display-4">Elisan Antologia</h3>
-              <p>
-                I've created this site for Elisa Stenberg, a young writer who
-                wanted a space to share her writings.
-              </p>
-              <h4>Tools I used</h4>
-              <figure>
-                <img src="pictures/html5.webp" alt="html5 icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/css3.webp" alt="css3 icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/w3css.webp" alt="w3Css icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/javascript.webp" alt="javascript icon" width="50" height="50" aria-hidden="true" />
-                <img src="pictures/handlebars.webp" alt="handlebars icon" width="50" height="50" aria-hidden="true"
-                  class="bg-light" />
-                <img src="pictures/github.webp" alt="github icon" width="50" height="50" aria-hidden="true" />
-              </figure>
-              <details class="py-2 my-2">
-                <summary>Read more</summary>
-                <p class="pt-2">
-                  I built this website using a template from
-                  <em>W3schools.com</em> and I'm working with the W3Css
-                  framework. w3.css is lightweight and easy to use. <br />
-                  There are plenty of images, therefore I use an image-CDN to
-                  automatically optimize, transform the images in real-time,
-                  and storage them as well. <br />
-                  I use handlebars.js as a templating language. All the
-                  information of the posts (title, the text itself etc.) are
-                  written in a javascript object and then injected by
-                  handlebars in html. <br />
-                  Finally the site is hosted in Github.
-                </p>
-              </details>
-              <a href="https://panugr.github.io/elisa/" class="ps-2 ms-1 ms-lg-2 link-warning">Visit the site</a>
-            </div>
-          </article>
-        </div>
-      </section>
-    </section>
-
-    <h2 id="about" class="display-2 container py-3">🧔 About me</h2>
-    <section class="container pb-5 d-lg-flex gap-lg-5">
-      <article class="">
-        <p>
-          Hello! I'm Panagiotis and I'm currently working in the automobile
-          industry. In April 2020, I joined Codecademy and started studying
-          Web-Development. I enjoy the frontend development very much.
-        </p>
-        <p>
-          Besides my codecademy courses, which you can freely seen in
-          <a href="https://www.codecademy.com/profiles/PakisGr">my account</a>, I also joined Frontend Mentor, a site
-          where I can complete
-          frontend challenges.
-        </p>
-        <p>
-          Up until today, my experience in coding comes from working on
-          projects, from Codecademy and Front-end mentor. Participating in
-          other people's projects has given me valuable experience.
-        </p>
-      </article>
-      <img src="pictures/aboutme.webp" loading="lazy" aria-hidden="true" alt="Panagiotis Panagiotakopoulos in Helsinki library"
-        class="align-self-lg-center rounded-3" width="512" height="341" />
-    </section>
-
-    <section id="challenges" class="container py-5">
-      <h2 class="display-3">Recent challenges</h2>
-      <div id="carouselExampleSlidesOnly" class="carousel slide w-50 mx-auto py-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <figure class="carousel-item active">
-            <img src="" class="" alt="" width="" height="" loading="lazy" />
-            <figcaption></figcaption>
-          </figure>
-
-          <figure class="carousel-item">
-            <img src="" class="" alt="" width="" height="" loading="lazy" />
-            <figcaption></figcaption>
-          </figure>
-
-          <figure class="carousel-item">
-            <img src="" class="" alt="" width="" height="" loading="lazy" />
-            <figcaption></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- 
+      <!-- 
       <details>
         <summary>Revelation Football Club</summary>
         <p>
@@ -295,12 +462,21 @@
       </details>
 
       -->
-  </main>
+    </main>
 
-  <footer class="text-center py-3">
-    <small>
-      ©️ 2020-2021 by Panagiotis Panagiotakopoulos | Front-end Developer</small>
-  </footer>
-</body>
-
+    <footer class="text-center py-3">
+      <p class="mx-auto">
+        Feel free to explore my
+        <a href="https://github.com/PanuGr">Github account</a> and my
+        <a href="https://www.frontendmentor.io/profile/PanuGr"
+          >frontendmentor account</a
+        >
+        for more projects.
+      </p>
+      <small>
+        ©️ 2020-2021 by Panagiotis Panagiotakopoulos | Front-end
+        Developer</small
+      >
+    </footer>
+  </body>
 </html>

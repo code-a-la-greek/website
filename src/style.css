@@ -7,7 +7,7 @@
 
 @media (prefers-color-scheme: dark) { :root { --bs-body-bg: black; --bs-body-color: #fff; } }
 
-body { min-width: 320px; max-width: 2000px; margin: auto; }
+body { min-width: 320px; }
 
 img { pointer-events: none; }
 
