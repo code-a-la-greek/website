@@ -11,7 +11,7 @@
     public,
     must-revalidate'''
     
-    content-security-policy-report-only='''
+    content-security-policy='''
     script-src 'self'; 
     require-trusted-types-for 'script';
     connect-src 'self';
