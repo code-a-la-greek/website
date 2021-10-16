@@ -1,3 +1,7 @@
+:root { --yellow: #ff8906; --bs-dark-rgb: 186, 232, 232; }
+
+@media (prefers-color-scheme: dark) { :root { --bs-body-bg: black; --bs-body-color: white; --yellow: #ffda06; --bs-dark-rgb: 39, 35, 67; } }
+
 @keyframes sweep { 0% { opacity: 0;
     margin-top: -10px; }
   100% { opacity: 1;
@@ -5,19 +9,25 @@
 
 @media (prefers-reduced-motion) { details[open] summary ~ * { animation: none; } }
 
-@media (prefers-color-scheme: dark) { :root { --bs-body-bg: black; --bs-body-color: #fff; } }
-
 body { min-width: 320px; }
 
 img { pointer-events: none; }
 
-p { max-inline-size: 75ch; }
+p { max-inline-size: 75ch; color: var(--bs-body-color); }
 
-header { background-image: url("pictures/blob-scene-dark.svg"); background-repeat: no-repeat; background-size: cover; display: grid; gap: 1rem; place-content: center; }
+a { color: var(--yellow); }
+
+a:hover, a:focus, a:active, a:visited { opacity: 0.7; color: var(--yellow); }
+
+header { background-image: url("pictures/blob-scene-light.svg"); background-repeat: no-repeat; background-size: cover; display: grid; gap: 1rem; place-content: center; }
 
 header img { justify-self: center; }
 
 header p { max-inline-size: 45ch; }
+
+header a { color: black; background-color: var(--yellow); }
+
+header a:hover, header a:focus, header a:active, header a:visited { opacity: 0.7; color: black; }
 
 .buttonUp { position: fixed; right: 10px; bottom: 1rem; font-size: large; visibility: hidden; border: none; border-radius: 20px; cursor: pointer; text-transform: capitalize; padding: 0.5rem; z-index: 1; }
 
@@ -32,5 +42,7 @@ details[open] summary ~ * { animation: sweep 0.5s ease-in-out; }
 li { padding-bottom: 1rem; }
 
 main p { line-height: 2; }
+
+@media (prefers-color-scheme: dark) { header { background-image: url("pictures/blob-scene-dark.svg"); } }
 
 @media (min-width: 1440px) { header, main { font-size: clamp(20px, 1vw, 30px); } }

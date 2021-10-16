@@ -2,12 +2,10 @@
   "name": "My_portfolio",
   "version": "1.0.0",
   "description": "I study Web-development and I've created this site as part of a project.",
-  "main": "./dev/index.html",
+  "main": "./src/index.html",
   "scripts": {
     "start": "snowpack dev",
-    "test": "netlify dev",
-    "build": "snowpack build",
-    "live": "netlify dev --live"
+    "build": "snowpack build"
   },
   "repository": {
     "type": "git",

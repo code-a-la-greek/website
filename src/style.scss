@@ -1,4 +1,12 @@
 :root {
+  --yellow: #ff8906;
+  --bs-dark-rgb: 186, 232, 232; //soft-blue for changing the bg-dark variable
+  @media (prefers-color-scheme: dark) {
+    --bs-body-bg: black;
+    --bs-body-color: white;
+    --yellow: #ffda06;
+    --bs-dark-rgb: 39, 35, 67; //dark-blue for changing the bg-dark variable
+  }
 }
 
 @keyframes sweep {
@@ -17,18 +25,10 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bs-body-bg: black;
-    --bs-body-color: #fff;
-  }
-}
-
 ///////////////////////////////GENERAL STYLES//////////////////////////////////////////////
 
 body {
   min-width: 320px;
-  
 }
 
 img {
@@ -37,12 +37,23 @@ img {
 
 p {
   max-inline-size: 75ch;
+  color: var(--bs-body-color);
+}
+a {
+  color: var(--yellow);
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    opacity: 0.7;
+    color: var(--yellow);
+  }
 }
 
 ////////////////////ELEMENTS STYLE////////////////////////////
 
 header {
-  background-image: url("pictures/blob-scene-dark.svg");
+  background-image: url("pictures/blob-scene-light.svg");
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -53,6 +64,17 @@ header {
   }
   p {
     max-inline-size: 45ch;
+  }
+  a {
+    color: black;
+    background-color: var(--yellow);
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      opacity: 0.7;
+      color: black;
+    }
   }
 }
 
@@ -86,13 +108,18 @@ details[open] summary ~ * {
   animation: sweep 0.5s ease-in-out;
 }
 
-li{
+li {
   padding-bottom: 1rem;
 }
 
-main p{
+main p {
   line-height: 2;
+}
 
+@media (prefers-color-scheme: dark) {
+  header {
+    background-image: url("pictures/blob-scene-dark.svg");
+  }
 }
 
 @media (min-width: 1440px) {

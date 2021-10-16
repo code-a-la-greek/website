@@ -12,7 +12,7 @@
     />
     <meta
       name="image"
-      content="https://panagiotis.netlify.app/dev/pictures/profile-photo-small.webp"
+      content="https://panagiotis.netlify.app/src/pictures/profile-photo-small.webp"
     />
     <meta name="og:url" content="https://panagiotis.netlify.app" />
     <meta
@@ -21,7 +21,10 @@
     />
     <meta name="og:type" content="website" />
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <script async type="module" src="index.js"></script>
@@ -35,16 +38,12 @@
         <ul>
           <li>
             Take a look at my
-            <a href="#portfolio" class="bg-warning p-1 rounded-3">portfolio</a>
+            <a href="#portfolio" class="p-1 rounded-3">portfolio</a>
           </li>
-          <li>
-            read <a href="#about" class="bg-warning p-1 rounded-3">about me</a>
-          </li>
+          <li>read <a href="#about" class="p-1 rounded-3">about me</a></li>
           <li>
             check the latest
-            <a href="#challenges" class="bg-warning p-1 rounded-3"
-              >challenges</a
-            >
+            <a href="#challenges" class="p-1 rounded-3">challenges</a>
           </li>
         </ul>
       </nav>
@@ -155,13 +154,11 @@
                     such as referer-policy, content-security-policy, x-frame
                     options etc. That was a challenge as well but there's good
                     documentation at <em>mozilla.org</em>. <br />
-                    Finally the site is bundled with Snowpack and hosted in
+                    The site is hosted in
                     Netlify.
                   </p>
                 </details>
-                <a
-                  href="https://vakkaviestinta.com"
-                  class="ps-2 ms-1 ms-lg-2 link-warning"
+                <a href="https://vakkaviestinta.com" class="ps-2 ms-1 ms-lg-2"
                   >Visit the site</a
                 >
               </div>
@@ -268,7 +265,7 @@
                 </details>
                 <a
                   href="https://explore-suomi.netlify.app/"
-                  class="ps-2 ms-1 ms-lg-2 link-warning"
+                  class="ps-2 ms-1 ms-lg-2"
                   >Visit the site</a
                 >
               </div>
@@ -360,7 +357,7 @@
                 </details>
                 <a
                   href="https://panugr.github.io/elisa/"
-                  class="ps-2 ms-1 ms-lg-2 link-warning"
+                  class="ps-2 ms-1 ms-lg-2"
                   >Visit the site</a
                 >
               </div>
@@ -370,7 +367,7 @@
       </section>
 
       <h2 id="about" class="display-2 container py-3">#️⃣ About me</h2>
-      <section class="container pb-5 d-lg-flex gap-lg-5">
+      <section class="container pb-5 d-lg-flex gap-lg-5 bg-dark">
         <article class="">
           <p>
             Hello! I'm Panagiotis and I'm currently working in the automobile
@@ -395,37 +392,16 @@
           loading="lazy"
           aria-hidden="true"
           alt="Panagiotis Panagiotakopoulos in Helsinki library"
-          class="align-self-lg-center rounded-3"
+          class="align-self-lg-center rounded-3 img-fluid"
           width="512"
           height="341"
         />
       </section>
 
-      <section id="challenges" class="container py-5">
-        <h2 class="display-3">Recent challenges</h2>
-        <div
-          id="carouselExampleSlidesOnly"
-          class="carousel slide w-50 mx-auto py-5"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <figure class="carousel-item active">
-              <img src="" class="" alt="" width="" height="" loading="lazy" />
-              <figcaption></figcaption>
-            </figure>
-
-            <figure class="carousel-item">
-              <img src="" class="" alt="" width="" height="" loading="lazy" />
-              <figcaption></figcaption>
-            </figure>
-
-            <figure class="carousel-item">
-              <img src="" class="" alt="" width="" height="" loading="lazy" />
-              <figcaption></figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+    <!--   <section id="challenges" class="container py-5">
+        <h2 class="display-2">#️⃣ Fun Projects</h2>
+       
+      </section> -->
 
       <!-- 
       <details>
