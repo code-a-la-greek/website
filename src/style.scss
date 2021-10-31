@@ -1,12 +1,8 @@
 :root {
-  --yellow: #ff8906;
-  --bs-dark-rgb: 186, 232, 232; //soft-blue for changing the bg-dark variable
-  @media (prefers-color-scheme: dark) {
-    --bs-body-bg: black;
-    --bs-body-color: white;
-    --yellow: #ffda06;
-    --bs-dark-rgb: 39, 35, 67; //dark-blue for changing the bg-dark variable
-  }
+  --bs-body-bg: black;
+  --bs-body-color: white;
+  --yellow: #ffda06;
+  --dark-blue: #272343;
 }
 
 @keyframes sweep {
@@ -29,15 +25,40 @@
 
 body {
   min-width: 320px;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
 }
 
-img {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: serif;
+}
+
+p,
+ul,
+ol {
+  font-family: sans-serif;
+}
+
+img,
+picture {
   pointer-events: none;
+  max-width: 100%;
+  height: auto;
 }
 
-p {
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a p {
   max-inline-size: 75ch;
-  color: var(--bs-body-color);
 }
 a {
   color: var(--yellow);
@@ -53,18 +74,10 @@ a {
 ////////////////////ELEMENTS STYLE////////////////////////////
 
 header {
-  background-image: url("pictures/blob-scene-light.svg");
+  background-image: url("pictures/blob-scene-dark.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
-  gap: 1rem;
-  place-content: center;
-  img {
-    justify-self: center;
-  }
-  p {
-    max-inline-size: 45ch;
-  }
+
   a {
     color: black;
     background-color: var(--yellow);
@@ -91,6 +104,8 @@ header {
   padding: 0.5rem;
   z-index: 1;
 }
+.bg-dark-blue{background-color:var(--dark-blue);}
+.bg-black{background-color: black;}
 
 details {
   cursor: pointer;
@@ -116,15 +131,12 @@ main p {
   line-height: 2;
 }
 
-@media (prefers-color-scheme: dark) {
-  header {
-    background-image: url("pictures/blob-scene-dark.svg");
-  }
-}
-
 @media (min-width: 1440px) {
   header,
   main {
     font-size: clamp(20px, 1vw, 30px);
+  }
+  header ul {
+    max-width: 75%;
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="dark" />
     <title>P.Panagiotakopoulos | Front-end Developer</title>
     <meta
       name="description"
@@ -20,10 +20,11 @@
       content="P.Panagiotakopoulos | Front-end Developer"
     />
     <meta name="og:type" content="website" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css"
+      integrity="sha256-YvdLHPgkqJ8DVUxjjnGVlMMJtNimJ6dYkowFFvp4kKs="
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
 
@@ -31,30 +32,30 @@
   </head>
 
   <body>
-    <header class="container-fluid min-vh-100">
-      <h1 class="display-1">Panagiotis Panagiotakopoulos</h1>
-      <p>Welcome to my personal website 👋</p>
-      <nav>
-        <ul>
-          <li>
-            Take a look at my
-            <a href="#portfolio" class="p-1 rounded-3">portfolio</a>
-          </li>
-          <li>read <a href="#about" class="p-1 rounded-3">about me</a></li>
-          <li>
-            check the latest
-            <a href="#challenges" class="p-1 rounded-3">challenges</a>
-          </li>
-        </ul>
-      </nav>
-
-      <img
-        src="pictures/profile-photo-small.webp"
-        alt=""
-        width="200"
-        aria-hidden="true"
-        class="rounded-circle"
-      />
+    <header class=" min-vh-100">
+      <h1 class="display-1 text-center mb-4 p-md-3">Panagiotis Panagiotakopoulos</h1>
+      <p class="text-center mb-5">Welcome to my personal website 👋</p>
+      <div class="container row gap-5 gap-md-0 m-auto align-items-center">
+        <nav class="col-md-8 ">
+          <ul class="m-auto">
+            <li>
+              Take a look at my
+              <a href="#portfolio" class="p-1 rounded-3">portfolio</a>
+            </li>
+            <li>read <a href="#about" class="p-1 rounded-3">about me</a></li>
+            <li>
+              check the latest
+              <a href="#challenges" class="p-1 rounded-3">challenges</a>
+            </li>
+          </ul>
+        </nav>
+        <img
+          src="pictures/profile-photo-small.webp"
+          alt="profile photo of Panagiotis"
+          aria-hidden="true"
+          class="rounded-circle col-md-4"
+        />
+      </div>
       <button class="buttonUp" aria-label="click to scroll up">up⬆️</button>
     </header>
 
@@ -62,20 +63,18 @@
       <section id="portfolio" class="container py-5">
         <h2 class="display-2">#️⃣ My Portfolio</h2>
 
-        <section class="card mt-5 mb-3 bg-dark">
+        <section class="card border-0  mt-5 mb-3 ">
           <div class="row g-0">
-            <figure class="col-lg-4 mb-0">
+            <figure class="col-lg-4 mb-0 bg-black">
               <img
                 src="pictures/VakkaViestintä.webp"
                 loading="lazy"
                 aria-hidden="true"
-                class="card-img rounded-start"
                 alt="screeshot from landing page of Vakka-Viestintä website"
-                width="400"
-                height="460"
+               
               />
             </figure>
-            <article class="col-lg-8">
+            <article class="col-lg-8 bg-dark-blue">
               <div class="card-body">
                 <h3 class="card-title display-4">Vakka-Viestintä</h3>
                 <p>
@@ -154,8 +153,7 @@
                     such as referer-policy, content-security-policy, x-frame
                     options etc. That was a challenge as well but there's good
                     documentation at <em>mozilla.org</em>. <br />
-                    The site is hosted in
-                    Netlify.
+                    The site is hosted in Netlify.
                   </p>
                 </details>
                 <a href="https://vakkaviestinta.com" class="ps-2 ms-1 ms-lg-2"
@@ -166,20 +164,18 @@
           </div>
         </section>
 
-        <section class="card mt-5 mb-3 bg-dark">
-          <div class="row g-0">
-            <figure class="col-lg-4 mb-0">
+        <section class="card border-0 mt-5 mb-3 ">
+          <div class="row g-0 bg-dark">
+            <figure class="col-lg-4 mb-0 bg-black">
               <img
                 src="pictures/explore_suomi.webp"
                 loading="lazy"
                 aria-hidden="true"
-                class="card-img rounded-start"
                 alt="screeshot from landing page of explore_suomi website"
-                width="400"
-                height="300"
+               
               />
             </figure>
-            <article class="col-lg-8">
+            <article class="col-lg-8 bg-dark-blue">
               <div class="card-body">
                 <h3 class="card-title display-4">Explore_Suomi</h3>
                 <p>
@@ -256,9 +252,6 @@
                     information of the posts (destination, description, images)
                     are written in a javascript object and then injected by
                     handlebars in html. <br />
-                    In the future,as the blog grows, there might be a need to
-                    update this site in a cms site, using sanity or netlify cms.
-                    <br />
                     Finally the site is bundled with Snowpack and hosted in
                     Netlify.
                   </p>
@@ -273,20 +266,17 @@
           </div>
         </section>
 
-        <section class="card mt-5 mb-3 bg-dark">
-          <div class="row g-0">
-            <figure class="col-lg-4 mb-0">
+        <section class="card border-0 mt-5 mb-3 ">
+          <div class="row g-0 ">
+            <figure class="col-lg-4 mb-0 bg-black" >
               <img
                 src="pictures/elisan-blog.webp"
                 loading="lazy"
                 aria-hidden="true"
-                class="card-img rounded-start"
-                alt="screeshot from landing page of explore_suomi website"
-                width="400"
-                height="300"
+                alt="screeshot from landing page of Elisa's blog"
               />
             </figure>
-            <article class="col-lg-8">
+            <article class="col-lg-8 bg-dark-blue">
               <div class="card-body">
                 <h3 class="card-title display-4">Elisan Antologia</h3>
                 <p>
@@ -367,7 +357,7 @@
       </section>
 
       <h2 id="about" class="display-2 container py-3">#️⃣ About me</h2>
-      <section class="container pb-5 d-lg-flex gap-lg-5 bg-dark">
+      <section class="container p-4 d-lg-flex gap-lg-5 bg-dark-blue rounded-3">
         <article class="">
           <p>
             Hello! I'm Panagiotis and I'm currently working in the automobile
@@ -398,8 +388,9 @@
         />
       </section>
 
-    <!--   <section id="challenges" class="container py-5">
-        <h2 class="display-2">#️⃣ Fun Projects</h2>
+    <section id="challenges" class="container py-5">
+        <h2 class="display-2">#️⃣ Side Projects</h2>
+      <!--   
        
       </section> -->
 
