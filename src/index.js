@@ -30,7 +30,7 @@ const getData = async () => {
     }
 };
 
-getData().
+/* getData().
     then(data => {
         for (let i = 0; i < data.length; i++) {
             const websiteLink = data[i].website;
@@ -54,18 +54,5 @@ getData().
             textHtml.innerHTML = text;
         }
     });
+ */
 
-
-/* const dataArray = [data[0], data[1], data[2], data[3]];
-const liveDemo = [data[0].website, data[1].website, data[2].website, data[3].website];
-const githubLinks = [data[0].github, data[1].github, data[2].github, data[3].github];
-const image = [data[0].image, data[1].image, data[2].image, data[3].image];
-const infoText = [data[0].info, data[1].info, data[2].info, data[3].info];
-const title = [data[0].title, data[1].title, data[2].title, data[3].title];
-//console.log(liveDemo)
-
-for (let i = 0; i < liveDemo.length; i++) {
-    const websiteLink = liveDemo[i];
-    const element = cardLiveDemo[i];
-    element.setAttribute("href", websiteLink)
-} */
