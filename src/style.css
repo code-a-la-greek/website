@@ -17,17 +17,9 @@ img, picture { pointer-events: none; max-width: 100%; height: auto; }
 
 input, button, textarea, select { font: inherit; }
 
-a p { max-inline-size: 75ch; }
-
-a { color: var(--yellow); }
-
-a:hover, a:focus, a:active, a:visited { opacity: 0.8; color: var(--yellow); }
+p { max-inline-size: 75ch; }
 
 header { background-image: url("pictures/blob-scene-dark.svg"); background-repeat: no-repeat; background-size: cover; }
-
-header a { color: black; background-color: var(--yellow); }
-
-header a:hover, header a:focus, header a:active, header a:visited { opacity: 0.7; color: black; }
 
 .buttonUp { position: fixed; right: 10px; bottom: 1rem; font-size: large; visibility: hidden; border: none; border-radius: 20px; cursor: pointer; text-transform: capitalize; padding: 0.5rem; z-index: 1; }
 
