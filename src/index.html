@@ -32,9 +32,7 @@
 
   <body>
     <header class="min-vh-100">
-      <h1 class="display-1 text-center mb-4 ">
-        Panagiotis Panagiotakopoulos
-      </h1>
+      <h1 class="display-1 text-center mb-4">Panagiotis Panagiotakopoulos</h1>
       <p class="m-auto text-center mb-5">Welcome to my personal website 👋</p>
       <div class="container row gap-5 gap-md-0 m-auto align-items-center">
         <nav class="col-md-8">
@@ -75,12 +73,12 @@
     </header>
 
     <main>
-      <section id="portfolio" class="container py-5">
+      <section id="portfolio" class="container py-5 ">
         <h2 class="display-2">
-          <img src="pictures/hashtag.webp"  alt="" /> My Portfolio
+          <img src="pictures/hashtag.webp" alt="" /> My Portfolio
         </h2>
 
-        <section class="card border-0 mt-5 mb-3">
+        <section class="card border-0 my-5 ">
           <div class="row g-0">
             <figure class="col-lg-4 mb-0 bg-black">
               <img
@@ -182,7 +180,7 @@
           </div>
         </section>
 
-        <section class="card border-0 mt-5 mb-3">
+        <section class="card border-0 my-5 ">
           <div class="row g-0 bg-dark">
             <figure class="col-lg-4 mb-0 bg-black">
               <img
@@ -198,7 +196,9 @@
                 <p>
                   Explore_Suomi is a blog website supplementary to the instagram
                   account
-                  <a href="https://www.instagram.com/explore_suomi/" class="link-warning"
+                  <a
+                    href="https://www.instagram.com/explore_suomi/"
+                    class="link-warning"
                     >@explore_suomi</a
                   >
                   which contains stories and photos of trips in Finland.
@@ -283,7 +283,7 @@
           </div>
         </section>
 
-        <section class="card border-0 mt-5 mb-3">
+        <section class="card border-0 my-5 ">
           <div class="row g-0">
             <figure class="col-lg-4 mb-0 bg-black">
               <img
@@ -409,100 +409,89 @@
         />
       </section>
 
-      <!-- <section id="challenges" class="container py-5">
+      <section id="challenges" class="container py-5 mt-lg-5">
         <h2 class="display-2">
-          <img src="pictures/hashtag.webp"  alt="" /> Side Projects
+          <img src="pictures/hashtag.webp" alt="" /> Side Projects
         </h2>
 
-        <section
-          class="row m-auto py-4 gap-3 justify-content-evenly text-black"
-        >
-          <div class="card" style="width: 18rem">
-            <img src="" class="card-img-top" alt="" />
+        <section class="row row-cols-1 gap-3 row-cols-lg-2 gap-lg-0 g-lg-4  py-4 text-black">
+          <div class="card col ">
+            <img
+              src="https://ik.imagekit.io/panugr/ProjectsDatabase/sunnyside"
+              class="card-img-top w-75"
+              alt=""
+            />
             <div class="card-body">
-              <h3 class="card-title">Card title</h3>
+              <h3 class="card-title">Sunnyside</h3>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Sunnyside agency landing page, built with Bootstrap 5. Includes
+                mobile menu, grid and responsive layout.
               </p>
+            </div>
+            <div class="links">
               <a href="#" class="btn btn-warning live">Live demo</a>
               <a href="#" class="btn btn-primary github">View code</a>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <img src="" class="card-img-top" alt="" />
+          <div class="card col">
+            <img
+              src="https://ik.imagekit.io/panugr/ProjectsDatabase/tip-calculator.jpeg"
+              class="card-img-top "
+              alt=""
+            />
             <div class="card-body">
-              <h3 class="card-title">Card title</h3>
+              <h3 class="card-title">SPLITTER, the tip-calculator</h3>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                I had previously built a basic tip calculator but now I'm taking
+                the opportunity to refactor my previous application using this
+                challenge. It's a new desing, better form handling and I turned
+                it into a PWA.
               </p>
+            </div>
+            <div class="links">
               <a href="#" class="btn btn-warning live">Live demo</a>
               <a href="#" class="btn btn-primary github">View code</a>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <img src="" class="card-img-top" alt="" />
+          <div class="card col">
+            <img
+              src="https://ik.imagekit.io/panugr/ProjectsDatabase/weatherApp.jpg"
+              class="card-img-top"
+              alt=""
+            />
             <div class="card-body">
-              <h3 class="card-title">Card title</h3>
+              <h3 class="card-title">Weather web application</h3>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                I have been practising with xhr-requests and fetch-requests to a
+                weather API, provided by openweather.org. Dark-mode is based on
+                the device's color preferences.
               </p>
+            </div>
+            <div class="links">
               <a href="#" class="btn btn-warning live">Live demo</a>
               <a href="#" class="btn btn-primary github">View code</a>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <img src="" class="card-img-top" alt="" />
+          <div class="card col">
+            <img
+              src="https://ik.imagekit.io/panugr/ProjectsDatabase/rockPaperScissor.jpg"
+              class="card-img-top"
+              alt=""
+            />
             <div class="card-body">
-              <h3 class="card-title">Card title</h3>
+              <h3 class="card-title">Rock-Paper-Scissors</h3>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                I've been working with arrow functions and array loops. The
+                project was inspired from my courses in Codecademy.
               </p>
+            </div>
+            <div class="links">
               <a href="#" class="btn btn-warning live">Live demo</a>
               <a href="#" class="btn btn-primary github">View code</a>
             </div>
           </div>
         </section>
-      </section> -->
-
-      <!-- 
-      <details>
-        <summary>Revelation Football Club</summary>
-        <p>
-          This has been another interesting project, which is still in
-          progress. <br />
-          <br />
-          A football club located in Ghana wanted a site to present
-          themselves. Building the site, I had to take into account the lack
-          of infrastructure or/and the slow internet connection in Ghana. The
-          site needs to load and run fast. I use the W3.CSS framework, which
-          is very light and, I will try to use as native Javascript as
-          possible. <br />
-          One concern is that I use pictures in a webp format. Safari browser
-          doesn't have good support and, since I don't know which Safari
-          version the users will be using, I might have a problem with that
-          but, it's an easy fix.<br />
-          <br />
-          This is the first time that I am not working alone on a project. The
-          client has an opinion about the state of the site and on the other
-          side, I get pictures and guidelines from a designer, who works with
-          them. <br />
-          On this project, I had the chance to use a wireframe to show a basic
-          structure for the site. I had read about it during my studies on
-          Frond-End Development but I had never tried it before. I didn't use
-          some computer program, I just made a pdf document.
-          <br />
-          This situation has taught me a lot about communication. <br />
-          Overall, I am happy with the process and the progress of the site.
-        </p>
-        <a href="https://revelationfc.netlify.app/" target="_blank" rel="noopener">Visit the site↗️
-        </a>
-      </details>
-
-      -->
+      </section>
     </main>
 
     <footer class="text-center py-3">
@@ -521,12 +510,26 @@
       </p>
       <small>
         Icons made by
-        <a href="https://www.freepik.com" class="link-warning" target="_blank" rel="noreferrer noopener" title="Freepik" >Freepik</a> from
-        <a href="https://www.flaticon.com/" class="link-warning" title="Flaticon" target="_blank" rel="noreferrer noopener"> 
+        <a
+          href="https://www.freepik.com"
+          class="link-warning"
+          target="_blank"
+          rel="noreferrer noopener"
+          title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a
+          href="https://www.flaticon.com/"
+          class="link-warning"
+          title="Flaticon"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           www.flaticon.com</a
         >
       </small>
-      <br>
+      <br />
       <small>
         ©️ 2020-2021 by Panagiotis Panagiotakopoulos | Front-end
         Developer</small

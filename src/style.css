@@ -39,5 +39,7 @@ li { padding-bottom: 1rem; }
 
 main p { line-height: 2; }
 
+.card { align-items: center; }
+
 @media (min-width: 1440px) { header, main { font-size: clamp(20px, 1vw, 30px); }
   header ul { max-width: 75%; } }
