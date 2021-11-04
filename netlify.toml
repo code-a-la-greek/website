@@ -9,7 +9,6 @@
 # cache for 36days
 	  cache-control = '''
     max-age=3153600, 
-    public,
     must-revalidate'''
     
     content-security-policy='''
