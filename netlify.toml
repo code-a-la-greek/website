@@ -8,8 +8,8 @@
     
     content-security-policy='''
     script-src 'self'; 
-    require-trusted-types-for 'script';
-    connect-src 'self' https://v1.nocodeapi.com/panugr/google_sheets/weAjdfuhKgnxoMqy?tabId=Projects&row_id=2;
+    
+    connect-src 'self' https://v1.nocodeapi.com/panugr/google_sheets/weAjdfuhKgnxoMqy;
     base-uri 'self';
     object-src 'none';
     frame-ancestors 'none';
