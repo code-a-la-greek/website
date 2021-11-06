@@ -6,11 +6,6 @@
     X-Content-Type-Options= "nosniff"
     Referrer-Policy=" no-referrer"
     
-# cache for 36days
-	  cache-control = '''
-    max-age=3153600, 
-    must-revalidate'''
-    
     content-security-policy='''
     script-src 'self'; 
     require-trusted-types-for 'script';
