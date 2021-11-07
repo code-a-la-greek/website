@@ -115,7 +115,9 @@ main p {
   line-height: 2;
 }
 
-.card{align-items: center;}
+.card-custom {
+  max-width: 500px;
+}
 
 @media (min-width: 1440px) {
   header,

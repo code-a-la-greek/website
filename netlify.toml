@@ -8,7 +8,6 @@
     
     content-security-policy='''
     script-src 'self'; 
-    
     connect-src 'self' https://v1.nocodeapi.com/panugr/google_sheets/weAjdfuhKgnxoMqy;
     base-uri 'self';
     object-src 'none';
