@@ -25,7 +25,7 @@ const getData = async () => {
     }
 };
 
-/* getData().
+getData().
     then(data => {
         cardLiveLink.setAttribute("href", data.website);
         cardGithub.setAttribute("href", data.github);
@@ -33,5 +33,5 @@ const getData = async () => {
         cardTitle.innerHTML = data.title;
         cardText.innerHTML = data.info;
     });
- */
+
 
