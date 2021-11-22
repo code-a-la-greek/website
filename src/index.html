@@ -50,19 +50,25 @@
               >
             </li>
             <li>
-              check my 
+              check my
               <a href="#challenges" class="p-1 rounded-3 link-dark bg-warning"
                 >side projects</a
               >
             </li>
           </ul>
         </nav>
-        <img
-          src="pictures/profile-photo-small.webp"
-          alt="profile photo of Panagiotis"
-          aria-hidden="true"
-          class="rounded-circle col-md-4"
-        />
+        <picture class="col-md-4">
+          <source
+            srcset="pictures/safari/profile-photo-small.avif"
+            type="image/avif"
+          />
+          <img
+            src="pictures/profile-photo-small.webp"
+            alt="profile photo of Panagiotis"
+            aria-hidden="true"
+            class="rounded-circle"
+          />
+        </picture>
       </div>
       <button
         class="buttonUp btn-warning btn-outline-dark"
@@ -73,20 +79,26 @@
     </header>
 
     <main>
-      <section id="portfolio" class="container py-5 ">
+      <section id="portfolio" class="container py-5">
         <h2 class="display-2">
           <img src="pictures/hashtag.webp" alt="" /> My Portfolio
         </h2>
 
-        <section class="card border-0 my-5 ">
+        <section class="card border-0 my-5">
           <div class="row g-0">
             <figure class="col-lg-4 mb-0 bg-black">
-              <img
-                src="pictures/VakkaViestintä.webp"
-                loading="lazy"
-                aria-hidden="true"
-                alt="screeshot from landing page of Vakka-Viestintä website"
-              />
+              <picture>
+                <source
+                  srcset="pictures/safari/VakkaViestintä.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="pictures/VakkaViestintä.webp"
+                  loading="lazy"
+                  aria-hidden="true"
+                  alt="screeshot from landing page of Vakka-Viestintä website"
+                />
+              </picture>
             </figure>
             <article class="col-lg-8 bg-dark-blue">
               <div class="card-body">
@@ -180,15 +192,21 @@
           </div>
         </section>
 
-        <section class="card border-0 my-5 ">
+        <section class="card border-0 my-5">
           <div class="row g-0 bg-dark">
             <figure class="col-lg-4 mb-0 bg-black">
-              <img
-                src="pictures/explore_suomi.webp"
-                loading="lazy"
-                aria-hidden="true"
-                alt="screeshot from landing page of explore_suomi website"
-              />
+              <picture>
+                <source
+                  srcset="pictures/safari/explore_suomi.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="pictures/explore_suomi.webp"
+                  loading="lazy"
+                  aria-hidden="true"
+                  alt="screeshot from landing page of explore_suomi website"
+                />
+              </picture>
             </figure>
             <article class="col-lg-8 bg-dark-blue">
               <div class="card-body">
@@ -283,15 +301,21 @@
           </div>
         </section>
 
-        <section class="card border-0 my-5 ">
+        <section class="card border-0 my-5">
           <div class="row g-0">
             <figure class="col-lg-4 mb-0 bg-black">
-              <img
-                src="pictures/elisan-blog.webp"
-                loading="lazy"
-                aria-hidden="true"
-                alt="screeshot from landing page of Elisa's blog"
-              />
+              <picture>
+                <source
+                  srcset="pictures/safari/elisan-blog.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="pictures/elisan-blog.webp"
+                  loading="lazy"
+                  aria-hidden="true"
+                  alt="screeshot from landing page of Elisa's blog"
+                />
+              </picture>
             </figure>
             <article class="col-lg-8 bg-dark-blue">
               <div class="card-body">
@@ -398,15 +422,18 @@
             other people's projects has also given me valuable experience.
           </p>
         </article>
-        <img
-          src="pictures/aboutme.webp"
-          loading="lazy"
-          aria-hidden="true"
-          alt="Panagiotis Panagiotakopoulos in Helsinki library"
-          class="align-self-lg-center rounded-3 img-fluid"
-          width="512"
-          height="341"
-        />
+        <picture>
+          <source srcset="pictures/safari/aboutme.avif" type="image/avif" />
+          <img
+            src="pictures/aboutme.webp"
+            loading="lazy"
+            aria-hidden="true"
+            alt="Panagiotis Panagiotakopoulos in Helsinki library"
+            class="align-self-lg-center rounded-3 img-fluid"
+            width="512"
+            height="341"
+          />
+        </picture>
       </section>
 
       <section id="challenges" class="container py-5 mt-lg-5">
@@ -414,18 +441,23 @@
           <img src="pictures/hashtag.webp" alt="" /> Side Projects
         </h2>
 
-        <section class="row row-cols-1 gap-3 row-cols-lg-2 gap-lg-0 g-lg-3  justify-content-evenly  pb-4 text-black">
+        <section
+          class="
+            row row-cols-1
+            gap-3
+            row-cols-lg-2
+            gap-lg-0
+            g-lg-3
+            justify-content-evenly
+            pb-4
+            text-black
+          "
+        >
           <div class="card col card-custom p-3">
-            <img
-              src=""
-              class="card-img-top"
-              alt=""
-            />
+            <img src="" class="card-img-top" alt="" />
             <div class="card-body">
               <h3 class="card-title"></h3>
-              <p class="card-text">
-               
-              </p>
+              <p class="card-text"></p>
             </div>
             <div class="links">
               <a href="#" class="btn btn-warning live">Live demo</a>
@@ -435,7 +467,7 @@
           <div class="card col card-custom p-3">
             <img
               src="https://ik.imagekit.io/panugr/ProjectsDatabase/tip-calculator.jpeg"
-              class="card-img-top "
+              class="card-img-top"
               alt=""
             />
             <div class="card-body">
