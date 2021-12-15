@@ -36,5 +36,10 @@ getData().
         cardText.textContent = info;
     }).catch(error => console.error(error));
 
-
-
+//add the year in copyright
+function getCurrentYear() {
+    const currentYear = new Date().getFullYear();
+    document.querySelector("footer small").textContent =` ©️ 2020-${currentYear} by Panagiotis Panagiotakopoulos | Front-end
+    Developer `;
+}
+getCurrentYear();
