@@ -27,11 +27,14 @@ const getData = async () => {
 
 getData().
     then(data => {
-        cardLiveLink.setAttribute("href", data.website);
-        cardGithub.setAttribute("href", data.github);
-        cardImages.setAttribute("src", data.image);
-        cardTitle.innerHTML = data.title;
-        cardText.innerHTML = data.info;
-    });
+        //sanitize data
+        const { title, info, website, github, image } = data;
+        cardLiveLink.href = website;
+        cardGithub.href = github; 
+        cardImages.src = image;
+        cardTitle.textContent = title;
+        cardText.textContent = info;
+    }).catch(error => console.error(error));
+
 
 
