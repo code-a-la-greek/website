@@ -27,6 +27,8 @@ header { background-image: url("pictures/blob-scene-dark.svg"); background-repea
 
 .bg-black { background-color: black; }
 
+svg:hover, a:focus { transform: scale(1.1); }
+
 details { cursor: pointer; }
 
 details summary { text-decoration: underline; }

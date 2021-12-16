@@ -91,6 +91,10 @@ header {
   background-color: black;
 }
 
+svg:hover,a:focus{
+  transform: scale(1.1);
+}
+
 details {
   cursor: pointer;
   summary {
