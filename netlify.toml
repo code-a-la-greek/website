@@ -1,5 +1,5 @@
 [[headers]]
-  for = "/*"
+  for = "src/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
@@ -14,8 +14,3 @@
     frame-ancestors 'none';
     img-src https:;
     '''
-    
-[[plugins]]
-  package = "netlify-plugin-html-validate"
-  package = "netlify-plugin-checklinks"
-  package = "@netlify/plugin-a11y"
