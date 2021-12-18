@@ -16,6 +16,6 @@
     '''
     
 [[plugins]]
-package = "netlify-plugin-html-validate"
-package = "netlify-plugin-checklinks"
-package = "@netlify/plugin-a11y"
+  package = "netlify-plugin-html-validate"
+  package = "netlify-plugin-checklinks"
+  package = "@netlify/plugin-a11y"
