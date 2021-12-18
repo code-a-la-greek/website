@@ -24,7 +24,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      #HTML validator
+      
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v1
+        
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v1
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v1
+    
       - name: HTML5 Validator
         uses: Cyb3r-Jak3/html5validator-action@v7.0.0
         with: 
