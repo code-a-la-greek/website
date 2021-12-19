@@ -14,3 +14,17 @@
     frame-ancestors 'none';
     img-src https:;
     '''
+
+[[plugins]]
+  package = "netlify-plugin-checklinks"
+
+[[plugins]]
+  package = "netlify-plugin-html-validate"
+
+[[plugins]]
+  package = "@netlify/plugin-a11y"
+
+[[plugins]]
+  package = "netlify-plugin-cypress"
+  [plugins.inputs]
+  record = true
