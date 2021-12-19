@@ -22,9 +22,6 @@
   package = "netlify-plugin-html-validate"
 
 [[plugins]]
-  package = "@netlify/plugin-a11y"
-
-[[plugins]]
   package = "netlify-plugin-cypress"
   [plugins.inputs]
   record = true
