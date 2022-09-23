@@ -1,15 +1,23 @@
 export default {
-  siteTitle: "Sarissa Blog",
-  siteDescription: "Responsive Blog Template",
+  siteTitle: "P.Panagiotakopoulos | Front-end Developer",
+  siteDescription: "I'm Panagiotis and welcome to my portfolio. I like front-end development and building projects.",
   favicon: "/favicon.ico",
   siteImagePath: "/images/sarissa.png",
-  footer: "© 1967 - 2022 Sarissa Blog",
-  dateFormat: "dd.MM.yyyy HH:mm",
+  footer: "©️ 2020-2022 BY PANAGIOTIS PANAGIOTAKOPOULOS | FRONT-END DEVELOPER",
+  //Site global date format. [Luxon](https://moment.github.io/luxon/#/parsing?id=table-of-tokens)
+  dateFormat: "MMMM dd, yyyy",
   socialMedia: {
-    facebook: "ozcelikismail",
+    /* facebook: "ozcelikismail",
     twitter: "ismailozcelik",
-    linkedin: "ismail-özçelik",
-    github: "iozcelik",
+    linkedin: "ismail-özçelik", */
+    github: "PanuGr",
+  },
+  menu: {
+    home: "Home",
+    about: "About",
+    categories: "Categories",
+    search: "Search",
+    archive: "Archive",
   },
   pageSize: 5,
   categories: [
