@@ -48,7 +48,7 @@ Sarissa Blog theme created to serve markdown-based personel blog needs.
   },
   //Default page size for home page, category and archive
   pageSize: 5,
-  //Customize category. Name is requried.
+  //Customize category. Name is required.
   //color for button and badges
   //image: if category layout is card, image shown at background in card.
   //order: override order of category

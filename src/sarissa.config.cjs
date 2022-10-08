@@ -2,7 +2,7 @@ export default {
   siteTitle: "P.Panagiotakopoulos | Front-end Developer",
   siteDescription: "I'm Panagiotis and welcome to my portfolio. I like front-end development and building projects.",
   favicon: "/favicon.ico",
-  siteImagePath: "/images/sarissa.png",
+  siteImagePath: "/images/panagiotis.webp",
   footer: "©️ 2020-2022 BY PANAGIOTIS PANAGIOTAKOPOULOS | FRONT-END DEVELOPER",
   //Site global date format. [Luxon](https://moment.github.io/luxon/#/parsing?id=table-of-tokens)
   dateFormat: "MMMM dd, yyyy",
@@ -22,17 +22,23 @@ export default {
   pageSize: 5,
   categories: [
     {
-      name: "theme",
-      color: "btn-warning",
-      image: "/images/theme.jpg",
+      name: "portfolio",
+      color: "btn-primary",
+      image: "/images/portfolio.webp",
       order: 1,
+    },
+    {
+      name: "challenges",
+      color: "btn-primary",
+      image: "/images/challenges.webp",
+      order: 2,
     },
   ],
   categorySettings: {
     order: "name", // name | count
     layout: "card", //button | card
     image: "",
-    color: "btn-primary",
+    color: "",
     countVisibility: true,
   },
   searchOptions: {

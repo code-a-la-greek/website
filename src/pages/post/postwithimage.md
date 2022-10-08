@@ -4,8 +4,8 @@ title: First example post with external an image
 image: https://api.lorem.space/image/drink?w=400&h=225
 date: 2022-01-21 05:44
 categories:
-  - lorem
-  - image
+  - portfolio
+ 
 ---
 
 This article only contains lorem ipsum and image.

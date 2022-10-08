@@ -4,8 +4,8 @@ title: "First example post with an image from public folder"
 image: "/images/postWithImageFromFile.jpg"
 date: "2021-01-21"
 categories:
-  - theme
-  - lorem
+  - portfolio
+  - challenges
 ---
 
 This article only contains lorem ipsum and image.
