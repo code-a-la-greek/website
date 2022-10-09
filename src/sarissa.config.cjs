@@ -1,6 +1,6 @@
 export default {
-  siteTitle: "P.Panagiotakopoulos | Front-end Developer",
-  siteDescription: "I'm Panagiotis and welcome to my portfolio. I like front-end development and building projects.",
+  siteTitle: "P.Panagiotakopoulos",
+  siteDescription: "Welcome to my portfolio",
   favicon: "/favicon.ico",
   siteImagePath: "/images/panagiotis.webp",
   footer: "©️ 2020-2022 BY PANAGIOTIS PANAGIOTAKOPOULOS | FRONT-END DEVELOPER",
