@@ -102,6 +102,17 @@ Sarissa Blog theme created to serve markdown-based personel blog needs.
     resultFound: " result(s) found",
   },
 ```
+## md-files frontmatter
+
+layout: ../../layouts/PostLayout.astro
+title: "Draft post"
+image:"url or local(/images/...)"
+date: "YYYY-MM-DD"
+draft: true - if it's a draft 
+categories:
+  - portfolio
+  - challenges
+---
 
 ## Built with Sarrisa Blog
 - [İsmail Özçelik](https://ismailozcelik.com/) - My personal blog site

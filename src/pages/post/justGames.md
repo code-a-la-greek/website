@@ -1,14 +1,13 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "First example post with an image from public folder"
-image: "/images/postWithImageFromFile.jpg"
-date: "2021-01-21"
+title: "Just Games Ltd"
+date: "2022-01-30"
+image: ""
 categories:
   - portfolio
-  - challenges
 ---
 
-This article only contains lorem ipsum and image.
+This article only contains lorem ipsum.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt eget nullam non nisi est sit amet facilisis magna. Faucibus pulvinar elementum integer enim. Sed euismod nisi porta lorem. Et netus et malesuada fames ac. Adipiscing commodo elit at imperdiet. Dictum varius duis at consectetur lorem. Cras fermentum odio eu feugiat pretium nibh ipsum. Sed euismod nisi porta lorem mollis. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Risus quis varius quam quisque id diam. Tincidunt dui ut ornare lectus sit amet est. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Tempus quam pellentesque nec nam aliquam. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Molestie a iaculis at erat pellentesque adipiscing commodo.
 

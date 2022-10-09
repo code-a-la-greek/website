@@ -21,7 +21,7 @@ export default {
   },
   pageSize: 5,
   categories: [
-    {
+    /* {
       name: "portfolio",
       color: "btn-primary",
       image: "/images/portfolio.webp",
@@ -32,13 +32,13 @@ export default {
       color: "btn-primary",
       image: "/images/challenges.webp",
       order: 2,
-    },
+    }, */
   ],
   categorySettings: {
     order: "name", // name | count
     layout: "card", //button | card
     image: "",
-    color: "",
+    color: "btn-primary",
     countVisibility: true,
   },
   searchOptions: {
