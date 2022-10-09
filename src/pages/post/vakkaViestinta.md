@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "Vakka-Viestintä"
-image: ""
+image: "/images/vakkaviestinta.webp"
 date: '2021-12-22'
 categories:
   - portfolio

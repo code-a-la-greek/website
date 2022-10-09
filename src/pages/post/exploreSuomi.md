@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "Explore_Suomi"
-image: ""
+image: "/images/explore_suomi.webp"
 date: "2021-09-14"
 categories:
   - portfolio

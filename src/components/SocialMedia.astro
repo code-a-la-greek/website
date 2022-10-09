@@ -53,8 +53,9 @@ import Config from "../sarissa.config.cjs";
     </svg>
   </a>}
   {Config.socialMedia.github &&
-  <a target="_blank" class="btn btn-sm btn-ghost btn-square" href={`https://github.com/${Config.socialMedia.github}`}>
+  <a aria-label="link to my github profile" target="_blank" class="btn btn-sm btn-ghost btn-square" href={`https://github.com/${Config.socialMedia.github}`}>
     <svg
+    aria-hidden="true"
       class="inline-block w-4 h-4 fill-current"
       viewBox="0 0 24 24"
       fill="none"

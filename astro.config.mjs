@@ -9,5 +9,6 @@ export default defineConfig({
       wrap: true,
     },
   },
+  site: 'https://panagiotis.netlify.app',
   integrations: [tailwind(), sitemap()],
 });

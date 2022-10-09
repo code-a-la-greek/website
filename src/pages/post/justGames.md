@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: "Just Games Ltd"
 date: "2022-01-30"
-image: ""
+image: "/images/justgames.webp"
 categories:
   - portfolio
 ---
