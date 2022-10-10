@@ -102,23 +102,41 @@ Sarissa Blog theme created to serve markdown-based personel blog needs.
     resultFound: " result(s) found",
   },
 ```
-## md-files frontmatter
+## .md files frontmatter
 
 layout: ../../layouts/PostLayout.astro
 title: "Draft post"
 image:"url or local(/images/...)"
 date: "YYYY-MM-DD"
-draft: true - if it's a draft 
+draft: true - if it's a draft <br>
 categories:
   - portfolio
   - challenges
----
 
-## Built with Sarrisa Blog
+## Posts format
+This is a solution to the *<ins>[something](https://)</ins>* challenge on Frontend Mentor. 
+
+**Users should be able to:**
+- something worth mentioning
+
+
+## Build with/ Features
+- Semantic HTML5 markup
+- Mobile-first workflow
+- etc.
+
+## Process
+bla bla bla
+
+*<ins>[See the demo](https:/)</ins>* <br>
+*<ins>[See the code](https:/)</ins>*
+
+
+### Built with Sarrisa Blog
 - [İsmail Özçelik](https://ismailozcelik.com/) - My personal blog site
 Open an issue to listed here.
 
 
-## License
+### License
 
 This template is MIT licensed. 

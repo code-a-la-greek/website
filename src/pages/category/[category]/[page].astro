@@ -11,8 +11,10 @@ export async function getStaticPaths({ paginate }) {
     .map((p) => p.frontmatter.categories);
   let allCategoriesUnique = [...new Set(allCategories.flat())];
   return allCategoriesUnique.map((category) => {
-    const filteredPosts = allPosts.filter((post) => 
-      post.frontmatter.categories.includes(category) && post.frontmatter.draft != true
+    const filteredPosts = allPosts.filter(
+      (post) =>
+        post.frontmatter.categories.includes(category) &&
+        post.frontmatter.draft != true
     );
     return paginate(filteredPosts, {
       params: { category },
@@ -23,7 +25,7 @@ export async function getStaticPaths({ paginate }) {
 
 const { page } = Astro.props;
 const { params } = Astro;
-let url = "category/"+params.category;
+let url = "category/" + params.category;
 
 const capitalize = ([firstLetter, ...restOfWord]) =>
   firstLetter.toUpperCase() + restOfWord.join("");
@@ -34,15 +36,16 @@ const capitalize = ([firstLetter, ...restOfWord]) =>
   <div class="overflow-x-auto w-full">
     <table class="table-normal w-full">
       <tbody>
-      <tr>
-  <td>
-        {page.data.map((post) => (  <PostPreview post={post} />))}
+        <tr>
+          <td class="flex flex-col space-y-4">
+            {page.data.map((post) => <PostPreview post={post} />)}
           </td>
-</tr>
+        </tr>
       </tbody>
     </table>
   </div>
-  <Pagination slot="paging" 
+  <Pagination
+    slot="paging"
     currentPage={page.currentPage}
     totalPage={page.lastPage}
     url={url}

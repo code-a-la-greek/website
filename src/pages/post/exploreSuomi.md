@@ -8,8 +8,20 @@ categories:
   
 ---
 
-This article only contains lorem ipsum and image.
+Explore_Suomi is a blog website supplementary to the instagram account *<ins>[@explore_suomi](https://www.instagram.com/explore_suomi/)</ins>* which contains stories and photos of trips in Finland.
+ 
+## Features:
+- Astro static site builder
+- PaperCss framework
+- ImageKit-CDN
+- Spreadsheet database
+- NoCodeApi
+- Vite bundler
+- hosted in Netlify
+ 
+I used this opportunity to learn how to work with the Astro builder.
+The transition was relatively easy. I copied all the assets to the Astro folder. I had to change the paths of the files so Astro can successfully build the site.
+I am also using Astro's fetch function to fetch information from database, using just a spreadsheet from google. I am using the api provided by nocodeapi.com, which simplifies the process of working with the google api. Astro gets and posts information using asynchronous functions.
+Astro manages the templating. The posts now are just markdown files, which are transformed into html during build time. Astro uses vite under the hood.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt eget nullam non nisi est sit amet facilisis magna. Faucibus pulvinar elementum integer enim. Sed euismod nisi porta lorem. Et netus et malesuada fames ac. Adipiscing commodo elit at imperdiet. Dictum varius duis at consectetur lorem. Cras fermentum odio eu feugiat pretium nibh ipsum. Sed euismod nisi porta lorem mollis. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Risus quis varius quam quisque id diam. Tincidunt dui ut ornare lectus sit amet est. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Tempus quam pellentesque nec nam aliquam. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Molestie a iaculis at erat pellentesque adipiscing commodo.
-
-Id volutpat lacus laoreet non curabitur gravida arcu ac tortor. Morbi blandit cursus risus at. Egestas sed tempus urna et pharetra pharetra massa. Porta lorem mollis aliquam ut porttitor leo a diam. Gravida neque convallis a cras semper auctor neque vitae tempus. Ac turpis egestas integer eget. Quis viverra nibh cras pulvinar mattis nunc. Enim tortor at auctor urna. Feugiat nisl pretium fusce id velit ut tortor pretium. Amet justo donec enim diam. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Pharetra magna ac placerat vestibulum lectus mauris ultrices.
+*<ins>[Visit the site](https://explore-suomi.netlify.app)</ins>*
