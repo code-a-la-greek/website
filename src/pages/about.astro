@@ -1,6 +1,7 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
 import Config from "../sarissa.config.cjs";
+import FavTools from "../components/favTools.astro";
 ---
 
 <PageLayout pageTitle={Config.menu?.about ?? "About"}>
@@ -34,6 +35,7 @@ import Config from "../sarissa.config.cjs";
       Since 2021 I started working on real projects, putting my knowledge into action.
       Participating in other people's projects has given me valuable experience.
     </p>
+    <FavTools/>
 
     <p>
       I love making new friends in the developer community and seeing how we can
