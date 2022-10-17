@@ -69,4 +69,8 @@ import Config from "../sarissa.config.cjs";
       ></path></svg
     >
   </a>}
+  {Config.socialMedia.frontmentor &&
+  <a aria-label="link to my frontmentor profile" target="_blank" class="btn btn-sm btn-ghost btn-square" href={`https://frontmentor.com/${Config.socialMedia.frontmentor}`}>
+    <img src="./frontmentor.webp" width="20" alt="logo frontmentor" aria-hidden="true">
+  </a>}
 </div>

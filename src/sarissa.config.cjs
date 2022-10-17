@@ -12,6 +12,7 @@ export default {
     twitter: "ismailozcelik",
     linkedin: "ismail-özçelik", */
     github: "PanuGr",
+    frontmentor:"@PanuGr"
   },
   menu: {
     home: "Home",
