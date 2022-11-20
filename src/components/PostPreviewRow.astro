@@ -9,7 +9,7 @@ const { post } = Astro.props;
       {post.frontmatter.image &&
         <div class="avatar">
           <div class="mask mask-squircle w-12 h-12">
-            <img src={post.frontmatter.image} />
+            <img src={post.frontmatter.image} alt="screenshot from the project" aria-hidden="true"/>
           </div>
         </div>
       }

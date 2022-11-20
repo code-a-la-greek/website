@@ -11,7 +11,7 @@ const countVisibility = Config.categorySettings.countVisibility;
   <div class="card w-80 h-40 bg-base-100 shadow-xl image-full">
     {category.image &&
         <figure>
-            <img src={category.image} alt={category.name} />
+            <img src={category.image} alt={category.name} alt="category image" aria-hidden="true" />
         </figure>
     }
 

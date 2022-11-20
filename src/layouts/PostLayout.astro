@@ -29,7 +29,7 @@ const { content } = Astro.props;
     {
       content.image && (
         <figure class="px-10 pt-10">
-          <img width="400" height="225" alt="screenshot from the project" src={content.image} />
+          <img width="400" height="225" alt="screenshot from the project" aria-hidden="true" src={content.image} />
         </figure>
       )
     }
