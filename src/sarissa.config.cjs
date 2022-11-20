@@ -9,8 +9,8 @@ export default {
   dateFormat: "MMMM dd, yyyy",
   socialMedia: {
     /* facebook: "ozcelikismail",
-    twitter: "ismailozcelik",
-    linkedin: "ismail-özçelik", */
+    twitter: "ismailozcelik",*/
+    youtube: "@codealagreek", 
     github: "PanuGr",
     frontmentor:"@PanuGr"
   },
