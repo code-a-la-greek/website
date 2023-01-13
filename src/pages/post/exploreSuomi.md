@@ -8,7 +8,7 @@ categories:
   
 ---
 
-Explore_Suomi is a blog website supplementary to the instagram account *<ins>[@explore_suomi](https://www.instagram.com/explore_suomi/)</ins>* which contains stories and photos of trips in Finland.
+Explore_Suomi is a blog website supplementary to the instagram account *<ins>[@explore_suomi](https://www.instagram.com/explore_suomi/)</ins>* which contains stories and photos of trips in Finland. (2021-2022)
  
 ## Features:
 - Astro static site builder
