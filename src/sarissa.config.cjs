@@ -12,7 +12,7 @@ export default {
     twitter: "ismailozcelik",*/
     youtube: "@codealagreek", 
     github: "PanuGr",
-    frontmentor:"@PanuGr"
+    frontendmentor:"panugr"
   },
   menu: {
     home: "Home",
