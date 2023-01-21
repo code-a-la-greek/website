@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "Clipboard landing page"
-image: "https://raw.githubusercontent.com/PanuGr/nicepage-builder/main/Clipboard-landing-page/screenshot.webp"
+image: "https://raw.githubusercontent.com/PanuGr/LowCode/main/Clipboard-landing-page/screenshot.webp"
 date: "2023-01-21"
 categories:
   - challenges
@@ -23,5 +23,5 @@ and as a result I have to inspect and change it manually in every available brea
 This is the last layout I try with Nicepage.
 
 ### Links
-- *<ins>[See the demo](https://panugr.github.io/nicepage-builder/Clipboard-landing-page/)</ins>*
-- *<ins>[See the code](https://github.com/PanuGr/nicepage-builder/tree/main/Clipboard-landing-page)</ins>*
+- *<ins>[See the demo](https://panugr.github.io/LowCode/Clipboard-landing-page/)</ins>*
+- *<ins>[See the code](https://github.com/PanuGr/LowCode/tree/main/Clipboard-landing-page)</ins>*

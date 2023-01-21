@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "Huddle curved landing page"
-image: "https://raw.githubusercontent.com/PanuGr/nicepage-builder/main/Huddle-landing-page/screenshot.jpg"
+image: "https://raw.githubusercontent.com/PanuGr/LowCode/main/Huddle-landing-page/screenshot.jpg"
 date: "2022-11-27"
 categories:
   - challenges
@@ -26,5 +26,5 @@ I was pleased to see that the html file was relatively nicely written and semant
 I'm relatively pleased and I will try again to build another layout
 
 ### Links
-- *<ins>[See the demo](https://panugr.github.io/nicepage-builder/Huddle-landing-page/)</ins>*
-- *<ins>[See the code](https://github.com/PanuGr/nicepage-builder/tree/main/Huddle-landing-page)</ins>*
+- *<ins>[See the demo](https://panugr.github.io/LowCode/Huddle-landing-page/)</ins>*
+- *<ins>[See the code](https://github.com/PanuGr/LowCode/tree/main/Huddle-landing-page)</ins>*
