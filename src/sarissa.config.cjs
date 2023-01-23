@@ -4,7 +4,7 @@ export default {
   description: "Hello there 👋 my name is Panagiotis and I am a Front- end enthusiast 😊. Welcome to my portfolio",
   favicon: "/favicon.ico",
   siteImagePath: "/panagiotis.webp",
-  footer: "©️ 2020-2022 BY PANAGIOTIS PANAGIOTAKOPOULOS | FRONT-END DEVELOPER",
+  footer: "©️ 2020-2023 BY PANAGIOTIS PANAGIOTAKOPOULOS | FRONT-END DEVELOPER",
   //Site global date format. [Luxon](https://moment.github.io/luxon/#/parsing?id=table-of-tokens)
   dateFormat: "MMMM dd, yyyy",
   socialMedia: {

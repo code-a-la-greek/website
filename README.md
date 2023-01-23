@@ -1,20 +1,7 @@
 # Astro Sarissa Blog Theme
 
-Responsive, functional, personal blog theme for Astro.
-
-![Screenshot](./public/images/Screenshot.jpg)
-
-Sarissa Blog theme created to serve markdown-based personel blog needs.
-
-## Features
-
-- Responsive and functional
-- Markdown-based blog
-- 3 Color Mode (Light, Book, Dark)
-- Easy site configration
-- Built-in article title and description search
-- Support draft page
-- Pagination for archive and category view
+## Sitemap
+https://panagiotis.netlify.app/sitemap-0.xml
 
 ## Used libraries
 
