@@ -18,7 +18,7 @@ export default defineConfig({
       config: {
         publish_mode: 'editorial_workflow',
         backend: {
-          name: 'git-gateway',
+          name: 'github',
           branch: 'main'
         },
         collections: [
