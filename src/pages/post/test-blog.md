@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../layouts/PostLayout.astro
 image: https://source.unsplash.com/weekly
 title: Test blog
