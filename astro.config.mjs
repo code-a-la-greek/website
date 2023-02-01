@@ -32,7 +32,7 @@ export default defineConfig({
             create: true,
             delete: true,
             fields: [
-              { name: 'image', widget: 'image', label: 'Post Image', media_folder:'/images/', allow_multiple:'false' },
+              { name: 'image', widget: 'image', label: 'Post Image', media_folder:'/images/'},
               { name: 'title', widget: 'string', label: 'Post Title' },
               { name: 'body', widget: 'markdown', label: 'Post Body' },
             ],
