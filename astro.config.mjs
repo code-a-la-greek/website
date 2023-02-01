@@ -19,7 +19,7 @@ export default defineConfig({
         publish_mode: 'editorial_workflow',
         backend: {
           name: 'git-gateway',
-          branch: 'main'
+          branch: 'master'
         },
         collections: [
           /*content collections*/
