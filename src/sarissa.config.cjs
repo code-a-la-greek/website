@@ -17,6 +17,7 @@ export default {
   menu: {
     home: "Home",
     about: "About",
+    portfolio: "Portfolio",
     categories: "Categories",
     search: "Search",
     archive: "Archive",
