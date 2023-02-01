@@ -18,9 +18,8 @@ export default defineConfig({
       config: {
         publish_mode: 'editorial_workflow',
         backend: {
-          name: 'github',
-          repo: 'PanuGr/My_portfolio',
-          branch: 'main'
+          name: 'git-gateway',
+          branch: 'master'
         },
         collections: [
           /*content collections*/
