@@ -19,7 +19,7 @@ export default defineConfig({
         publish_mode: 'editorial_workflow',
         backend: {
           name: 'github',
-          repo: PanuGr/My_portfolio,
+          repo: 'PanuGr/My_portfolio',
           branch: 'main'
         },
         collections: [
