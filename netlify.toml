@@ -1,8 +1,8 @@
 [build]
-  #command = "npm run build"
-[context.production]
-  publish = "dist"
-  environment = { NODE_VERSION = "16" }
+#  command = "npm run build"
+#[context.production]
+#  publish = "dist"
+#  environment = { NODE_VERSION = "16" }
 [[headers]]
   for = "/*"
   [headers.values]
