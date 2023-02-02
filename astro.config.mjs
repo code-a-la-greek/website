@@ -33,6 +33,7 @@ export default defineConfig({
             create: true,
             delete: true,
             fields: [
+              { label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/PostLayout.astro" },
               { name: 'image', widget: 'image', label: 'Post Image' },
               { name: 'categories', widget: 'select', label: 'Post category', multiple:true, min: 1, options: ['challenges', 'newbie', 'junior', 'intermediate', 'advance', 'guru', 'portfolio'] },
               {
