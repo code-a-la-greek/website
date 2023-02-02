@@ -37,10 +37,10 @@ export default defineConfig({
               { name: 'image', widget: 'image', label: 'Post Image' },
               { name: 'categories', widget: 'select', label: 'Post category', multiple:true, min: 1, options: ['challenges', 'newbie', 'junior', 'intermediate', 'advance', 'guru', 'portfolio'] },
               {
-                name: 'date',
+                name: 'date',//frontmatter format
                 widget: 'datetime',
-                format: 'YYYY-MM-DD',
-                date_format: 'DD MMM YYYY',
+                format: 'YYYY-MM-DD',// frontmatter format
+                date_format: 'DD MMM YYYY',//ετσι φαινεται στο UI
                 label: 'Publish Date',
                 time_format:false
               },
