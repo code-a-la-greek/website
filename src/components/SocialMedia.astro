@@ -38,6 +38,7 @@ import Config from "../sarissa.config.cjs";
   <a target="_blank" aria-label="link to my youtube channel" class="btn btn-sm btn-ghost btn-square" href={`https://www.youtube.com/${Config.socialMedia.youtube}`}>
     <svg fill="darkred" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
   </a>}
+
   {Config.socialMedia.github &&
   <a aria-label="link to my github profile" target="_blank" class="btn btn-sm btn-ghost btn-square" href={`https://github.com/${Config.socialMedia.github}`}>
     <svg
@@ -52,11 +53,12 @@ import Config from "../sarissa.config.cjs";
     >
       <path
         d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-      ></path></svg
-    >
+      ></path></svg>
   </a>}
-  {Config.socialMedia.frontmentor &&
-  <a aria-label="link to my frontmentor profile" target="_blank" class="btn btn-sm btn-ghost btn-square" href={`https://frontendmentor.io/profile/${Config.socialMedia.frontendmentor}`}>
+
+  {Config.socialMedia.frontendmentor &&
+  <a aria-label="link to my frontmentor profile" target="_blank" class="btn btn-sm btn-ghost btn-square"
+   href={`https://frontendmentor.io/profile/${Config.socialMedia.frontendmentor}`}>
     <img src="/frontmentor.webp" width="20" alt="logo frontmentor" aria-hidden="true">
   </a>}
 </div>
