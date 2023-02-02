@@ -17,7 +17,7 @@ export default defineConfig({
     NetlifyCMS({
       config: {
         publish_mode: 'editorial_workflow',
-        logo_url: 'https://panagiotis.netlify.app/favicon.ico',
+        logo_url: 'https://source.unsplash.com/weekly',
         media_folder:'src/assets/images',
         public_folder:'/assets/images',
         backend: {
