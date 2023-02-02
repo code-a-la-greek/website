@@ -34,7 +34,7 @@ export default defineConfig({
             delete: true,
             fields: [
               { name: 'image', widget: 'image', label: 'Post Image', media_folder: '/images/' },
-              { name: 'categories', widget: 'select', label: 'Post category', multiple: 'true', min: 1, options: ['challenges', 'newbie', 'junior', 'intermediate', 'advance', 'guru', 'portfolio'] },
+              { name: 'categories', widget: 'select', label: 'Post category', multiple:true, min: 1, options: ['challenges', 'newbie', 'junior', 'intermediate', 'advance', 'guru', 'portfolio'] },
               {
                 name: 'date',
                 widget: 'datetime',
