@@ -17,6 +17,7 @@ export default defineConfig({
     NetlifyCMS({
       config: {
         publish_mode: 'editorial_workflow',
+        logo_url:'https://panagiotis.netlify.app/favicon.ico',
         backend: {
           name: 'git-gateway',
           branch: 'master'
