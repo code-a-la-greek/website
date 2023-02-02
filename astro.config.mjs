@@ -17,7 +17,7 @@ export default defineConfig({
     NetlifyCMS({
       config: {
         publish_mode: 'editorial_workflow',
-        logo_url:'https://panagiotis.netlify.app/favicon.ico',
+        logo_url: 'https://panagiotis.netlify.app/favicon.ico',
         backend: {
           name: 'git-gateway',
           branch: 'master'
@@ -33,13 +33,13 @@ export default defineConfig({
             create: true,
             delete: true,
             fields: [
-              { name: 'image', widget: 'image', label: 'Post Image', media_folder:'/images/'},
+              { name: 'image', widget: 'image', label: 'Post Image', media_folder: '/images/' },
+              { name: 'categories', widget: 'select', label: 'Post category', multiple: 'true', min: 1, options: ['challenges', 'newbie', 'junior', 'intermediate', 'advance', 'guru', 'portfolio'] },
               {
-                name: 'publishDate',
+                name: 'date',
                 widget: 'datetime',
-                format: 'DD MMM YYYY',
+                format: 'YYYY-MM-DD',
                 date_format: 'DD MMM YYYY',
-                time_format: false,
                 label: 'Publish Date',
               },
               { name: 'title', widget: 'string', label: 'Post Title' },
