@@ -9,6 +9,9 @@
 - **Theme Changer:** [Theme change](https://github.com/saadeghi/theme-change)
 - **blog theme:[Astro Ssarissa](https://github.com/iozcelik/SarissaBlogAstroStarter)**
 
+## Sitemap
+https://codealagreek.netlify.app/sitemap-0.xml
+
 ## Site Configuration
 
 ```cjs
