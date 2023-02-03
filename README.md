@@ -8,3 +8,10 @@ https://codealagreek.netlify.app/sitemap-0.xml
 
 ## Channel
 Επισκεφτείτε το κανάλι [Code a la greek](https://youtube.com/@codealagreek) για να δείτε βίντεο σχετικά με το front end development στην ελληνική γλώσσα
+
+## Issues
+Κανείς δεν είναι τέλειος. 
+Αντιμετώπισες κάποιο πρόβλημα στο σάιτ;
+Μήπως βρήκες κάποιο πρόβλημα στο κώδικα;
+Έχεις κάποια ιδέα για τη βελτίωση της ιστοσελίδας;
+Δημιούργησε μια [αναφορά](https://github.com/code-a-la-greek/codealagreek/issues) και θα προσπαθήσω να το φτιάξω :slightly_smiling_face
