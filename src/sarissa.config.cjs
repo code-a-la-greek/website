@@ -1,9 +1,9 @@
 export default {
-  siteTitle: "P.Panagiotakopoulos",
-  siteDescription: "Welcome to my portfolio",
-  description: "Hello there 👋 my name is Panagiotis and I am a Front- end enthusiast 😊. Welcome to my portfolio",
-  favicon: "/favicon.ico",
-  siteImagePath: "/panagiotis.webp",
+  siteTitle: "Code a la greek",
+  siteDescription: "Welcome to the codealagreek website. Here you'll find projects which I've been making along with real-life websites",
+  description: "Hello👋 My name is Panagiotis, a Front- end enthusiast and I've created this website for the youtube channel: Code a la greek",
+  favicon: "/favicon.webp",
+  siteImagePath: "/logo.webp",
   footer: "©️ 2020-2023 BY PANAGIOTIS PANAGIOTAKOPOULOS | FRONT-END DEVELOPER",
   //Site global date format. [Luxon](https://moment.github.io/luxon/#/parsing?id=table-of-tokens)
   dateFormat: "MMMM dd, yyyy",
@@ -11,7 +11,7 @@ export default {
     /* facebook: "ozcelikismail",
     twitter: "ismailozcelik",*/
     youtube: "@codealagreek", 
-    github: "PanuGr",
+    github: "code-a-la-greek",
     frontendmentor:"panugr"
   },
   menu: {

@@ -10,14 +10,14 @@ export default defineConfig({
       wrap: true,
     },
   },
-  site: 'https://panagiotis.netlify.app',
+  site: 'https://codealagreek.netlify.app',
   integrations: [
     tailwind(),
     sitemap(),
     NetlifyCMS({
       config: {
         publish_mode: 'editorial_workflow',
-        logo_url: 'https://source.unsplash.com/weekly',
+        //logo_url: 'https://source.unsplash.com/weekly',
         media_folder:'src/assets/images',
         public_folder:'/assets/images',
         backend: {
