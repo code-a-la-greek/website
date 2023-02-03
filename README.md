@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/69b2b2f1-441e-46ad-9246-d92e63268cc1/deploy-status)](https://app.netlify.com/sites/codealagreek/deploys)
 # Code a la greek
 Καλωσήρθατε στο φάκελο της ιστοσελίδας codealagreek.
 Θα βρείτε τις τεχνικές λεπτομέρειες της σελίδας στο αρχειο [technical_details](/technical_details.md)
