@@ -1,7 +1,7 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
 import Config from "../sarissa.config.cjs";
-import FavTools from "../components/favTools.astro";
+//import FavTools from "../components/favTools.astro";
 ---
 
 <PageLayout pageTitle={Config.menu?.about ?? "About"}>
@@ -25,6 +25,7 @@ import FavTools from "../components/favTools.astro";
       >, both the website and the YouTube channel. I am currently working in the
       automobile industry and few years ago I got involved with Web-Development.
     </p>
+    <h3>Education</h3>
     <p>
       In September 2017, I joined
       <a href="https://www.codecademy.com/" target="_blank">Codecademy</a>
@@ -32,14 +33,15 @@ import FavTools from "../components/favTools.astro";
       In May 2021, I joined
       <a href="https://www.frontendmentor.io/" target="_blank"
         >Frontend Mentor</a
-      >, a site where you can improve your front-end coding skills by solving real-world HTML, CSS and JavaScript challenges.
+      >, a site where you can improve your front-end coding skills by solving
+      real-world HTML, CSS and JavaScript challenges.
     </p>
 
     <p>
       I've taken a full-stack course on web development. It goes through from
       the basics to advanced front-end development and continues with back-end
       web development like servers, databases, SQL, and APIs. <br />
-<!--       <small><em>62% completed</em></small> -->
+      <!--       <small><em>62% completed</em></small> -->
     </p>
 
     <p>
@@ -47,17 +49,17 @@ import FavTools from "../components/favTools.astro";
       course explores advanced web development tools such as working with the
       React framework, advanced JavaScript, testing tools, algorithms, and more.
       <br />
-<!--       <small><em>50% completed</em></small> -->
+      <!--       <small><em>50% completed</em></small> -->
     </p>
-
+    <h3>Work experience</h3>
     <p>
-      <!-- Up until today, my experience in coding comes from working on my own
+      Up until today, my experience in coding comes from working on my own
       projects, on projects/tasks during my courses on Codecademy, and from
-      front-end challenges at frontendmentor.io. <br /> -->
+      front-end challenges at frontendmentor.io. </p>
+      <p>
       Since 2021 I started working on real projects, putting my knowledge into action.
       Participating in other people's projects has given me valuable experience.
     </p>
-    <FavTools />
-
+   <!--  <FavTools /> -->
   </article>
 </PageLayout>
