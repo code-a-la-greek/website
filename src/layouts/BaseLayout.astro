@@ -1,48 +1,90 @@
 ---
 import Config from "../sarissa.config.cjs";
 import Head from "../components/Head.astro";
-import MobileNavbar from "../components/MobileNavbar.astro";
 import SiteImage from "../components/SiteImage.astro";
 import SocialMedia from "../components/SocialMedia.astro";
 import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
 
 const { pageTitle } = Astro.props;
-
 ---
 
 <html lang="en">
   <Head pageTitle={pageTitle} />
-  <body>
+  <body class="lg:grid lg:grid-cols-[minmax(300px,_400px)_1fr] p-4">
+    <header>
       <a href="#main-content" aria-label="Skip to main content"></a>
-    <div class="drawer drawer-mobile">
-      <label for="my-drawer" class="drawer-overlay"></label>
-      <input aria-label="toggle the sidebar" id="my-drawer" type="checkbox" class="drawer-toggle"/>
-      <div class="drawer-content flex justify-center lg:justify-start">
-        <div class="sm:w-[70vw] max-w-screen-lg lg:pt-14 lg:p-4">
-          <MobileNavbar />
-          <div class="flex-1 p-3 md:py-[35]">
-            <div class="space-y-2 md:space-y-6" id="main-content" role="main">
-              <slot />
-            </div>
-            <Footer />
-          </div>
+      <label class="lg:hidden" for="navbar"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-three-dots"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+          ></path>
+        </svg>
+
+        <input
+          type="checkbox"
+          name="navbar"
+          id="navbar"
+          class="invisible pointer-events-none"
+          title="navbar"
+        /></label
+      >
+      <aside class="min-h-screen w-2/5 lg:relative">
+        <div class="w-fit p-3 lg:m-6 bg-base-100">
+          {Config.siteImagePath && <SiteImage />}
+          <h1 class="text-2xl p-2 pl-4">{Config.siteTitle}</h1>
+          <p class="pl-4">{Config.siteDescription}</p>
+
+          <SocialMedia />
+          <div class="divider"></div>
+          <Sidebar />
         </div>
-      </div>
-      <div class="drawer-side">
-        <label for="my-drawer" class="drawer-overlay"></label>
-        <div class="overflow-y-auto flex lg:justify-end w-fit sm:w-[30vw]">
-          <div class="w-fit p-3 lg:m-6 bg-base-100">
-            {Config.siteImagePath && <SiteImage />}
-            <h1 class="text-2xl p-2 pl-4">{Config.siteTitle}</h1>
-            <p class=" pl-4">{Config.siteDescription}</p>
-          
-            <SocialMedia />
-            <div class="divider"></div>
-            <Sidebar />
-          </div>
-        </div>
-      </div>
-    </div>
+      </aside>
+    </header>
+    <main id="main-content" class="min-h-screen space-y-6">
+      <slot />
+    </main>
+    <Footer />
+    <style>
+      aside {
+        position: absolute;
+        top: 0;
+        left: -300%;
+        z-index: 1;
+        transition: left 200ms ease-in;
+      }
+
+      label:has(input:checked) + aside {
+        left: 0;
+      }
+      body:has(input:checked) main {
+        opacity: 0.5;
+      }
+
+      @media (width>=1024px) {
+        aside {
+          left: 0;
+        }
+      }
+    </style>
+
+    <script>
+      const checkbox= document.querySelector("input");
+      document.querySelector("main").addEventListener("click", (e) => {
+        checkbox.checked = false;
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          checkbox.checked = false;
+        }
+      });
+    </script>
   </body>
 </html>
