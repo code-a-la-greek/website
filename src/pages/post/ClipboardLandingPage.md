@@ -18,9 +18,7 @@ This is a solution to the <ins>*[Clipboard landing page challenge on Frontend Me
 I try once again to build this design, using the site builder from nicepage.
 
 Working with the nicepage website builder is relatively easy. However the layout is not automatically responsive 
-and as a result I have to inspect and change it manually in every available breakpoint. A process very tedious.active
-
-This is the last layout I try with Nicepage.
+and as a result I have to inspect and change it manually in every available breakpoint. A very tedious process.
 
 ### Links
 - *<ins>[See the demo](https://panugr.github.io/LowCode/Clipboard-landing-page/)</ins>*
