@@ -7,7 +7,7 @@ categories:
   - portfolio
  
 ---
-Vakka-Viestintä is an advertising agency located in Uusikaupunki (FI) and specializing in digital advertisement and marketing. (2021-present)
+Vakka-Viestintä is an advertising agency located in Uusikaupunki (FI) and specializing in digital advertisement and marketing.
  
 I identified several areas which I could improve:
 - The site was made with Bootstrap 3 

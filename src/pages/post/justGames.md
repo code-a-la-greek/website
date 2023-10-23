@@ -7,7 +7,7 @@ categories:
   - portfolio
 ---
 
-Just Games is an indie start-up game company based in Helsinki, Finland. They had their website on Wix.com but they needed a custom-built website. (2021-present) 
+Just Games is an indie start-up game company based in Helsinki, Finland. They had their website on Wix.com but they needed a custom-built website. 
 
 ## Features:
 - Astro website-builder
