@@ -7,7 +7,7 @@ categories:
   - portfolio
 ---
 
-Garage21 - Iliopoulos is a car repair shop based in Kalamata, Greece. They had their website on wordpress.com but they had a few issues with it. (2023) 
+Garage21 - Iliopoulos is a car repair shop based in Kalamata, Greece. They had their website on wordpress.com but they had a few issues with it. 
 
 ## Issues
 I identified several areas in which I could improve:
