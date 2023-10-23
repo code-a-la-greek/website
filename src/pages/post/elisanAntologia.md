@@ -7,7 +7,6 @@ categories:
   - portfolio
 ---
 I've created this site for Elisa Stenberg, a young writer who wanted a space to share her writings.
-(2021-2022)
  
 ## Features:
 - W3schools html template
