@@ -29,5 +29,3 @@ No cookies are used, but due to a contact form, a privacy policy is required. I 
 I also added the privacy and GDPR policy that Netlify provides. <br>
 I increased the security of the site, setting some headers, such as referrer-policy, content-security-policy, x-frame options etc. That was a challenge as well but there's good documentation at mozilla.org. <br>
 The site is hosted in Netlify.
-
-*<ins>[Visit the site](https://vakkaviestinta.com)</ins>*
