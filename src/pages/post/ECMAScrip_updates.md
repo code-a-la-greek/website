@@ -1,3 +1,14 @@
+---
+layout: ../../layouts/PostLayout.astro
+image: 
+categories:
+  - blog 
+  - javascript
+date: 2024-05-09
+title: ECMAScript Updates 
+draft: true 
+---
+
 Keeping Up With The Speed: A Look at Recent ECMAScript Updates
 ECMAScript, the foundation of Javascript, is constantly evolving. Each year brings a new
 edition, brimming with features that enhance the capabilities and developer experience. Let's
