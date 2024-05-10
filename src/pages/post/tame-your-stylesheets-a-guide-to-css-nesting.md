@@ -25,8 +25,6 @@ CSS nesting is achieved using the greater than symbol (>). Let's see some exampl
 
 **Basic Nesting:**
 
-
-
 ```css
 .menu {
   background-color: #f0f0f0;
@@ -41,46 +39,40 @@ CSS nesting is achieved using the greater than symbol (>). Let's see some exampl
 
 **Nesting with Multiple Levels:**
 
-
-
-
-
-```
-.card {\
-  background-color: #fff;\
+```css
+.card {
+  background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\
-\
-  > .card-header {\
-    padding: 15px;\
-    border-bottom: 1px solid #ddd;\
-  }\
-\
-  > .card-body {\
-    padding: 20px;\
-  }\
+
+  > .card-header {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  > .card-body {
+    padding: 20px;
+  }
 }
 ```
 
-Here, we nest styles for both the .card-header and .card-body classes within the .card style block.
-
-The & Placeholder Selector:
+**The & Placeholder Selector:**
 
 The & symbol acts as a placeholder for the parent selector within a nested block. This allows you to target descendant elements while maintaining the nesting hierarchy.
 
-CSS
+```css
+.article {
+  margin-bottom: 20px;
 
-.article {\
-  margin-bottom: 20px;\
-\
-  & h2 {  /\* Target h2 elements within .article \*/\
+  & h2 {  /* Target h2 elements within .article \*/
     font-size: 20px;\
     margin-top: 0;\
-  }\
-\
-  & p {\
+  }
+
+  & p {
     line-height: 1.5;\
-  }\
+  }
 }
+```
 
 In this example, the & symbol in the nested blocks allows us to target <h2> and <p> elements specifically within the context of the .article class.
 
