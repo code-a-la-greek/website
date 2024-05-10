@@ -74,7 +74,7 @@ The `&` symbol acts as a placeholder for the parent selector within a nested blo
 }
 ```
 
-In this example, the & symbol in the nested blocks allows us to target `h2` and `p` elements specifically within the context of the` .article` class.
+In this example, the & symbol in the nested blocks allows us to target `h2` and `p` elements specifically within the context of the`.article` class.
 
 ## Browser Support
 
@@ -87,4 +87,4 @@ Globally the support is at around 87%. For broader browser support, consider usi
 
 CSS nesting is a valuable tool for organizing and maintaining your stylesheets. By leveraging its capabilities, you can create cleaner, more readable, and easier-to-manage code. So, experiment with nesting, keep an eye on browser support, and enjoy the benefits of a more structured styling experience!
 
-Happy coding!
+*Happy coding!*
