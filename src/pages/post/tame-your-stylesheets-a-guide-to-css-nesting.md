@@ -42,7 +42,7 @@ CSS nesting is achieved using the greater than symbol (`>`). Let's see some exam
 ```css
 .card {
   background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
   > .card-header {
     padding: 15px;
@@ -64,12 +64,12 @@ The `&` symbol acts as a placeholder for the parent selector within a nested blo
   margin-bottom: 20px;
 
   & h2 {  /* Target h2 elements within .article \*/
-    font-size: 20px;\
-    margin-top: 0;\
+    font-size: 20px;
+    margin-top: 0;
   }
 
   & p {
-    line-height: 1.5;\
+    line-height: 1.5;
   }
 }
 ```
@@ -78,9 +78,7 @@ In this example, the & symbol in the nested blocks allows us to target `h2` and 
 
 ## Browser Support
 
-Since December 2023, this feature works across the latest devices and major browser versions.
-
-\
+Since December 2023, this feature works across the latest devices and major browser versions.\
 Globally the support is at around 87%. For broader browser support, consider using a CSS preprocessor like Sass or Less, which offers similar nesting functionalities.
 
 ## Conclusion
