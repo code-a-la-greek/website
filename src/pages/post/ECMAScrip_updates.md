@@ -6,7 +6,7 @@ categories:
   - javascript
 date: 2024-05-09
 title: "Keeping Up With The Speed: A Look at Recent ECMAScript Updates"
-draft: true
+
 ---
 ECMAScript, the foundation of Javascript, is constantly evolving. Each year brings a new
 edition, brimming with features that enhance the capabilities and developer experience.  \
