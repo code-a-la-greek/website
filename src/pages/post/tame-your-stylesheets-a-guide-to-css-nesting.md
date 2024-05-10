@@ -21,7 +21,7 @@ Imagine being able to define styles for child elements directly within the style
 
 ## How to Use CSS Nesting
 
-CSS nesting is achieved using the greater than symbol (>). Let's see some examples:
+CSS nesting is achieved using the greater than symbol (`>`). Let's see some examples:
 
 **Basic Nesting:**
 
@@ -57,7 +57,7 @@ CSS nesting is achieved using the greater than symbol (>). Let's see some exampl
 
 **The & Placeholder Selector:**
 
-The & symbol acts as a placeholder for the parent selector within a nested block. This allows you to target descendant elements while maintaining the nesting hierarchy.
+The `&` symbol acts as a placeholder for the parent selector within a nested block. This allows you to target descendant elements while maintaining the nesting hierarchy.
 
 ```css
 .article {
@@ -74,14 +74,17 @@ The & symbol acts as a placeholder for the parent selector within a nested block
 }
 ```
 
-In this example, the & symbol in the nested blocks allows us to target <h2> and <p> elements specifically within the context of the .article class.
+In this example, the & symbol in the nested blocks allows us to target `h2` and `p` elements specifically within the context of the` .article` class.
 
-Browser Support
+## Browser Support
 
-While CSS nesting is a powerful feature, it's important to note that browser support is still evolving. You can check compatibility using resources like Can I Use [https://caniuse.com/?search=nested%20css](https://caniuse.com/?search=nested+css). For broader browser support, consider using a CSS preprocessor like Sass or Less, which offer similar nesting functionalities.
+Since December 2023, this feature works across the latest devices and major browser versions.
 
-Conclusion
+\
+Globally the support is at around 87%. For broader browser support, consider using a CSS preprocessor like Sass or Less, which offers similar nesting functionalities.
+
+## Conclusion
 
 CSS nesting is a valuable tool for organizing and maintaining your stylesheets. By leveraging its capabilities, you can create cleaner, more readable, and easier-to-manage code. So, experiment with nesting, keep an eye on browser support, and enjoy the benefits of a more structured styling experience!
 
-<!--EndFragment-->
+Happy coding!
