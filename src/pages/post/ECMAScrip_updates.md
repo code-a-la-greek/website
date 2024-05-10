@@ -33,8 +33,10 @@ ECMAScript 2021, released in June 2021, brought some major additions:
 
 ## Staying Updated: Resources for Continuous Learning
 
-
   The world of Javascript moves fast. Here are some resources to help you stay on top of
   ECMAScript updates:
-- ECMAScript News: https://ecmascript-daily.github.io/ delivers weekly updates on Javascript
+
+* ECMAScript News: https://ecmascript-daily.github.io/ delivers weekly updates on Javascript
   and tools.
+
+*Happy coding!*
