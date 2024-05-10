@@ -78,9 +78,7 @@ In this example, the & symbol in the nested blocks allows us to target `h2` and 
 
 ## Browser Support
 
-Since December 2023, this feature works across the latest devices and major browser versions.
-
-\
+Since December 2023, this feature works across the latest devices and major browser versions.\
 Globally the support is at around 87%. For broader browser support, consider using a CSS preprocessor like Sass or Less, which offers similar nesting functionalities.
 
 ## Conclusion
