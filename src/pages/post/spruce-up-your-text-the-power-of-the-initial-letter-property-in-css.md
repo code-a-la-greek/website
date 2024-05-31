@@ -7,28 +7,22 @@ categories:
 date: 2024-05-31
 title: "Spruce Up Your Text: The Power of the initial-letter Property in CSS"
 ---
-
-
 Have you ever admired those beautifully styled first letters (drop caps) that grace websites and printed publications? Well, fret no more! The initial-letter property in CSS grants you the power to create these eye-catching design elements effortlessly.
-
 
 ## What is the initial-letter Property?
 
 Forget complex HTML markup or inline styles. The initial-letter property lets you define styles directly within your CSS for the first letter of an element. This translates into cleaner code and a more streamlined workflow.
 
-
 ## The Magic of initial-letter
+
 This property offers two main functionalities:
-- **Specifying the Size**: Define how many lines the initial letter should occupy. This creates the classic drop cap effect.
-- **Controlling Alignment**: Set the vertical positioning of the initial letter relative to the surrounding text (no browser support).
+
+* **Specifying the Size**: Define how many lines the initial letter should occupy. This creates the classic drop cap effect.
+* **Controlling Alignment**: Set the vertical positioning of the initial letter relative to the surrounding text (no browser support).
 
 **Let's Code!**
 
-
-
-
-````CSS
-
+```css
 .article {
   font-size: 16px;
 }
@@ -39,15 +33,10 @@ This property offers two main functionalities:
   color: #fff;
   padding: 0 5px; 
 }
-````
-
-
+```
 
 In this example, the first letter of the first paragraph within the .article element gets styled as a two-line drop cap with a subtle background.
 
-
-
-
 ## Browser Compatibility
-The initial-letter is widely supported by modern browsers except firefox. Also the initial-letter-align property which ensures that the letter stays centered within the first line, is not supported yet. 
 
+The initial-letter is widely supported by modern browsers except firefox. Also the initial-letter-align property which ensures that the letter stays centered within the first line, is not supported yet.
