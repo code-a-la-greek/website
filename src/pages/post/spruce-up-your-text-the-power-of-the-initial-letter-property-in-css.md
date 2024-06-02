@@ -5,20 +5,20 @@ categories:
   - css
   - blog
 date: 2024-05-31
-title: "Spruce Up Your Text: The Power of the initial-letter Property in CSS"
+title: "Spruce Up Your Text: The Power of the first-letter Property in CSS"
 ---
 Have you ever admired those beautifully styled first letters (drop caps) that grace websites and printed publications? Well, fret no more! The initial-letter property in CSS grants you the power to create these eye-catching design elements effortlessly.
 
-## What is the initial-letter Property?
+## What is the first-letter Property?
 
-Forget complex HTML markup or inline styles. The initial-letter property lets you define styles directly within your CSS for the first letter of an element. This translates into cleaner code and a more streamlined workflow.
+Forget complex HTML markup or inline styles. The first-letter property lets you define styles directly within your CSS for the first letter of an element. This translates into cleaner code and a more streamlined workflow.
 
-## The Magic of initial-letter
+## The Magic of first-letter
 
 This property offers two main functionalities:
 
-* **Specifying the Size**: Define how many lines the initial letter should occupy. This creates the classic drop cap effect.
-* **Controlling Alignment**: Set the vertical positioning of the initial letter relative to the surrounding text (no browser support).
+* **Specifying the Size**: Define how many lines the first letter should occupy. This creates the classic drop cap effect.
+* **Controlling Alignment**: Set the vertical positioning of the first letter relative to the surrounding text (no browser support).
 
 **Let's Code!**
 
@@ -39,4 +39,4 @@ In this example, the first letter of the first paragraph within the .article ele
 
 ## Browser Compatibility
 
-The initial-letter is widely supported by modern browsers except firefox. Also the initial-letter-align property which ensures that the letter stays centered within the first line, is not supported yet.
+The first-letter is widely supported by modern browsers except firefox. Also the first-letter-align property which ensures that the letter stays centered within the first line, is not supported yet.
