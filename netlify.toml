@@ -12,4 +12,7 @@
     object-src 'none';
     base-uri 'none';
     '''
-
+[[redirects]]
+  from = "/https://www.codealagreek.netlify.app/*"
+  to = "https://codealagreek.netlify.app/*"
+  status = 301
