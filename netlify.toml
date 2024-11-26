@@ -13,6 +13,6 @@
     base-uri 'none';
     '''
 [[redirects]]
-  from = "/https://www.codealagreek.netlify.app/*"
+  from = "/http://www.codealagreek.netlify.app/*"
   to = "https://codealagreek.netlify.app/*"
   status = 301
