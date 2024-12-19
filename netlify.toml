@@ -5,10 +5,13 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options= 'nosniff'
     Referrer-Policy= 'no-referrer'
-
-   #  Multi-value headers are expressed with multi-line strings
+    Strict-Transport-Security= "max-age=31536000; includeSubDomains; preload"
+    
+  #  Multi-value headers are expressed with multi-line strings 
     content-security-policy = '''
     frame-ancestors 'none';
+    connect-src 'self';
+    img-src https:;
     object-src 'none';
     base-uri 'none';
     '''
